@@ -1,0 +1,84 @@
+---
+title: "Lab 06 — Ước lượng Cobb-Douglas cho Việt Nam"
+subtitle: "Tương ứng Buổi 6: Tăng trưởng dài hạn và growth accounting"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 6
+
+Bài này áp dụng khái niệm chính từ [Buổi 6](../lectures/buoi-06.qmd) vào dữ liệu thực tế Việt Nam.
+
+**Khái niệm Stata học**: `regress, log, t-stat, R-squared`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Lab đang biên soạn
+
+Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 06. Cấu trúc cố định theo template chuẩn của 16 lab.
+:::
+
+## Khung Lab 06
+
+### 1. Bài toán
+
+Ước lượng alpha và TFP residual
+
+### 2. Dữ liệu cần
+
+Dataset Y K L của VN 2000-2024 (WB hoặc Penn World Tables)
+
+### 3. Lệnh Stata trọng tâm
+
+Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+
+```stata
+* Lab 06 — DTU301
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab06_<ten>.log", replace text
+
+* === Tải dữ liệu ===
+* (sẽ chi tiết khi có dataset thật)
+
+* === Phân tích ===
+* Sử dụng: regress, log, t-stat, R-squared
+
+* === Đóng log ===
+log close
+```
+
+### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+
+1. Câu hỏi mô tả dữ liệu
+2. Câu hỏi so sánh / xu hướng
+3. Câu hỏi liên hệ với lý thuyết
+4. Câu hỏi liên hệ với chính sách Việt Nam
+5. Câu hỏi mở rộng / phản biện
+
+## Deliverable Lab 06
+
+Nộp 3 file (như các lab trước):
+
+| File | Nội dung |
+|---|---|
+| `lab06_<tên>.do` | Code + comment |
+| `lab06_<tên>.log` | Output |
+| `lab06_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `DTU301-LAB06-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log | 30% |
+| Vận dụng đúng khái niệm Stata mới của bài | 25% |
+| Biểu đồ / bảng kết quả rõ ràng | 20% |
+| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+
+---
+
+← *Lab trước*: [Lab 5](lab-05.qmd) | *Lab tiếp theo*: [Lab 7](lab-07.qmd) →

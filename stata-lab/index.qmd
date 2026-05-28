@@ -1,0 +1,91 @@
+---
+title: "Stata Lab"
+subtitle: "Tự học Stata qua 15 bài thực hành — tương ứng 15 buổi của môn DTU301"
+toc: true
+---
+
+## Stata Lab là gì?
+
+Stata Lab là **chuỗi 15 bài thực hành tự nguyện** đi kèm môn DTU301. Mỗi lab tương ứng với một buổi giảng, lấy dữ liệu thực tế Việt Nam và quốc tế để vận dụng khái niệm vừa học.
+
+Mục tiêu:
+
+- **Nắm vững Stata** ở mức cử nhân năm 3-4 — đủ để làm khoá luận tốt nghiệp, làm việc tại các viện nghiên cứu, hoặc tiếp tục bậc thạc sĩ.
+- **Cảm nhận lý thuyết bằng dữ liệu thật** — thấy Cobb-Douglas, đường Phillips, Bộ ba bất khả thi *bằng số* chứ không chỉ bằng chữ.
+- **Tự xây dựng bộ tài sản kỹ năng** (do-file, ghi chú) có thể dùng dài hạn.
+
+::: {.callout-tip appearance="simple"}
+## 🎁 Cơ chế bonus
+
+Nộp Stata Lab có thể **cộng tới 0,5 điểm** vào điểm tổng kết (tối đa 5% bonus). Xem [Đánh giá](../exams/) để biết cách quy đổi.
+:::
+
+## Cấu trúc 16 bài lab
+
+| Lab | Tương ứng | Chủ đề | Khái niệm Stata |
+|:---:|:---:|---|---|
+| **0** | — | [Hướng dẫn cài Stata + lệnh cơ bản](lab-00.qmd) | `use`, `describe`, `summarize`, do-file |
+| **1** | Buổi 1 | [Vẽ PPF + tính chi phí cơ hội](lab-01.qmd) | `twoway`, `generate`, scatter |
+| **2** | Buổi 2 | [Phân tích chi tiêu công VN](lab-02.qmd) | `import excel`, `collapse`, bar chart |
+| **3** | Buổi 3 | [Tính HHI cho 5 ngành VN](lab-03.qmd) | `egen`, formula, ranking |
+| **4** | Buổi 4 | [Mô phỏng thuế Pigou](lab-04.qmd) | `gen`, đường cung-cầu |
+| **5** | Buổi 5 | [DNNN vs Tư nhân vs FDI](lab-05.qmd) | `tabulate`, by-group statistics |
+| **6** | Buổi 6 | [Ước lượng Cobb-Douglas VN](lab-06.qmd) | `regress`, `log`, t-stat |
+| **7** | Buổi 7 | [Cân bằng IS-LM bằng số](lab-07.qmd) | `display`, `scalar`, simulation |
+| **8** | Buổi 8 | [Đường Phillips VN 2010-2024](lab-08.qmd) | OLS, fitted line, expectations |
+| **9** | Buổi 9 | [Tính NEER/REER VND](lab-09.qmd) | weighted average, time series |
+| **10** | Buổi 10 | [Mundell-Fleming bằng dữ liệu](lab-10.qmd) | đa biến, time index |
+| **11** | Buổi 11 | [Event study Khủng hoảng Á 1997](lab-11.qmd) | rolling, event dummy |
+| **12** | Buổi 12 | [PCI/PAPI/PAR theo tỉnh](lab-12.qmd) | `merge`, correlation, scatter |
+| **13** | Buổi 13 | [So sánh 6 vùng KT-XH](lab-13.qmd) | group stats, box plot |
+| **14** | Buổi 14 | [Capstone phân tích chính sách](lab-14.qmd) | tổng hợp |
+| **15** | Buổi 15 | [Xuất bảng + biểu đồ cho thuyết trình](lab-15.qmd) | `outreg2`, `coefplot`, export |
+
+## Yêu cầu công cụ
+
+Có **3 cách** tiếp cận Stata cho sinh viên DTU301:
+
+| Cách | Phù hợp | Chi phí |
+|---|---|---|
+| **Phòng máy FTU** | Sinh viên đang học, có lịch lên phòng | 0đ |
+| **Stata trên máy cá nhân** | Sinh viên muốn làm việc dài hạn | ~$129/năm (Stata BE student) |
+| **Online tạm thời (Stata Cloud)** | Thử nghiệm ngắn | Có phí |
+
+Xem [Lab 0 — Hướng dẫn cài đặt](lab-00.qmd) để biết chi tiết.
+
+## Cách nộp Stata Lab
+
+Mỗi lab có **deliverables** rõ ràng:
+
+1. **File `.do`** chứa code đầy đủ, có comment tiếng Việt giải thích từng đoạn
+2. **File `.log`** chứa output (kết quả chạy)
+3. **File `.pdf` ngắn** (1-2 trang) trả lời các câu hỏi suy nghĩ trong lab
+
+**Tiêu đề email**: `DTU301-LAB[số]-MSSV-HọTên` → gửi giảng viên trước hạn nộp công bố đầu kỳ.
+
+## Rubric chấm (đơn giản)
+
+Mỗi lab chấm theo 4 mức:
+
+| Mức | Mô tả | Điểm bonus |
+|---|---|---|
+| **Đạt xuất sắc** | Code chạy đúng, có comment rõ, trả lời câu hỏi sâu, có liên hệ thực tiễn | 0.5 điểm/lab |
+| **Đạt tốt** | Code chạy đúng, trả lời câu hỏi đầy đủ | 0.3 điểm/lab |
+| **Đạt cơ bản** | Code chạy, có nỗ lực trả lời câu hỏi | 0.1 điểm/lab |
+| **Không đạt** | Code không chạy hoặc không nộp | 0 điểm |
+
+**Tổng tối đa**: ~0,5 điểm vào điểm tổng kết (giảng viên có thể điều chỉnh tỷ lệ).
+
+## Tinh thần làm Stata Lab
+
+::: {.callout-important}
+- **Làm để hiểu**, không phải để cộng điểm. Mục tiêu thật sự là **kỹ năng dài hạn**.
+- **Bắt đầu từ Lab 0** — đừng nhảy. Stata có cú pháp riêng, cần làm quen.
+- **Không sao chép code mà không hiểu**. Mỗi dòng code phải biết nó làm gì.
+- **Sử dụng AI có trách nhiệm**: ChatGPT/Claude có thể giải thích lệnh, nhưng *không thay bạn nghĩ*. Khai báo nếu AI hỗ trợ.
+- **Lưu giữ lab của bạn** — đây là bộ tài sản dài hạn.
+:::
+
+## Bắt đầu ở đâu?
+
+→ **Bắt đầu**: [Lab 0 — Hướng dẫn cài Stata + lệnh cơ bản](lab-00.qmd)

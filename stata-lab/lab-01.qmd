@@ -1,0 +1,184 @@
+---
+title: "Lab 1 — Vẽ PPF và tính chi phí cơ hội"
+subtitle: "Tương ứng Buổi 1: Cơ sở khoa học kinh tế"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 1
+
+Bài này áp dụng hai khái niệm chính từ [Buổi 1](../lectures/buoi-01.qmd):
+
+- **Đường giới hạn sản xuất (PPF)** — minh hoạ đánh đổi giữa hai hàng hoá
+- **Chi phí cơ hội** — đo lường lựa chọn tốt nhất bị từ bỏ
+
+Sau Lab 1, bạn có thể:
+
+- Tạo dataset PPF từ công thức
+- Vẽ đường PPF cong lõm trong Stata
+- Tính chi phí cơ hội tại mọi điểm trên PPF
+- Bình luận về *tăng trưởng* khi PPF dịch ra ngoài
+:::
+
+## 1. Bài toán
+
+Một nền kinh tế giả định chỉ sản xuất **hai hàng hoá**: **Y tế** (đo bằng số bệnh viện) và **Quốc phòng** (đo bằng số đơn vị quân sự).
+
+Tổng nguồn lực cố định. Đường PPF có dạng:
+
+\\[Y^2 + X^2 = 100\\]
+
+Trong đó:
+
+- \\(X\\) = số đơn vị quân sự (0 đến 10)
+- \\(Y\\) = số bệnh viện (cũng từ 0 đến 10)
+
+PPF cong lõm về phía gốc toạ độ — đây là dạng phổ biến trong giáo trình Mankiw.
+
+## 2. Tạo dataset PPF trong Stata
+
+```stata
+* Lab 1 — DTU301 — PPF và Chi phí cơ hội
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab01_<ten>.log", replace text
+
+* === Phần 1: Tạo dataset PPF ===
+clear
+set obs 11                              // 11 quan sát: x = 0, 1, ..., 10
+generate x = _n - 1                     // Quân sự: 0 đến 10
+generate y = sqrt(100 - x^2)            // Y tế (từ công thức X^2 + Y^2 = 100)
+
+label variable x "Quân sự (đơn vị)"
+label variable y "Y tế (số bệnh viện)"
+
+list
+```
+
+**Câu hỏi 1**: Khi `x = 0` (không có quân sự), `y` bằng bao nhiêu? Khi `x = 10`, `y` bằng bao nhiêu? Ý nghĩa?
+
+## 3. Vẽ PPF
+
+```stata
+* === Phần 2: Vẽ đường PPF ===
+twoway (line y x, lwidth(thick) lcolor("114 47 55")) ///
+       (scatter y x, mcolor("114 47 55") msize(medium)), ///
+       title("PPF: Đánh đổi giữa Y tế và Quốc phòng") ///
+       subtitle("Đường cong lõm thể hiện đánh đổi tăng dần") ///
+       xtitle("Quân sự (đơn vị)") ///
+       ytitle("Y tế (số bệnh viện)") ///
+       legend(off) ///
+       graphregion(color(white))
+
+graph export "ppf.png", replace width(1200)
+```
+
+Bạn sẽ thấy đường cong **lõm về phía gốc toạ độ** — đặc trưng của PPF cổ điển.
+
+**Câu hỏi 2**: Tại sao PPF *cong lõm*, không *thẳng*? (Gợi ý: nghĩ về "tài nguyên không đồng nhất" — một số người làm bác sĩ giỏi hơn làm bộ đội, và ngược lại.)
+
+## 4. Tính chi phí cơ hội
+
+**Chi phí cơ hội** của 1 đơn vị quân sự thêm tại mỗi điểm = lượng Y tế phải hy sinh.
+
+```stata
+* === Phần 3: Tính chi phí cơ hội biên ===
+sort x
+generate y_lag = y[_n-1]                    // Y ở điểm trước đó
+generate opportunity_cost = y_lag - y       // Bệnh viện hy sinh để thêm 1 quân sự
+
+label variable opportunity_cost "Chi phí cơ hội biên (bệnh viện / quân sự)"
+
+list x y opportunity_cost
+```
+
+Bạn sẽ thấy bảng đại loại:
+
+| x | y | opportunity_cost |
+|:---:|:---:|:---:|
+| 0 | 10.00 | . |
+| 1 | 9.95 | 0.05 |
+| 2 | 9.80 | 0.15 |
+| 3 | 9.54 | 0.26 |
+| ... | ... | ... |
+| 9 | 4.36 | 1.95 |
+| 10 | 0.00 | 4.36 |
+
+**Câu hỏi 3**: Chi phí cơ hội của 1 đơn vị quân sự thêm **tăng** hay **giảm** khi đã có nhiều quân sự rồi? Tại sao? Liên hệ với khái niệm *Quy luật chi phí cơ hội tăng dần* trong Mankiw.
+
+## 5. Trực quan hoá chi phí cơ hội
+
+```stata
+* === Phần 4: Biểu đồ chi phí cơ hội ===
+twoway (bar opportunity_cost x, fcolor("193 154 77") lcolor("114 47 55")), ///
+       title("Chi phí cơ hội biên tăng dần") ///
+       xtitle("Số đơn vị quân sự") ///
+       ytitle("Bệnh viện hy sinh để thêm 1 quân sự") ///
+       graphregion(color(white))
+
+graph export "opportunity_cost.png", replace width(1200)
+```
+
+## 6. PPF dịch ra — tăng trưởng kinh tế
+
+Giả sử công nghệ tiến bộ, tổng nguồn lực tăng 30% (giống VN 1986-2024 GDP tăng ~30 lần — đường PPF *dịch ra rất mạnh*):
+
+```stata
+* === Phần 5: PPF cũ vs PPF mới (tăng trưởng) ===
+generate y_new = sqrt(130 - x^2)            // PPF mới với nguồn lực tăng
+replace y_new = . if y_new == . | x^2 > 130
+
+twoway (line y x,     lwidth(medium) lcolor("114 47 55")) ///
+       (line y_new x, lwidth(medium) lcolor("46 125 80") lpattern(dash)), ///
+       title("PPF dịch ra — đại diện cho tăng trưởng kinh tế") ///
+       xtitle("Quân sự") ytitle("Y tế") ///
+       legend(label(1 "PPF cũ") label(2 "PPF mới (sau tiến bộ công nghệ)") ///
+              position(2) ring(0) cols(1)) ///
+       graphregion(color(white))
+
+graph export "ppf_growth.png", replace width(1200)
+```
+
+**Câu hỏi 4**: Với PPF mới, mức tối đa Y tế (khi quân sự = 0) tăng bao nhiêu? Mức tối đa Quân sự (khi Y tế = 0) tăng bao nhiêu? Đây có phải là tăng trưởng đều giữa hai ngành?
+
+## 7. Liên hệ thực tiễn Việt Nam
+
+**Câu hỏi 5** (suy nghĩ và viết, không cần code):
+
+Liên hệ PPF với ngân sách Nhà nước Việt Nam 2026. Nếu Chính phủ quyết định chi thêm 100.000 tỷ cho **đường sắt cao tốc Bắc-Nam**, theo bạn:
+
+- Đâu là *chi phí cơ hội* của khoản chi này? (Liệt kê 3 phương án thay thế tốt nhất)
+- Nếu nền kinh tế đang trong PPF (lãng phí, thất nghiệp cao), việc tăng chi này có "miễn phí" theo nghĩa kinh tế không? Tại sao?
+
+## 8. Đóng log
+
+```stata
+log close
+```
+
+## Deliverable Lab 1
+
+Nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab01_<tên>.do` | Toàn bộ code, có comment tiếng Việt |
+| `lab01_<tên>.log` | Output Stata |
+| `lab01_<tên>.pdf` (1-2 trang) | Trả lời 5 câu hỏi suy nghĩ + 3 biểu đồ (PPF, opportunity cost, PPF growth) đã xuất ra png |
+
+**Tiêu đề email**: `DTU301-LAB01-MSSV-HọTên` → giảng viên trước hạn nộp công bố đầu kỳ.
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log file | 30% |
+| Bình luận trong code rõ ràng, tiếng Việt | 15% |
+| 3 biểu đồ được xuất, format đẹp | 20% |
+| Trả lời 5 câu hỏi sâu sắc, có liên hệ thực tiễn | 35% |
+
+---
+
+← *Lab trước*: [Lab 0 — Cài Stata và lệnh cơ bản](lab-00.qmd) | *Lab tiếp theo*: [Lab 2 — Phân tích chi tiêu công VN](lab-02.qmd) →

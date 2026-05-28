@@ -1,0 +1,84 @@
+---
+title: "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+subtitle: "Tương ứng Buổi 15: Trình bày kết quả"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 15
+
+Bài này áp dụng khái niệm chính từ [Buổi 15](../lectures/buoi-15.qmd) vào dữ liệu thực tế Việt Nam.
+
+**Khái niệm Stata học**: `outreg2, coefplot, esttab, putexcel`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Lab đang biên soạn
+
+Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 15. Cấu trúc cố định theo template chuẩn của 16 lab.
+:::
+
+## Khung Lab 15
+
+### 1. Bài toán
+
+Xuất kết quả ra Word/Excel/PDF format chuẩn
+
+### 2. Dữ liệu cần
+
+Dữ liệu từ Lab Capstone
+
+### 3. Lệnh Stata trọng tâm
+
+Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+
+```stata
+* Lab 15 — DTU301
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab15_<ten>.log", replace text
+
+* === Tải dữ liệu ===
+* (sẽ chi tiết khi có dataset thật)
+
+* === Phân tích ===
+* Sử dụng: outreg2, coefplot, esttab, putexcel
+
+* === Đóng log ===
+log close
+```
+
+### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+
+1. Câu hỏi mô tả dữ liệu
+2. Câu hỏi so sánh / xu hướng
+3. Câu hỏi liên hệ với lý thuyết
+4. Câu hỏi liên hệ với chính sách Việt Nam
+5. Câu hỏi mở rộng / phản biện
+
+## Deliverable Lab 15
+
+Nộp 3 file (như các lab trước):
+
+| File | Nội dung |
+|---|---|
+| `lab15_<tên>.do` | Code + comment |
+| `lab15_<tên>.log` | Output |
+| `lab15_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `DTU301-LAB15-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log | 30% |
+| Vận dụng đúng khái niệm Stata mới của bài | 25% |
+| Biểu đồ / bảng kết quả rõ ràng | 20% |
+| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+
+---
+
+← *Lab trước*: [Lab 14](lab-14.qmd) | *Đây là lab cuối.*

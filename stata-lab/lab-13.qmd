@@ -1,0 +1,84 @@
+---
+title: "Lab 13 — So sánh 6 vùng KT-XH"
+subtitle: "Tương ứng Buổi 13: Phát triển vùng và chênh lệch"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 13
+
+Bài này áp dụng khái niệm chính từ [Buổi 13](../lectures/buoi-13.qmd) vào dữ liệu thực tế Việt Nam.
+
+**Khái niệm Stata học**: `collapse, group statistics, box plot`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Lab đang biên soạn
+
+Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 13. Cấu trúc cố định theo template chuẩn của 16 lab.
+:::
+
+## Khung Lab 13
+
+### 1. Bài toán
+
+Tính GRDP per capita 6 vùng và chênh lệch
+
+### 2. Dữ liệu cần
+
+GDP theo tỉnh + phân loại vùng KT-XH
+
+### 3. Lệnh Stata trọng tâm
+
+Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+
+```stata
+* Lab 13 — DTU301
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab13_<ten>.log", replace text
+
+* === Tải dữ liệu ===
+* (sẽ chi tiết khi có dataset thật)
+
+* === Phân tích ===
+* Sử dụng: collapse, group statistics, box plot
+
+* === Đóng log ===
+log close
+```
+
+### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+
+1. Câu hỏi mô tả dữ liệu
+2. Câu hỏi so sánh / xu hướng
+3. Câu hỏi liên hệ với lý thuyết
+4. Câu hỏi liên hệ với chính sách Việt Nam
+5. Câu hỏi mở rộng / phản biện
+
+## Deliverable Lab 13
+
+Nộp 3 file (như các lab trước):
+
+| File | Nội dung |
+|---|---|
+| `lab13_<tên>.do` | Code + comment |
+| `lab13_<tên>.log` | Output |
+| `lab13_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `DTU301-LAB13-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log | 30% |
+| Vận dụng đúng khái niệm Stata mới của bài | 25% |
+| Biểu đồ / bảng kết quả rõ ràng | 20% |
+| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+
+---
+
+← *Lab trước*: [Lab 12](lab-12.qmd) | *Lab tiếp theo*: [Lab 14](lab-14.qmd) →

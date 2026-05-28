@@ -38,13 +38,45 @@ website:
         text: "Lịch học"
       - href: lectures/index.qmd
         text: "Bài giảng"
+      - href: stata-lab/index.qmd
+        text: "Stata Lab"
       - href: problem-sets/index.qmd
         text: "Tiểu luận / Bài tập"
       - href: exams/index.qmd
         text: "Đánh giá"
 
   sidebar:
-    - title: "Bài giảng"
+    - id: stata-lab
+      title: "Stata Lab"
+      style: docked
+      align: left
+      collapse-level: 2
+      contents:
+        - text: "← Trang chủ"
+          href: index.qmd
+        - stata-lab/index.qmd
+        - section: "Hướng dẫn"
+          contents:
+            - stata-lab/lab-00.qmd
+        - section: "Lab theo buổi"
+          contents:
+            - stata-lab/lab-01.qmd
+            - stata-lab/lab-02.qmd
+            - stata-lab/lab-03.qmd
+            - stata-lab/lab-04.qmd
+            - stata-lab/lab-05.qmd
+            - stata-lab/lab-06.qmd
+            - stata-lab/lab-07.qmd
+            - stata-lab/lab-08.qmd
+            - stata-lab/lab-09.qmd
+            - stata-lab/lab-10.qmd
+            - stata-lab/lab-11.qmd
+            - stata-lab/lab-12.qmd
+            - stata-lab/lab-13.qmd
+            - stata-lab/lab-14.qmd
+            - stata-lab/lab-15.qmd
+    - id: bai-giang
+      title: "Bài giảng"
       style: docked
       align: left
       collapse-level: 2

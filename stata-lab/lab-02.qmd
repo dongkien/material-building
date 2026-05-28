@@ -1,0 +1,180 @@
+---
+title: "Lab 2 — Phân tích chi tiêu công Việt Nam"
+subtitle: "Tương ứng Buổi 2: Năm chức năng và ba nhóm công cụ QLKT"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 2
+
+Bài này áp dụng khái niệm **năm chức năng QLKT** và **ba nhóm công cụ** từ [Buổi 2](../lectures/buoi-02.qmd) vào dữ liệu thực tế: **cơ cấu chi ngân sách Nhà nước Việt Nam**.
+
+Sau Lab 2, bạn có thể:
+
+- Đọc dữ liệu chi NSNN từ file Excel của Bộ Tài chính
+- Phân loại các khoản chi theo **chức năng** (hoạch định / tổ chức / điều tiết...)
+- Tính tỷ trọng và xu hướng các nhóm chi
+- Liên hệ cơ cấu chi với *vai trò Nhà nước* trong nền KTTT
+:::
+
+## 1. Dữ liệu
+
+Bạn sẽ làm việc với **dữ liệu chi NSNN Việt Nam** giai đoạn 2015–2024, phân theo *lĩnh vực* (đầu tư phát triển, an ninh quốc phòng, y tế, giáo dục, an sinh xã hội, quản lý hành chính, v.v.).
+
+**Nguồn dữ liệu**: Bộ Tài chính (mof.gov.vn) → mục "Số liệu Ngân sách Nhà nước". Định dạng phổ biến là `.xlsx`.
+
+**File cho lab này**: `vn_nsnn_chi_2015_2024.xlsx` (giảng viên cung cấp tại lớp hoặc bạn tự tải từ MoF).
+
+Cấu trúc giả định:
+
+| year | dau_tu | an_ninh_qp | y_te | giao_duc | an_sinh | qly_hc | khac |
+|---|---|---|---|---|---|---|---|
+| 2015 | ... | ... | ... | ... | ... | ... | ... |
+| 2016 | ... | ... | ... | ... | ... | ... | ... |
+
+Đơn vị: nghìn tỷ VND.
+
+## 2. Đọc dữ liệu Excel vào Stata
+
+```stata
+* Lab 2 — DTU301 — Phân tích chi NSNN Việt Nam
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab02_<ten>.log", replace text
+
+cd "đường-dẫn-thư-mục-của-bạn"
+
+* Đọc file Excel — dòng đầu là tên cột
+import excel "vn_nsnn_chi_2015_2024.xlsx", firstrow clear
+
+* Kiểm tra cấu trúc
+describe
+list in 1/5
+```
+
+**Câu hỏi 1**: Tổng cộng có bao nhiêu năm dữ liệu? Bao nhiêu nhóm chi?
+
+## 3. Tính tổng chi và tỷ trọng
+
+```stata
+* === Phần 1: Tổng chi mỗi năm ===
+egen tong_chi = rowtotal(dau_tu an_ninh_qp y_te giao_duc an_sinh qly_hc khac)
+label variable tong_chi "Tổng chi NSNN (nghìn tỷ VND)"
+
+list year tong_chi
+
+* === Phần 2: Tỷ trọng từng nhóm ===
+foreach v in dau_tu an_ninh_qp y_te giao_duc an_sinh qly_hc khac {
+    generate pct_`v' = `v' / tong_chi * 100
+    label variable pct_`v' "Tỷ trọng `v' (%)"
+}
+
+list year pct_*
+```
+
+**Câu hỏi 2**: Năm 2024 (năm gần nhất), 3 nhóm chi *cao nhất* về tỷ trọng là những nhóm nào? Liên hệ với *5 chức năng QLKT* — chi tiêu Nhà nước VN tập trung vào chức năng nào?
+
+## 4. So sánh giữa hai giai đoạn
+
+```stata
+* === Phần 3: So sánh trung bình 2 giai đoạn ===
+generate giai_doan = ""
+replace giai_doan = "2015-2019" if year >= 2015 & year <= 2019
+replace giai_doan = "2020-2024" if year >= 2020 & year <= 2024
+
+* Tính trung bình tỷ trọng theo giai đoạn
+foreach v in dau_tu an_ninh_qp y_te giao_duc an_sinh qly_hc khac {
+    tabulate giai_doan, summarize(pct_`v')
+}
+```
+
+**Câu hỏi 3**: Giữa hai giai đoạn 2015-2019 và 2020-2024, *nhóm chi nào tăng tỷ trọng đáng kể nhất*? Có thể giải thích bằng sự kiện gì (Covid-19? Đại hội XIII?)?
+
+## 5. Vẽ biểu đồ stacked area — cơ cấu chi theo thời gian
+
+```stata
+* === Phần 4: Biểu đồ stacked area — cơ cấu chi qua thời gian ===
+reshape long pct_, i(year) j(linh_vuc) string
+
+* (Tuỳ chọn) Hoặc dùng graph bar stacked
+twoway (area pct_ year), by(linh_vuc, total)
+```
+
+Hoặc dùng graph bar — đơn giản hơn:
+
+```stata
+* Đưa dữ liệu về dạng wide rồi vẽ stacked bar
+graph bar pct_dau_tu pct_an_ninh_qp pct_y_te pct_giao_duc pct_an_sinh pct_qly_hc pct_khac, ///
+    over(year) stack ///
+    title("Cơ cấu chi NSNN Việt Nam 2015–2024") ///
+    legend(rows(2)) ///
+    graphregion(color(white))
+
+graph export "co_cau_chi.png", replace width(1400)
+```
+
+## 6. Phân loại theo chức năng QLKT
+
+Bây giờ thử **phân loại** các nhóm chi theo **năm chức năng QLKT** từ Buổi 2:
+
+| Nhóm chi NSNN | Chức năng QLKT chủ yếu |
+|---|---|
+| Đầu tư phát triển | **Hoạch định** + **Tổ chức** |
+| An ninh quốc phòng | **Tổ chức** (bộ máy) |
+| Y tế, Giáo dục, An sinh | **Điều tiết** (hàng hoá công, ngoại tác tích cực) |
+| Quản lý hành chính | **Tổ chức** + **Kiểm soát** |
+| Trợ cấp ngành | **Điều tiết** |
+
+```stata
+* === Phần 5: Tính tổng theo chức năng QLKT ===
+generate chuc_nang_hoachdinh_to_chuc = pct_dau_tu + pct_an_ninh_qp + pct_qly_hc
+generate chuc_nang_dieutiet = pct_y_te + pct_giao_duc + pct_an_sinh
+generate chuc_nang_khac_kiemsoat = pct_khac
+
+list year chuc_nang_*
+```
+
+**Câu hỏi 4**: Chi tiêu Nhà nước VN dùng chủ yếu để thực hiện chức năng *hoạch định + tổ chức* hay *điều tiết*? Tỷ lệ này có ý nghĩa gì về *vai trò Nhà nước* (chủ sở hữu vs quản lý vs điều tiết)?
+
+## 7. Liên hệ với 3 nhóm công cụ
+
+**Câu hỏi 5** (suy nghĩ và viết):
+
+Trong 3 nhóm công cụ QLKT (hành chính / kinh tế / thông tin), dữ liệu chi NSNN này thể hiện chủ yếu công cụ nào? Bạn có nghĩ Nhà nước VN nên *tăng* tỷ trọng công cụ **thông tin – giáo dục** (mà chỉ chiếm phần nhỏ trong NSNN) không? Lập luận trong 200 từ.
+
+## 8. Đóng log
+
+```stata
+log close
+```
+
+## Deliverable Lab 2
+
+Nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab02_<tên>.do` | Code đầy đủ + comment tiếng Việt |
+| `lab02_<tên>.log` | Output Stata |
+| `lab02_<tên>.pdf` (2 trang) | Trả lời 5 câu hỏi + biểu đồ cơ cấu chi |
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log | 25% |
+| Phân loại theo chức năng QLKT chính xác | 25% |
+| Biểu đồ stacked area / bar dễ đọc | 20% |
+| Trả lời 5 câu hỏi sâu, có liên hệ thực tiễn | 30% |
+
+::: {.callout-warning}
+## Nếu chưa có dataset chi NSNN
+
+Tự tải từ Bộ Tài chính (mof.gov.vn) hoặc dùng bộ dữ liệu giả giảng viên cung cấp. Quan trọng là **quy trình phân tích**, không phải con số tuyệt đối.
+:::
+
+---
+
+← *Lab trước*: [Lab 1 — PPF và chi phí cơ hội](lab-01.qmd) | *Lab tiếp theo*: [Lab 3 — Tính HHI cho 5 ngành VN](lab-03.qmd) →

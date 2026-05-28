@@ -1,0 +1,84 @@
+---
+title: "Lab 08 — Đường Phillips Việt Nam 2010-2024"
+subtitle: "Tương ứng Buổi 8: Mối quan hệ thất nghiệp - lạm phát"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 8
+
+Bài này áp dụng khái niệm chính từ [Buổi 8](../lectures/buoi-08.qmd) vào dữ liệu thực tế Việt Nam.
+
+**Khái niệm Stata học**: `twoway scatter, fitted line, regress`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Lab đang biên soạn
+
+Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 08. Cấu trúc cố định theo template chuẩn của 16 lab.
+:::
+
+## Khung Lab 08
+
+### 1. Bài toán
+
+Vẽ đường Phillips và ước lượng độ dốc
+
+### 2. Dữ liệu cần
+
+Dữ liệu CPI và unemployment VN 2010-2024 (GSO)
+
+### 3. Lệnh Stata trọng tâm
+
+Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+
+```stata
+* Lab 08 — DTU301
+* Họ tên: <điền>, MSSV: <điền>
+
+clear all
+set more off
+log using "lab08_<ten>.log", replace text
+
+* === Tải dữ liệu ===
+* (sẽ chi tiết khi có dataset thật)
+
+* === Phân tích ===
+* Sử dụng: twoway scatter, fitted line, regress
+
+* === Đóng log ===
+log close
+```
+
+### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+
+1. Câu hỏi mô tả dữ liệu
+2. Câu hỏi so sánh / xu hướng
+3. Câu hỏi liên hệ với lý thuyết
+4. Câu hỏi liên hệ với chính sách Việt Nam
+5. Câu hỏi mở rộng / phản biện
+
+## Deliverable Lab 08
+
+Nộp 3 file (như các lab trước):
+
+| File | Nội dung |
+|---|---|
+| `lab08_<tên>.do` | Code + comment |
+| `lab08_<tên>.log` | Output |
+| `lab08_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `DTU301-LAB08-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code chạy đúng, có log | 30% |
+| Vận dụng đúng khái niệm Stata mới của bài | 25% |
+| Biểu đồ / bảng kết quả rõ ràng | 20% |
+| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+
+---
+
+← *Lab trước*: [Lab 7](lab-07.qmd) | *Lab tiếp theo*: [Lab 9](lab-09.qmd) →
