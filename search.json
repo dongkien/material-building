@@ -2,92 +2,1369 @@
   {
     "objectID": "problem-sets/index.html",
     "href": "problem-sets/index.html",
-    "title": "Bài tập",
+    "title": "Tiểu luận và bài tập lớn",
     "section": "",
-    "text": "Mỗi học kỳ có 3 Problem Sets, mỗi PS chiếm 5% tổng điểm.\nHạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài có sử dụng Stata phải nộp kèm file .do (code) và .log (kết quả chạy).\nKhuyến khích thảo luận nhóm nhưng viết bài độc lập. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.\nSử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ."
+    "text": "Theo đề cương DTU301, đánh giá học phần gồm 3 cấu phần:\n\n\n\n\n\n\n\n\n\nHình thức\nTrọng số\nPhạm vi\nCLO\n\n\n\n\nĐánh giá quá trình\n10%\nLiên tục\nCLO1, CLO4\n\n\nĐánh giá giữa kỳ\n30%\nChương 1–2\nCLO1, CLO2\n\n\nĐánh giá cuối kỳ\n60%\nToàn bộ học phần (tại Seminar Buổi 14–15)\nCLO2, CLO3, CLO4, CLO5"
   },
   {
-    "objectID": "problem-sets/index.html#quy-định-chung",
-    "href": "problem-sets/index.html#quy-định-chung",
-    "title": "Bài tập",
+    "objectID": "problem-sets/index.html#cấu-trúc-đánh-giá",
+    "href": "problem-sets/index.html#cấu-trúc-đánh-giá",
+    "title": "Tiểu luận và bài tập lớn",
     "section": "",
-    "text": "Mỗi học kỳ có 3 Problem Sets, mỗi PS chiếm 5% tổng điểm.\nHạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài có sử dụng Stata phải nộp kèm file .do (code) và .log (kết quả chạy).\nKhuyến khích thảo luận nhóm nhưng viết bài độc lập. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.\nSử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ."
+    "text": "Theo đề cương DTU301, đánh giá học phần gồm 3 cấu phần:\n\n\n\n\n\n\n\n\n\nHình thức\nTrọng số\nPhạm vi\nCLO\n\n\n\n\nĐánh giá quá trình\n10%\nLiên tục\nCLO1, CLO4\n\n\nĐánh giá giữa kỳ\n30%\nChương 1–2\nCLO1, CLO2\n\n\nĐánh giá cuối kỳ\n60%\nToàn bộ học phần (tại Seminar Buổi 14–15)\nCLO2, CLO3, CLO4, CLO5"
   },
   {
-    "objectID": "problem-sets/index.html#cấu-trúc-một-problem-set",
-    "href": "problem-sets/index.html#cấu-trúc-một-problem-set",
-    "title": "Bài tập",
-    "section": "Cấu trúc một Problem Set",
-    "text": "Cấu trúc một Problem Set\nMỗi PS bao gồm:\n\nPhần A — Tự luận (40%): 2–3 câu phân tích, 200–400 từ mỗi câu.\nPhần B — Tính toán / Định lượng (40%): bài tập với dữ liệu thực, viết code Stata.\nPhần C — Đọc và bình luận (20%): đọc 1 bài báo / chính sách và bình luận ngắn 300 từ."
+    "objectID": "problem-sets/index.html#bài-tập-lớn-theo-chương",
+    "href": "problem-sets/index.html#bài-tập-lớn-theo-chương",
+    "title": "Tiểu luận và bài tập lớn",
+    "section": "Bài tập lớn theo chương",
+    "text": "Bài tập lớn theo chương\nMỗi chương có bài tập lớn đi kèm, phục vụ vừa đánh giá quá trình vừa chuẩn bị cho giữa kỳ / cuối kỳ:\n\n\n\nChương\nBuổi\nBài tập lớn\nLiên kết\n\n\n\n\n1\n1–2\nPhân tích vai trò Nhà nước qua 3 lăng kính đạo đức (Bentham / Kant / Rawls)\nBuổi 1\n\n\n2\n3–5\nPhân tích thất bại thị trường và vai trò quyền sở hữu, thể chế tại Việt Nam\nBuổi 5\n\n\n3\n6–8\nĐánh giá chính sách vĩ mô VN 2020–2024 qua khung AD-AS, Phillips\nBuổi 8\n\n\n4\n9–11\nPhân tích chính sách tỷ giá / dòng vốn Việt Nam, 4–6 trang\nBuổi 11\n\n\n5\n12–13\nĐề xuất chiến lược phát triển kinh tế cho 1 tỉnh / vùng, đối chiếu PCI/PAPI/PAR Index\nBuổi 13"
   },
   {
-    "objectID": "problem-sets/index.html#danh-sách-bài-tập",
-    "href": "problem-sets/index.html#danh-sách-bài-tập",
-    "title": "Bài tập",
-    "section": "Danh sách bài tập",
-    "text": "Danh sách bài tập"
+    "objectID": "problem-sets/index.html#quy-định-nộp-bài",
+    "href": "problem-sets/index.html#quy-định-nộp-bài",
+    "title": "Tiểu luận và bài tập lớn",
+    "section": "Quy định nộp bài",
+    "text": "Quy định nộp bài\n\nTiêu đề email: DTU301-MSSV-HọTên-Bài[số]\nĐịnh dạng: PDF (Word convert) + file dữ liệu kèm theo nếu có\nHạn nộp: giảng viên thông báo cụ thể từng bài\nLiêm chính học thuật: bài giống nhau đến 50% trừ 1/2 số điểm; trên 50% bị điểm 0\nSử dụng AI: được phép nhưng phải công bố phạm vi sử dụng khi giảng viên yêu cầu; tự kiểm chứng dữ liệu; không sao chép trực tiếp đầu ra AI"
+  },
+  {
+    "objectID": "problem-sets/index.html#tiêu-chí-chấm-chung",
+    "href": "problem-sets/index.html#tiêu-chí-chấm-chung",
+    "title": "Tiểu luận và bài tập lớn",
+    "section": "Tiêu chí chấm chung",
+    "text": "Tiêu chí chấm chung\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nCấu trúc và logic lập luận\n20%\n\n\nChất lượng nội dung học thuật\n25%\n\n\nSử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn\n15%\n\n\nPhân tích và phản biện\n15%\n\n\nĐề xuất khả thi cho Việt Nam\n15%\n\n\nSử dụng AI có trách nhiệm + liêm chính học thuật\n10%"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Đề cương chi tiết học phần",
+    "section": "",
+    "text": "Đề cương ban hành kèm theo Quyết định của Hiệu trưởng Trường Đại học Ngoại Thương. Phiên bản v1.1 — học liệu mở."
+  },
+  {
+    "objectID": "syllabus.html#thông-tin-chung",
+    "href": "syllabus.html#thông-tin-chung",
+    "title": "Đề cương chi tiết học phần",
+    "section": "1. Thông tin chung",
+    "text": "1. Thông tin chung\n\n\n\n\n\n\n\nMục\nNội dung\n\n\n\n\nTên học phần\nNguyên lý Quản lý Kinh tế (Principles of Economic Management)\n\n\nMã học phần\nDTU301\n\n\nBộ môn phụ trách\nKinh tế và Quản lý\n\n\nViện\nKinh tế và Kinh doanh Quốc tế\n\n\nSố tín chỉ\n3\n\n\nĐiều kiện tiên quyết\nKhông\n\n\nNgôn ngữ giảng dạy\nTiếng Việt\n\n\nTổng thời lượng\n30 tiết lý thuyết + 15 tiết thực hành + 25 tiết bài tập + 80 giờ tự học"
+  },
+  {
+    "objectID": "syllabus.html#đội-ngũ-giảng-viên",
+    "href": "syllabus.html#đội-ngũ-giảng-viên",
+    "title": "Đề cương chi tiết học phần",
+    "section": "2. Đội ngũ giảng viên",
+    "text": "2. Đội ngũ giảng viên\n\n\n\n\n\n\n\n\n\nSTT\nHọ và tên\nEmail FTU\nTrụ sở\n\n\n\n\n1\nTS. Nguyễn Thị Việt Hoa\nntvthoa@ftu.edu.vn\nHN\n\n\n2\nThS. Đinh Hoàng Minh\nhoangminh007@ftu.edu.vn\nHN\n\n\n3\nTS. Đỗ Ngọc Kiên (Trưởng Bộ môn)\ndongockien@ftu.edu.vn\nHN\n\n\n4\nTS. Trần Thanh Phương\nPhuong.tranthanh@ftu.edu.vn\nHN\n\n\n5\nPGS. TS. Trần Thị Ngọc Quyên\nquyenttn@ftu.edu.vn\nHN\n\n\n6\nTS. Cao Thị Hồng Vinh\ncaovinhftu@ftu.edu.vn\nHN\n\n\n7\nTS. Hoàng Hương Giang\nhoanghuonggiang@ftu.edu.vn\nHN\n\n\n8\nPGS. TS. Nguyễn Thị Thùy Vinh\nvinhntt@ftu.edu.vn\nHN\n\n\n9\nTS. Nguyễn Quỳnh Hương\nnguyenquynhhuong.cs2@ftu.edu.vn\nCS II\n\n\n10\nThS. Trương Bích Phương\ntruongbichphuong.cs2@ftu.edu.vn\nCS II\n\n\n11\nThS. Phạm Thanh Dung\nphamthanhdung.cs2@ftu.edu.vn\nCS II"
+  },
+  {
+    "objectID": "syllabus.html#mô-tả-học-phần",
+    "href": "syllabus.html#mô-tả-học-phần",
+    "title": "Đề cương chi tiết học phần",
+    "section": "3. Mô tả học phần",
+    "text": "3. Mô tả học phần\nHọc phần Nguyên lý Quản lý Kinh tế cung cấp khung tư duy về cách Nhà nước điều hành nền kinh tế thị trường hiện đại, tiếp cận theo bốn cấp độ liên kết:\n\nQuản lý kinh tế ngành — cấu trúc thị trường, thất bại thị trường và điều tiết.\nQuản lý kinh tế vĩ mô trong nền kinh tế đóng — mục tiêu, công cụ tài khoá và tiền tệ.\nQuản lý kinh tế trong nền kinh tế mở — cán cân thanh toán, tỷ giá, phối hợp chính sách trong hội nhập.\nQuản trị địa phương cùng phát triển kinh tế vùng.\n\nCác khung lý thuyết được minh hoạ bằng tình huống chính sách Việt Nam và quốc tế. Phương pháp giảng dạy ưu tiên thảo luận tình huống, mô phỏng chính sách, làm việc nhóm và sử dụng có trách nhiệm các công cụ số và trí tuệ nhân tạo."
+  },
+  {
+    "objectID": "syllabus.html#chuẩn-đầu-ra-clo",
+    "href": "syllabus.html#chuẩn-đầu-ra-clo",
+    "title": "Đề cương chi tiết học phần",
+    "section": "4. Chuẩn đầu ra (CLO)",
+    "text": "4. Chuẩn đầu ra (CLO)\nMỗi chuẩn đầu ra dùng một động từ Bloom đo lường được.\n\n\n\n\n\n\n\n\nMã\nCấp độ Bloom\nNội dung\n\n\n\n\nCLO 1\nGiải thích\nGiải thích vai trò, chức năng và công cụ quản lý nhà nước về kinh tế trong nền kinh tế thị trường hiện đại\n\n\nCLO 2\nVận dụng\nVận dụng các mô hình kinh tế và khung lý thuyết quản lý kinh tế vào các tình huống chính sách điển hình trong nước và quốc tế\n\n\nCLO 3\nPhân tích\nPhân tích sự phối hợp giữa các cấp và loại chính sách kinh tế cùng các đánh đổi và rủi ro chính sách trong tình huống cụ thể\n\n\nCLO 4\nPhối hợp\nPhối hợp hiệu quả trong nhóm khi tham gia thảo luận, mô phỏng và phân tích các vấn đề chính sách kinh tế\n\n\nCLO 5\nSử dụng\nSử dụng có trách nhiệm công cụ số và trí tuệ nhân tạo trong học tập và phân tích chính sách, tuân thủ chuẩn mực liêm chính học thuật\n\n\n\n\nMa trận đóng góp CLO → PLO\nThang đánh giá 3 mức của FTU: 1 = Giới thiệu, 2 = Vận dụng, 3 = Thành thạo, A = đánh giá tổng kết.\nHọc phần đánh giá tổng kết ở mức Master cho PLO2 (qua đánh giá giữa kỳ) và PLO3 (qua đánh giá cuối kỳ); đóng góp ở mức Develop cho PLO4, PLO5 và PLO9; giới thiệu cho PLO8.\n\n\n\nCLO\nPLO2\nPLO3\nPLO4\nPLO5\nPLO8\nPLO9\n\n\n\n\nCLO1\n1\n\n\n\n\n\n\n\nCLO2\n3, A\n\n\n\n\n\n\n\nCLO3\n\n3, A\n\n\n\n\n\n\nCLO4\n\n\n2\n2\n\n\n\n\nCLO5\n\n\n\n\n1\n2\n\n\nTổng\n3, A\n3, A\n2\n2\n1\n2"
+  },
+  {
+    "objectID": "syllabus.html#học-liệu",
+    "href": "syllabus.html#học-liệu",
+    "title": "Đề cương chi tiết học phần",
+    "section": "5. Học liệu",
+    "text": "5. Học liệu\n\n5.1. Tài liệu bắt buộc\n\nMankiw, N. Gregory (2026). Kinh tế học vi mô (bản dịch tiếng Việt). NXB Hồng Đức.\nMankiw, N. Gregory (2026). Kinh tế học vĩ mô (bản dịch tiếng Việt). NXB Hồng Đức.\nBuchholz, G. Todd (2007). Ý tưởng mới từ các Kinh tế gia tiền bối. NXB Tri thức.\n\n\n\n5.2. Tài liệu tham khảo tự chọn\n\nMankiw, N. Gregory (2021). Principles of Microeconomics, 9th edition. Cengage Learning.\nMankiw, N. Gregory (2021). Principles of Macroeconomics, 9th edition. Cengage Learning.\nBlanchard, Olivier (2020). Macroeconomics, Global Edition, 8th Edition. Pearson.\nStiglitz, J. E. & Rosengard, J. K. (2015). Economics of the Public Sector, 4th edition. W. W. Norton.\nHọc viện Chính trị quốc gia Hồ Chí Minh (2021). Giáo trình Quản lý nhà nước về kinh tế. NXB Lý luận Chính trị.\n\n\n\n5.3. Văn kiện chính thức và văn bản pháp luật\n\nVăn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng Cộng sản Việt Nam (2026) — Báo cáo chính trị, Nghị quyết, Chiến lược phát triển KT-XH 2026–2030.\nQuốc hội (2025). Luật Tổ chức chính quyền địa phương số 72/2025/QH15.\nQuốc hội (2025). Luật Ngân sách nhà nước số 89/2025/QH15 (hiệu lực từ năm ngân sách 2026).\nQuốc hội (2025). Nghị quyết số 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh.\n\n\n\n5.4. Báo cáo định kỳ\n\nBáo cáo PCI hàng năm (VCCI); PAPI (UNDP); PAR Index (Bộ Nội vụ).\nWorld Bank, IMF, ADB — Báo cáo cập nhật Kinh tế Việt Nam, phiên bản mới nhất.\n\n\n\n5.5. Tài liệu chuyên đề\n\nTài liệu chuyên đề về quản trị địa phương, phân cấp tài khoá và phát triển kinh tế vùng do giảng viên biên soạn và cung cấp tại lớp (cho Chương 5)."
+  },
+  {
+    "objectID": "syllabus.html#phân-bổ-tiết-theo-chương",
+    "href": "syllabus.html#phân-bổ-tiết-theo-chương",
+    "title": "Đề cương chi tiết học phần",
+    "section": "6. Phân bổ tiết theo chương",
+    "text": "6. Phân bổ tiết theo chương\n\n\n\n\n\n\n\n\n\n\n\n\nBuổi\nNội dung\nLý thuyết\nThực hành\nBài tập\nTự học\nCLO\n\n\n\n\n1–2\nChương 1: Tổng quan về quản lý kinh tế\n5\n1\n3\n9\nCLO1\n\n\n3–5\nChương 2: Quản lý kinh tế ngành và doanh nghiệp\n5\n2\n4\n13\nCLO1, CLO2\n\n\n6–8\nChương 3: Quản lý kinh tế vĩ mô (nền kinh tế đóng)\n5\n2\n4\n13\nCLO2, CLO3\n\n\n9–11\nChương 4: Quản lý kinh tế vĩ mô trong nền kinh tế mở\n5\n3\n4\n13\nCLO2, CLO3\n\n\n12–13\nChương 5: Quản trị địa phương và phát triển kinh tế vùng\n5\n2\n4\n9\nCLO3, CLO4\n\n\n14–15\nSeminar tổng hợp và ứng dụng\n5\n5\n6\n23\nCLO3, CLO4, CLO5\n\n\nTổng\n\n30\n15\n25\n80\n\n\n\n\nChi tiết nội dung từng buổi: xem Lịch học và các trang Bài giảng."
+  },
+  {
+    "objectID": "syllabus.html#phương-pháp-và-hình-thức-kiểm-tra-đánh-giá",
+    "href": "syllabus.html#phương-pháp-và-hình-thức-kiểm-tra-đánh-giá",
+    "title": "Đề cương chi tiết học phần",
+    "section": "7. Phương pháp và hình thức kiểm tra đánh giá",
+    "text": "7. Phương pháp và hình thức kiểm tra đánh giá\nThang điểm: 10.\n\n\n\n\n\n\n\n\n\n\nHình thức\nNội dung\nPhạm vi\nTrọng số\nCLO\n\n\n\n\nĐánh giá quá trình\nChuyên cần + bài kiểm tra ngắn + tham gia thảo luận\nLiên tục\n10%\nCLO1, CLO4\n\n\nĐánh giá giữa kỳ\nHình thức do giảng viên quyết định (thi viết, thuyết trình, hoặc kết hợp)\nChương 1–2\n30%\nCLO1, CLO2\n\n\nĐánh giá cuối kỳ\nHình thức do giảng viên quyết định (thi viết, thuyết trình, tiểu luận, hoặc kết hợp tại Seminar Buổi 14–15)\nToàn bộ học phần\n60%\nCLO2, CLO3, CLO4, CLO5\n\n\n\n\n\n100%\n\n\n\n\n\nTiêu chí đánh giá đề nghị\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nCấu trúc và logic lập luận\n20%\n\n\nChất lượng nội dung học thuật\n25%\n\n\nSử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn\n15%\n\n\nPhân tích và phản biện\n15%\n\n\nĐề xuất khả thi cho Việt Nam\n15%\n\n\nSử dụng AI có trách nhiệm + liêm chính học thuật\n10%\n\n\n\nLưu ý: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể linh hoạt do Bộ môn quyết định phụ thuộc vào tình hình thực tế."
+  },
+  {
+    "objectID": "syllabus.html#quy-định-đối-với-học-phần",
+    "href": "syllabus.html#quy-định-đối-với-học-phần",
+    "title": "Đề cương chi tiết học phần",
+    "section": "8. Quy định đối với học phần",
+    "text": "8. Quy định đối với học phần\n\n8.1. Nhiệm vụ của sinh viên\n\nNghiên cứu tài liệu và chuẩn bị bài trước mỗi buổi học.\nTham gia tích cực các hoạt động thảo luận, bài tập trên lớp và làm việc nhóm.\nHoàn thành đầy đủ các bài tập và sản phẩm học tập theo tiến độ.\nSử dụng AI và công cụ số có trách nhiệm: công bố phạm vi sử dụng khi giảng viên yêu cầu; tự kiểm chứng dữ liệu; không sao chép trực tiếp đầu ra AI mà không xử lý lại.\n\n\n\n8.2. Quy định thi cử và học vụ\n\nSinh viên phải dự lớp đầy đủ theo quy định hiện hành.\nBài tập / tiểu luận giống nhau đến 50% trừ 1/2 số điểm; trên 50% bị điểm không.\nSinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều bị điểm 0 phần đánh giá tương ứng.\nVi phạm liêm chính học thuật (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường."
+  },
+  {
+    "objectID": "syllabus.html#phê-duyệt",
+    "href": "syllabus.html#phê-duyệt",
+    "title": "Đề cương chi tiết học phần",
+    "section": "9. Phê duyệt",
+    "text": "9. Phê duyệt\n\n\n\nTrưởng Bộ môn\nTS. Đỗ Ngọc Kiên\n\n\nViện trưởng\nPGS. TS. Bùi Thị Lý"
+  },
+  {
+    "objectID": "lectures/buoi-10.html",
+    "href": "lectures/buoi-10.html",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích chính sách dưới các chế độ tỷ giá",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-10.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n4.2. Mô hình Mundell-Fleming\n\nBa phương trình: IS, LM, BP\nĐiều kiện Marshall-Lerner\nTác động chính sách tài khoá, tiền tệ và thương mại dưới:\n\nTỷ giá cố định\nTỷ giá thả nổi\n\n\nCases lịch sử\n\nHong Kong LERS (Linked Exchange Rate System)\nReaganomics đầu thập kỷ 1980\nERM 1992 — Black Wednesday và sự rút lui của Anh",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-10.html#thực-hành-thảo-luận",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nPhân tích chính sách tỷ giá Việt Nam 2022–2024 qua khung Mundell-Fleming; mô phỏng quyết định NHNN trước cú sốc Fed tăng lãi suất 200 bps.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-10.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích chính sách về một vấn đề tỷ giá / dòng vốn VN (Phần 2): áp dụng Mundell-Fleming.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-10.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nTại sao Hong Kong vẫn giữ được peg sau bao năm?\nReaganomics: bài học nào còn áp dụng được?\nERM 1992: nguyên nhân cốt lõi nào dẫn đến đổ vỡ?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#đọc-thêm",
+    "href": "lectures/buoi-10.html#đọc-thêm",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20.\nBlanchard (2020), chương 19–20.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 10 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 9 Buổi tiếp theo: Buổi 11 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html",
+    "href": "lectures/buoi-04.html",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung điều tiết và chính sách công nghiệp",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-04.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n2.3. Cơ chế điều tiết\n\nThuế Pigou\nĐịnh lý Coase\nCap-and-trade\nĐiều tiết độc quyền tự nhiên\n\n2.4. Chính sách công nghiệp và đổi mới sáng tạo\n\nHệ thống Đổi mới sáng tạo quốc gia (National Innovation System)\nBốn chuyển đổi theo Đại hội XIV: chuyển đổi xanh, chuyển đổi số, chuyển đổi năng lượng, chuyển đổi mô hình tăng trưởng",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-04.html#thực-hành-thảo-luận",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nPhân tích Formosa Hà Tĩnh qua khung Pigou/Coase: thuế hay đàm phán? Mô phỏng đấu giá quyền phát thải (cap-and-trade game).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-04.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 2).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-04.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nKhi nào điều tiết bằng giá hiệu quả hơn quy chuẩn?\nChính sách công nghiệp Việt Nam hậu Đại hội XIV?\nĐiều kiện để cap-and-trade hiệu quả là gì?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#đọc-thêm",
+    "href": "lectures/buoi-04.html#đọc-thêm",
+    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 10 (ngoại tác).\nVăn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 04 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 3 Buổi tiếp theo: Buổi 5 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Bài giảng",
+    "section": "",
+    "text": "Toàn bộ 15 buổi tổ chức theo 5 chương + Seminar tổng hợp. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:\n\nNội dung lý thuyết (thuyết giảng)\nThực hành / Thảo luận trên lớp\nBài tập lớn / Tiểu luận\nTự học có hướng dẫn (kèm 3 câu hỏi định hướng)\nĐọc thêm (Mankiw, Buchholz, HCMA 2021, văn kiện XIV…)\n\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\n\nTrước buổi: đọc Đọc thêm và trả lời các câu hỏi Tự học có hướng dẫn.\nSau buổi: hoàn thiện Bài tập lớn / Tiểu luận được giao.\nĐối chiếu CLO: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBuổi\n\n\n\nNội dung chính\n\n\n\nThuộc chương\n\n\n\n\n\n\n\n\nBuổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách\n\n\nKhan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc; Bentham/Kant/Rawls\n\n\n2 min\n\n\n\n\n\n\nBuổi 02 — Khái niệm, chức năng và công cụ QLKT\n\n\n5 chức năng, 3 nhóm công cụ, 3 vai trò Nhà nước trong nền KTTT\n\n\n2 min\n\n\n\n\n\n\nBuổi 03 — Cấu trúc thị trường và thất bại thị trường\n\n\n4 loại cấu trúc; Lerner, HHI; hàng hoá công, ngoại tác, độc quyền, thông tin bất cân xứng\n\n\n2 min\n\n\n\n\n\n\nBuổi 04 — Cơ chế điều tiết và chính sách công nghiệp\n\n\nPigou, Coase, cap-and-trade, ĐMST quốc gia, 4 chuyển đổi XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 05 — Quản trị doanh nghiệp và case Việt Nam\n\n\nDNNN, kinh tế tư nhân, FDI; case viễn thông, Formosa, ô tô/bán dẫn\n\n\n2 min\n\n\n\n\n\n\nBuổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn\n\n\n4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam\n\n\n2 min\n\n\n\n\n\n\nBuổi 07 — Mô hình IS-LM\n\n\nĐường IS, LM, cân bằng, crowding out, bẫy thanh khoản\n\n\n1 min\n\n\n\n\n\n\nBuổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ\n\n\nAD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN\n\n\n2 min\n\n\n\n\n\n\nBuổi 09 — Cán cân thanh toán và tỷ giá\n\n\nBoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối\n\n\n2 min\n\n\n\n\n\n\nBuổi 10 — Mô hình Mundell-Fleming\n\n\nBa phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992\n\n\n2 min\n\n\n\n\n\n\nBuổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997\n\n\nTrilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997\n\n\n2 min\n\n\n\n\n\n\nBuổi 12 — Quản trị địa phương và phân cấp tài khoá\n\n\nPhân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\n\n\n2 min\n\n\n\n\n\n\nBuổi 13 — Phát triển kinh tế vùng\n\n\nMarshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 14 — Chia sẻ thực tiễn\n\n\nMời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\n\n\n2 min\n\n\n\n\n\n\nBuổi 15 — Tổng kết và đánh giá\n\n\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lectures/buoi-06.html",
+    "href": "lectures/buoi-06.html",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích các đánh đổi giữa mục tiêu vĩ mô",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-06.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-06.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n3.1. Bốn mục tiêu vĩ mô\n\nTăng trưởng kinh tế\nViệc làm đầy đủ\nỔn định giá cả (kiểm soát lạm phát)\nCân bằng cán cân thanh toán\n\nPhân phối thu nhập; phát triển bền vững.\nTăng trưởng dài hạn\n\nHàm sản xuất Cobb-Douglas: (Y = AK^L^{1-})\nPhân rã Solow: đóng góp K, L, TFP\nGrowth accounting Việt Nam giai đoạn 2010–2024",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-06.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-06.html#thực-hành-thảo-luận",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nTính growth accounting cho Việt Nam giai đoạn 5 năm gần nhất: đóng góp của vốn, lao động và TFP. Thảo luận hàm ý chính sách.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-06.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-06.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích một mục tiêu vĩ mô của Việt Nam giai đoạn 2020–2024 (Phần 1).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-06.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-06.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nBốn mục tiêu vĩ mô mâu thuẫn nhau ở đâu?\nTFP đóng góp bao nhiêu % vào tăng trưởng VN?\nKhi nào tăng trưởng đi đôi với bất bình đẳng tăng?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-06.html#đọc-thêm",
+    "href": "lectures/buoi-06.html#đọc-thêm",
+    "title": "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 7–8.\nBlanchard (2020), chương 11–13.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 06 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 5 Buổi tiếp theo: Buổi 7 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html",
+    "href": "lectures/buoi-02.html",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1 — Giải thích vai trò và công cụ QLNN về kinh tế",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-02.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n1.3. Khái niệm, đối tượng và phạm vi quản lý kinh tế\n1.4. Năm chức năng QLKT\n\nHoạch định\nTổ chức\nChỉ đạo\nKiểm soát\nĐiều tiết\n\n1.5. Ba nhóm công cụ\n\nHành chính – pháp lý\nKinh tế – tài chính\nThông tin – giáo dục\n\n1.6. Ba vai trò Nhà nước trong nền kinh tế thị trường\n\nChủ sở hữu\nQuản lý\nĐiều tiết",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-02.html#thực-hành-thảo-luận",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nThảo luận: phân biệt 3 vai trò Nhà nước qua một ví dụ (vd: ngành điện, ngành ngân hàng) — phân tích cách Nhà nước thể hiện cả 3 vai trò trong cùng một ngành.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-02.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nTiếp tục bài tập Buổi 1: bổ sung phân tích chức năng và công cụ Nhà nước đã sử dụng trong chính sách bạn chọn.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-02.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nKhi nào nên dùng công cụ hành chính, khi nào dùng công cụ kinh tế?\nNăm chức năng QLKT có thứ tự bắt buộc không?\nVai trò ‘điều tiết’ khác ‘quản lý’ ở điểm nào?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-02.html#đọc-thêm",
+    "href": "lectures/buoi-02.html#đọc-thêm",
+    "title": "Buổi 02 — Khái niệm, chức năng và công cụ QLKT",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 10–11.\nHCMA (2021), Giáo trình Quản lý nhà nước về kinh tế, chương 1–2.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 02 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 1 Buổi tiếp theo: Buổi 3 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html",
+    "href": "lectures/buoi-09.html",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Vận dụng khung tỷ giá",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-09.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n4.1. Cán cân thanh toán (BoP)\n\nCấu trúc: tài khoản vãng lai (CA), tài khoản tài chính (FA)\nĐồng nhất: (CA = S - I)\nBoP Việt Nam\n\nTỷ giá\n\nDanh nghĩa vs thực\nNEER (nominal effective exchange rate)\nREER (real effective exchange rate)\nCác chế độ tỷ giá theo IMF\n\nLý thuyết\n\nPPP (purchasing power parity)\nUIP (uncovered interest parity)\nCIP (covered interest parity)\nCarry trade\nDự trữ ngoại hối — vai trò",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-09.html#thực-hành-thảo-luận",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nTính NEER và REER VND từ dữ liệu mới nhất; thảo luận VND có bị định giá quá cao/thấp so với rổ tiền tệ chính.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-09.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích chính sách (4–6 trang) về một vấn đề tỷ giá hoặc dòng vốn Việt Nam (Phần 1).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-09.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nCA = S − I — hàm ý gì cho VN có thâm hụt CA?\nTại sao PPP thường không nắm trong ngắn hạn?\nDự trữ ngoại hối VN mức nào là đủ?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#đọc-thêm",
+    "href": "lectures/buoi-09.html#đọc-thêm",
+    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 19.\nBlanchard (2020), chương 17–18.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 09 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 8 Buổi tiếp theo: Buổi 10 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html",
+    "href": "lectures/buoi-14.html",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3, CLO4, CLO5 — Tổng hợp xuyên suốt 5 chương",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-14.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\nMục tiêu: Tổng hợp xuyên suốt năm chương; tổ chức không gian phản biện học thuật cuối kỳ.\nCấu trúc Buổi 14 — Chia sẻ thực tiễn\n\nMời chuyên gia bên ngoài (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn\nThảo luận chính sách với chuyên gia\nHoạt động vận dụng theo nhóm dưới hướng dẫn của giảng viên",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-14.html#thực-hành-thảo-luận",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nQ&A với chuyên gia; thảo luận chính sách mở; phân công nhóm chuẩn bị thuyết trình Buổi 15.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-14.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nSản phẩm nhóm cho Buổi 15: bản đề cương thuyết trình + tài liệu phản biện chéo.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-14.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nChuẩn bị nội dung thuyết trình theo chủ đề giảng viên giao.\nĐọc bổ sung tài liệu chuyên đề.\nTổng hợp kiến thức xuyên 5 chương.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#đọc-thêm",
+    "href": "lectures/buoi-14.html#đọc-thêm",
+    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nTài liệu giảng viên cung cấp tại lớp.\nBài đọc bổ sung theo chủ đề nhóm.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 14 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 13 Buổi tiếp theo: Buổi 15 →",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 14 — Chia sẻ thực tiễn"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html",
+    "href": "lectures/buoi-13.html",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3, CLO4 — Phân tích phát triển vùng và phối hợp liên vùng",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-13.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n5.2. Phát triển kinh tế vùng\n\nKhái niệm vùng và cơ chế tạo chênh lệch\nLý thuyết kinh tế vùng:\n\nMarshall — agglomeration economies\nKrugman — New Economic Geography\n\n\nPhân vùng kinh tế Việt Nam\n\nSáu vùng KT-XH: TDMNPB, ĐBSH, BTB-DHMT, Tây Nguyên, ĐNB, ĐBSCL\nBốn vùng KTTĐ: Bắc Bộ, miền Trung, phía Nam, ĐBSCL\nHành lang kinh tế\n\nĐịnh hướng Đại hội XIV\n\nBốn cực động lực\nSáu siêu dự án trọng điểm\n\nPhát triển bền vững vùng\n\nCase ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-13.html#thực-hành-thảo-luận",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nĐối chiếu PCI / PAPI / PAR Index cho 3 tỉnh thuộc 3 vùng khác nhau; thảo luận về chênh lệch vùng và bài học chính sách.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-13.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nĐề xuất chiến lược phát triển cho một tỉnh/vùng (Phần 2 — đề xuất cụ thể với số liệu).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-13.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nBốn cực động lực có tạo ra chênh lệch vùng mới không?\nĐBSCL: ưu tiên thích ứng biến đổi khí hậu hay tăng trưởng?\nMarshall vs Krugman: khung nào phù hợp VN hơn?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#đọc-thêm",
+    "href": "lectures/buoi-13.html#đọc-thêm",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nHCMA (2021), chương 6.\nVăn kiện Đại hội XIV — chiến lược phát triển vùng.\nBáo cáo World Bank về phát triển vùng VN.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 13 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 12 Buổi tiếp theo: Buổi 14 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "exams/index.html",
+    "href": "exams/index.html",
+    "title": "Đánh giá học phần",
+    "section": "",
+    "text": "Thang điểm 10. Học phần đánh giá qua 3 cấu phần:\n\n\n\n\n\n\n\n\n\n\nHình thức\nTrọng số\nHình thức cụ thể\nPhạm vi\nCLO\n\n\n\n\nĐánh giá quá trình\n10%\nĐiểm danh + bài kiểm tra ngắn + chất lượng thảo luận\nLiên tục\nCLO1, CLO4\n\n\nĐánh giá giữa kỳ\n30%\nThi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định)\nChương 1–2\nCLO1, CLO2\n\n\nĐánh giá cuối kỳ\n60%\nThi viết, thuyết trình, tiểu luận, hoặc kết hợp tại Seminar Buổi 14–15\nToàn bộ học phần\nCLO2, CLO3, CLO4, CLO5\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nLưu ý: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể linh hoạt do Bộ môn quyết định phụ thuộc vào tình hình thực tế."
+  },
+  {
+    "objectID": "exams/index.html#tổng-quan-đánh-giá",
+    "href": "exams/index.html#tổng-quan-đánh-giá",
+    "title": "Đánh giá học phần",
+    "section": "",
+    "text": "Thang điểm 10. Học phần đánh giá qua 3 cấu phần:\n\n\n\n\n\n\n\n\n\n\nHình thức\nTrọng số\nHình thức cụ thể\nPhạm vi\nCLO\n\n\n\n\nĐánh giá quá trình\n10%\nĐiểm danh + bài kiểm tra ngắn + chất lượng thảo luận\nLiên tục\nCLO1, CLO4\n\n\nĐánh giá giữa kỳ\n30%\nThi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định)\nChương 1–2\nCLO1, CLO2\n\n\nĐánh giá cuối kỳ\n60%\nThi viết, thuyết trình, tiểu luận, hoặc kết hợp tại Seminar Buổi 14–15\nToàn bộ học phần\nCLO2, CLO3, CLO4, CLO5\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nLưu ý: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể linh hoạt do Bộ môn quyết định phụ thuộc vào tình hình thực tế."
+  },
+  {
+    "objectID": "exams/index.html#đánh-giá-giữa-kỳ-30",
+    "href": "exams/index.html#đánh-giá-giữa-kỳ-30",
+    "title": "Đánh giá học phần",
+    "section": "2. Đánh giá giữa kỳ (30%)",
+    "text": "2. Đánh giá giữa kỳ (30%)\nDiễn ra: sau Buổi 5 (hết Chương 1–2)\nPhạm vi: Chương 1 + Chương 2 — Tổng quan QLKT và Quản lý kinh tế ngành và doanh nghiệp\nHình thức: giảng viên quyết định, có thể là: - Đề tự luận - Mini-case (phân tích tình huống chính sách) - Thuyết trình theo chủ đề\nTiêu chí: kiến thức nền, vận dụng khung lý thuyết, ví dụ Việt Nam.\n\nKhung câu hỏi mẫu\nDạng tự luận\n\nPhân biệt vai trò chủ sở hữu, quản lý và điều tiết của Nhà nước trong nền kinh tế thị trường. Lấy một ngành cụ thể tại Việt Nam để minh hoạ cả ba vai trò.\n\nDạng mini-case\n\nFormosa Hà Tĩnh, 2016: Phân tích thất bại thị trường trong tình huống này. Áp dụng khung thuế Pigou và định lý Coase, đề xuất phương án điều tiết phù hợp với bối cảnh Việt Nam."
+  },
+  {
+    "objectID": "exams/index.html#đánh-giá-cuối-kỳ-60",
+    "href": "exams/index.html#đánh-giá-cuối-kỳ-60",
+    "title": "Đánh giá học phần",
+    "section": "3. Đánh giá cuối kỳ (60%)",
+    "text": "3. Đánh giá cuối kỳ (60%)\nDiễn ra: trong Seminar Buổi 14–15\nPhạm vi: toàn bộ học phần\nHình thức: thi viết, thuyết trình, tiểu luận, hoặc kết hợp. Tại Seminar có thể bao gồm: - Thuyết trình nhóm về một vấn đề chính sách kinh tế tổng hợp - Phản biện chéo giữa các nhóm - Tiểu luận cá nhân nộp sau Seminar\nTiêu chí: - Phân tích chính sách - Vận dụng dữ liệu - Phản biện - Đề xuất - Làm việc nhóm - Sử dụng có trách nhiệm công cụ số\n\nKhung câu hỏi mẫu (tự luận)\nCâu 1 (Phân tích — CLO3)\n\nPhân tích phối hợp tài khoá – tiền tệ của Việt Nam giai đoạn 2020–2024 qua khung AD-AS và Phillips. Đánh giá hiệu quả và đề xuất hướng điều chỉnh.\n\nCâu 2 (Vận dụng — CLO2)\n\nÁp dụng Bộ ba bất khả thi (Trilemma) để phân tích vị trí hiện tại của Việt Nam trong tam giác. Bài học nào từ Khủng hoảng châu Á 1997 vẫn còn áp dụng?\n\nCâu 3 (Tổng hợp + đề xuất — CLO3, CLO5)\n\nĐề xuất chiến lược phát triển kinh tế cho một tỉnh/vùng cụ thể (chọn 1 trong 6 vùng KT-XH) sau cải cách 2025. Sử dụng số liệu PCI / PAPI / PAR Index ba năm gần nhất, có dẫn nguồn chính thống."
+  },
+  {
+    "objectID": "exams/index.html#tiêu-chí-chấm-chung",
+    "href": "exams/index.html#tiêu-chí-chấm-chung",
+    "title": "Đánh giá học phần",
+    "section": "4. Tiêu chí chấm chung",
+    "text": "4. Tiêu chí chấm chung\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nCấu trúc và logic lập luận\n20%\n\n\nChất lượng nội dung học thuật\n25%\n\n\nSử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn\n15%\n\n\nPhân tích và phản biện\n15%\n\n\nĐề xuất khả thi cho Việt Nam\n15%\n\n\nSử dụng AI có trách nhiệm + liêm chính học thuật\n10%"
+  },
+  {
+    "objectID": "exams/index.html#quy-định-liêm-chính-học-thuật",
+    "href": "exams/index.html#quy-định-liêm-chính-học-thuật",
+    "title": "Đánh giá học phần",
+    "section": "5. Quy định liêm chính học thuật",
+    "text": "5. Quy định liêm chính học thuật\n\n\n\n\n\n\nImportant\n\n\n\n\nBài tập / tiểu luận giống nhau đến 50% trừ 1/2 số điểm.\nBài giống nhau trên 50% bị điểm 0.\nSinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều bị điểm 0 phần đánh giá tương ứng.\nVi phạm liêm chính học thuật (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường.\n\n\n\n\nQuy định sử dụng AI\n\nSử dụng AI và công cụ số được khuyến khích cho mục đích học tập và nghiên cứu.\nPhải công bố phạm vi sử dụng khi giảng viên yêu cầu.\nPhải tự kiểm chứng dữ liệu AI cung cấp.\nKhông sao chép trực tiếp đầu ra AI mà không xử lý lại.\nKhông khai báo = đạo văn → xử lý theo quy chế."
+  },
+  {
+    "objectID": "exams/index.html#đề-thi-các-năm-trước",
+    "href": "exams/index.html#đề-thi-các-năm-trước",
+    "title": "Đánh giá học phần",
+    "section": "6. Đề thi các năm trước",
+    "text": "6. Đề thi các năm trước\n\n\n\n\n\n\nKhi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.\n\n\n\n(chưa có)"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Lịch học 15 buổi",
+    "section": "",
+    "text": "Buổi\nChương\nChủ đề\nMục chính\nCLO\n\n\n\n\n1\nI\nTổng quan QLKT (1)\nCơ sở khoa học kinh tế; triết lý chính sách (Bentham CBA, Kant, Rawls)\nCLO1\n\n\n2\nI\nTổng quan QLKT (2)\nKhái niệm QLKT; 5 chức năng; 3 nhóm công cụ; 3 vai trò Nhà nước\nCLO1\n\n\n3\nII\nNgành & DN (1)\nCấu trúc thị trường; Lerner, HHI; thất bại thị trường\nCLO1, CLO2\n\n\n4\nII\nNgành & DN (2)\nCơ chế điều tiết: Pigou, Coase, cap-and-trade; chính sách công nghiệp\nCLO1, CLO2\n\n\n5\nII\nNgành & DN (3)\nQuản trị doanh nghiệp; DNNN, tư nhân, FDI; case Việt Nam\nCLO1, CLO2\n\n\n6\nIII\nVĩ mô đóng (1)\nMục tiêu vĩ mô; tăng trưởng dài hạn: Cobb-Douglas, Solow, growth accounting\nCLO2, CLO3\n\n\n7\nIII\nVĩ mô đóng (2)\nMô hình IS-LM; crowding out; bẫy thanh khoản\nCLO2, CLO3\n\n\n8\nIII\nVĩ mô đóng (3)\nAD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp tài khoá–tiền tệ VN\nCLO2, CLO3\n\n\n9\nIV\nVĩ mô mở (1)\nBoP, tỷ giá (NEER, REER), PPP, UIP, CIP, dự trữ ngoại hối\nCLO2, CLO3\n\n\n10\nIV\nVĩ mô mở (2)\nMundell-Fleming; Marshall-Lerner; case Hong Kong LERS, Reaganomics, ERM 1992\nCLO2, CLO3\n\n\n11\nIV\nVĩ mô mở (3)\nBộ ba bất khả thi; sterilization; Việt Nam trong Trilemma; KH châu Á 1997\nCLO2, CLO3\n\n\n12\nV\nĐịa phương\nPhân cấp tài khoá; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\nCLO3\n\n\n13\nV\nVùng kinh tế\n6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án Đại hội XIV\nCLO3\n\n\n14\nSeminar\nChia sẻ thực tiễn\nChuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\nCLO2-CLO5\n\n\n15\nSeminar\nTổng kết\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết\nCLO2-CLO5"
+  },
+  {
+    "objectID": "schedule.html#tổng-quan-tiến-độ",
+    "href": "schedule.html#tổng-quan-tiến-độ",
+    "title": "Lịch học 15 buổi",
+    "section": "",
+    "text": "Buổi\nChương\nChủ đề\nMục chính\nCLO\n\n\n\n\n1\nI\nTổng quan QLKT (1)\nCơ sở khoa học kinh tế; triết lý chính sách (Bentham CBA, Kant, Rawls)\nCLO1\n\n\n2\nI\nTổng quan QLKT (2)\nKhái niệm QLKT; 5 chức năng; 3 nhóm công cụ; 3 vai trò Nhà nước\nCLO1\n\n\n3\nII\nNgành & DN (1)\nCấu trúc thị trường; Lerner, HHI; thất bại thị trường\nCLO1, CLO2\n\n\n4\nII\nNgành & DN (2)\nCơ chế điều tiết: Pigou, Coase, cap-and-trade; chính sách công nghiệp\nCLO1, CLO2\n\n\n5\nII\nNgành & DN (3)\nQuản trị doanh nghiệp; DNNN, tư nhân, FDI; case Việt Nam\nCLO1, CLO2\n\n\n6\nIII\nVĩ mô đóng (1)\nMục tiêu vĩ mô; tăng trưởng dài hạn: Cobb-Douglas, Solow, growth accounting\nCLO2, CLO3\n\n\n7\nIII\nVĩ mô đóng (2)\nMô hình IS-LM; crowding out; bẫy thanh khoản\nCLO2, CLO3\n\n\n8\nIII\nVĩ mô đóng (3)\nAD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp tài khoá–tiền tệ VN\nCLO2, CLO3\n\n\n9\nIV\nVĩ mô mở (1)\nBoP, tỷ giá (NEER, REER), PPP, UIP, CIP, dự trữ ngoại hối\nCLO2, CLO3\n\n\n10\nIV\nVĩ mô mở (2)\nMundell-Fleming; Marshall-Lerner; case Hong Kong LERS, Reaganomics, ERM 1992\nCLO2, CLO3\n\n\n11\nIV\nVĩ mô mở (3)\nBộ ba bất khả thi; sterilization; Việt Nam trong Trilemma; KH châu Á 1997\nCLO2, CLO3\n\n\n12\nV\nĐịa phương\nPhân cấp tài khoá; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\nCLO3\n\n\n13\nV\nVùng kinh tế\n6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án Đại hội XIV\nCLO3\n\n\n14\nSeminar\nChia sẻ thực tiễn\nChuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\nCLO2-CLO5\n\n\n15\nSeminar\nTổng kết\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết\nCLO2-CLO5"
+  },
+  {
+    "objectID": "schedule.html#mốc-đánh-giá",
+    "href": "schedule.html#mốc-đánh-giá",
+    "title": "Lịch học 15 buổi",
+    "section": "Mốc đánh giá",
+    "text": "Mốc đánh giá\n\n\n\n\n\n\nWarningCác mốc bắt buộc\n\n\n\n\nSau Buổi 5 (hết Chương 1–2): Đánh giá giữa kỳ (30%) — hình thức do giảng viên quyết định: thi viết, thuyết trình, mini-case, hoặc kết hợp.\nBuổi 14–15 (Seminar): Đánh giá cuối kỳ (60%) — thuyết trình, tiểu luận hoặc thi viết, phạm vi toàn bộ học phần.\nLiên tục: Đánh giá quá trình (10%) — chuyên cần, bài kiểm tra ngắn, tham gia thảo luận."
+  },
+  {
+    "objectID": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
+    "href": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
+    "title": "Lịch học 15 buổi",
+    "section": "Khối lượng học tập kỳ vọng",
+    "text": "Khối lượng học tập kỳ vọng\n\n\n\nHoạt động\nTổng giờ\n\n\n\n\nLý thuyết (thuyết giảng)\n30\n\n\nThực hành, thảo luận trên lớp\n15\n\n\nTiểu luận, bài tập lớn, thực tế\n25\n\n\nTự học có hướng dẫn\n80\n\n\nTổng cộng\n150\n\n\n\nTỷ lệ tự học : thực hành : thuyết giảng ≈ 80 : 40 : 30 — học phần đòi hỏi cao về tự học và áp dụng."
+  },
+  {
+    "objectID": "schedule.html#khung-tự-học-gợi-ý-cho-mỗi-buổi",
+    "href": "schedule.html#khung-tự-học-gợi-ý-cho-mỗi-buổi",
+    "title": "Lịch học 15 buổi",
+    "section": "Khung tự học (gợi ý cho mỗi buổi)",
+    "text": "Khung tự học (gợi ý cho mỗi buổi)\n\n\n\nHoạt động\nThời lượng\n\n\n\n\nĐọc trước Mankiw / Buchholz\n1–2 giờ\n\n\nĐọc văn bản pháp luật / Văn kiện XIV (theo chương)\n1 giờ\n\n\nLàm bài tập, mini-case sau buổi\n1–2 giờ\n\n\nChuẩn bị thảo luận buổi sau\n30–60 phút"
+  },
+  {
+    "objectID": "schedule.html#buổi-học-bù",
+    "href": "schedule.html#buổi-học-bù",
+    "title": "Lịch học 15 buổi",
+    "section": "Buổi học bù",
+    "text": "Buổi học bù\nNếu có buổi học bù do nghỉ lễ hoặc giảng viên đi công tác, lịch bù sẽ được công bố ở trang này.\nLần cập nhật cuối: cuối tháng 5/2026"
+  },
+  {
+    "objectID": "lectures/buoi-11.html",
+    "href": "lectures/buoi-11.html",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích các đánh đổi chính sách trong KT mở",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-11.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n4.3. Bộ ba bất khả thi (Impossible Trinity / Trilemma)\n\nPhát biểu và chứng minh\nBa góc: ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ\nSterilization — và giới hạn của nó\n\nViệt Nam trong Trilemma\n\nVị trí hiện tại của Việt Nam trong tam giác\nĐịnh hướng theo Đại hội XIV\n\nKhủng hoảng châu Á 1997\n\nNguyên nhân: bộ ba bất khả thi + thanh khoản ngoại tệ\nDiễn biến tại Thái Lan, Indonesia, Hàn Quốc\nBài học cho Việt Nam",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-11.html#thực-hành-thảo-luận",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nMô phỏng quyết định NHNN trong 3 vòng: cố giữ peg → sterilization → thả nổi. Mỗi vòng có cú sốc mới, sinh viên quyết định.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-11.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nHoàn thiện báo cáo phân tích chính sách tỷ giá / dòng vốn (Phần 3 — kết luận và khuyến nghị).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-11.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nBộ ba bất khả thi giải thích điều gì cho VN?\nBài học từ khủng hoảng Á 1997?\nKhi nào nên thả nổi tỷ giá VND?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#đọc-thêm",
+    "href": "lectures/buoi-11.html#đọc-thêm",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20.\nBlanchard (2020), chương 21.\nWorld Bank report on Asian Financial Crisis.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 11 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 10 Buổi tiếp theo: Buổi 12 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html",
+    "href": "lectures/buoi-15.html",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3, CLO4, CLO5 — Đánh giá tổng kết toàn học phần",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-15.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\nCấu trúc Buổi 15 — Tổng kết và đánh giá\n\nThuyết trình và phản biện của sinh viên về các vấn đề chính sách kinh tế\nPhản biện chéo giữa các nhóm\nĐánh giá tổng kết theo hình thức do giảng viên quyết định",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-15.html#thực-hành-thảo-luận",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nThuyết trình nhóm (15–20 phút/nhóm) + phản biện 10 phút. Mỗi nhóm phản biện ít nhất 2 nhóm khác.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-15.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nĐánh giá cuối kỳ (60%) — diễn ra trong Buổi 14–15 hoặc theo lịch riêng của giảng viên. Tiêu chí xem mục Đánh giá.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-15.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nTổng hợp khung tư duy đã học qua 5 chương vào một sơ đồ.\nChuẩn bị 3 câu hỏi phản biện sắc sảo cho các nhóm khác.\nTự đánh giá đóng góp của mình trong nhóm theo CLO4.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#đọc-thêm",
+    "href": "lectures/buoi-15.html#đọc-thêm",
+    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nToàn bộ tài liệu học phần.\nBáo cáo PCI / PAPI / PAR Index phiên bản mới nhất.\nBáo cáo cập nhật kinh tế VN mới nhất từ WB / IMF / ADB.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 15 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 14 Đây là buổi cuối của học phần.",
+    "crumbs": [
+      "Trang chủ",
+      "Seminar tổng hợp",
+      "Buổi 15 — Tổng kết và đánh giá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html",
+    "href": "lectures/buoi-03.html",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung phân tích vào tình huống điển hình",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-03.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n2.1. Cấu trúc thị trường\n\nBốn loại: cạnh tranh hoàn hảo, độc quyền, độc quyền nhóm, cạnh tranh độc quyền\nChỉ số Lerner, chỉ số HHI\nLuật Cạnh tranh Việt Nam\n\n2.2. Thất bại thị trường\n\nHàng hoá công\nNgoại tác (externalities)\nĐộc quyền tự nhiên\nThông tin bất cân xứng",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-03.html#thực-hành-thảo-luận",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nTính HHI cho một ngành Việt Nam (vd: viễn thông, ngân hàng); thảo luận mức độ tập trung và hàm ý cho chính sách cạnh tranh.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-03.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 1).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-03.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nBốn nguồn thất bại thị trường?\nHHI &lt; 1500: thị trường có cạnh tranh không?\nThông tin bất cân xứng tạo ra vấn đề gì cho QLKT?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#đọc-thêm",
+    "href": "lectures/buoi-03.html#đọc-thêm",
+    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 14–17.\nStiglitz & Rosengard (2015), Economics of the Public Sector, chương 4–6.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 03 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 2 Buổi tiếp theo: Buổi 4 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html",
+    "href": "lectures/buoi-01.html",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1 — Giải thích vai trò và công cụ QLNN về kinh tế",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-01.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n1.1. Cơ sở khoa học kinh tế\n\nKhan hiếm và chi phí cơ hội\nPhát biểu thực chứng vs chuẩn tắc\n\n1.2. Triết lý chính sách\n\nBentham và Cost-Benefit Analysis (trọng tâm)\nKant và Rawls (giới thiệu để so sánh khung)",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-01.html#thực-hành-thảo-luận",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nThảo luận phân loại phát biểu thực chứng vs chuẩn tắc; áp dụng ba lăng kính Bentham / Kant / Rawls cho một chính sách Việt Nam.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-01.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBài tập: phân tích vai trò Nhà nước trong một chính sách kinh tế cụ thể qua ba lăng kính đạo đức.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-01.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nKhái niệm về quản lý và quản lý kinh tế?\nĐặc điểm của quản lý kinh tế?\nVai trò và chức năng của quản lý kinh tế?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-01.html#đọc-thêm",
+    "href": "lectures/buoi-01.html#đọc-thêm",
+    "title": "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 1.\nBuchholz, Ý tưởng mới từ các Kinh tế gia tiền bối, chương 1.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 01 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\nBuổi tiếp theo: Buổi 2 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 1 — Tổng quan QLKT",
+      "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html",
+    "href": "lectures/buoi-05.html",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Phân tích vai trò các thành phần kinh tế",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-05.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n2.5. Quản trị doanh nghiệp\n\nVai trò DNNN trong nền KTTT định hướng XHCN\nKinh tế tư nhân — vai trò ngày càng tăng\nFDI và liên kết với doanh nghiệp trong nước\n\n2.6. Case Việt Nam\n\nNgành viễn thông\nFormosa Hà Tĩnh\nCông nghiệp ô tô / bán dẫn",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-05.html#thực-hành-thảo-luận",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nPhân tích chuỗi cung ứng trong một case (vd: Samsung Việt Nam); thảo luận liên kết FDI – nội địa.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-05.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBài tập tổng hợp Chương 1–2 — phục vụ đánh giá giữa kỳ. Phạm vi: chính sách quản lý một ngành cụ thể qua các khung của Chương 1–2.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-05.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nTỷ trọng DNNN trong GDP Việt Nam còn phù hợp không?\nKhi nào FDI có hại nhiều hơn lợi?\nTại sao Việt Nam chưa có công nghiệp ô tô mạnh?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-05.html#đọc-thêm",
+    "href": "lectures/buoi-05.html#đọc-thêm",
+    "title": "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 22.\nBáo cáo VBR — World Bank, phiên bản mới nhất.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 05 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 4 Buổi tiếp theo: Buổi 6 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html",
+    "href": "lectures/buoi-12.html",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3 — Phân tích phối hợp chính sách giữa các cấp",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-12.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n5.1. Quản trị địa phương và phân cấp tài khoá\n\nPhân cấp / phân quyền / tản quyền / uỷ quyền\nLý thuyết phân cấp:\n\nTiebout — voting with feet\nOates — Decentralization Theorem\nMusgrave — ba chức năng của Nhà nước\n\n\nBộ máy QLNN ở Việt Nam SAU cải cách 2025\n\nChính quyền hai cấp tỉnh – xã (Luật 72/2025/QH15)\n34 tỉnh/thành sau sắp xếp (NQ 202/2025/QH15)\nLuật NSNN 89/2025/QH15 — phân cấp nguồn thu, nhiệm vụ chi, trợ cấp cân đối\n\nĐánh giá quản trị địa phương\n\nPCI (Provincial Competitiveness Index — VCCI)\nPAPI (Public Administration Performance Index — UNDP)\nPAR Index (Public Administration Reform Index — Bộ Nội vụ)\n\nCơ chế đặc thù\n\nNQ 98/2023 cho TP.HCM\nCase Quảng Ninh",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-12.html#thực-hành-thảo-luận",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nTrò chơi phân cấp ngân sách theo Luật NSNN 89/2025: 3 vai (TW – Tỉnh A đầu tàu – Tỉnh B kém phát triển). Mỗi tỉnh có nguồn thu khác nhau; thảo luận trợ cấp cân đối.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-12.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nĐề xuất chiến lược phát triển cho một tỉnh/vùng cụ thể (Phần 1 — cấu trúc đề xuất).",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-12.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nTại sao phân cấp cần đi cùng phân quyền tài khoá?\nCó nên dùng PCI làm KPI cho bí thư tỉnh?\nMô hình 34 tỉnh: ưu nhược điểm so với 63 tỉnh cũ?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#đọc-thêm",
+    "href": "lectures/buoi-12.html#đọc-thêm",
+    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nHCMA (2021), Giáo trình Quản lý nhà nước về kinh tế, chương 5.\nTài liệu chuyên đề do giảng viên cung cấp.\nLuật 72/2025/QH15, Luật 89/2025/QH15, NQ 202/2025/QH15.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 12 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 11 Buổi tiếp theo: Buổi 13 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html",
+    "href": "lectures/buoi-07.html",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Vận dụng IS-LM phân tích chính sách",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-07.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n3.2. Mô hình IS-LM\n\nĐường IS: cân bằng thị trường hàng hoá\nĐường LM: cân bằng thị trường tiền tệ\nCân bằng đồng thời\nCrowding out — hiệu ứng lấn át\nBẫy thanh khoản (liquidity trap)",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-07.html#thực-hành-thảo-luận",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nVẽ IS-LM cho phản ứng NHNN trước cú sốc cung 2022 (giá xăng tăng). Mô phỏng Bộ Tài chính và NHNN ra quyết định trong 3 vòng kịch bản.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-07.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích một mục tiêu vĩ mô VN giai đoạn 2020–2024 (Phần 2): bổ sung IS-LM.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-07.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nKhi nào CSTK hiệu quả hơn CSTT?\nViệt Nam có ở bẫy thanh khoản không?\nCrowding out có quan trọng ở nền kinh tế nhỏ mở?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-07.html#đọc-thêm",
+    "href": "lectures/buoi-07.html#đọc-thêm",
+    "title": "Buổi 07 — Mô hình IS-LM",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 11–12.\nBlanchard (2020), chương 5.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 07 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 6 Buổi tiếp theo: Buổi 8 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 07 — Mô hình IS-LM"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html",
+    "href": "lectures/buoi-08.html",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích phối hợp chính sách",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "href": "lectures/buoi-08.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "Nội dung lý thuyết (thuyết giảng)",
+    "text": "Nội dung lý thuyết (thuyết giảng)\n3.3. Mô hình AD-AS\n\nĐường tổng cầu (AD)\nĐường tổng cung ngắn hạn (SRAS) và dài hạn (LRAS)\n\nĐường Phillips\n\nPhillips ngắn hạn\nPhiên bản kỳ vọng (expectations-augmented)\nNAIRU\n\nChính sách\n\nTài khoá: chi tiêu, thuế, chuyển giao\nTiền tệ: lãi suất chính sách, OMO, dự trữ bắt buộc\nPhối hợp tài khoá – tiền tệ Việt Nam 2020–2024",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html#thực-hành-thảo-luận",
+    "href": "lectures/buoi-08.html#thực-hành-thảo-luận",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "Thực hành / Thảo luận",
+    "text": "Thực hành / Thảo luận\nPhân tích gói hỗ trợ Covid 2021–2022 qua khung AD-AS: cú sốc cầu hay cú sốc cung? Hiệu quả tài khoá vs tiền tệ?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html#bài-tập-lớn-tiểu-luận",
+    "href": "lectures/buoi-08.html#bài-tập-lớn-tiểu-luận",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "Bài tập lớn / Tiểu luận",
+    "text": "Bài tập lớn / Tiểu luận\nTiểu luận giữa kỳ — đánh giá chính sách vĩ mô Việt Nam 2020–2024 qua khung AD-AS và Phillips.",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html#tự-học-có-hướng-dẫn",
+    "href": "lectures/buoi-08.html#tự-học-có-hướng-dẫn",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "Tự học có hướng dẫn",
+    "text": "Tự học có hướng dẫn\n\nHạn mức tín dụng: giữ hay bỏ?\nPhillips có còn áp dụng được ở VN sau 2008?\nKhi nào lạm phát mục tiêu là chính sách tốt cho VN?",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-08.html#đọc-thêm",
+    "href": "lectures/buoi-08.html#đọc-thêm",
+    "title": "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 14–15.\nBáo cáo IMF Article IV về Việt Nam, phiên bản mới nhất.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 08 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 7 Buổi tiếp theo: Buổi 9 →",
+    "crumbs": [
+      "Trang chủ",
+      "Chương 3 — Vĩ mô (KT đóng)",
+      "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Nguyên lý quản lý kinh tế là môn học nền tảng cung cấp hệ thống tri thức cơ bản về bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.\n\n\n\n\nHọc liệu được biên soạn cho sinh viên cử nhân năm 3–4 thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua Kinh tế vi mô, Kinh tế vĩ mô và Thống kê trước khi vào môn này.\nMôn được tổ chức theo 15 tuần × 3 tiết, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.\n\n\n\n\nCơ sở lý luận (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.\nCác yếu tố của hệ thống QLKT (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.\nCông cụ và chính sách QLKT (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.\nQLKT trong thực tiễn Việt Nam (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương chi tiết\n📅 Lịch học 15 tuần\n🎓 Tất cả bài giảng\n✏️ Bài tập\n📝 Đề thi mẫu\n\n\n\n\n\n\n\n\n\nTuần 1 · Giới thiệu môn học và bản chất QLKT\nĐối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.\n\n\nTuần 2 · Lịch sử tư tưởng QLKT\nTừ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.\n\n\nTuần 3 · Quy luật khách quan và vận dụng\nCác quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.\n\n\nTuần 4 · Hệ thống quản lý kinh tế\nChủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.\n\n\n\n\n\nTuần 5 · Chức năng quản lý kinh tế\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.\n\n\nTuần 6 · Cơ cấu tổ chức QLKT\nPhân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.\n\n\nTuần 7 · Phương pháp quản lý kinh tế\nPhương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.\n\n\nTuần 8 · Cán bộ và thông tin trong QLKT\nYêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.\n\n\n\n\n\nTuần 9 · Quản lý nhà nước về kinh tế\nChức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.\n\n\nTuần 10 · Chính sách tài khóa\nQuản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.\n\n\nTuần 11 · Chính sách tiền tệ\nNgân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.\n\n\nTuần 12 · Chính sách thương mại — đầu tư — công nghiệp\nQuản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.\n\n\n\n\n\nTuần 13 · Đặc thù QLKT Việt Nam\nKinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.\n\n\nTuần 14 · Hội nhập kinh tế quốc tế\nWTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.\n\n\nTuần 15 · Tổng ôn và thuyết trình\nHệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.",
+    "text": "Nguyên lý Quản lý Kinh tế (DTU301) cung cấp khung tư duy về cách Nhà nước điều hành nền kinh tế thị trường hiện đại, tiếp cận theo bốn cấp độ liên kết: quản lý kinh tế ngành, vĩ mô đóng, vĩ mô mở, và quản trị địa phương kết hợp phát triển kinh tế vùng.\n\n\n\n\nCác khung lý thuyết được minh hoạ bằng tình huống chính sách Việt Nam và quốc tế. Phương pháp giảng dạy ưu tiên thảo luận tình huống, mô phỏng chính sách, làm việc nhóm và sử dụng có trách nhiệm các công cụ số và trí tuệ nhân tạo.\n\n\n\n\n\n\n\n\n\n\n\nChương\nBuổi\nTrọng tâm\n\n\n\n\nI — Tổng quan QLKT\n1–2\nCơ sở khoa học, triết lý chính sách, 5 chức năng, 3 nhóm công cụ\n\n\nII — Ngành & doanh nghiệp\n3–5\nCấu trúc thị trường, thất bại thị trường, điều tiết, công nghiệp hoá\n\n\nIII — Vĩ mô đóng\n6–8\nCobb-Douglas, IS-LM, AD-AS, Phillips, phối hợp tài khoá–tiền tệ\n\n\nIV — Vĩ mô mở\n9–11\nBoP, tỷ giá, Mundell-Fleming, Bộ ba bất khả thi\n\n\nV — Địa phương + Vùng\n12–13\nPhân cấp tài khoá, 4 cực động lực, PCI/PAPI/PAR Index\n\n\nSeminar\n14–15\nChia sẻ chuyên gia, thuyết trình, phản biện chéo\n\n\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương DTU301\n📅 Lịch học 15 buổi\n🎓 Tất cả bài giảng\n✏️ Tiểu luận / Bài tập\n📝 Đánh giá\n\n\n\n\n\n\n\n\n\nTip🎯 Đánh giá\n\n\n\n\nQuá trình 10%\nGiữa kỳ 30% (Ch.1–2)\nCuối kỳ 60% (toàn bộ)\n\n\n\n\n\n\n\n\n\nBuổi 1 · Cơ sở khoa học và triết lý chính sách\nKhan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc. Triết lý chính sách: Bentham và Cost-Benefit Analysis (trọng tâm); Kant và Rawls (so sánh khung).\n\n\nBuổi 2 · Khái niệm, chức năng và công cụ QLKT\nĐối tượng và phạm vi QLKT. Năm chức năng: hoạch định, tổ chức, chỉ đạo, kiểm soát, điều tiết. Ba nhóm công cụ. Ba vai trò Nhà nước: chủ sở hữu, quản lý, điều tiết.\n\n\n\n\n\nBuổi 3 · Cấu trúc thị trường và thất bại thị trường\nBốn loại cấu trúc thị trường; chỉ số Lerner, HHI; Luật Cạnh tranh Việt Nam. Thất bại thị trường: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.\n\n\nBuổi 4 · Cơ chế điều tiết và chính sách công nghiệp\nThuế Pigou, định lý Coase, cap-and-trade, điều tiết độc quyền tự nhiên. Chính sách công nghiệp và đổi mới sáng tạo; Hệ thống ĐMST quốc gia; bốn chuyển đổi theo Đại hội XIV.\n\n\nBuổi 5 · Quản trị doanh nghiệp + Case Việt Nam\nVai trò DNNN, kinh tế tư nhân, FDI và liên kết. Case Việt Nam: viễn thông, Formosa Hà Tĩnh, công nghiệp ô tô / bán dẫn.\n\n\n\n\n\nBuổi 6 · Mục tiêu vĩ mô và tăng trưởng dài hạn\nBốn mục tiêu vĩ mô; phân phối thu nhập; phát triển bền vững. Tăng trưởng dài hạn: hàm Cobb-Douglas, phân rã Solow, growth accounting Việt Nam.\n\n\nBuổi 7 · Mô hình IS-LM\nĐường IS, đường LM, cân bằng đồng thời, crowding out, bẫy thanh khoản.\n\n\nBuổi 8 · AD-AS, Phillips và phối hợp chính sách\nMô hình AD-AS; đường Phillips ngắn hạn và phiên bản kỳ vọng; chính sách tài khoá; chính sách tiền tệ; phối hợp tài khoá–tiền tệ Việt Nam 2020–2024.\n\n\n\n\n\nBuổi 9 · Cán cân thanh toán và tỷ giá\nCấu trúc CA, FA; đồng nhất CA = S − I; BoP Việt Nam. Tỷ giá: danh nghĩa, thực, NEER, REER. Các chế độ tỷ giá theo IMF. Lý thuyết PPP, UIP, CIP; carry trade. Dự trữ ngoại hối.\n\n\nBuổi 10 · Mô hình Mundell-Fleming\nBa phương trình IS, LM, BP; điều kiện Marshall-Lerner; tác động chính sách tài khoá, tiền tệ và thương mại dưới tỷ giá cố định và thả nổi. Case: Hong Kong LERS, Reaganomics, ERM 1992.\n\n\nBuổi 11 · Bộ ba bất khả thi và Khủng hoảng châu Á 1997\nPhát biểu và chứng minh; sterilization. Việt Nam trong Trilemma; định hướng theo Đại hội XIV. Khủng hoảng châu Á 1997 và bài học cho Việt Nam.\n\n\n\n\n\nBuổi 12 · Quản trị địa phương và phân cấp tài khoá\nPhân cấp / phân quyền / tản quyền. Lý thuyết Tiebout, Oates, Musgrave. Cải cách 2025: chính quyền 2 cấp tỉnh–xã (Luật 72/2025); 34 tỉnh/thành (NQ 202/2025); Luật NSNN 89/2025. Đánh giá: PCI, PAPI, PAR Index.\n\n\nBuổi 13 · Phát triển kinh tế vùng\nLý thuyết Marshall, Krugman. Sáu vùng KT-XH, bốn vùng KTTĐ, hành lang kinh tế. Bốn cực động lực và sáu siêu dự án trọng điểm theo Đại hội XIV. Case: ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT.\n\n\n\n\n\nBuổi 14 · Chia sẻ thực tiễn\nMời chuyên gia bên ngoài (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn. Thảo luận chính sách. Hoạt động vận dụng theo nhóm.\n\n\nBuổi 15 · Tổng kết và đánh giá\nThuyết trình và phản biện của sinh viên về các vấn đề chính sách kinh tế. Phản biện chéo giữa các nhóm. Đánh giá tổng kết theo hình thức do giảng viên quyết định.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
   },
   {
-    "objectID": "index.html#về-môn-học",
-    "href": "index.html#về-môn-học",
+    "objectID": "index.html#về-học-phần",
+    "href": "index.html#về-học-phần",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Nguyên lý quản lý kinh tế là môn học nền tảng cung cấp hệ thống tri thức cơ bản về bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.\n\n\n\n\nHọc liệu được biên soạn cho sinh viên cử nhân năm 3–4 thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua Kinh tế vi mô, Kinh tế vĩ mô và Thống kê trước khi vào môn này.\nMôn được tổ chức theo 15 tuần × 3 tiết, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.\n\n\n\n\nCơ sở lý luận (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.\nCác yếu tố của hệ thống QLKT (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.\nCông cụ và chính sách QLKT (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.\nQLKT trong thực tiễn Việt Nam (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương chi tiết\n📅 Lịch học 15 tuần\n🎓 Tất cả bài giảng\n✏️ Bài tập\n📝 Đề thi mẫu",
+    "text": "Nguyên lý Quản lý Kinh tế (DTU301) cung cấp khung tư duy về cách Nhà nước điều hành nền kinh tế thị trường hiện đại, tiếp cận theo bốn cấp độ liên kết: quản lý kinh tế ngành, vĩ mô đóng, vĩ mô mở, và quản trị địa phương kết hợp phát triển kinh tế vùng.\n\n\n\n\nCác khung lý thuyết được minh hoạ bằng tình huống chính sách Việt Nam và quốc tế. Phương pháp giảng dạy ưu tiên thảo luận tình huống, mô phỏng chính sách, làm việc nhóm và sử dụng có trách nhiệm các công cụ số và trí tuệ nhân tạo.\n\n\n\n\n\n\n\n\n\n\n\nChương\nBuổi\nTrọng tâm\n\n\n\n\nI — Tổng quan QLKT\n1–2\nCơ sở khoa học, triết lý chính sách, 5 chức năng, 3 nhóm công cụ\n\n\nII — Ngành & doanh nghiệp\n3–5\nCấu trúc thị trường, thất bại thị trường, điều tiết, công nghiệp hoá\n\n\nIII — Vĩ mô đóng\n6–8\nCobb-Douglas, IS-LM, AD-AS, Phillips, phối hợp tài khoá–tiền tệ\n\n\nIV — Vĩ mô mở\n9–11\nBoP, tỷ giá, Mundell-Fleming, Bộ ba bất khả thi\n\n\nV — Địa phương + Vùng\n12–13\nPhân cấp tài khoá, 4 cực động lực, PCI/PAPI/PAR Index\n\n\nSeminar\n14–15\nChia sẻ chuyên gia, thuyết trình, phản biện chéo\n\n\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương DTU301\n📅 Lịch học 15 buổi\n🎓 Tất cả bài giảng\n✏️ Tiểu luận / Bài tập\n📝 Đánh giá\n\n\n\n\n\n\n\n\n\nTip🎯 Đánh giá\n\n\n\n\nQuá trình 10%\nGiữa kỳ 30% (Ch.1–2)\nCuối kỳ 60% (toàn bộ)",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
   },
   {
-    "objectID": "index.html#phan-i",
-    "href": "index.html#phan-i",
+    "objectID": "index.html#chuong-1",
+    "href": "index.html#chuong-1",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Tuần 1 · Giới thiệu môn học và bản chất QLKT\nĐối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.\n\n\nTuần 2 · Lịch sử tư tưởng QLKT\nTừ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.\n\n\nTuần 3 · Quy luật khách quan và vận dụng\nCác quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.\n\n\nTuần 4 · Hệ thống quản lý kinh tế\nChủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.",
+    "text": "Buổi 1 · Cơ sở khoa học và triết lý chính sách\nKhan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc. Triết lý chính sách: Bentham và Cost-Benefit Analysis (trọng tâm); Kant và Rawls (so sánh khung).\n\n\nBuổi 2 · Khái niệm, chức năng và công cụ QLKT\nĐối tượng và phạm vi QLKT. Năm chức năng: hoạch định, tổ chức, chỉ đạo, kiểm soát, điều tiết. Ba nhóm công cụ. Ba vai trò Nhà nước: chủ sở hữu, quản lý, điều tiết.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
   },
   {
-    "objectID": "index.html#phan-ii",
-    "href": "index.html#phan-ii",
+    "objectID": "index.html#chuong-2",
+    "href": "index.html#chuong-2",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Tuần 5 · Chức năng quản lý kinh tế\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.\n\n\nTuần 6 · Cơ cấu tổ chức QLKT\nPhân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.\n\n\nTuần 7 · Phương pháp quản lý kinh tế\nPhương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.\n\n\nTuần 8 · Cán bộ và thông tin trong QLKT\nYêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.",
+    "text": "Buổi 3 · Cấu trúc thị trường và thất bại thị trường\nBốn loại cấu trúc thị trường; chỉ số Lerner, HHI; Luật Cạnh tranh Việt Nam. Thất bại thị trường: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.\n\n\nBuổi 4 · Cơ chế điều tiết và chính sách công nghiệp\nThuế Pigou, định lý Coase, cap-and-trade, điều tiết độc quyền tự nhiên. Chính sách công nghiệp và đổi mới sáng tạo; Hệ thống ĐMST quốc gia; bốn chuyển đổi theo Đại hội XIV.\n\n\nBuổi 5 · Quản trị doanh nghiệp + Case Việt Nam\nVai trò DNNN, kinh tế tư nhân, FDI và liên kết. Case Việt Nam: viễn thông, Formosa Hà Tĩnh, công nghiệp ô tô / bán dẫn.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
   },
   {
-    "objectID": "index.html#phan-iii",
-    "href": "index.html#phan-iii",
+    "objectID": "index.html#chuong-3",
+    "href": "index.html#chuong-3",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Tuần 9 · Quản lý nhà nước về kinh tế\nChức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.\n\n\nTuần 10 · Chính sách tài khóa\nQuản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.\n\n\nTuần 11 · Chính sách tiền tệ\nNgân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.\n\n\nTuần 12 · Chính sách thương mại — đầu tư — công nghiệp\nQuản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.",
+    "text": "Buổi 6 · Mục tiêu vĩ mô và tăng trưởng dài hạn\nBốn mục tiêu vĩ mô; phân phối thu nhập; phát triển bền vững. Tăng trưởng dài hạn: hàm Cobb-Douglas, phân rã Solow, growth accounting Việt Nam.\n\n\nBuổi 7 · Mô hình IS-LM\nĐường IS, đường LM, cân bằng đồng thời, crowding out, bẫy thanh khoản.\n\n\nBuổi 8 · AD-AS, Phillips và phối hợp chính sách\nMô hình AD-AS; đường Phillips ngắn hạn và phiên bản kỳ vọng; chính sách tài khoá; chính sách tiền tệ; phối hợp tài khoá–tiền tệ Việt Nam 2020–2024.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
   },
   {
-    "objectID": "index.html#phan-iv",
-    "href": "index.html#phan-iv",
+    "objectID": "index.html#chuong-4",
+    "href": "index.html#chuong-4",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "",
-    "text": "Tuần 13 · Đặc thù QLKT Việt Nam\nKinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.\n\n\nTuần 14 · Hội nhập kinh tế quốc tế\nWTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.\n\n\nTuần 15 · Tổng ôn và thuyết trình\nHệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.",
+    "text": "Buổi 9 · Cán cân thanh toán và tỷ giá\nCấu trúc CA, FA; đồng nhất CA = S − I; BoP Việt Nam. Tỷ giá: danh nghĩa, thực, NEER, REER. Các chế độ tỷ giá theo IMF. Lý thuyết PPP, UIP, CIP; carry trade. Dự trữ ngoại hối.\n\n\nBuổi 10 · Mô hình Mundell-Fleming\nBa phương trình IS, LM, BP; điều kiện Marshall-Lerner; tác động chính sách tài khoá, tiền tệ và thương mại dưới tỷ giá cố định và thả nổi. Case: Hong Kong LERS, Reaganomics, ERM 1992.\n\n\nBuổi 11 · Bộ ba bất khả thi và Khủng hoảng châu Á 1997\nPhát biểu và chứng minh; sterilization. Việt Nam trong Trilemma; định hướng theo Đại hội XIV. Khủng hoảng châu Á 1997 và bài học cho Việt Nam.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#chuong-5",
+    "href": "index.html#chuong-5",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Buổi 12 · Quản trị địa phương và phân cấp tài khoá\nPhân cấp / phân quyền / tản quyền. Lý thuyết Tiebout, Oates, Musgrave. Cải cách 2025: chính quyền 2 cấp tỉnh–xã (Luật 72/2025); 34 tỉnh/thành (NQ 202/2025); Luật NSNN 89/2025. Đánh giá: PCI, PAPI, PAR Index.\n\n\nBuổi 13 · Phát triển kinh tế vùng\nLý thuyết Marshall, Krugman. Sáu vùng KT-XH, bốn vùng KTTĐ, hành lang kinh tế. Bốn cực động lực và sáu siêu dự án trọng điểm theo Đại hội XIV. Case: ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#seminar",
+    "href": "index.html#seminar",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Buổi 14 · Chia sẻ thực tiễn\nMời chuyên gia bên ngoài (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn. Thảo luận chính sách. Hoạt động vận dụng theo nhóm.\n\n\nBuổi 15 · Tổng kết và đánh giá\nThuyết trình và phản biện của sinh viên về các vấn đề chính sách kinh tế. Phản biện chéo giữa các nhóm. Đánh giá tổng kết theo hình thức do giảng viên quyết định.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
@@ -98,1200 +1375,10 @@
     "href": "index.html#học-liệu-mở",
     "title": "Nguyên lý Quản lý Kinh tế",
     "section": "Học liệu mở",
-    "text": "Học liệu mở\nBộ học liệu này được phát hành theo giấy phép Creative Commons BY-NC-SA 4.0: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.",
+    "text": "Học liệu mở\nBộ học liệu này được phát hành theo giấy phép Creative Commons BY-NC-SA 4.0: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.\nTrưởng Bộ môn: TS. Đỗ Ngọc Kiên · Viện trưởng: PGS. TS. Bùi Thị Lý.",
     "crumbs": [
       "Trang chủ",
       "← Trang chủ"
     ]
-  },
-  {
-    "objectID": "lectures/week-13.html",
-    "href": "lectures/week-13.html",
-    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Định hướng XHCN; sở hữu hỗn hợp; DNNN; cải cách thể chế.\nVận dụng được khung phân tích của tuần 13 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 13 — Đặc thù QLKT Việt Nam"
-    ]
-  },
-  {
-    "objectID": "lectures/week-13.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-13.html#dàn-ý-dự-kiến",
-    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 13 — Đặc thù QLKT Việt Nam"
-    ]
-  },
-  {
-    "objectID": "lectures/week-13.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-13.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nĐịnh hướng XHCN\nsở hữu hỗn hợp\nDNNN\ncải cách thể chế",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 13 — Đặc thù QLKT Việt Nam"
-    ]
-  },
-  {
-    "objectID": "lectures/week-13.html#đọc-trước",
-    "href": "lectures/week-13.html#đọc-trước",
-    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 13 — Đặc thù QLKT Việt Nam"
-    ]
-  },
-  {
-    "objectID": "lectures/week-13.html#tự-kiểm-tra",
-    "href": "lectures/week-13.html#tự-kiểm-tra",
-    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 13 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 12 | Tuần tiếp theo: Tuần 14 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 13 — Đặc thù QLKT Việt Nam"
-    ]
-  },
-  {
-    "objectID": "lectures/week-04.html",
-    "href": "lectures/week-04.html",
-    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Cấu trúc hệ thống; phân tích đầu vào-đầu ra; phản hồi; cân bằng động.\nVận dụng được khung phân tích của tuần 04 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 04 — Hệ thống quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-04.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-04.html#dàn-ý-dự-kiến",
-    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 04 — Hệ thống quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-04.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-04.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nCấu trúc hệ thống\nphân tích đầu vào-đầu ra\nphản hồi\ncân bằng động",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 04 — Hệ thống quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-04.html#đọc-trước",
-    "href": "lectures/week-04.html#đọc-trước",
-    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 04 — Hệ thống quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-04.html#tự-kiểm-tra",
-    "href": "lectures/week-04.html#tự-kiểm-tra",
-    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 04 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 3 | Tuần tiếp theo: Tuần 5 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 04 — Hệ thống quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html",
-    "href": "lectures/week-12.html",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Hàng rào thương mại; FDI; chuỗi giá trị toàn cầu; công nghiệp hóa hướng xuất khẩu.\nVận dụng được khung phân tích của tuần 12 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-12.html#dàn-ý-dự-kiến",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-12.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nHàng rào thương mại\nFDI\nchuỗi giá trị toàn cầu\ncông nghiệp hóa hướng xuất khẩu",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html#đọc-trước",
-    "href": "lectures/week-12.html#đọc-trước",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html#ví-dụ-định-lượng-với-stata",
-    "href": "lectures/week-12.html#ví-dụ-định-lượng-với-stata",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "Ví dụ định lượng với Stata",
-    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 12\nimport delimited \"data/topic-week-12.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/week-12.html#tự-kiểm-tra",
-    "href": "lectures/week-12.html#tự-kiểm-tra",
-    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 12 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 11 | Tuần tiếp theo: Tuần 13 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
-    ]
-  },
-  {
-    "objectID": "lectures/index.html",
-    "href": "lectures/index.html",
-    "title": "Bài giảng",
-    "section": "",
-    "text": "Toàn bộ 15 bài giảng được tổ chức theo bốn phần lớn của môn học. Mỗi bài có cấu trúc thống nhất: mục tiêu bài học, khái niệm cốt lõi, phân tích chi tiết, ví dụ thực tiễn Việt Nam, và bài tập tự kiểm tra.\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\nTrước mỗi buổi, đọc lướt phần Mục tiêu và Khái niệm cốt lõi. Sau buổi học, quay lại đọc kỹ phần Phân tích chi tiết và làm phần Tự kiểm tra.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBài giảng\n\n\n\nNội dung chính\n\n\n\nThời lượng đọc\n\n\n\n\n\n\n\n\nTuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế\n\n\nĐối tượng, phương pháp, vai trò; vị trí trong hệ thống khoa học quản lý\n\n\n9 min\n\n\n\n\n\n\nTuần 02 — Lịch sử tư tưởng quản lý kinh tế\n\n\nTừ Adam Smith và Marx đến Keynes, Coase và Williamson\n\n\n2 min\n\n\n\n\n\n\nTuần 03 — Quy luật khách quan và nguyên tắc vận dụng\n\n\nCác quy luật kinh tế và nguyên tắc quản lý dựa trên quy luật\n\n\n2 min\n\n\n\n\n\n\nTuần 04 — Hệ thống quản lý kinh tế\n\n\nChủ thể, đối tượng, mối quan hệ và các bộ phận cấu thành\n\n\n2 min\n\n\n\n\n\n\nTuần 05 — Chức năng quản lý kinh tế\n\n\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát\n\n\n2 min\n\n\n\n\n\n\nTuần 06 — Cơ cấu tổ chức quản lý kinh tế\n\n\nPhân cấp, phân quyền, ủy quyền và các mô hình cơ cấu\n\n\n2 min\n\n\n\n\n\n\nTuần 07 — Phương pháp quản lý kinh tế\n\n\nPhương pháp kinh tế, hành chính, giáo dục và phối hợp\n\n\n2 min\n\n\n\n\n\n\nTuần 08 — Cán bộ và thông tin trong QLKT\n\n\nYêu cầu cán bộ quản lý; hệ thống thông tin và ra quyết định\n\n\n2 min\n\n\n\n\n\n\nTuần 09 — Quản lý nhà nước về kinh tế\n\n\nChức năng và công cụ của Nhà nước trong nền KTTT\n\n\n2 min\n\n\n\n\n\n\nTuần 10 — Chính sách tài khóa\n\n\nQuản lý ngân sách, chi tiêu công, nợ công\n\n\n2 min\n\n\n\n\n\n\nTuần 11 — Chính sách tiền tệ\n\n\nNgân hàng trung ương và quản lý hệ thống tài chính\n\n\n2 min\n\n\n\n\n\n\nTuần 12 — Chính sách thương mại — đầu tư — công nghiệp\n\n\nQuản lý xuất nhập khẩu, FDI, và chính sách công nghiệp hóa\n\n\n2 min\n\n\n\n\n\n\nTuần 13 — Đặc thù QLKT Việt Nam\n\n\nKTTT định hướng XHCN; vai trò Nhà nước, DNNN, kinh tế tư nhân\n\n\n2 min\n\n\n\n\n\n\nTuần 14 — Hội nhập kinh tế quốc tế\n\n\nWTO, FTA, CPTPP và áp lực điều chỉnh trong nước\n\n\n2 min\n\n\n\n\n\n\nTuần 15 — Tổng ôn và thuyết trình nhóm\n\n\nHệ thống hóa kiến thức và thuyết trình về vấn đề QLKT đương đại\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lectures/week-10.html",
-    "href": "lectures/week-10.html",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Thâm hụt-thặng dư; nợ công bền vững; chính sách tài khóa phản chu kỳ; quy tắc tài khóa.\nVận dụng được khung phân tích của tuần 10 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-10.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-10.html#dàn-ý-dự-kiến",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-10.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-10.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nThâm hụt-thặng dư\nnợ công bền vững\nchính sách tài khóa phản chu kỳ\nquy tắc tài khóa",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-10.html#đọc-trước",
-    "href": "lectures/week-10.html#đọc-trước",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-10.html#ví-dụ-định-lượng-với-stata",
-    "href": "lectures/week-10.html#ví-dụ-định-lượng-với-stata",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "Ví dụ định lượng với Stata",
-    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 10\nimport delimited \"data/topic-week-10.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-10.html#tự-kiểm-tra",
-    "href": "lectures/week-10.html#tự-kiểm-tra",
-    "title": "Tuần 10 — Chính sách tài khóa",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 10 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 9 | Tuần tiếp theo: Tuần 11 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 10 — Chính sách tài khóa"
-    ]
-  },
-  {
-    "objectID": "lectures/week-05.html",
-    "href": "lectures/week-05.html",
-    "title": "Tuần 05 — Chức năng quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Lập kế hoạch chiến lược; cơ cấu; động viên; KPI và đo lường.\nVận dụng được khung phân tích của tuần 05 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 05 — Chức năng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-05.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-05.html#dàn-ý-dự-kiến",
-    "title": "Tuần 05 — Chức năng quản lý kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 05 — Chức năng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-05.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-05.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 05 — Chức năng quản lý kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nLập kế hoạch chiến lược\ncơ cấu\nđộng viên\nKPI và đo lường",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 05 — Chức năng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-05.html#đọc-trước",
-    "href": "lectures/week-05.html#đọc-trước",
-    "title": "Tuần 05 — Chức năng quản lý kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 05 — Chức năng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-05.html#tự-kiểm-tra",
-    "href": "lectures/week-05.html#tự-kiểm-tra",
-    "title": "Tuần 05 — Chức năng quản lý kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 05 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 4 | Tuần tiếp theo: Tuần 6 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 05 — Chức năng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html",
-    "href": "lectures/week-09.html",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Thất bại thị trường; ngoại ứng; hàng hóa công; vai trò Nhà nước.\nVận dụng được khung phân tích của tuần 09 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-09.html#dàn-ý-dự-kiến",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-09.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nThất bại thị trường\nngoại ứng\nhàng hóa công\nvai trò Nhà nước",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html#đọc-trước",
-    "href": "lectures/week-09.html#đọc-trước",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html#ví-dụ-định-lượng-với-stata",
-    "href": "lectures/week-09.html#ví-dụ-định-lượng-với-stata",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "Ví dụ định lượng với Stata",
-    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 09\nimport delimited \"data/topic-week-09.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-09.html#tự-kiểm-tra",
-    "href": "lectures/week-09.html#tự-kiểm-tra",
-    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 09 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 8 | Tuần tiếp theo: Tuần 10 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 09 — Quản lý nhà nước về kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html",
-    "href": "lectures/week-11.html",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Lãi suất chính sách; cung tiền M2; tỷ giá; lạm phát mục tiêu; ổn định tài chính.\nVận dụng được khung phân tích của tuần 11 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-11.html#dàn-ý-dự-kiến",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-11.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nLãi suất chính sách\ncung tiền M2\ntỷ giá\nlạm phát mục tiêu\nổn định tài chính",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html#đọc-trước",
-    "href": "lectures/week-11.html#đọc-trước",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html#ví-dụ-định-lượng-với-stata",
-    "href": "lectures/week-11.html#ví-dụ-định-lượng-với-stata",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "Ví dụ định lượng với Stata",
-    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 11\nimport delimited \"data/topic-week-11.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "lectures/week-11.html#tự-kiểm-tra",
-    "href": "lectures/week-11.html#tự-kiểm-tra",
-    "title": "Tuần 11 — Chính sách tiền tệ",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 11 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 10 | Tuần tiếp theo: Tuần 12 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần III — Công cụ chính sách",
-      "Tuần 11 — Chính sách tiền tệ"
-    ]
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Lịch học 15 tuần",
-    "section": "",
-    "text": "Tuần\nPhần\nChủ đề\nĐọc trước\nBài tập / Kiểm tra\n\n\n\n\n1\nI\nGiới thiệu môn học và bản chất QLKT\nĐỗ-Mai Ch.1\n—\n\n\n2\nI\nLịch sử tư tưởng QLKT\nĐỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2\n—\n\n\n3\nI\nQuy luật khách quan và vận dụng\nĐỗ-Mai Ch.3\nPS-01 giao\n\n\n4\nI\nHệ thống quản lý kinh tế\nĐỗ-Mai Ch.4\nPS-01 nộp\n\n\n5\nII\nChức năng quản lý kinh tế\nĐỗ-Mai Ch.5\n—\n\n\n6\nII\nCơ cấu tổ chức QLKT\nĐỗ-Mai Ch.6\nPS-02 giao\n\n\n7\nII\nPhương pháp quản lý kinh tế\nĐỗ-Mai Ch.7\n—\n\n\n8\nII\nCán bộ và thông tin trong QLKT\nĐỗ-Mai Ch.8\n⚠️ Kiểm tra giữa kỳ + PS-02 nộp\n\n\n9\nIII\nQuản lý nhà nước về kinh tế\nPhan Huy Đường Ch.1–2\n—\n\n\n10\nIII\nChính sách tài khóa\nPhan Huy Đường Ch.3; Luật NSNN\nPS-03 giao\n\n\n11\nIII\nChính sách tiền tệ\nPhan Huy Đường Ch.4\n—\n\n\n12\nIII\nThương mại — đầu tư — công nghiệp\nRodrik Ch.4–5\nPS-03 nộp\n\n\n13\nIV\nĐặc thù QLKT Việt Nam\nVăn kiện Đại hội XIII\n—\n\n\n14\nIV\nHội nhập kinh tế quốc tế\nWorld Bank VDR\nĐăng ký nhóm thuyết trình\n\n\n15\nIV\nTổng ôn và thuyết trình nhóm\n—\n🎤 Thuyết trình nhóm\n\n\nThi\n—\nThi cuối kỳ (90 phút, tự luận)\nToàn bộ\n⚠️ Thi cuối kỳ"
-  },
-  {
-    "objectID": "schedule.html#tổng-quan-tiến-độ",
-    "href": "schedule.html#tổng-quan-tiến-độ",
-    "title": "Lịch học 15 tuần",
-    "section": "",
-    "text": "Tuần\nPhần\nChủ đề\nĐọc trước\nBài tập / Kiểm tra\n\n\n\n\n1\nI\nGiới thiệu môn học và bản chất QLKT\nĐỗ-Mai Ch.1\n—\n\n\n2\nI\nLịch sử tư tưởng QLKT\nĐỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2\n—\n\n\n3\nI\nQuy luật khách quan và vận dụng\nĐỗ-Mai Ch.3\nPS-01 giao\n\n\n4\nI\nHệ thống quản lý kinh tế\nĐỗ-Mai Ch.4\nPS-01 nộp\n\n\n5\nII\nChức năng quản lý kinh tế\nĐỗ-Mai Ch.5\n—\n\n\n6\nII\nCơ cấu tổ chức QLKT\nĐỗ-Mai Ch.6\nPS-02 giao\n\n\n7\nII\nPhương pháp quản lý kinh tế\nĐỗ-Mai Ch.7\n—\n\n\n8\nII\nCán bộ và thông tin trong QLKT\nĐỗ-Mai Ch.8\n⚠️ Kiểm tra giữa kỳ + PS-02 nộp\n\n\n9\nIII\nQuản lý nhà nước về kinh tế\nPhan Huy Đường Ch.1–2\n—\n\n\n10\nIII\nChính sách tài khóa\nPhan Huy Đường Ch.3; Luật NSNN\nPS-03 giao\n\n\n11\nIII\nChính sách tiền tệ\nPhan Huy Đường Ch.4\n—\n\n\n12\nIII\nThương mại — đầu tư — công nghiệp\nRodrik Ch.4–5\nPS-03 nộp\n\n\n13\nIV\nĐặc thù QLKT Việt Nam\nVăn kiện Đại hội XIII\n—\n\n\n14\nIV\nHội nhập kinh tế quốc tế\nWorld Bank VDR\nĐăng ký nhóm thuyết trình\n\n\n15\nIV\nTổng ôn và thuyết trình nhóm\n—\n🎤 Thuyết trình nhóm\n\n\nThi\n—\nThi cuối kỳ (90 phút, tự luận)\nToàn bộ\n⚠️ Thi cuối kỳ"
-  },
-  {
-    "objectID": "schedule.html#mốc-thời-gian-quan-trọng",
-    "href": "schedule.html#mốc-thời-gian-quan-trọng",
-    "title": "Lịch học 15 tuần",
-    "section": "Mốc thời gian quan trọng",
-    "text": "Mốc thời gian quan trọng\n\n\n\n\n\n\nWarningCác mốc bắt buộc\n\n\n\n\nTuần 3: Phát Problem Set 01.\nTuần 4: Hạn nộp Problem Set 01.\nTuần 6: Phát Problem Set 02.\nTuần 8: Kiểm tra giữa kỳ + Hạn nộp Problem Set 02.\nTuần 10: Phát Problem Set 03.\nTuần 12: Hạn nộp Problem Set 03.\nTuần 14: Hạn đăng ký nhóm thuyết trình.\nTuần 15: Thuyết trình nhóm trên lớp.\nTuần thi: Thi cuối kỳ (lịch thi do nhà trường công bố)."
-  },
-  {
-    "objectID": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
-    "href": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
-    "title": "Lịch học 15 tuần",
-    "section": "Khối lượng học tập kỳ vọng",
-    "text": "Khối lượng học tập kỳ vọng\nTheo chuẩn 1 tín chỉ = 15 tiết lên lớp + 30 giờ tự học, môn 3 tín chỉ kỳ vọng:\n\n\n\nHoạt động\nGiờ/tuần\n\n\n\n\nLên lớp\n3\n\n\nĐọc tài liệu trước giờ học\n3\n\n\nLàm bài tập\n2\n\n\nÔn tập, đọc mở rộng\n1\n\n\nTổng/tuần\n~9\n\n\n\nTrên 15 tuần ≈ 135 giờ học tập cho môn này."
-  },
-  {
-    "objectID": "schedule.html#buổi-học-bù",
-    "href": "schedule.html#buổi-học-bù",
-    "title": "Lịch học 15 tuần",
-    "section": "Buổi học bù",
-    "text": "Buổi học bù\nNếu có buổi học bù do nghỉ lễ hoặc giảng viên đi công tác, lịch bù sẽ được công bố ở trang này.\nLần cập nhật cuối: cuối tháng 5/2026"
-  },
-  {
-    "objectID": "exams/index.html",
-    "href": "exams/index.html",
-    "title": "Đề thi mẫu",
-    "section": "",
-    "text": "Thời gian: 60 phút.\nHình thức: 50% trắc nghiệm khách quan + 50% tự luận ngắn.\nPhạm vi: Tuần 1–8 (Phần I và Phần II).\nTài liệu: Không sử dụng tài liệu.\n\n\n\n\n\nThời gian: 90 phút.\nHình thức: Tự luận (3–4 câu).\nPhạm vi: Toàn bộ chương trình.\nTài liệu: Không sử dụng tài liệu."
-  },
-  {
-    "objectID": "exams/index.html#cấu-trúc-thi",
-    "href": "exams/index.html#cấu-trúc-thi",
-    "title": "Đề thi mẫu",
-    "section": "",
-    "text": "Thời gian: 60 phút.\nHình thức: 50% trắc nghiệm khách quan + 50% tự luận ngắn.\nPhạm vi: Tuần 1–8 (Phần I và Phần II).\nTài liệu: Không sử dụng tài liệu.\n\n\n\n\n\nThời gian: 90 phút.\nHình thức: Tự luận (3–4 câu).\nPhạm vi: Toàn bộ chương trình.\nTài liệu: Không sử dụng tài liệu."
-  },
-  {
-    "objectID": "exams/index.html#đề-mẫu-giữa-kỳ",
-    "href": "exams/index.html#đề-mẫu-giữa-kỳ",
-    "title": "Đề thi mẫu",
-    "section": "Đề mẫu giữa kỳ",
-    "text": "Đề mẫu giữa kỳ\n\n\n\n\n\n\nNote\n\n\n\nĐề mẫu sẽ được phát ở Tuần 7 để sinh viên ôn tập. File PDF đính kèm khi sẵn sàng.\n\n\n\nCấu trúc đề mẫu (gợi ý)\nPhần I — Trắc nghiệm (5 điểm, 20 câu × 0.25đ)\nCác câu hỏi về khái niệm, định nghĩa, phân loại. Ví dụ:\n\nCâu nào KHÔNG phải là chức năng cơ bản của quản lý kinh tế?\nA. Kế hoạch hóa B. Tổ chức C. Lãnh đạo D. Tiêu dùng ✓ E. Kiểm soát\n\nPhần II — Tự luận ngắn (5 điểm, 2 câu × 2.5đ)\n\nCâu 1: Trình bày 2–3 phương pháp quản lý kinh tế chính, đưa ví dụ.\nCâu 2: Phân tích một trường hợp cụ thể qua khung hệ thống quản lý kinh tế."
-  },
-  {
-    "objectID": "exams/index.html#đề-mẫu-cuối-kỳ",
-    "href": "exams/index.html#đề-mẫu-cuối-kỳ",
-    "title": "Đề thi mẫu",
-    "section": "Đề mẫu cuối kỳ",
-    "text": "Đề mẫu cuối kỳ\n\n\n\n\n\n\nNote\n\n\n\nĐề mẫu cuối kỳ sẽ phát ở Tuần 14.\n\n\n\nCấu trúc đề mẫu (gợi ý)\nCâu 1 (3 điểm) — Phân tích khái niệm\nMột câu hỏi yêu cầu trình bày + phân biệt các khái niệm cốt lõi. Ví dụ:\n\nPhân biệt quản lý nhà nước về kinh tế và quản trị kinh doanh. Cho biết vì sao cả hai đều quan trọng trong nền kinh tế thị trường.\n\nCâu 2 (3 điểm) — Phân tích chính sách\nMột câu hỏi vận dụng khung lý luận vào tình huống thực tế.\n\nPhân tích chính sách tài khóa của Việt Nam trong giai đoạn 2020–2024 dưới tác động của đại dịch Covid-19. Đánh giá hiệu quả qua khung 4 chức năng QLKT.\n\nCâu 3 (2 điểm) — Lập luận\nCâu hỏi mở yêu cầu lập luận cá nhân có căn cứ.\n\n“Trong nền kinh tế thị trường định hướng XHCN, vai trò của Nhà nước nên giảm dần theo thời gian.” Bạn đồng ý hay không? Lập luận của bạn.\n\nCâu 4 (2 điểm) — Liên hệ thực tiễn\n\nLựa chọn một vấn đề quản lý kinh tế nổi bật của Việt Nam trong 12 tháng qua. Phân tích nguyên nhân, đề xuất giải pháp."
-  },
-  {
-    "objectID": "exams/index.html#tiêu-chí-chấm-tự-luận",
-    "href": "exams/index.html#tiêu-chí-chấm-tự-luận",
-    "title": "Đề thi mẫu",
-    "section": "Tiêu chí chấm tự luận",
-    "text": "Tiêu chí chấm tự luận\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nĐúng khái niệm cốt lõi\n30%\n\n\nCó ví dụ thực tế cụ thể\n25%\n\n\nLập luận logic, có cấu trúc\n25%\n\n\nVăn phong học thuật, ít lỗi\n10%\n\n\nLiên hệ với tài liệu đã học (sách, bài đọc)\n10%"
-  },
-  {
-    "objectID": "exams/index.html#đề-thi-các-năm-trước",
-    "href": "exams/index.html#đề-thi-các-năm-trước",
-    "title": "Đề thi mẫu",
-    "section": "Đề thi các năm trước",
-    "text": "Đề thi các năm trước\n\n\n\n\n\n\nKhi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.\n\n\n\n\n(chưa có)"
-  },
-  {
-    "objectID": "lectures/week-15.html",
-    "href": "lectures/week-15.html",
-    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: — ôn tập 14 tuần — thuyết trình nhóm —.\nVận dụng được khung phân tích của tuần 15 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
-    ]
-  },
-  {
-    "objectID": "lectures/week-15.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-15.html#dàn-ý-dự-kiến",
-    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
-    ]
-  },
-  {
-    "objectID": "lectures/week-15.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-15.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\n— ôn tập 14 tuần — thuyết trình nhóm —",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
-    ]
-  },
-  {
-    "objectID": "lectures/week-15.html#đọc-trước",
-    "href": "lectures/week-15.html#đọc-trước",
-    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
-    ]
-  },
-  {
-    "objectID": "lectures/week-15.html#tự-kiểm-tra",
-    "href": "lectures/week-15.html#tự-kiểm-tra",
-    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 15 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 14 | Đây là tuần cuối của môn học.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html",
-    "href": "lectures/week-01.html",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được định nghĩa, đối tượng và phương pháp nghiên cứu của môn Nguyên lý Quản lý Kinh tế.\nPhân biệt quản lý kinh tế với các môn liên quan: kinh tế học, quản trị kinh doanh, quản lý nhà nước.\nGiải thích vì sao QLKT vừa mang tính khoa học vừa mang tính nghệ thuật.\nMô tả cấu trúc 15 tuần của môn học và yêu cầu đối với sinh viên.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#quản-lý-kinh-tế-là-gì",
-    "href": "lectures/week-01.html#quản-lý-kinh-tế-là-gì",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.1 Quản lý kinh tế là gì?",
-    "text": "1.1 Quản lý kinh tế là gì?\n\nĐịnh nghĩa\nQuản lý kinh tế là quá trình tác động có ý thức, có tổ chức và có hướng đích của chủ thể quản lý lên đối tượng bị quản lý — tức là các hoạt động kinh tế và các nguồn lực kinh tế — nhằm đạt được những mục tiêu kinh tế và xã hội nhất định trong những điều kiện môi trường cụ thể.\nĐịnh nghĩa này gồm năm thành tố cần ghi nhớ:\n\nChủ thể quản lý — người ra quyết định (cá nhân, tập thể, tổ chức, Nhà nước).\nĐối tượng quản lý — hoạt động kinh tế và các nguồn lực (nhân lực, vốn, tài nguyên, công nghệ).\nMục tiêu — kết quả kinh tế và xã hội mong muốn.\nCông cụ và phương pháp — cách thức tác động.\nMôi trường — bối cảnh kinh tế, chính trị, xã hội, công nghệ.\n\n\n\nKhác biệt với các môn liên quan\n\n\n\n\n\n\n\n\nMôn học\nTrọng tâm\nCâu hỏi điển hình\n\n\n\n\nKinh tế học\nMô tả và giải thích các quy luật kinh tế\nVì sao giá tăng khi cầu vượt cung?\n\n\nQuản trị kinh doanh\nQuản lý ở cấp doanh nghiệp\nLàm sao tối đa hóa lợi nhuận của doanh nghiệp X?\n\n\nQuản lý nhà nước về kinh tế\nVai trò Nhà nước trong điều tiết\nChính sách nào giúp ổn định lạm phát?\n\n\nNguyên lý QLKT\nKhung lý luận tổng quát về quản lý các hoạt động kinh tế ở mọi cấp\nQuản lý kinh tế phải dựa trên những nguyên tắc nào?\n\n\n\nQLKT nằm ở vị trí cầu nối: lấy các quy luật từ kinh tế học làm nền, nhưng quan tâm đến việc vận dụng các quy luật đó để quản lý — gần với khoa học quản lý hơn là khoa học mô tả.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#đối-tượng-và-phương-pháp-nghiên-cứu",
-    "href": "lectures/week-01.html#đối-tượng-và-phương-pháp-nghiên-cứu",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.2 Đối tượng và phương pháp nghiên cứu",
-    "text": "1.2 Đối tượng và phương pháp nghiên cứu\n\nĐối tượng nghiên cứu\nĐối tượng nghiên cứu của môn Nguyên lý QLKT là các quy luật, nguyên tắc, chức năng, phương pháp và công cụ trong quản lý các quá trình kinh tế ở tầm vĩ mô và trung mô, đặc biệt là:\n\nMối quan hệ giữa chủ thể quản lý (Nhà nước, các tổ chức) và đối tượng quản lý (nền kinh tế, các ngành, các vùng).\nHệ thống công cụ điều tiết kinh tế (chính sách, pháp luật, kế hoạch, đòn bẩy kinh tế).\nQuá trình ra quyết định kinh tế ở các cấp.\n\n\n\nPhương pháp nghiên cứu\nMôn học sử dụng tổng hợp ba nhóm phương pháp:\n\nPhương pháp duy vật biện chứng và duy vật lịch sử — đặt vấn đề quản lý kinh tế trong bối cảnh lịch sử cụ thể, thấy rõ tính phát triển và mâu thuẫn.\nPhương pháp trừu tượng hóa khoa học — gạt bỏ những yếu tố ngẫu nhiên để rút ra bản chất chung.\nPhương pháp định lượng và mô hình hóa — sử dụng số liệu thống kê, phân tích kinh tế lượng cơ bản.\n\n\n\n\n\n\n\nTip💡 Trong môn này\n\n\n\nChúng ta sẽ sử dụng Stata ở những tuần có nội dung định lượng. Sinh viên không cần là chuyên gia Stata — chỉ cần đọc hiểu được code và biết tự chạy lại được các ví dụ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#vai-trò-của-qlkt-trong-khoa-học-và-thực-tiễn",
-    "href": "lectures/week-01.html#vai-trò-của-qlkt-trong-khoa-học-và-thực-tiễn",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.3 Vai trò của QLKT trong khoa học và thực tiễn",
-    "text": "1.3 Vai trò của QLKT trong khoa học và thực tiễn\n\nVai trò khoa học\nQLKT đóng vai trò hợp lưu giữa khoa học quản lý và khoa học kinh tế:\n\nCung cấp khung phân tích chung cho mọi nghiên cứu sâu hơn về quản lý ngành, quản lý vùng, quản lý dự án.\nĐặt nền tảng tư duy hệ thống cho người làm chính sách và quản lý.\n\n\n\nVai trò thực tiễn\nĐối với một sinh viên kinh tế năm 3–4, môn này có ba giá trị thực tiễn:\n\nĐọc hiểu chính sách. Sau môn học, bạn có thể đọc một thông tư hay một đề án chính sách và hiểu vì sao nó được thiết kế như vậy.\nTư duy hệ thống. Khi đứng trước một vấn đề thực tế, biết phân biệt đâu là vấn đề của quy luật (không thể đổi), đâu là vấn đề của cách quản lý (có thể đổi).\nNền cho các môn sau. Quản lý ngân sách, Quản lý dự án công, Phân tích chính sách — tất cả đều dựa trên khung của môn này.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#tính-khoa-học-và-tính-nghệ-thuật",
-    "href": "lectures/week-01.html#tính-khoa-học-và-tính-nghệ-thuật",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.4 Tính khoa học và tính nghệ thuật",
-    "text": "1.4 Tính khoa học và tính nghệ thuật\nMột câu hỏi cổ điển: Quản lý là khoa học hay nghệ thuật? Trả lời: cả hai.\n\n\nTính khoa học\n\nDựa trên quy luật khách quan (cung-cầu, giá trị, năng suất…).\nCó hệ thống khái niệm, nguyên tắc, phương pháp được kiểm chứng.\nCó thể học, truyền đạt và đo lường được phần lớn.\n\n\n\nTính nghệ thuật\n\nVận dụng quy luật vào hoàn cảnh cụ thể — đòi hỏi phán đoán.\nBao gồm trực giác, kinh nghiệm, và cảm nhận về con người.\nKhông thể truyền đạt hết bằng sách vở — cần thực hành.\n\n\n\nMột nhà quản lý kinh tế giỏi phải có cả hai. Học sách giúp bạn không phạm sai lầm cơ bản. Kinh nghiệm giúp bạn ra quyết định đúng trong hoàn cảnh khó.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#ví-dụ-minh-họa-với-dữ-liệu-việt-nam",
-    "href": "lectures/week-01.html#ví-dụ-minh-họa-với-dữ-liệu-việt-nam",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.5 Ví dụ minh họa với dữ liệu Việt Nam",
-    "text": "1.5 Ví dụ minh họa với dữ liệu Việt Nam\nĐể cảm nhận quy mô và động thái của nền kinh tế Việt Nam — đối tượng quản lý chính của môn này — hãy nhìn vào dữ liệu GDP thực tế từ Đổi mới (1986) đến nay.\n\n\n\n\n\n\nNote📊 Stata exercise — chạy thử ở nhà\n\n\n\nTải bộ dữ liệu vn_gdp_1986_2024.csv từ thư mục data/ (sẽ phát ở tuần này). Chạy lệnh sau:\n\n\n\n* Đọc dữ liệu GDP thực tế Việt Nam 1986-2024\nimport delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\n\n* Khai báo dữ liệu chuỗi thời gian\ntsset year\n\n* Tóm tắt\nsummarize gdp_growth\n\n* Vẽ biểu đồ tăng trưởng GDP qua các giai đoạn\ntwoway (line gdp_growth year), ///\n    title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n    ytitle(\"Tăng trưởng GDP thực (%)\") ///\n    xtitle(\"Năm\") ///\n    xlabel(1986(4)2024) ///\n    yline(0, lcolor(red))\n\n* Tính tăng trưởng trung bình từng giai đoạn\ngen period = .\nreplace period = 1 if year &gt;= 1986 & year &lt;= 1996  // Đầu Đổi mới\nreplace period = 2 if year &gt;= 1997 & year &lt;= 2006  // Hậu khủng hoảng châu Á\nreplace period = 3 if year &gt;= 2007 & year &lt;= 2019  // Gia nhập WTO\nreplace period = 4 if year &gt;= 2020 & year &lt;= 2024  // Covid và phục hồi\n\nlabel define p 1 \"1986-1996 Đầu Đổi mới\" ///\n               2 \"1997-2006 Hậu KH châu Á\" ///\n               3 \"2007-2019 Gia nhập WTO\" ///\n               4 \"2020-2024 Covid + phục hồi\"\nlabel values period p\n\ntabstat gdp_growth, by(period) stat(mean sd min max n) format(%6.2f)\n\n\n\n\n\n. * Đọc dữ liệu GDP thực tế Việt Nam 1986-2024\n. import delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\n(encoding automatically selected: UTF-8)\n(3 vars, 39 obs)\n\n. \n. * Khai báo dữ liệu chuỗi thời gian\n. tsset year\n\nTime variable: year, 1986 to 2024\n        Delta: 1 unit\n\n. \n. * Tóm tắt\n. summarize gdp_growth\n\n    Variable |        Obs        Mean    Std. dev.       Min        Max\n-------------+---------------------------------------------------------\n  gdp_growth |         39    6.362564    1.662904       2.58       9.54\n\n. \n. * Vẽ biểu đồ tăng trưởng GDP qua các giai đoạn\n. twoway (line gdp_growth year), ///\n&gt;     title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n&gt;     ytitle(\"Tăng trưởng GDP thực (%)\") ///\n&gt;     xtitle(\"Năm\") ///\n&gt;     xlabel(1986(4)2024) ///\n&gt;     yline(0, lcolor(red))\n\n. \n. * Tính tăng trưởng trung bình từng giai đoạn\n. gen period = .\n(39 missing values generated)\n\n. replace period = 1 if year &gt;= 1986 & year &lt;= 1996  // Đầu Đổi mới\n(11 real changes made)\n\n. replace period = 2 if year &gt;= 1997 & year &lt;= 2006  // Hậu khủng hoảng châu Á\n(10 real changes made)\n\n. replace period = 3 if year &gt;= 2007 & year &lt;= 2019  // Gia nhập WTO\n(13 real changes made)\n\n. replace period = 4 if year &gt;= 2020 & year &lt;= 2024  // Covid và phục hồi\n(5 real changes made)\n\n. \n. label define p 1 \"1986-1996 Đầu Đổi mới\" ///\n&gt;                2 \"1997-2006 Hậu KH châu Á\" ///\n&gt;                3 \"2007-2019 Gia nhập WTO\" ///\n&gt;                4 \"2020-2024 Covid + phục hồi\"\n\n. label values period p\n\n. \n. tabstat gdp_growth, by(period) stat(mean sd min max n) format(%6.2f)\n\nSummary for variables: gdp_growth\nGroup variable: period \n\n          period |      Mean        SD       Min       Max         N\n-----------------+--------------------------------------------------\n1986-1996 Đầu Đổ |      6.75      2.38      2.79      9.54     11.00\n1997-2006 Hậu KH |      6.70      0.98      4.77      8.15     10.00\n2007-2019 Gia nh |      6.25      0.67      5.25      7.13     13.00\n2020-2024 Covid  |      5.13      2.43      2.58      8.02      5.00\n-----------------+--------------------------------------------------\n           Total |      6.36      1.66      2.58      9.54     39.00\n--------------------------------------------------------------------\n\n. \n\n\n\n\n\n\n\n\n\nQuan sát điển hình (sẽ thảo luận trên lớp):\n\nGiai đoạn nào tăng trưởng cao nhất? Vì sao?\nCó sự kiện chính sách hoặc cú sốc bên ngoài nào ứng với từng giai đoạn?\nTăng trưởng có chậm lại theo thời gian không? Nếu có, đó là vấn đề quản lý hay vấn đề quy luật (mức GDP đầu người đã cao hơn)?",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#cấu-trúc-môn-học-và-kỳ-vọng",
-    "href": "lectures/week-01.html#cấu-trúc-môn-học-và-kỳ-vọng",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.6 Cấu trúc môn học và kỳ vọng",
-    "text": "1.6 Cấu trúc môn học và kỳ vọng\nNhư đã trình bày ở trang Đề cương:\n\n15 tuần × 3 tiết = 45 tiết lên lớp.\nĐọc trước mỗi buổi 1 chương giáo trình.\n3 bài tập (Tuần 3-4, 6-8, 10-12).\nKiểm tra giữa kỳ tuần 8, thuyết trình nhóm tuần 15, thi cuối kỳ.\n\n\n\n\n\n\n\nWarning⚠️ Khuyến nghị thực tế\n\n\n\nMôn này nhiều khái niệm trừu tượng. Nếu chỉ “học thuộc” sẽ rất khó nhớ và khó dùng. Hãy:\n\nĐọc trước mỗi buổi — đừng đến lớp với đầu trống.\nLiên hệ thực tế — mỗi khái niệm thử nghĩ ra 1 ví dụ Việt Nam đương đại.\nĐặt câu hỏi — không hiểu thì hỏi ngay, đừng đợi đến kiểm tra.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#tự-kiểm-tra",
-    "href": "lectures/week-01.html#tự-kiểm-tra",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "1.7 Tự kiểm tra",
-    "text": "1.7 Tự kiểm tra\n\nCâu hỏi tự luận ngắn\n\nPhân biệt quản lý kinh tế với quản trị kinh doanh. Đưa ra một ví dụ cho mỗi loại.\nTại sao nói quản lý kinh tế vừa là khoa học vừa là nghệ thuật? Liệt kê 2 ví dụ cho mỗi vế.\nVai trò của môn Nguyên lý QLKT với người sẽ làm việc tại cơ quan nhà nước về kinh tế là gì?\n\n\n\nBài tập nhỏ\nChọn một chính sách kinh tế gần đây của Việt Nam (vd: gói hỗ trợ Covid 2021, giảm thuế VAT 2024, v.v.) — phân tích bằng năm thành tố của quản lý kinh tế (chủ thể, đối tượng, mục tiêu, công cụ, môi trường). Viết ngắn 300–400 từ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-01.html#đọc-thêm",
-    "href": "lectures/week-01.html#đọc-thêm",
-    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
-    "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nĐỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). Giáo trình Quản lý kinh tế, Chương 1.\nAcemoglu, D., & Robinson, J. A. (2012). Why Nations Fail, Chương 3: “The making of prosperity and poverty”.\nVăn kiện Đại hội Đảng XIII, mục III.2: “Hoàn thiện toàn diện, đồng bộ thể chế phát triển nền kinh tế thị trường định hướng XHCN”.\n\n\nTuần tiếp theo: Tuần 2 — Lịch sử tư tưởng quản lý kinh tế →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-07.html",
-    "href": "lectures/week-07.html",
-    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Đòn bẩy kinh tế; mệnh lệnh hành chính; thuyết phục; kết hợp linh hoạt.\nVận dụng được khung phân tích của tuần 07 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 07 — Phương pháp quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-07.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-07.html#dàn-ý-dự-kiến",
-    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 07 — Phương pháp quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-07.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-07.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nĐòn bẩy kinh tế\nmệnh lệnh hành chính\nthuyết phục\nkết hợp linh hoạt",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 07 — Phương pháp quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-07.html#đọc-trước",
-    "href": "lectures/week-07.html#đọc-trước",
-    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 07 — Phương pháp quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-07.html#tự-kiểm-tra",
-    "href": "lectures/week-07.html#tự-kiểm-tra",
-    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 07 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 6 | Tuần tiếp theo: Tuần 8 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 07 — Phương pháp quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-08.html",
-    "href": "lectures/week-08.html",
-    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Năng lực lãnh đạo; quy hoạch cán bộ; thông tin bất cân xứng; quyết định trong điều kiện rủi ro.\nVận dụng được khung phân tích của tuần 08 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 08 — Cán bộ và thông tin trong QLKT"
-    ]
-  },
-  {
-    "objectID": "lectures/week-08.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-08.html#dàn-ý-dự-kiến",
-    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 08 — Cán bộ và thông tin trong QLKT"
-    ]
-  },
-  {
-    "objectID": "lectures/week-08.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-08.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nNăng lực lãnh đạo\nquy hoạch cán bộ\nthông tin bất cân xứng\nquyết định trong điều kiện rủi ro",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 08 — Cán bộ và thông tin trong QLKT"
-    ]
-  },
-  {
-    "objectID": "lectures/week-08.html#đọc-trước",
-    "href": "lectures/week-08.html#đọc-trước",
-    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 08 — Cán bộ và thông tin trong QLKT"
-    ]
-  },
-  {
-    "objectID": "lectures/week-08.html#tự-kiểm-tra",
-    "href": "lectures/week-08.html#tự-kiểm-tra",
-    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 08 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 7 | Tuần tiếp theo: Tuần 9 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 08 — Cán bộ và thông tin trong QLKT"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html",
-    "href": "lectures/week-14.html",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Hội nhập tài chính; cam kết WTO; FTA thế hệ mới; chủ quyền chính sách.\nVận dụng được khung phân tích của tuần 14 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-14.html#dàn-ý-dự-kiến",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-14.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nHội nhập tài chính\ncam kết WTO\nFTA thế hệ mới\nchủ quyền chính sách",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html#đọc-trước",
-    "href": "lectures/week-14.html#đọc-trước",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html#ví-dụ-định-lượng-với-stata",
-    "href": "lectures/week-14.html#ví-dụ-định-lượng-với-stata",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "Ví dụ định lượng với Stata",
-    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 14\nimport delimited \"data/topic-week-14.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-14.html#tự-kiểm-tra",
-    "href": "lectures/week-14.html#tự-kiểm-tra",
-    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 14 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 13 | Tuần tiếp theo: Tuần 15 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần IV — QLKT Việt Nam",
-      "Tuần 14 — Hội nhập kinh tế quốc tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-06.html",
-    "href": "lectures/week-06.html",
-    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Tập trung-phân cấp; mô hình trực tuyến; ma trận; hỗn hợp.\nVận dụng được khung phân tích của tuần 06 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-06.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-06.html#dàn-ý-dự-kiến",
-    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-06.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-06.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nTập trung-phân cấp\nmô hình trực tuyến\nma trận\nhỗn hợp",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-06.html#đọc-trước",
-    "href": "lectures/week-06.html#đọc-trước",
-    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-06.html#tự-kiểm-tra",
-    "href": "lectures/week-06.html#tự-kiểm-tra",
-    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 06 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 5 | Tuần tiếp theo: Tuần 7 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần II — Hệ thống QLKT",
-      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-03.html",
-    "href": "lectures/week-03.html",
-    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Quy luật giá trị; cung-cầu; cạnh tranh; tiết kiệm thời gian lao động xã hội.\nVận dụng được khung phân tích của tuần 03 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
-    ]
-  },
-  {
-    "objectID": "lectures/week-03.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-03.html#dàn-ý-dự-kiến",
-    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
-    ]
-  },
-  {
-    "objectID": "lectures/week-03.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-03.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nQuy luật giá trị\ncung-cầu\ncạnh tranh\ntiết kiệm thời gian lao động xã hội",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
-    ]
-  },
-  {
-    "objectID": "lectures/week-03.html#đọc-trước",
-    "href": "lectures/week-03.html#đọc-trước",
-    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
-    ]
-  },
-  {
-    "objectID": "lectures/week-03.html#tự-kiểm-tra",
-    "href": "lectures/week-03.html#tự-kiểm-tra",
-    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 03 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 2 | Tuần tiếp theo: Tuần 4 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
-    ]
-  },
-  {
-    "objectID": "lectures/week-02.html",
-    "href": "lectures/week-02.html",
-    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
-    "section": "",
-    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Trường phái cổ điển; Marxist; Keynes; tân cổ điển; thể chế mới.\nVận dụng được khung phân tích của tuần 02 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-02.html#dàn-ý-dự-kiến",
-    "href": "lectures/week-02.html#dàn-ý-dự-kiến",
-    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
-    "section": "Dàn ý dự kiến",
-    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-02.html#khái-niệm-cốt-lõi-sẽ-học",
-    "href": "lectures/week-02.html#khái-niệm-cốt-lõi-sẽ-học",
-    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
-    "section": "Khái niệm cốt lõi sẽ học",
-    "text": "Khái niệm cốt lõi sẽ học\n\nTrường phái cổ điển\nMarxist\nKeynes\ntân cổ điển\nthể chế mới",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-02.html#đọc-trước",
-    "href": "lectures/week-02.html#đọc-trước",
-    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
-    "section": "Đọc trước",
-    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "lectures/week-02.html#tự-kiểm-tra",
-    "href": "lectures/week-02.html#tự-kiểm-tra",
-    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
-    "section": "Tự kiểm tra",
-    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 02 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 1 | Tuần tiếp theo: Tuần 3 →",
-    "crumbs": [
-      "Trang chủ",
-      "Phần I — Cơ sở lý luận",
-      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
-    ]
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Đề cương môn học",
-    "section": "",
-    "text": "Mục\nNội dung\n\n\n\n\nTên môn học\nNguyên lý Quản lý Kinh tế\n\n\nMã môn\ncập nhật mã môn theo chương trình\n\n\nSố tín chỉ\n3\n\n\nTổng thời lượng\n45 tiết lên lớp + ~90 giờ tự học\n\n\nHọc kỳ\ncập nhật\n\n\nĐối tượng\nSinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý\n\n\nĐiều kiện tiên quyết\nKinh tế Vi mô, Kinh tế Vĩ mô, Thống kê\n\n\nHình thức\nTrực tiếp kết hợp tự học có hướng dẫn"
-  },
-  {
-    "objectID": "syllabus.html#thông-tin-chung",
-    "href": "syllabus.html#thông-tin-chung",
-    "title": "Đề cương môn học",
-    "section": "",
-    "text": "Mục\nNội dung\n\n\n\n\nTên môn học\nNguyên lý Quản lý Kinh tế\n\n\nMã môn\ncập nhật mã môn theo chương trình\n\n\nSố tín chỉ\n3\n\n\nTổng thời lượng\n45 tiết lên lớp + ~90 giờ tự học\n\n\nHọc kỳ\ncập nhật\n\n\nĐối tượng\nSinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý\n\n\nĐiều kiện tiên quyết\nKinh tế Vi mô, Kinh tế Vĩ mô, Thống kê\n\n\nHình thức\nTrực tiếp kết hợp tự học có hướng dẫn"
-  },
-  {
-    "objectID": "syllabus.html#mô-tả-môn-học",
-    "href": "syllabus.html#mô-tả-môn-học",
-    "title": "Đề cương môn học",
-    "section": "2. Mô tả môn học",
-    "text": "2. Mô tả môn học\nMôn học cung cấp hệ thống tri thức nền tảng về quản lý nền kinh tế quốc dân, bao gồm: bản chất, đặc điểm và quy luật khách quan của quản lý kinh tế; hệ thống quản lý kinh tế và các thành tố cấu thành; chức năng, phương pháp và công cụ quản lý; các chính sách kinh tế chủ yếu của Nhà nước; và đặc thù quản lý kinh tế trong điều kiện Việt Nam — nền kinh tế thị trường định hướng xã hội chủ nghĩa và quá trình hội nhập kinh tế quốc tế."
-  },
-  {
-    "objectID": "syllabus.html#mục-tiêu-môn-học",
-    "href": "syllabus.html#mục-tiêu-môn-học",
-    "title": "Đề cương môn học",
-    "section": "3. Mục tiêu môn học",
-    "text": "3. Mục tiêu môn học\nSau khi hoàn thành môn học, sinh viên có khả năng:\n\nVề kiến thức (K)\n\nK1. Trình bày được bản chất, đặc trưng và các quy luật khách quan của quản lý kinh tế.\nK2. Phân tích được cấu trúc của hệ thống quản lý kinh tế và mối quan hệ giữa các thành tố.\nK3. Hiểu rõ các chức năng, phương pháp và công cụ quản lý kinh tế của Nhà nước.\nK4. Đánh giá được vai trò và đặc thù của Nhà nước Việt Nam trong quản lý nền kinh tế.\n\n\n\nVề kỹ năng (S)\n\nS1. Vận dụng được khung phân tích QLKT để mổ xẻ một vấn đề chính sách thực tế.\nS2. Đọc hiểu được các báo cáo kinh tế và tài liệu chính sách của Chính phủ.\nS3. Sử dụng được công cụ định lượng cơ bản (Stata) để phân tích dữ liệu kinh tế vĩ mô.\nS4. Trình bày một vấn đề QLKT có cấu trúc khoa học, bằng cả văn bản và thuyết trình.\n\n\n\nVề thái độ (A)\n\nA1. Có thái độ khách quan, dựa trên bằng chứng khi phân tích vấn đề kinh tế.\nA2. Có ý thức trách nhiệm với các vấn đề phát triển kinh tế của Việt Nam."
-  },
-  {
-    "objectID": "syllabus.html#đánh-giá",
-    "href": "syllabus.html#đánh-giá",
-    "title": "Đề cương môn học",
-    "section": "4. Đánh giá",
-    "text": "4. Đánh giá\n\n\n\n\n\n\n\n\nHình thức\nTỷ trọng\nMô tả\n\n\n\n\nChuyên cần\n10%\nTham gia đầy đủ, tích cực trong giờ học\n\n\nBài tập về nhà\n15%\n3 bài tập / học kỳ, có sử dụng dữ liệu thực\n\n\nKiểm tra giữa kỳ\n25%\nTuần 8, trắc nghiệm + tự luận, 60 phút\n\n\nThuyết trình nhóm\n20%\nTuần 15, nhóm 3–5 sinh viên, đề tài tự chọn từ danh mục\n\n\nThi cuối kỳ\n30%\nTự luận, 90 phút, không dùng tài liệu\n\n\nTổng\n100%\n\n\n\n\n\nTiêu chí đánh giá thuyết trình nhóm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nNội dung học thuật (sử dụng đúng khái niệm, có bằng chứng)\n40%\n\n\nCấu trúc và logic trình bày\n20%\n\n\nSử dụng dữ liệu định lượng (có Stata code, biểu đồ)\n20%\n\n\nKỹ năng trình bày và phản biện\n20%"
-  },
-  {
-    "objectID": "syllabus.html#tài-liệu",
-    "href": "syllabus.html#tài-liệu",
-    "title": "Đề cương môn học",
-    "section": "5. Tài liệu",
-    "text": "5. Tài liệu\n\nGiáo trình chính\n\n\n\n\n\n\nPhần này cần cập nhật cho phù hợp với chương trình của trường bạn.\n\n\n\n\nĐỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). Giáo trình Quản lý kinh tế. Nhà xuất bản Đại học Kinh tế Quốc dân. (Cập nhật phiên bản mới nhất)\n\n\n\nTài liệu tham khảo bắt buộc\n\nVũ Đình Bách (chủ biên). Quản lý nhà nước về kinh tế. NXB Lao động.\nPhan Huy Đường. Quản lý nhà nước về kinh tế. NXB Đại học Quốc gia Hà Nội.\n\n\n\nTài liệu tham khảo mở rộng (tiếng Anh)\n\nAcemoglu, D., & Robinson, J. A. (2012). Why Nations Fail: The Origins of Power, Prosperity, and Poverty. Crown Business.\nStiglitz, J. E. (2015). The Great Divide. W. W. Norton.\nRodrik, D. (2007). One Economics, Many Recipes. Princeton University Press.\nWorld Bank. Vietnam Development Report (cập nhật hàng năm). worldbank.org/vietnam\n\n\n\nVăn bản pháp luật và chính sách\n\nHiến pháp 2013 (Điều 50–54 về chế độ kinh tế).\nVăn kiện Đại hội Đảng XIII (mục Định hướng phát triển kinh tế).\nLuật Quản lý nợ công (sửa đổi).\nLuật Ngân sách Nhà nước.\n\n\n\nPhần mềm sử dụng\n\nStata (bản từ 14 trở lên) cho phân tích dữ liệu vĩ mô.\nExcel hoặc Google Sheets cho bài tập cơ bản.\n(Tùy chọn) R hoặc Python — cho sinh viên muốn mở rộng."
-  },
-  {
-    "objectID": "syllabus.html#quy-định-lớp-học",
-    "href": "syllabus.html#quy-định-lớp-học",
-    "title": "Đề cương môn học",
-    "section": "6. Quy định lớp học",
-    "text": "6. Quy định lớp học\n\nChuyên cần\n\nVắng quá 20% số tiết → không đủ điều kiện dự thi cuối kỳ.\nĐến muộn 15 phút trở lên tính là vắng tiết.\n\n\n\nBài tập về nhà\n\nNộp đúng hạn — chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài tập có sử dụng Stata phải nộp kèm file .do và .log.\n\n\n\nLiêm chính học thuật\n\nKhông sao chép. Phát hiện đạo văn → điểm 0 cho cấu phần đó, có thể bị xử lý kỷ luật.\nSử dụng AI (ChatGPT, Claude…) được khuyến khích cho nghiên cứu và học tập, nhưng phải ghi nhận minh bạch: ghi rõ phần nào do AI hỗ trợ, prompt sử dụng. Không khai báo = đạo văn."
-  },
-  {
-    "objectID": "syllabus.html#lịch-học-tóm-tắt",
-    "href": "syllabus.html#lịch-học-tóm-tắt",
-    "title": "Đề cương môn học",
-    "section": "7. Lịch học tóm tắt",
-    "text": "7. Lịch học tóm tắt\nXem trang Lịch học để có bảng 15 tuần đầy đủ."
-  },
-  {
-    "objectID": "syllabus.html#cập-nhật",
-    "href": "syllabus.html#cập-nhật",
-    "title": "Đề cương môn học",
-    "section": "8. Cập nhật",
-    "text": "8. Cập nhật\nĐề cương này có thể được điều chỉnh trong quá trình giảng dạy. Mọi thay đổi được công bố trong tuần kế tiếp.\nPhiên bản đề cương: cập nhật cuối"
-  },
-  {
-    "objectID": "problem-sets/ps-01.html",
-    "href": "problem-sets/ps-01.html",
-    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
-    "section": "",
-    "text": "WarningHạn nộp\n\n\n\n23:59, Chủ nhật cuối Tuần 4 — qua email giảng viên với tiêu đề: PS01-MSSV-HọTên"
-  },
-  {
-    "objectID": "problem-sets/ps-01.html#phần-a-tự-luận-40-điểm",
-    "href": "problem-sets/ps-01.html#phần-a-tự-luận-40-điểm",
-    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
-    "section": "Phần A — Tự luận (40 điểm)",
-    "text": "Phần A — Tự luận (40 điểm)\n\nCâu 1 (15đ)\nPhân biệt quản lý kinh tế với quản trị kinh doanh. Cho 2 ví dụ thực tế cho mỗi loại để minh họa.\nYêu cầu: 250–350 từ, có dẫn chiếu khái niệm từ giáo trình.\n\n\nCâu 2 (15đ)\nTrình bày năm thành tố của một hệ thống quản lý kinh tế (chủ thể, đối tượng, mục tiêu, công cụ, môi trường). Lấy một chính sách kinh tế gần đây của Việt Nam (ví dụ: gói hỗ trợ doanh nghiệp Covid 2021–2022; giảm thuế VAT 2024; chính sách năng lượng tái tạo…) và phân tích nó qua năm thành tố trên.\nYêu cầu: 350–500 từ.\n\n\nCâu 3 (10đ)\nTại sao nói “quản lý kinh tế vừa là khoa học vừa là nghệ thuật”? Theo bạn, yếu tố nào khiến quản lý kinh tế trong điều kiện Việt Nam đặc biệt cần “tính nghệ thuật”?\nYêu cầu: 200–300 từ."
-  },
-  {
-    "objectID": "problem-sets/ps-01.html#phần-b-định-lượng-với-stata-40-điểm",
-    "href": "problem-sets/ps-01.html#phần-b-định-lượng-với-stata-40-điểm",
-    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
-    "section": "Phần B — Định lượng với Stata (40 điểm)",
-    "text": "Phần B — Định lượng với Stata (40 điểm)\n\nBài B1 (20đ) — Phân tích tăng trưởng GDP Việt Nam\nSử dụng bộ dữ liệu vn_gdp_1986_2024.csv (tải từ thư mục data/).\nYêu cầu:\n\nĐọc dữ liệu và mô tả tổng quan (mean, sd, min, max của tốc độ tăng GDP).\nVẽ biểu đồ tăng trưởng GDP qua các năm.\nChia thành 4 giai đoạn: 1986–1996, 1997–2006, 2007–2019, 2020–2024. Tính tăng trưởng trung bình mỗi giai đoạn.\nBình luận: giai đoạn nào tăng trưởng cao nhất? Vì sao? Có chính sách hoặc cú sốc nào ứng với từng giai đoạn?\n\nNộp kèm:\n\nFile .do chứa code đầy đủ, có comment tiếng Việt.\nFile .log chứa output.\nBiểu đồ xuất ra dạng .png hoặc .pdf.\nFile .docx bình luận ~300 từ.\n\nCode khởi đầu (bạn mở rộng thêm):\n* PS01 - B1: Phân tích tăng trưởng GDP Việt Nam 1986-2024\n* Họ tên: ...\n* MSSV: ...\n\nclear all\nset more off\ncd \"đường-dẫn-thư-mục-của-bạn\"\n\nimport delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\ntsset year\n\n* Câu 1: Mô tả tổng quan\nsummarize gdp_growth\n\n* Câu 2: Biểu đồ\ntwoway (line gdp_growth year), ///\n    title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n    ytitle(\"Tăng trưởng (%)\") xtitle(\"Năm\")\n\n* Câu 3: Theo giai đoạn (bạn tự viết)\n* gen period = ...\n\n* Câu 4: Bình luận trong file .docx riêng\n\n\nBài B2 (20đ) — So sánh quy mô khu vực kinh tế\nSử dụng bộ vn_sector_share.csv chứa tỷ trọng GDP của 3 khu vực (Nông nghiệp, Công nghiệp-Xây dựng, Dịch vụ) qua các năm.\nYêu cầu:\n\nVẽ biểu đồ chồng (stacked area) thể hiện tỷ trọng 3 khu vực theo thời gian.\nTính sự thay đổi tỷ trọng từng khu vực qua 10 năm gần nhất.\nLiên hệ kết quả với quá trình chuyển dịch cơ cấu kinh tế."
-  },
-  {
-    "objectID": "problem-sets/ps-01.html#phần-c-đọc-và-bình-luận-20-điểm",
-    "href": "problem-sets/ps-01.html#phần-c-đọc-và-bình-luận-20-điểm",
-    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
-    "section": "Phần C — Đọc và bình luận (20 điểm)",
-    "text": "Phần C — Đọc và bình luận (20 điểm)\nĐọc một trong các tài liệu sau:\n\nVăn kiện Đại hội Đảng XIII, mục III.2 về thể chế kinh tế thị trường định hướng XHCN.\nWorld Bank, Vietnam Development Report (phiên bản mới nhất), chương Tổng quan.\nAcemoglu & Robinson (2012), Why Nations Fail, Chapter 1: “So Close and Yet So Different” (cập nhật bản dịch tiếng Việt nếu có).\n\nViết bình luận 300 từ trả lời: tác giả/văn bản đang nói gì? Bạn có đồng ý không? Áp dụng vào Việt Nam như thế nào?"
-  },
-  {
-    "objectID": "problem-sets/ps-01.html#tiêu-chí-chấm",
-    "href": "problem-sets/ps-01.html#tiêu-chí-chấm",
-    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nĐúng khái niệm, đúng phương pháp\n40%\n\n\nVí dụ và bằng chứng cụ thể, có dẫn nguồn\n25%\n\n\nLogic và cấu trúc lập luận\n20%\n\n\nTrình bày sạch, code chạy được, có comment\n15%"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bài tập – Nguyên lý Quản lý Kinh tế</title>
+<title>Tiểu luận và bài tập lớn – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,66 +68,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -142,7 +82,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế (DTU301)</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -169,11 +109,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../problem-sets/index.html" aria-current="page"> 
-<span class="menu-text">Bài tập</span></a>
+<span class="menu-text">Tiểu luận / Bài tập</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../exams/index.html"> 
-<span class="menu-text">Đề thi mẫu</span></a>
+<span class="menu-text">Đánh giá</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -192,8 +132,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bài tập</h1>
-<p class="subtitle lead">3 Problem sets cho học kỳ</p>
+<h1 class="title">Tiểu luận và bài tập lớn</h1>
+<p class="subtitle lead">Theo cấu trúc đánh giá DTU301</p>
 </div>
 
 
@@ -210,54 +150,143 @@ window.Quarto = {
 </header>
 
 
-<section id="quy-định-chung" class="level2">
-<h2 class="anchored" data-anchor-id="quy-định-chung">Quy định chung</h2>
+<section id="cấu-trúc-đánh-giá" class="level2">
+<h2 class="anchored" data-anchor-id="cấu-trúc-đánh-giá">Cấu trúc đánh giá</h2>
+<p>Theo đề cương DTU301, đánh giá học phần gồm <strong>3 cấu phần</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 35%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hình thức</th>
+<th style="text-align: center;">Trọng số</th>
+<th>Phạm vi</th>
+<th>CLO</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Đánh giá quá trình</strong></td>
+<td style="text-align: center;">10%</td>
+<td>Liên tục</td>
+<td>CLO1, CLO4</td>
+</tr>
+<tr class="even">
+<td><strong>Đánh giá giữa kỳ</strong></td>
+<td style="text-align: center;">30%</td>
+<td>Chương 1–2</td>
+<td>CLO1, CLO2</td>
+</tr>
+<tr class="odd">
+<td><strong>Đánh giá cuối kỳ</strong></td>
+<td style="text-align: center;">60%</td>
+<td>Toàn bộ học phần (tại Seminar Buổi 14–15)</td>
+<td>CLO2, CLO3, CLO4, CLO5</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bài-tập-lớn-theo-chương" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-lớn-theo-chương">Bài tập lớn theo chương</h2>
+<p>Mỗi chương có <strong>bài tập lớn</strong> đi kèm, phục vụ vừa đánh giá quá trình vừa chuẩn bị cho giữa kỳ / cuối kỳ:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Chương</th>
+<th style="text-align: center;">Buổi</th>
+<th>Bài tập lớn</th>
+<th>Liên kết</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">1–2</td>
+<td>Phân tích vai trò Nhà nước qua <strong>3 lăng kính đạo đức</strong> (Bentham / Kant / Rawls)</td>
+<td><a href="../lectures/buoi-01.html">Buổi 1</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">3–5</td>
+<td>Phân tích <strong>thất bại thị trường</strong> và vai trò <strong>quyền sở hữu, thể chế</strong> tại Việt Nam</td>
+<td><a href="../lectures/buoi-05.html">Buổi 5</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">6–8</td>
+<td>Đánh giá chính sách vĩ mô VN 2020–2024 qua khung <strong>AD-AS, Phillips</strong></td>
+<td><a href="../lectures/buoi-08.html">Buổi 8</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">9–11</td>
+<td>Phân tích chính sách <strong>tỷ giá / dòng vốn</strong> Việt Nam, 4–6 trang</td>
+<td><a href="../lectures/buoi-11.html">Buổi 11</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">12–13</td>
+<td>Đề xuất <strong>chiến lược phát triển kinh tế</strong> cho 1 tỉnh / vùng, đối chiếu <strong>PCI/PAPI/PAR Index</strong></td>
+<td><a href="../lectures/buoi-13.html">Buổi 13</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quy-định-nộp-bài" class="level2">
+<h2 class="anchored" data-anchor-id="quy-định-nộp-bài">Quy định nộp bài</h2>
 <ul>
-<li>Mỗi học kỳ có <strong>3 Problem Sets</strong>, mỗi PS chiếm 5% tổng điểm.</li>
-<li>Hạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.</li>
-<li>Bài có sử dụng Stata <strong>phải nộp kèm</strong> file <code>.do</code> (code) và <code>.log</code> (kết quả chạy).</li>
-<li>Khuyến khích thảo luận nhóm nhưng <strong>viết bài độc lập</strong>. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.</li>
-<li>Sử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ.</li>
+<li><strong>Tiêu đề email</strong>: <code>DTU301-MSSV-HọTên-Bài[số]</code></li>
+<li><strong>Định dạng</strong>: PDF (Word convert) + file dữ liệu kèm theo nếu có</li>
+<li><strong>Hạn nộp</strong>: giảng viên thông báo cụ thể từng bài</li>
+<li><strong>Liêm chính học thuật</strong>: bài giống nhau <strong>đến 50%</strong> trừ 1/2 số điểm; <strong>trên 50%</strong> bị điểm 0</li>
+<li><strong>Sử dụng AI</strong>: được phép nhưng phải <strong>công bố phạm vi sử dụng</strong> khi giảng viên yêu cầu; tự kiểm chứng dữ liệu; không sao chép trực tiếp đầu ra AI</li>
 </ul>
 </section>
-<section id="cấu-trúc-một-problem-set" class="level2">
-<h2 class="anchored" data-anchor-id="cấu-trúc-một-problem-set">Cấu trúc một Problem Set</h2>
-<p>Mỗi PS bao gồm:</p>
-<ol type="1">
-<li><strong>Phần A — Tự luận</strong> (40%): 2–3 câu phân tích, 200–400 từ mỗi câu.</li>
-<li><strong>Phần B — Tính toán / Định lượng</strong> (40%): bài tập với dữ liệu thực, viết code Stata.</li>
-<li><strong>Phần C — Đọc và bình luận</strong> (20%): đọc 1 bài báo / chính sách và bình luận ngắn 300 từ.</li>
-</ol>
+<section id="tiêu-chí-chấm-chung" class="level2">
+<h2 class="anchored" data-anchor-id="tiêu-chí-chấm-chung">Tiêu chí chấm chung</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tiêu chí</th>
+<th style="text-align: center;">Trọng số</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cấu trúc và logic lập luận</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="even">
+<td>Chất lượng nội dung học thuật</td>
+<td style="text-align: center;">25%</td>
+</tr>
+<tr class="odd">
+<td>Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="even">
+<td>Phân tích và phản biện</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="odd">
+<td>Đề xuất khả thi cho Việt Nam</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="even">
+<td>Sử dụng AI có trách nhiệm + liêm chính học thuật</td>
+<td style="text-align: center;">10%</td>
+</tr>
+</tbody>
+</table>
+
+
 </section>
-<section id="danh-sách-bài-tập" class="level2">
-<h2 class="anchored" data-anchor-id="danh-sách-bài-tập">Danh sách bài tập</h2>
 
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1789405200000" data-listing-file-modified-sort="1779988783214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="597">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../problem-sets/ps-01.html" class="no-external">Problem Set 01 — Khái niệm và hệ thống QLKT</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../problem-sets/ps-01.html" class="no-external">Bao quát Tuần 1–4. Phát: Tuần 3. Hạn nộp: cuối Tuần 4.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../problem-sets/ps-01.html" class="no-external">
-<div class="listing-date">
-15 thg 9, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -331,7 +360,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/dongkien\.github\.io\/material-building\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -669,10 +698,10 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 — Học liệu mở · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a></p>
+<p>© 2026 — Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, ĐH Ngoại Thương · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a></p>
 </div>   
     <div class="nav-footer-center">
-<p>Giảng viên: <em>cập nhật tên tại đây</em></p>
+<p>TS. Đỗ Ngọc Kiên — Trưởng Bộ môn</p>
 </div>
     <div class="nav-footer-right">
 <p>Tạo bằng <a href="https://quarto.org/">Quarto</a></p>

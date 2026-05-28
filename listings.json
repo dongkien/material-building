@@ -1,28 +1,22 @@
 [
   {
-    "listing": "/problem-sets/index.html",
-    "items": [
-      "/problem-sets/ps-01.html"
-    ]
-  },
-  {
     "listing": "/lectures/index.html",
     "items": [
-      "/lectures/week-01.html",
-      "/lectures/week-02.html",
-      "/lectures/week-03.html",
-      "/lectures/week-04.html",
-      "/lectures/week-05.html",
-      "/lectures/week-06.html",
-      "/lectures/week-07.html",
-      "/lectures/week-08.html",
-      "/lectures/week-09.html",
-      "/lectures/week-10.html",
-      "/lectures/week-11.html",
-      "/lectures/week-12.html",
-      "/lectures/week-13.html",
-      "/lectures/week-14.html",
-      "/lectures/week-15.html"
+      "/lectures/buoi-01.html",
+      "/lectures/buoi-02.html",
+      "/lectures/buoi-03.html",
+      "/lectures/buoi-04.html",
+      "/lectures/buoi-05.html",
+      "/lectures/buoi-06.html",
+      "/lectures/buoi-07.html",
+      "/lectures/buoi-08.html",
+      "/lectures/buoi-09.html",
+      "/lectures/buoi-10.html",
+      "/lectures/buoi-11.html",
+      "/lectures/buoi-12.html",
+      "/lectures/buoi-13.html",
+      "/lectures/buoi-14.html",
+      "/lectures/buoi-15.html"
     ]
   }
 ]
