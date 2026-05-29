@@ -1,5 +1,5 @@
 # ============================================================
-# Nguyên lý Quản lý Kinh tế (DTU301) — Học liệu mở FTU
+# Nguyên lý Quản lý Kinh tế — Học liệu mở FTU
 # Quarto Website project
 # ============================================================
 
@@ -19,8 +19,8 @@ execute-dir: project
 
 # ----- Site config -----
 website:
-  title: "Nguyên lý Quản lý Kinh tế (DTU301)"
-  description: "Học liệu mở môn DTU301 — Nguyên lý Quản lý Kinh tế. Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, Trường ĐH Ngoại Thương."
+  title: "Nguyên lý Quản lý Kinh tế"
+  description: "Học liệu mở môn — Nguyên lý Quản lý Kinh tế. Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, Trường ĐH Ngoại Thương."
   search:
     location: navbar
     type: overlay
@@ -38,14 +38,49 @@ website:
         text: "Lịch học"
       - href: lectures/index.qmd
         text: "Bài giảng"
-      - href: stata-lab/index.qmd
-        text: "Stata Lab"
+      - text: "Stata / R Lab"
+        menu:
+          - href: stata-lab/index.qmd
+            text: "Stata Lab"
+          - href: r-lab/index.qmd
+            text: "R Lab"
       - href: problem-sets/index.qmd
         text: "Tiểu luận / Bài tập"
       - href: exams/index.qmd
         text: "Đánh giá"
+      - href: nguoi-huong-dan.qmd
+        text: "Người hướng dẫn"
 
   sidebar:
+    - id: r-lab
+      title: "R Lab"
+      style: docked
+      align: left
+      collapse-level: 2
+      contents:
+        - text: "← Trang chủ"
+          href: index.qmd
+        - r-lab/index.qmd
+        - section: "Hướng dẫn"
+          contents:
+            - r-lab/lab-00.qmd
+        - section: "Lab theo buổi"
+          contents:
+            - r-lab/lab-01.qmd
+            - r-lab/lab-02.qmd
+            - r-lab/lab-03.qmd
+            - r-lab/lab-04.qmd
+            - r-lab/lab-05.qmd
+            - r-lab/lab-06.qmd
+            - r-lab/lab-07.qmd
+            - r-lab/lab-08.qmd
+            - r-lab/lab-09.qmd
+            - r-lab/lab-10.qmd
+            - r-lab/lab-11.qmd
+            - r-lab/lab-12.qmd
+            - r-lab/lab-13.qmd
+            - r-lab/lab-14.qmd
+            - r-lab/lab-15.qmd
     - id: stata-lab
       title: "Stata Lab"
       style: docked

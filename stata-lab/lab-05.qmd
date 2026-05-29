@@ -25,7 +25,7 @@ Sau Lab 5, bạn có thể:
 Mở do-file mới:
 
 ```stata
-* Lab 5 — DTU301 — So sánh DNNN vs KTTN vs FDI
+* Lab 5 — So sánh DNNN vs KTTN vs FDI
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -210,7 +210,7 @@ Nộp 3 file:
 | `lab05_<tên>.log` | Output Stata |
 | `lab05_<tên>.pdf` (2-3 trang) | Trả lời 5 câu hỏi + 3 box plot |
 
-**Tiêu đề email**: `DTU301-LAB05-MSSV-HọTên`
+**Tiêu đề email**: `LAB05-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

@@ -23,7 +23,7 @@ Sau Lab 8, bạn có thể:
 ## 1. Dataset CPI và thất nghiệp Việt Nam
 
 ```stata
-* Lab 8 — DTU301 — Đường Phillips Việt Nam 2010-2024
+* Lab 8 — Đường Phillips Việt Nam 2010-2024
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -219,7 +219,7 @@ log close
 | `lab08_<tên>.log` | Output Stata |
 | `lab08_<tên>.pdf` (2-3 trang) | 5 câu hỏi + 2 biểu đồ Phillips |
 
-**Tiêu đề email**: `DTU301-LAB08-MSSV-HọTên`
+**Tiêu đề email**: `LAB08-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

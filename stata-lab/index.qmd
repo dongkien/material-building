@@ -1,12 +1,12 @@
 ---
 title: "Stata Lab"
-subtitle: "Tự học Stata qua 15 bài thực hành — tương ứng 15 buổi của môn DTU301"
+subtitle: "Tự học Stata qua 15 bài thực hành — tương ứng 15 buổi của môn "
 toc: true
 ---
 
 ## Stata Lab là gì?
 
-Stata Lab là **chuỗi 15 bài thực hành tự nguyện** đi kèm môn DTU301. Mỗi lab tương ứng với một buổi giảng, lấy dữ liệu thực tế Việt Nam và quốc tế để vận dụng khái niệm vừa học.
+Stata Lab là **chuỗi 15 bài thực hành tự nguyện** đi kèm môn . Mỗi lab tương ứng với một buổi giảng, lấy dữ liệu thực tế Việt Nam và quốc tế để vận dụng khái niệm vừa học.
 
 Mục tiêu:
 
@@ -15,6 +15,15 @@ Mục tiêu:
 - **Tự xây dựng bộ tài sản kỹ năng** (do-file, ghi chú) có thể dùng dài hạn.
 
 ::: {.callout-tip appearance="simple"}
+::: {.callout-tip appearance="simple"}
+## 🔄 Cũng có: R Lab song song
+
+R Lab cùng nội dung phân tích, **free 100%**, ggplot2 đẹp. Sinh viên chọn 1 trong 2 — hoặc làm cả hai (bonus cao hơn).
+
+→ [Xem R Lab](../r-lab/)
+:::
+
+
 ## 🎁 Cơ chế bonus
 
 Nộp Stata Lab có thể **cộng tới 0,5 điểm** vào điểm tổng kết (tối đa 5% bonus). Xem [Đánh giá](../exams/) để biết cách quy đổi.
@@ -43,7 +52,7 @@ Nộp Stata Lab có thể **cộng tới 0,5 điểm** vào điểm tổng kết
 
 ## Yêu cầu công cụ
 
-Có **3 cách** tiếp cận Stata cho sinh viên DTU301:
+Có **3 cách** tiếp cận Stata cho sinh viên :
 
 | Cách | Phù hợp | Chi phí |
 |---|---|---|
@@ -61,7 +70,7 @@ Mỗi lab có **deliverables** rõ ràng:
 2. **File `.log`** chứa output (kết quả chạy)
 3. **File `.pdf` ngắn** (1-2 trang) trả lời các câu hỏi suy nghĩ trong lab
 
-**Tiêu đề email**: `DTU301-LAB[số]-MSSV-HọTên` → gửi giảng viên trước hạn nộp công bố đầu kỳ.
+**Tiêu đề email**: `LAB[số]-MSSV-HọTên` → gửi giảng viên trước hạn nộp công bố đầu kỳ.
 
 ## Rubric chấm (đơn giản)
 

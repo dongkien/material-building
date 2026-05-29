@@ -39,7 +39,7 @@ Câu hỏi:
 ## 2. Tạo dataset cung-cầu
 
 ```stata
-* Lab 4 — DTU301 — Mô phỏng thuế Pigou cho ngành xi măng
+* Lab 4 — Mô phỏng thuế Pigou cho ngành xi măng
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -203,7 +203,7 @@ Nộp 3 file:
 | `lab04_<tên>.log` | Output Stata |
 | `lab04_<tên>.pdf` (2-3 trang) | Trả lời 5 câu hỏi + biểu đồ Pigou |
 
-**Tiêu đề email**: `DTU301-LAB04-MSSV-HọTên`
+**Tiêu đề email**: `LAB04-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

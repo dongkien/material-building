@@ -22,7 +22,7 @@ Sau Lab 0, bạn có thể:
 
 Đa số phòng máy của FTU có Stata cài sẵn. Lịch sử dụng:
 
-- Hỏi giảng viên về **lịch phòng máy** dành cho lớp DTU301
+- Hỏi giảng viên về **lịch phòng máy** dành cho lớp 
 - Mang theo **USB** để lưu file do/log/dataset của bạn
 - Mỗi buổi lên phòng máy 1-2 lần là đủ làm xong 1-2 lab
 
@@ -67,7 +67,7 @@ Cửa sổ thứ 6 — **Do-file Editor** — mở bằng nút "Do-file Editor" 
 Mở Do-file Editor (`Ctrl+9`) và gõ:
 
 ```stata
-* Lab 0 — DTU301 — Buổi học đầu tiên với Stata
+* Lab 0 — Buổi học đầu tiên với Stata
 * Họ tên: <điền tên>
 * MSSV: <điền MSSV>
 * Ngày: <điền ngày>
@@ -241,7 +241,7 @@ import excel "mydata.xlsx", firstrow clear         // Đọc Excel
 4. **Sử dụng `///`** để xuống dòng trong 1 lệnh dài
 5. **Bật `set more off`** đầu file để không phải bấm space
 6. **Save thường xuyên** dataset đã làm sạch
-7. **Tạo working directory chuyên cho DTU301**: `cd "đường-dẫn"` đầu file
+7. **Tạo working directory chuyên cho **: `cd "đường-dẫn"` đầu file
 
 ## 10. Lệnh giúp đỡ
 

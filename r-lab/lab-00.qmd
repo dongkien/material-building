@@ -1,0 +1,322 @@
+---
+title: "R Lab 0 — Cài R + RStudio + Tidyverse"
+subtitle: "Nền tảng trước khi vào 15 lab buổi"
+reading-time: "~30 phút thực hành"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Mục tiêu Lab 0
+
+Sau Lab 0, bạn có thể:
+
+- **Cài R + RStudio** trên Windows/macOS/Linux (hoàn toàn miễn phí)
+- **Cài tidyverse** + các package econ phổ biến
+- **Tải, đọc, ghi** dataset (`.csv`, `.xlsx`, `.dta`)
+- **Khám phá nhanh** dữ liệu bằng `glimpse()`, `summary()`, `count()`
+- **Viết script R** đầu tiên có comment tiếng Việt
+- **Render báo cáo** bằng Quarto/RMarkdown
+:::
+
+## 1. Cài R + RStudio
+
+R là *ngôn ngữ + công cụ chạy*. RStudio là *IDE* (môi trường viết code) đẹp nhất cho R.
+
+### Phương án A — Cài về máy cá nhân (khuyên dùng)
+
+#### Bước 1: Cài R
+
+| OS | Đường dẫn |
+|---|---|
+| **Windows** | https://cran.r-project.org/bin/windows/base/ — tải file `R-X.X.X-win.exe` |
+| **macOS** | https://cran.r-project.org/bin/macosx/ — tải `.pkg` cho chip Intel hoặc Apple Silicon |
+| **Linux/WSL** | `sudo apt install r-base` (Ubuntu) |
+
+#### Bước 2: Cài RStudio Desktop (free)
+
+- https://posit.co/download/rstudio-desktop/
+- Cài cùng OS với R
+
+Mở **RStudio** — bạn sẽ thấy 4 cửa sổ chính:
+
+| Cửa sổ | Vai trò |
+|---|---|
+| **Source** (trên trái) | Viết script `.R` hoặc `.qmd` |
+| **Console** (dưới trái) | Chạy lệnh trực tiếp |
+| **Environment** (trên phải) | Danh sách biến hiện có |
+| **Files / Plots / Help** (dưới phải) | Quản lý file, xem biểu đồ, đọc help |
+
+### Phương án B — Posit Cloud (online, free tier)
+
+Nếu không muốn cài:
+
+- Vào https://posit.cloud — đăng ký
+- Tạo new project — RStudio chạy trên trình duyệt
+- Free tier: 25 giờ/tháng (đủ cho R Lab DTU301)
+
+## 2. Cài tidyverse + các package cần
+
+Trong RStudio Console, gõ:
+
+```r
+# Bộ thư viện cốt lõi
+install.packages("tidyverse")    # dplyr + ggplot2 + readr + tibble + ...
+install.packages("haven")        # đọc Stata .dta
+install.packages("readxl")       # đọc Excel
+install.packages("fixest")       # hồi quy nâng cao (panel, IV, fixed effects)
+install.packages("modelsummary") # bảng hồi quy đẹp
+install.packages("ggthemes")     # theme đẹp cho ggplot2
+install.packages("scales")       # format số trên biểu đồ
+```
+
+Đợi vài phút. Sau khi cài xong, load:
+
+```r
+library(tidyverse)
+library(haven)
+```
+
+Bạn sẽ thấy thông báo các package được attach.
+
+## 3. Script R đầu tiên
+
+File > New File > **R Script** (hoặc `Ctrl+Shift+N`).
+
+```r
+# Lab 0 — Buổi học đầu tiên với R
+# Họ tên: <điền tên>
+# MSSV: <điền MSSV>
+# Ngày: <điền ngày>
+
+# Tải tidyverse
+library(tidyverse)
+
+# Dataset có sẵn: mtcars (32 mẫu xe)
+data(mtcars)
+
+# In thông báo
+print("R đang chạy. Bạn đã mở dataset mtcars")
+
+# Xem cấu trúc
+glimpse(mtcars)
+
+# Xem 5 dòng đầu
+head(mtcars, 5)
+```
+
+**Lưu file** với tên `lab00_<ten>.R`. Phím tắt: `Ctrl+S`.
+
+**Chạy file**: nhấn nút **Run** ở góc phải, hoặc:
+- `Ctrl+Enter`: chạy dòng đang chọn
+- `Ctrl+Shift+Enter`: chạy cả script
+
+## 4. Khám phá dataset — bốn lệnh cốt lõi
+
+### `glimpse()` — mô tả cấu trúc
+
+```r
+glimpse(mtcars)
+```
+
+Output sẽ cho:
+- **Số dòng** + **số cột**
+- **Kiểu dữ liệu** từng biến (dbl, int, fct, chr...)
+- **5 giá trị đầu** mỗi biến
+
+### `summary()` — thống kê mô tả
+
+```r
+summary(mtcars)
+summary(mtcars[, c("mpg", "hp", "wt")])
+```
+
+Output cho: Min, 1st Qu, Median, Mean, 3rd Qu, Max cho mỗi biến.
+
+### `count()` — bảng tần suất
+
+```r
+count(mtcars, cyl)              # đếm theo số xi-lanh
+count(mtcars, cyl, am)          # bảng chéo
+```
+
+### Xem dòng dữ liệu
+
+```r
+head(mtcars, 10)                            # 10 dòng đầu
+mtcars |> filter(mpg > 25)                  # các dòng có mpg > 25
+mtcars |> select(mpg, hp) |> head()         # chỉ cột mpg, hp
+```
+
+::: {.callout-tip}
+## 📝 Bài tập nhỏ ngay tại Lab 0
+
+Mở dataset `mtcars`, trả lời:
+
+1. Có bao nhiêu xe trong dataset?
+2. `mpg` (mile per gallon) trung bình là bao nhiêu?
+3. Có bao nhiêu xe 4, 6, 8 xi-lanh?
+4. Xe nào có `mpg` cao nhất?
+5. So sánh trung bình `mpg` giữa xe automatic (`am == 0`) và manual (`am == 1`)?
+:::
+
+## 5. Tạo biến + lọc + sort (tidyverse)
+
+```r
+# Cách viết cũ (base R)
+mtcars_new <- mtcars
+mtcars_new$gpm <- 1 / mtcars_new$mpg
+
+# Cách tidyverse (khuyên dùng)
+library(tidyverse)
+
+mtcars_new <- mtcars |>
+  mutate(
+    gpm = 1 / mpg,                    # gallon per mile
+    is_efficient = mpg > 25            # xe tiết kiệm
+  ) |>
+  filter(cyl != 4) |>                  # bỏ xe 4 xi-lanh
+  select(mpg, hp, gpm, is_efficient) |> # giữ 4 cột
+  arrange(desc(mpg))                   # sắp theo mpg giảm dần
+
+head(mtcars_new, 10)
+```
+
+`|>` là **pipe** — biểu thị "rồi" trong tiếng Việt. Đọc từ trên xuống: lấy `mtcars`, RỒI mutate, RỒI filter, RỒI select, RỒI arrange.
+
+## 6. Vẽ biểu đồ với ggplot2
+
+### Scatter plot
+
+```r
+library(ggplot2)
+
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  labs(
+    title = "Công suất vs Tiết kiệm xăng",
+    x = "Mile per gallon",
+    y = "Horsepower"
+  ) +
+  theme_minimal()
+```
+
+### Bar chart theo nhóm
+
+```r
+mtcars |>
+  count(cyl) |>
+  ggplot(aes(x = factor(cyl), y = n)) +
+  geom_col(fill = "#722f37") +
+  labs(title = "Số xe theo số xi-lanh", x = "Xi-lanh", y = "Số xe") +
+  theme_minimal()
+```
+
+### Histogram
+
+```r
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(bins = 10, fill = "#c19a4d", color = "black") +
+  labs(title = "Phân bố MPG") +
+  theme_minimal()
+```
+
+## 7. Lưu output
+
+### Lưu dataset đã xử lý
+
+```r
+write_csv(mtcars_new, "mtcars_clean.csv")
+write_rds(mtcars_new, "mtcars_clean.rds")     # native R format
+```
+
+### Lưu biểu đồ
+
+```r
+my_plot <- ggplot(mtcars, aes(mpg, hp)) + geom_point()
+
+ggsave("scatter.png", my_plot, width = 8, height = 5, dpi = 150)
+ggsave("scatter.pdf", my_plot, width = 8, height = 5)
+```
+
+## 8. Đọc dataset bên ngoài
+
+```r
+library(tidyverse)
+library(haven)
+library(readxl)
+
+# CSV
+df_csv <- read_csv("mydata.csv")
+
+# Excel
+df_excel <- read_excel("mydata.xlsx", sheet = 1)
+
+# Stata
+df_dta <- read_dta("mydata.dta")
+```
+
+## 9. Báo cáo R bằng Quarto
+
+R Lab nộp dạng **Quarto** đẹp như cuốn sách:
+
+1. File > New File > **Quarto Document**
+2. Đặt tên `lab01_<ten>.qmd`
+3. Viết code trong block:
+
+````markdown
+---
+title: "R Lab 1"
+author: "Họ tên — MSSV"
+format: html
+---
+
+## Phần 1: Đặt vấn đề
+
+Lab này phân tích...
+
+```r
+library(tidyverse)
+data(mtcars)
+summary(mtcars)
+```
+
+## Phần 2: Biểu đồ
+
+```r
+#| fig-cap: "Công suất vs MPG"
+ggplot(mtcars, aes(mpg, hp)) + geom_point()
+```
+````
+
+4. Bấm **Render** → có file `.html` đẹp với cả code + output.
+
+## 10. Mẹo R hiệu quả
+
+1. **Luôn dùng `library(tidyverse)`** — chuẩn hiện đại
+2. **Dùng pipe `|>`** thay vì lồng hàm
+3. **Tên biến tiếng Việt được**: `gdp_thuc <- ...` (R hỗ trợ UTF-8)
+4. **Comment tiếng Việt** sau `#`
+5. **Save dataset thường xuyên** sau khi clean
+6. **Set working directory**: `setwd("đường-dẫn")` hoặc dùng project RStudio
+7. **Help**: gõ `?summary` để xem hướng dẫn
+
+## Deliverable Lab 0
+
+Nộp **1 file R** `lab00_<ten>.R` hoặc Quarto `lab00_<ten>.qmd` thực hiện:
+
+1. Load `tidyverse`
+2. Mở `mtcars` (`data(mtcars)`)
+3. `glimpse()` + `summary()`
+4. So sánh trung bình `mpg` giữa xe automatic và manual (`group_by(am)`)
+5. Vẽ scatter `mpg` vs `hp`, phân biệt automatic/manual
+6. Tạo biến mới `gpm = 1/mpg`
+7. **Comment tiếng Việt** ở mỗi bước
+8. Nếu dùng Quarto: render ra HTML
+
+Nộp kèm:
+- File `.R` hoặc `.qmd`
+- File `.html` (nếu Quarto)
+- Phản hồi ngắn 200 chữ: bạn thấy R khó/dễ hơn Stata ở điểm nào?
+
+---
+
+*Lab tiếp theo*: [R Lab 1 — Vẽ PPF và chi phí cơ hội](lab-01.qmd) →

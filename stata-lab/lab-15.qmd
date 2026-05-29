@@ -15,7 +15,7 @@ Lab cuối cùng: xuất kết quả Stata ra **Word/LaTeX/Excel** đẹp dùng 
 ## 1. Cài đặt packages
 
 ```stata
-* Lab 15 — DTU301 — Xuất bảng + biểu đồ
+* Lab 15 — Xuất bảng + biểu đồ
 clear all
 set more off
 log using "lab15_<ten>.log", replace text
@@ -132,7 +132,7 @@ graph export "scatter_final.png", replace width(1400)
 ```stata
 * === Tạo file Excel có nhiều sheets ===
 putexcel set "results.xlsx", replace
-putexcel A1 = "Kết quả phân tích DTU301", bold
+putexcel A1 = "Kết quả phân tích ", bold
 putexcel A2 = "Lab 15 — Họ tên: <điền>"
 
 * Sheet "Descriptive"
@@ -170,7 +170,7 @@ log close
 
 ---
 
-## 🎉 Kết thúc 16 lab DTU301
+## 🎉 Kết thúc 16 lab 
 
 Bạn đã hoàn thành **Lab 0 → 15** — học từ basics đến advanced. Tài sản kỹ năng:
 

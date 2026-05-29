@@ -39,7 +39,7 @@ Trước khi nói về chức năng và công cụ, cần thống nhất *quản
 
 ### A.2. Ba cấp độ — bảng đối chiếu
 
-Trong môn DTU301, cần phân biệt **ba cấp độ** thuật ngữ thường bị nhầm lẫn:
+Trong môn , cần phân biệt **ba cấp độ** thuật ngữ thường bị nhầm lẫn:
 
 | Khái niệm | Nội dung | Chủ thể |
 |---|---|---|
@@ -47,7 +47,7 @@ Trong môn DTU301, cần phân biệt **ba cấp độ** thuật ngữ thường
 | **Quản lý Kinh tế** | Quản lý áp dụng vào lĩnh vực kinh tế | Cá nhân, doanh nghiệp, Nhà nước |
 | **QLNN về Kinh tế** | QLKT do **Nhà nước** thực hiện, mang **quyền lực công** | Nhà nước (các cấp) |
 
-Môn DTU301 tập trung chủ yếu vào **QLNN về Kinh tế** — tức cấp độ thứ ba. Tuy nhiên, ta vẫn dùng thuật ngữ "QLKT" thay thế cho ngắn gọn, hiểu ngầm là QLNN về kinh tế trừ khi nói rõ khác.
+Môn tập trung chủ yếu vào **QLNN về Kinh tế** — tức cấp độ thứ ba. Tuy nhiên, ta vẫn dùng thuật ngữ "QLKT" thay thế cho ngắn gọn, hiểu ngầm là QLNN về kinh tế trừ khi nói rõ khác.
 
 ### A.3. Năm đặc điểm của QLKT
 
@@ -251,7 +251,7 @@ Bốn loại kinh tế này sẽ là **trọng tâm chính sách kinh tế Việ
 
 ## Tổng kết Buổi 2 — Năm điểm cốt lõi
 
-1. **QLKT có ba cấp độ** (quản lý → QLKT → QLNN về KT); môn DTU301 tập trung vào QLNN về KT.
+1. **QLKT có ba cấp độ** (quản lý → QLKT → QLNN về KT); môn tập trung vào QLNN về KT.
 2. **Năm chức năng QLKT**: Hoạch định – Tổ chức – Chỉ đạo – Kiểm soát + **Điều tiết** (bổ sung Fayol). Năm chức năng đan xen liên tục.
 3. **Ba nhóm công cụ**: Hành chính – Kinh tế – Thông tin. Thực tế luôn kết hợp cả ba.
 4. **Vai trò Nhà nước**: ba vai trò phổ quát (chủ sở hữu, quản lý, điều tiết) + hai tư cách đặc thù VN (quyền lực chính trị, chủ thể kinh tế).
@@ -265,11 +265,13 @@ Bốn loại kinh tế này sẽ là **trọng tâm chính sách kinh tế Việ
 4. **Đọc thêm (tự chọn)**: Case Singapore — *Lý Hiển Long: Ba quy tắc QLKT*.
 
 ::: {.callout-tip}
-## 🔧 Stata Lab 2 (bonus 5%)
+## 🔧 Stata/R Lab 2 (bonus 5%)
 
 Bài này có lab thực hành **phân tích cơ cấu chi NSNN Việt Nam 2015-2024** trong Stata: phân loại các nhóm chi theo *5 chức năng QLKT*, tính tỷ trọng, so sánh hai giai đoạn 2015-2019 và 2020-2024, vẽ biểu đồ stacked area.
 
 → [**Bắt đầu Lab 2 — Phân tích chi tiêu công VN**](../stata-lab/lab-02.qmd) *(~25 phút)*
+
+→ [**Hoặc dùng R Lab 2**](../r-lab/lab-02.qmd) — phiên bản free, ggplot2 đẹp
 
 Chưa làm Lab 1? Bắt đầu từ [Lab 1 — PPF và chi phí cơ hội](../stata-lab/lab-01.qmd) để có nền tảng.
 :::

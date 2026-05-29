@@ -1,0 +1,96 @@
+---
+title: "R Lab"
+subtitle: "Tự học R qua 16 bài thực hành — phiên bản song song với Stata Lab"
+toc: true
+---
+
+## R Lab là gì?
+
+R Lab là **phiên bản song song** với [Stata Lab](../stata-lab/) — cùng nội dung phân tích, cùng dataset, cùng câu hỏi suy nghĩ, nhưng dùng **R** thay vì Stata.
+
+Sinh viên **chọn 1 trong 2** (hoặc làm cả hai — bonus cao hơn):
+
+| | **Stata Lab** | **R Lab** |
+|---|---|---|
+| Ngôn ngữ | Stata | R |
+| Chi phí | Có phí (license) | **100% free** |
+| Phổ biến VN | Cao (truyền thống) | Đang tăng nhanh |
+| Phù hợp nhất | Phòng máy FTU + giảng viên dạy Stata | Sinh viên muốn học miễn phí + dùng dài hạn |
+| Bonus 5% | ✅ | ✅ |
+
+::: {.callout-tip}
+## 🎁 Bonus song song
+
+- Làm Stata Lab: tới **+5% bonus**
+- Làm R Lab: tới **+5% bonus**
+- Làm **cả hai** trong cùng Lab: tới **+7% bonus** (không phải +10%, vì câu hỏi suy nghĩ chấm 1 lần)
+:::
+
+## Vì sao học R?
+
+| Lý do | Chi tiết |
+|---|---|
+| **100% Free** | Không cần license — sinh viên cài về máy cá nhân |
+| **Tidyverse + ggplot2** | Hệ sinh thái mạnh nhất cho khoa học dữ liệu |
+| **Cộng đồng học thuật** | Hầu hết tạp chí kinh tế hiện đại chấp nhận R |
+| **Reproducibility** | RMarkdown / Quarto + R → tái tạo nghiên cứu chuẩn quốc tế |
+| **Dài hạn** | Khoá luận, cao học, nghiên cứu — R ngày càng quan trọng |
+
+## Cấu trúc 16 bài R Lab
+
+Tương ứng với 16 Stata Lab:
+
+| Lab | Chủ đề | Lab tương ứng |
+|:---:|---|:---:|
+| **0** | [Cài R + RStudio + tidyverse](lab-00.qmd) | [Stata Lab 0](../stata-lab/lab-00.qmd) |
+| **1** | [Vẽ PPF + chi phí cơ hội](lab-01.qmd) | [Stata Lab 1](../stata-lab/lab-01.qmd) |
+| **2** | [Phân tích chi tiêu công VN](lab-02.qmd) | [Stata Lab 2](../stata-lab/lab-02.qmd) |
+| **3** | [Tính HHI 5 ngành VN](lab-03.qmd) | [Stata Lab 3](../stata-lab/lab-03.qmd) |
+| **4** | [Mô phỏng thuế Pigou](lab-04.qmd) | [Stata Lab 4](../stata-lab/lab-04.qmd) |
+| **5** | [DNNN vs KTTN vs FDI](lab-05.qmd) | [Stata Lab 5](../stata-lab/lab-05.qmd) |
+| **6** | [Cobb-Douglas VN](lab-06.qmd) | [Stata Lab 6](../stata-lab/lab-06.qmd) |
+| **7** | [Mô phỏng IS-LM](lab-07.qmd) | [Stata Lab 7](../stata-lab/lab-07.qmd) |
+| **8** | [Phillips VN 2010-2024](lab-08.qmd) | [Stata Lab 8](../stata-lab/lab-08.qmd) |
+| **9** | [NEER/REER VND](lab-09.qmd) | [Stata Lab 9](../stata-lab/lab-09.qmd) |
+| **10** | [Mundell-Fleming](lab-10.qmd) | [Stata Lab 10](../stata-lab/lab-10.qmd) |
+| **11** | [Event study KH Á 1997](lab-11.qmd) | [Stata Lab 11](../stata-lab/lab-11.qmd) |
+| **12** | [PCI/PAPI/PAR](lab-12.qmd) | [Stata Lab 12](../stata-lab/lab-12.qmd) |
+| **13** | [6 vùng KT-XH](lab-13.qmd) | [Stata Lab 13](../stata-lab/lab-13.qmd) |
+| **14** | [Capstone](lab-14.qmd) | [Stata Lab 14](../stata-lab/lab-14.qmd) |
+| **15** | [Xuất bảng + biểu đồ](lab-15.qmd) | [Stata Lab 15](../stata-lab/lab-15.qmd) |
+
+## Stata → R cheatsheet
+
+Bảng quy đổi nhanh cho người đã quen Stata:
+
+| Stata | R (tidyverse) | Mục đích |
+|---|---|---|
+| `use mydata.dta` | `df <- read_dta("mydata.dta")` | Đọc file |
+| `import delimited "mydata.csv"` | `df <- read_csv("mydata.csv")` | Đọc CSV |
+| `describe` | `glimpse(df)` | Mô tả cấu trúc |
+| `summarize` | `summary(df)` | Thống kê mô tả |
+| `tabulate x` | `count(df, x)` | Đếm theo nhóm |
+| `gen y = x*2` | `df <- df |> mutate(y = x*2)` | Tạo biến mới |
+| `keep if x > 0` | `df <- df |> filter(x > 0)` | Lọc |
+| `bysort id: gen mean_y = mean(y)` | `df |> group_by(id) |> mutate(mean_y = mean(y))` | Group by |
+| `regress y x1 x2` | `lm(y ~ x1 + x2, data = df)` | Hồi quy OLS |
+| `regress y x1 x2, robust` | `feols(y ~ x1 + x2, data = df)` (fixest) | OLS robust |
+| `xtreg y x, fe i(id)` | `feols(y ~ x | id, data = df)` (fixest) | Panel FE |
+| `twoway scatter y x` | `ggplot(df, aes(x, y)) + geom_point()` | Scatter |
+| `twoway line y x` | `ggplot(df, aes(x, y)) + geom_line()` | Line plot |
+
+## Cách nộp R Lab
+
+Mỗi lab nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab<số>_<tên>.R` | Script R có comment tiếng Việt |
+| `lab<số>_<tên>.html` | Output sau render (qua Quarto/RMarkdown) |
+| `lab<số>_<tên>.pdf` | Trả lời câu hỏi + biểu đồ (1-2 trang) |
+
+**Tiêu đề email**: `RLAB<số>-MSSV-HọTên` → giảng viên trước hạn nộp.
+
+## Bắt đầu ở đâu?
+
+→ [Lab 0 — Cài R + RStudio + tidyverse](lab-00.qmd)

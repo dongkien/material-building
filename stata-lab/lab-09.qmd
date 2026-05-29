@@ -15,7 +15,7 @@ Bài này tính **NEER và REER VND** từ tỷ giá song phương với 5 đố
 ## 1. Dataset tỷ giá + CPI
 
 ```stata
-* Lab 9 — DTU301 — NEER/REER VND
+* Lab 9 — NEER/REER VND
 clear all
 set more off
 log using "lab09_<ten>.log", replace text

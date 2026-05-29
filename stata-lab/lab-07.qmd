@@ -53,7 +53,7 @@ $$\text{LM: } r = \frac{kY - M/P}{h}$$
 ## 2. Thiết lập tham số trong Stata
 
 ```stata
-* Lab 7 — DTU301 — Mô phỏng IS-LM
+* Lab 7 — Mô phỏng IS-LM
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -259,7 +259,7 @@ log close
 | `lab07_<tên>.log` | Output Stata |
 | `lab07_<tên>.pdf` (2-3 trang) | 5 câu hỏi + 3 biểu đồ IS-LM |
 
-**Tiêu đề email**: `DTU301-LAB07-MSSV-HọTên`
+**Tiêu đề email**: `LAB07-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

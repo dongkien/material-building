@@ -38,7 +38,7 @@ PPF cong lõm về phía gốc toạ độ — đây là dạng phổ biến tro
 ## 2. Tạo dataset PPF trong Stata
 
 ```stata
-* Lab 1 — DTU301 — PPF và Chi phí cơ hội
+* Lab 1 — PPF và Chi phí cơ hội
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -168,7 +168,7 @@ Nộp 3 file:
 | `lab01_<tên>.log` | Output Stata |
 | `lab01_<tên>.pdf` (1-2 trang) | Trả lời 5 câu hỏi suy nghĩ + 3 biểu đồ (PPF, opportunity cost, PPF growth) đã xuất ra png |
 
-**Tiêu đề email**: `DTU301-LAB01-MSSV-HọTên` → giảng viên trước hạn nộp công bố đầu kỳ.
+**Tiêu đề email**: `LAB01-MSSV-HọTên` → giảng viên trước hạn nộp công bố đầu kỳ.
 
 ## Tiêu chí chấm
 

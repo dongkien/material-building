@@ -1,6 +1,6 @@
 ---
 title: "Đề cương chi tiết học phần"
-subtitle: "DTU301 — Nguyên lý Quản lý Kinh tế · 3 tín chỉ"
+subtitle: "Nguyên lý Quản lý Kinh tế · 3 tín chỉ"
 date: last-modified
 ---
 
@@ -13,7 +13,7 @@ date: last-modified
 | Mục | Nội dung |
 |---|---|
 | **Tên học phần** | Nguyên lý Quản lý Kinh tế (*Principles of Economic Management*) |
-| **Mã học phần** | DTU301 |
+| **Mã học phần** | |
 | **Bộ môn phụ trách** | Kinh tế và Quản lý |
 | **Viện** | Kinh tế và Kinh doanh Quốc tế |
 | **Số tín chỉ** | 3 |

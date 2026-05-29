@@ -15,7 +15,7 @@ Event study **Khủng hoảng châu Á 1997**: tác động lên Thái Lan, Indo
 ## 1. Dataset 5 nền kinh tế 1995-2000
 
 ```stata
-* Lab 11 — DTU301 — Asian Crisis Event Study
+* Lab 11 — Asian Crisis Event Study
 clear all
 set more off
 log using "lab11_<ten>.log", replace text

@@ -1,0 +1,81 @@
+---
+title: "R Lab 11 — Event study Khủng hoảng châu Á 1997"
+subtitle: "Tương ứng Buổi 11 (phiên bản R, song song [Stata Lab 11](../stata-lab/lab-11.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 11
+
+Phiên bản R của [Stata Lab 11](../stata-lab/lab-11.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm R học**: `event window, dplyr filter, ggplot facet`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 R Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 11. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+:::
+
+## Khung Lab 11
+
+### 1. Bài toán
+
+Thái/Indo/Hàn/Phil vs VN, before/after dummy
+
+### 2. Stata Lab tương ứng
+
+Cùng phân tích như **[Stata Lab 11](../stata-lab/lab-11.qmd)** — bạn có thể:
+
+- Mở Stata Lab 11 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
+
+### 3. Khung code R (mẫu)
+
+```r
+# R Lab 11 — Event study Khủng hoảng châu Á 1997
+# Họ tên: <điền>, MSSV: <điền>
+
+library(tidyverse)
+library(modelsummary)        # cho bảng đẹp
+library(fixest)              # cho hồi quy nâng cao (nếu cần)
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: event window, dplyr filter, ggplot facet
+
+# === Lưu kết quả ===
+# ggsave("lab11.png", plot_obj, width = 10, height = 6, dpi = 150)
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata Lab 11 — xem chi tiết tại [Stata Lab 11](../stata-lab/lab-11.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab11_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab11_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab11_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `RLAB11-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code R chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới của bài | 25% |
+| Biểu đồ ggplot2 đẹp | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [R Lab 10](lab-10.qmd) | *Lab tiếp theo*: [R Lab 12](lab-12.qmd) →

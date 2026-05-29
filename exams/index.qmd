@@ -1,6 +1,6 @@
 ---
 title: "Đánh giá học phần"
-subtitle: "Cấu trúc thi giữa kỳ, cuối kỳ và đánh giá quá trình theo DTU301"
+subtitle: "Cấu trúc thi giữa kỳ, cuối kỳ và đánh giá quá trình theo "
 toc: true
 ---
 

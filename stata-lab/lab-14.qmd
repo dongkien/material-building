@@ -42,7 +42,7 @@ Chọn **1** trong các đề tài sau (hoặc tự đề xuất, xin GV duyệt
 ## 3. Cấu trúc do-file
 
 ```stata
-* Lab 14 Capstone — DTU301
+* Lab 14 Capstone — 
 * Đề tài: <tên đề tài>
 * Họ tên: <điền>, MSSV: <điền>
 
@@ -53,7 +53,7 @@ log using "lab14_<ten>.log", replace text
 *-------------------------------
 * PHẦN 1: ĐẶT VẤN ĐỀ
 *-------------------------------
-display "=== Capstone DTU301 ==="
+display "=== Capstone ==="
 display "Đề tài: <tên>"
 display "Câu hỏi nghiên cứu chính: <ghi vào đây>"
 

@@ -87,7 +87,7 @@ Tư duy mới: **cung – cầu gặp nhau ở giá cân bằng**. Hành vi củ
 - Khung phân tích cung – cầu – giá vẫn dùng đến ngày nay (chính là khung Mankiw).
 - Ý tưởng *agglomeration* — tập trung công nghiệp — sẽ trở lại ở Buổi 13 (kinh tế vùng).
 
-Trường phái Tân cổ điển là **nền tảng** của môn DTU301 và mọi giáo trình kinh tế học vi mô hiện đại.
+Trường phái Tân cổ điển là **nền tảng** của môn và mọi giáo trình kinh tế học vi mô hiện đại.
 
 ## B. Bốn cấu trúc thị trường
 
@@ -276,11 +276,13 @@ Tính **HHI** cho một ngành Việt Nam tự chọn (ngân hàng, bán lẻ, h
 4. **Đọc thêm** về thuế Pigou và định lý Coase.
 
 ::: {.callout-tip}
-## 🔧 Stata Lab 3 (bonus 5%)
+## 🔧 Stata/R Lab 3 (bonus 5%)
 
 Bài này có lab thực hành **tính HHI cho 5 ngành Việt Nam** trong Stata: viễn thông, ngân hàng, bia, bán lẻ, hàng không. Bạn sẽ học `egen rowtotal`, `gsort`, formatting bảng so sánh.
 
 → [**Bắt đầu Lab 3 — Tính HHI cho 5 ngành Việt Nam**](../stata-lab/lab-03.qmd) *(~20 phút)*
+
+→ [**Hoặc dùng R Lab 3**](../r-lab/lab-03.qmd) — phiên bản free, ggplot2 đẹp
 :::
 
 ## Đọc thêm

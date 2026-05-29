@@ -1,12 +1,12 @@
 ---
 title: "Tiểu luận và bài tập lớn"
-subtitle: "Theo cấu trúc đánh giá DTU301"
+subtitle: "Theo cấu trúc đánh giá "
 toc: false
 ---
 
 ## Cấu trúc đánh giá
 
-Theo đề cương DTU301, đánh giá học phần gồm **3 cấu phần**:
+Theo đề cương , đánh giá học phần gồm **3 cấu phần**:
 
 | Hình thức | Trọng số | Phạm vi | CLO |
 |---|:---:|---|---|
@@ -28,7 +28,7 @@ Mỗi chương có **bài tập lớn** đi kèm, phục vụ vừa đánh giá 
 
 ## Quy định nộp bài
 
-- **Tiêu đề email**: `DTU301-MSSV-HọTên-Bài[số]`
+- **Tiêu đề email**: `MSSV-HọTên-Bài[số]`
 - **Định dạng**: PDF (Word convert) + file dữ liệu kèm theo nếu có
 - **Hạn nộp**: giảng viên thông báo cụ thể từng bài
 - **Liêm chính học thuật**: bài giống nhau **đến 50%** trừ 1/2 số điểm; **trên 50%** bị điểm 0

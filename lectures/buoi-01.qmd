@@ -73,7 +73,7 @@ Mười nguyên lý này là **lăng kính chung** chúng ta sẽ dùng xuyên s
 | Đối tượng | Cá nhân, doanh nghiệp, thị trường | Toàn bộ nền kinh tế quốc dân |
 | Khái niệm chính | Cung – cầu, giá cả, lợi nhuận | GDP, lạm phát, thất nghiệp |
 | Câu hỏi | Tại sao giá xăng tăng? | Tại sao tăng trưởng chậm lại? |
-| Trong DTU301 | **Chương 2** | **Chương 3 và 4** |
+| Trong | **Chương 2** | **Chương 3 và 4** |
 
 Vi mô không phải "phần nhỏ" của vĩ mô — chúng là **hai cấp phân tích bổ sung**. Một chính sách thuế VAT có tác động vi mô (giá hàng tăng, cầu giảm) và tác động vĩ mô (lạm phát, ngân sách). Quản lý kinh tế đòi hỏi nhìn được cả hai.
 
@@ -177,7 +177,7 @@ Có hai loại bất đồng giữa các nhà kinh tế:
 ## C. Triết lý chính sách: Bentham – Kant – Rawls
 
 > *"Kinh tế học cho biết HẬU QUẢ; triết học cho biết NÊN chọn gì."*
-> — Quy ước phương pháp luận DTU301
+> — Quy ước phương pháp luận 
 
 Khi đánh giá chính sách, chỉ riêng kinh tế học là không đủ. Ta cần *triết lý chính trị* để biết "tốt" nghĩa là gì. Ba trường phái dưới đây là ba lăng kính chuẩn để phân tích chính sách công.
 
@@ -256,7 +256,7 @@ Khi đánh giá chính sách, chỉ riêng kinh tế học là không đủ. Ta 
 | Công cụ chính sách | CBA | Quyền cá nhân | Phân phối lại |
 | Nguy cơ | Hi sinh thiểu số | Cứng nhắc | Khó đo lường |
 
-**Quy ước phương pháp DTU301**: ba lăng kính **không loại trừ nhau** — chúng *bổ sung* nhau. Một chính sách tốt thường phải vượt qua được **cả ba** kiểm tra:
+**Quy ước phương pháp **: ba lăng kính **không loại trừ nhau** — chúng *bổ sung* nhau. Một chính sách tốt thường phải vượt qua được **cả ba** kiểm tra:
 
 1. Tổng lợi ích > tổng chi phí (Bentham)
 2. Không xâm phạm quyền cơ bản (Kant)
@@ -312,11 +312,13 @@ Nếu chính sách vượt qua cả ba kiểm tra → chính sách tốt theo nh
 4. **Tự đọc**: Nghị quyết 60/2025 về bộ máy chính quyền hai cấp.
 
 ::: {.callout-tip}
-## 🔧 Stata Lab 1 (bonus 5%)
+## 🔧 Stata/R Lab 1 (bonus 5%)
 
 Sau buổi này, bạn có thể **vẽ PPF và tính chi phí cơ hội bằng dữ liệu** trong Stata. Lab 1 hướng dẫn từng bước: tạo dataset PPF, vẽ đường cong lõm, tính chi phí cơ hội biên tăng dần, và mô phỏng *PPF dịch ra* khi nền kinh tế tăng trưởng.
 
 → [**Bắt đầu Lab 1 — Vẽ PPF và tính chi phí cơ hội**](../stata-lab/lab-01.qmd) *(~20 phút)*
+
+→ [**Hoặc dùng R Lab 1**](../r-lab/lab-01.qmd) — phiên bản free, ggplot2 đẹp
 
 Chưa quen Stata? Bắt đầu từ [Lab 0 — Cài đặt và lệnh cơ bản](../stata-lab/lab-00.qmd) trước.
 :::

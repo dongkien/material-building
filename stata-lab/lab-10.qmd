@@ -15,7 +15,7 @@ Phân tích **3 case lịch sử** bằng dữ liệu macro: Hong Kong LERS (peg
 ## 1. Tạo dataset 3 nền kinh tế
 
 ```stata
-* Lab 10 — DTU301 — Mundell-Fleming historical cases
+* Lab 10 — Mundell-Fleming historical cases
 clear all
 set more off
 log using "lab10_<ten>.log", replace text

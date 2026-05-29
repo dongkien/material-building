@@ -1,0 +1,81 @@
+---
+title: "R Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+subtitle: "Tương ứng Buổi 15 (phiên bản R, song song [Stata Lab 15](../stata-lab/lab-15.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 15
+
+Phiên bản R của [Stata Lab 15](../stata-lab/lab-15.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm R học**: `modelsummary, gt, kableExtra, ragg`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 R Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 15. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+:::
+
+## Khung Lab 15
+
+### 1. Bài toán
+
+modelsummary, gt, ggsave, kableExtra cho báo cáo
+
+### 2. Stata Lab tương ứng
+
+Cùng phân tích như **[Stata Lab 15](../stata-lab/lab-15.qmd)** — bạn có thể:
+
+- Mở Stata Lab 15 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
+
+### 3. Khung code R (mẫu)
+
+```r
+# R Lab 15 — Xuất bảng + biểu đồ cho thuyết trình
+# Họ tên: <điền>, MSSV: <điền>
+
+library(tidyverse)
+library(modelsummary)        # cho bảng đẹp
+library(fixest)              # cho hồi quy nâng cao (nếu cần)
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: modelsummary, gt, kableExtra, ragg
+
+# === Lưu kết quả ===
+# ggsave("lab15.png", plot_obj, width = 10, height = 6, dpi = 150)
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata Lab 15 — xem chi tiết tại [Stata Lab 15](../stata-lab/lab-15.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab15_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab15_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab15_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `RLAB15-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code R chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới của bài | 25% |
+| Biểu đồ ggplot2 đẹp | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [R Lab 14](lab-14.qmd) | *Đây là R Lab cuối.*

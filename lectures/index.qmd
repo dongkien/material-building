@@ -1,6 +1,6 @@
 ---
 title: "Bài giảng"
-subtitle: "15 buổi học liệu môn DTU301 — Nguyên lý Quản lý Kinh tế"
+subtitle: "15 buổi học liệu môn Nguyên lý Quản lý Kinh tế"
 listing:
   contents: "buoi-*.qmd"
   type: table
@@ -16,7 +16,7 @@ listing:
 toc: false
 ---
 
-Toàn bộ 15 buổi tổ chức theo **5 chương + Seminar tổng hợp**. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:
+Toàn bộ 15 buổi tổ chức theo **5 chương + Seminar tổng hợp**. Mỗi buổi có cấu trúc thống nhất theo đề cương :
 
 - **Nội dung lý thuyết** (thuyết giảng)
 - **Thực hành / Thảo luận** trên lớp

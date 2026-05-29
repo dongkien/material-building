@@ -1,6 +1,6 @@
 ---
 title: "Nguyên lý Quản lý Kinh tế"
-subtitle: "DTU301 · 3 tín chỉ · Bộ môn Kinh tế và Quản lý, Viện KT&KDQT, ĐH Ngoại Thương"
+subtitle: "3 tín chỉ · Bộ môn Kinh tế và Quản lý, Viện KT&KDQT, ĐH Ngoại Thương"
 toc: false
 page-layout: full
 ---
@@ -9,7 +9,7 @@ page-layout: full
 
 ## Về học phần
 
-**Nguyên lý Quản lý Kinh tế (DTU301)** cung cấp khung tư duy về cách **Nhà nước điều hành nền kinh tế thị trường hiện đại**, tiếp cận theo **bốn cấp độ liên kết**: quản lý kinh tế ngành, vĩ mô đóng, vĩ mô mở, và quản trị địa phương kết hợp phát triển kinh tế vùng.
+**Nguyên lý Quản lý Kinh tế** cung cấp khung tư duy về cách **Nhà nước điều hành nền kinh tế thị trường hiện đại**, tiếp cận theo **bốn cấp độ liên kết**: quản lý kinh tế ngành, vĩ mô đóng, vĩ mô mở, và quản trị địa phương kết hợp phát triển kinh tế vùng.
 
 ::: {.grid}
 
@@ -37,7 +37,7 @@ Các khung lý thuyết được minh hoạ bằng **tình huống chính sách 
 ::: {.callout-note appearance="simple"}
 ## 📚 Bắt đầu nhanh
 
-- 📋 [Đề cương DTU301](syllabus.qmd)
+- 📋 [Đề cương ](syllabus.qmd)
 - 📅 [Lịch học 15 buổi](schedule.qmd)
 - 🎓 [Tất cả bài giảng](lectures/index.qmd)
 - ✏️ [Tiểu luận / Bài tập](problem-sets/index.qmd)

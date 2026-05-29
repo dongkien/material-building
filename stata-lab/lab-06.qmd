@@ -23,7 +23,7 @@ Sau Lab 6, bạn có thể:
 ## 1. Tạo dataset GDP – K – L Việt Nam (mô phỏng)
 
 ```stata
-* Lab 6 — DTU301 — Cobb-Douglas cho Việt Nam
+* Lab 6 — Cobb-Douglas cho Việt Nam
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -260,7 +260,7 @@ log close
 | `lab06_<tên>.log` | Output Stata |
 | `lab06_<tên>.pdf` (2-3 trang) | 5 câu hỏi + biểu đồ growth accounting |
 
-**Tiêu đề email**: `DTU301-LAB06-MSSV-HọTên`
+**Tiêu đề email**: `LAB06-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

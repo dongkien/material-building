@@ -1,0 +1,178 @@
+---
+title: "R Lab 1 — Vẽ PPF và tính chi phí cơ hội"
+subtitle: "Tương ứng Buổi 1 (phiên bản R, song song [Stata Lab 1](../stata-lab/lab-01.qmd))"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 1
+
+Bài này áp dụng **PPF** và **chi phí cơ hội** từ [Buổi 1](../lectures/buoi-01.qmd), thực hiện bằng **R + tidyverse + ggplot2**.
+
+**Khái niệm R học**: `tibble`, `mutate`, `geom_line`, `geom_point`, `geom_bar`, multi-layer ggplot
+:::
+
+## 1. Bài toán
+
+Nền KT giả định 2 hàng hoá: **Y tế** và **Quốc phòng**. PPF dạng:
+
+$$Y^2 + X^2 = 100, \quad X \in [0, 10]$$
+
+## 2. Tạo dataset PPF
+
+```r
+# R Lab 1 — Vẽ PPF và chi phí cơ hội
+# Họ tên: <điền>, MSSV: <điền>
+
+library(tidyverse)
+
+# === Phần 1: Tạo dataset PPF ===
+ppf <- tibble(
+  x = 0:10,
+  y = sqrt(100 - x^2)
+)
+
+print(ppf)
+```
+
+**Câu hỏi 1**: Khi `x = 0`, `y` = ? Khi `x = 10`, `y` = ? Ý nghĩa?
+
+## 3. Vẽ PPF
+
+```r
+# === Phần 2: Vẽ PPF ===
+p1 <- ggplot(ppf, aes(x = x, y = y)) +
+  geom_line(linewidth = 1.2, color = "#722f37") +
+  geom_point(size = 3, color = "#722f37") +
+  labs(
+    title = "PPF: Đánh đổi giữa Y tế và Quốc phòng",
+    subtitle = "Đường cong lõm thể hiện đánh đổi tăng dần",
+    x = "Quân sự (đơn vị)",
+    y = "Y tế (số bệnh viện)"
+  ) +
+  theme_minimal(base_size = 13)
+
+print(p1)
+ggsave("ppf.png", p1, width = 10, height = 6, dpi = 150)
+```
+
+**Câu hỏi 2**: Tại sao PPF *cong lõm*, không *thẳng*?
+
+## 4. Tính chi phí cơ hội
+
+```r
+# === Phần 3: Chi phí cơ hội biên ===
+ppf <- ppf |>
+  mutate(
+    y_lag = lag(y),                       # y ở điểm trước
+    opportunity_cost = y_lag - y          # bệnh viện hy sinh
+  )
+
+print(ppf)
+```
+
+Bạn sẽ thấy:
+
+| x | y | opportunity_cost |
+|:---:|:---:|:---:|
+| 0 | 10.00 | NA |
+| 1 | 9.95 | 0.05 |
+| 5 | 8.66 | ... |
+| 10 | 0.00 | 4.36 |
+
+**Câu hỏi 3**: Chi phí cơ hội *tăng* hay *giảm*? Liên hệ với *Quy luật chi phí cơ hội tăng dần* (Mankiw).
+
+## 5. Trực quan hoá chi phí cơ hội
+
+```r
+# === Phần 4: Biểu đồ chi phí cơ hội ===
+p2 <- ppf |>
+  filter(!is.na(opportunity_cost)) |>
+  ggplot(aes(x = x, y = opportunity_cost)) +
+  geom_col(fill = "#c19a4d", color = "#722f37") +
+  labs(
+    title = "Chi phí cơ hội biên tăng dần",
+    x = "Số đơn vị quân sự",
+    y = "Bệnh viện hy sinh để thêm 1 quân sự"
+  ) +
+  theme_minimal(base_size = 13)
+
+print(p2)
+ggsave("opportunity_cost.png", p2, width = 10, height = 6, dpi = 150)
+```
+
+## 6. PPF dịch ra — tăng trưởng
+
+```r
+# === Phần 5: PPF dịch ra ===
+ppf_growth <- tibble(
+  x = 0:11,
+  y_old = sqrt(pmax(100 - x^2, 0)),
+  y_new = sqrt(pmax(130 - x^2, 0))
+)
+
+p3 <- ggplot(ppf_growth, aes(x = x)) +
+  geom_line(aes(y = y_old, color = "PPF cũ"), linewidth = 1.2) +
+  geom_line(aes(y = y_new, color = "PPF mới"),
+            linewidth = 1.2, linetype = "dashed") +
+  scale_color_manual(
+    name = NULL,
+    values = c("PPF cũ" = "#722f37", "PPF mới" = "#2e7d50")
+  ) +
+  labs(
+    title = "PPF dịch ra — đại diện cho tăng trưởng kinh tế",
+    x = "Quân sự",
+    y = "Y tế"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = c(0.85, 0.85))
+
+print(p3)
+ggsave("ppf_growth.png", p3, width = 10, height = 6, dpi = 150)
+```
+
+**Câu hỏi 4**: PPF mới mức tối đa Y khi X=0 = ? Đây có phải tăng trưởng đều giữa 2 ngành?
+
+## 7. Liên hệ thực tiễn Việt Nam
+
+**Câu hỏi 5** (suy nghĩ + viết, không cần code):
+
+Nếu Chính phủ chi 100.000 tỷ cho đường sắt cao tốc Bắc-Nam:
+
+- **Chi phí cơ hội** là gì? 3 phương án thay thế tốt nhất?
+- Nếu nền KT *trong* PPF (lãng phí), có "miễn phí"?
+
+## Deliverable R Lab 1
+
+Nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab01_<tên>.R` (hoặc `.qmd`) | Code R đầy đủ + comment tiếng Việt |
+| `lab01_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab01_<tên>.pdf` (1-2 trang) | 5 câu hỏi + 3 biểu đồ |
+
+**Tiêu đề email**: `RLAB01-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code R chạy đúng | 30% |
+| Bình luận tiếng Việt rõ | 15% |
+| 3 biểu đồ đẹp + format | 20% |
+| Trả lời 5 câu hỏi sâu | 35% |
+
+---
+
+::: {.callout-tip}
+## 💡 So sánh với Stata Lab 1
+
+R có *cú pháp ngắn gọn hơn* Stata cho phép tổng hợp pipeline data. ggplot2 có *kiểm soát mỹ thuật* tốt hơn `twoway`. Nhưng Stata vẫn *gọn* cho hồi quy đơn giản.
+
+Khuyên: **biết cả hai**, dùng theo bối cảnh.
+:::
+
+---
+
+← *Lab trước*: [R Lab 0 — Cài R](lab-00.qmd) | *Lab tiếp theo*: [R Lab 2 — Chi tiêu công VN](lab-02.qmd) →

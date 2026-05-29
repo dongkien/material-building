@@ -37,7 +37,7 @@ Cấu trúc giả định:
 ## 2. Đọc dữ liệu Excel vào Stata
 
 ```stata
-* Lab 2 — DTU301 — Phân tích chi NSNN Việt Nam
+* Lab 2 — Phân tích chi NSNN Việt Nam
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all

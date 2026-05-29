@@ -24,7 +24,7 @@ Sau Lab 3, bạn có thể:
 Mở do-file mới, gõ:
 
 ```stata
-* Lab 3 — DTU301 — HHI 5 ngành Việt Nam
+* Lab 3 — HHI 5 ngành Việt Nam
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
@@ -213,7 +213,7 @@ Nộp 3 file:
 | `lab03_<tên>.log` | Output Stata |
 | `lab03_<tên>.pdf` (2 trang) | Trả lời 5 câu hỏi + biểu đồ HHI 5 ngành |
 
-**Tiêu đề email**: `DTU301-LAB03-MSSV-HọTên`
+**Tiêu đề email**: `LAB03-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

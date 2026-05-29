@@ -15,7 +15,7 @@ So sánh **6 vùng KT-XH Việt Nam** về GRDP, dân số, FDI, hạ tầng —
 ## 1. Dataset 6 vùng KT-XH
 
 ```stata
-* Lab 13 — DTU301 — 6 vùng KT-XH
+* Lab 13 — 6 vùng KT-XH
 clear all
 set more off
 log using "lab13_<ten>.log", replace text
