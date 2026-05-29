@@ -500,9 +500,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh" class="level2">
 <h2 class="anchored" data-anchor-id="tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh">4. Tìm doanh nghiệp có vị trí thống lĩnh</h2>
 <p>Theo Luật Cạnh tranh VN 2018, DN có <strong>thị phần &gt; 30%</strong> được coi là có <em>vị trí thống lĩnh thị trường</em>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Tìm DN có thị phần &gt; 30% ===</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> thong_linh = (thi_phan &gt; 30)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Tìm DN có thị phần &gt; 30% (LOẠI nhóm <span class="st">"Khác"</span>) ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> thong_linh = (thi_phan &gt; 30 &amp; doanh_nghiep != <span class="st">"Khác"</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> nganh doanh_nghiep thi_phan <span class="kw">if</span> thong_linh == 1, <span class="kw">noobs</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>Lưu ý</em>: “Khác” là <strong>tổng nhiều DN nhỏ</strong>, không phải 1 DN — phải loại khỏi phép kiểm tra thống lĩnh.</p>
+</div>
+</div>
+</div>
 <p><strong>Câu hỏi 3</strong>: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?</p>
 </section>
 <section id="mô-phỏng-tác-động-ma" class="level2">

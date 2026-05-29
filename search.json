@@ -2417,7 +2417,7 @@
     "href": "stata-lab/lab-03.html#tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh",
     "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "4. Tìm doanh nghiệp có vị trí thống lĩnh",
-    "text": "4. Tìm doanh nghiệp có vị trí thống lĩnh\nTheo Luật Cạnh tranh VN 2018, DN có thị phần &gt; 30% được coi là có vị trí thống lĩnh thị trường.\n* === Tìm DN có thị phần &gt; 30% ===\ngenerate thong_linh = (thi_phan &gt; 30)\nlist nganh doanh_nghiep thi_phan if thong_linh == 1, noobs\nCâu hỏi 3: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?",
+    "text": "4. Tìm doanh nghiệp có vị trí thống lĩnh\nTheo Luật Cạnh tranh VN 2018, DN có thị phần &gt; 30% được coi là có vị trí thống lĩnh thị trường.\n* === Tìm DN có thị phần &gt; 30% (LOẠI nhóm \"Khác\") ===\ngenerate thong_linh = (thi_phan &gt; 30 & doanh_nghiep != \"Khác\")\nlist nganh doanh_nghiep thi_phan if thong_linh == 1, noobs\n\n\n\n\n\n\nLưu ý: “Khác” là tổng nhiều DN nhỏ, không phải 1 DN — phải loại khỏi phép kiểm tra thống lĩnh.\n\n\n\nCâu hỏi 3: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
