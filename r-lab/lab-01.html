@@ -268,49 +268,49 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 02 — Phân tích chi tiêu công Việt Nam</span></a>
+ <span class="menu-text">R Lab 2 — Phân tích chi tiêu công Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
+ <span class="menu-text">R Lab 3 — Tính HHI cho 5 ngành Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 04 — Mô phỏng thuế Pigou</span></a>
+ <span class="menu-text">R Lab 4 — Mô phỏng thuế Pigou</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 05 — DNNN vs KTTN vs FDI</span></a>
+ <span class="menu-text">R Lab 5 — DNNN vs KTTN vs FDI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 06 — Ước lượng Cobb-Douglas Việt Nam</span></a>
+ <span class="menu-text">R Lab 6 — Ước lượng Cobb-Douglas Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 07 — Mô phỏng IS-LM</span></a>
+ <span class="menu-text">R Lab 7 — Mô phỏng IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
+ <span class="menu-text">R Lab 8 — Đường Phillips Việt Nam 2010-2024</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../r-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">R Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -533,10 +533,13 @@ window.Quarto = {
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Y tế"</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.85</span>))</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p3)</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"ppf_growth.png"</span>, p3, <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">150</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position        =</span> <span class="st">"inside"</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.85</span>)   <span class="co"># ggplot2 ≥ 3.5 cú pháp mới</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p3)</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"ppf_growth.png"</span>, p3, <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">150</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Câu hỏi 4</strong>: PPF mới mức tối đa Y khi X=0 = ? Đây có phải tăng trưởng đều giữa 2 ngành?</p>
 </section>
 <section id="liên-hệ-thực-tiễn-việt-nam" class="level2">

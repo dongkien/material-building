@@ -1704,49 +1704,49 @@
   {
     "objectID": "r-lab/lab-02.html",
     "href": "r-lab/lab-02.html",
-    "title": "R Lab 02 — Phân tích chi tiêu công Việt Nam",
+    "title": "R Lab 2 — Phân tích chi tiêu công Việt Nam",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 2\n\n\n\nPhiên bản R của Stata Lab 02. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: read_excel, group_by/summarise, pivot_longer, geom_area",
+    "text": "Note🎯 Liên kết với Buổi 2\n\n\n\nPhiên bản R của Stata Lab 2. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: read_excel, group_by/summarise, pivot_longer, geom_area",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 02 — Phân tích chi tiêu công Việt Nam"
+      "R Lab 2 — Phân tích chi tiêu công Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-02.html#khung-lab-02",
     "href": "r-lab/lab-02.html#khung-lab-02",
-    "title": "R Lab 02 — Phân tích chi tiêu công Việt Nam",
+    "title": "R Lab 2 — Phân tích chi tiêu công Việt Nam",
     "section": "Khung Lab 02",
-    "text": "Khung Lab 02\n\n1. Bài toán\nPhân loại chi NSNN theo 5 chức năng QLKT, tỷ trọng, stacked area\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 02 — bạn có thể:\n\nMở Stata Lab 02 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 02 — Phân tích chi tiêu công Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: read_excel, group_by/summarise, pivot_longer, geom_area\n\n# === Lưu kết quả ===\n# ggsave(\"lab02.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 02 — xem chi tiết tại Stata Lab 02.",
+    "text": "Khung Lab 02\n\n1. Bài toán\nPhân loại chi NSNN theo 5 chức năng QLKT, tỷ trọng, stacked area\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 2 — bạn có thể:\n\nMở Stata Lab 2 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 2 — Phân tích chi tiêu công Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: read_excel, group_by/summarise, pivot_longer, geom_area\n\n# === Lưu kết quả ===\n# ggsave(\"lab2.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 2 — xem chi tiết tại Stata Lab 2.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 02 — Phân tích chi tiêu công Việt Nam"
+      "R Lab 2 — Phân tích chi tiêu công Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-02.html#deliverable",
     "href": "r-lab/lab-02.html#deliverable",
-    "title": "R Lab 02 — Phân tích chi tiêu công Việt Nam",
+    "title": "R Lab 2 — Phân tích chi tiêu công Việt Nam",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab02_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab02_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab02_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB02-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab2_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab2_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab2_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB2-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 02 — Phân tích chi tiêu công Việt Nam"
+      "R Lab 2 — Phân tích chi tiêu công Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-02.html#tiêu-chí-chấm",
     "href": "r-lab/lab-02.html#tiêu-chí-chấm",
-    "title": "R Lab 02 — Phân tích chi tiêu công Việt Nam",
+    "title": "R Lab 2 — Phân tích chi tiêu công Việt Nam",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 1 | Lab tiếp theo: R Lab 3 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 02 — Phân tích chi tiêu công Việt Nam"
+      "R Lab 2 — Phân tích chi tiêu công Việt Nam"
     ]
   },
   {
@@ -1896,97 +1896,97 @@
   {
     "objectID": "r-lab/lab-07.html",
     "href": "r-lab/lab-07.html",
-    "title": "R Lab 07 — Mô phỏng IS-LM",
+    "title": "R Lab 7 — Mô phỏng IS-LM",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 7\n\n\n\nPhiên bản R của Stata Lab 07. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, mutate, optimize, geom_line",
+    "text": "Note🎯 Liên kết với Buổi 7\n\n\n\nPhiên bản R của Stata Lab 7. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, mutate, optimize, geom_line",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 07 — Mô phỏng IS-LM"
+      "R Lab 7 — Mô phỏng IS-LM"
     ]
   },
   {
     "objectID": "r-lab/lab-07.html#khung-lab-07",
     "href": "r-lab/lab-07.html#khung-lab-07",
-    "title": "R Lab 07 — Mô phỏng IS-LM",
+    "title": "R Lab 7 — Mô phỏng IS-LM",
     "section": "Khung Lab 07",
-    "text": "Khung Lab 07\n\n1. Bài toán\nTìm Y* r* bằng số, simulate ΔG ΔM, đo crowding out\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 07 — bạn có thể:\n\nMở Stata Lab 07 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 07 — Mô phỏng IS-LM\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, mutate, optimize, geom_line\n\n# === Lưu kết quả ===\n# ggsave(\"lab07.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 07 — xem chi tiết tại Stata Lab 07.",
+    "text": "Khung Lab 07\n\n1. Bài toán\nTìm Y* r* bằng số, simulate ΔG ΔM, đo crowding out\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 7 — bạn có thể:\n\nMở Stata Lab 7 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 7 — Mô phỏng IS-LM\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, mutate, optimize, geom_line\n\n# === Lưu kết quả ===\n# ggsave(\"lab7.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 7 — xem chi tiết tại Stata Lab 7.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 07 — Mô phỏng IS-LM"
+      "R Lab 7 — Mô phỏng IS-LM"
     ]
   },
   {
     "objectID": "r-lab/lab-07.html#deliverable",
     "href": "r-lab/lab-07.html#deliverable",
-    "title": "R Lab 07 — Mô phỏng IS-LM",
+    "title": "R Lab 7 — Mô phỏng IS-LM",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab07_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab07_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab07_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB07-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab7_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab7_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab7_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB7-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 07 — Mô phỏng IS-LM"
+      "R Lab 7 — Mô phỏng IS-LM"
     ]
   },
   {
     "objectID": "r-lab/lab-07.html#tiêu-chí-chấm",
     "href": "r-lab/lab-07.html#tiêu-chí-chấm",
-    "title": "R Lab 07 — Mô phỏng IS-LM",
+    "title": "R Lab 7 — Mô phỏng IS-LM",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 6 | Lab tiếp theo: R Lab 8 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 07 — Mô phỏng IS-LM"
+      "R Lab 7 — Mô phỏng IS-LM"
     ]
   },
   {
     "objectID": "r-lab/lab-05.html",
     "href": "r-lab/lab-05.html",
-    "title": "R Lab 05 — DNNN vs KTTN vs FDI",
+    "title": "R Lab 5 — DNNN vs KTTN vs FDI",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 5\n\n\n\nPhiên bản R của Stata Lab 05. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: t.test, geom_boxplot, summarise by group",
+    "text": "Note🎯 Liên kết với Buổi 5\n\n\n\nPhiên bản R của Stata Lab 5. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: t.test, geom_boxplot, summarise by group",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 05 — DNNN vs KTTN vs FDI"
+      "R Lab 5 — DNNN vs KTTN vs FDI"
     ]
   },
   {
     "objectID": "r-lab/lab-05.html#khung-lab-05",
     "href": "r-lab/lab-05.html#khung-lab-05",
-    "title": "R Lab 05 — DNNN vs KTTN vs FDI",
+    "title": "R Lab 5 — DNNN vs KTTN vs FDI",
     "section": "Khung Lab 05",
-    "text": "Khung Lab 05\n\n1. Bài toán\nSo sánh ROE/ROA/NSLĐ/R&D 3 loại DN bằng t-test, box plot\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 05 — bạn có thể:\n\nMở Stata Lab 05 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 05 — DNNN vs KTTN vs FDI\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: t.test, geom_boxplot, summarise by group\n\n# === Lưu kết quả ===\n# ggsave(\"lab05.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 05 — xem chi tiết tại Stata Lab 05.",
+    "text": "Khung Lab 05\n\n1. Bài toán\nSo sánh ROE/ROA/NSLĐ/R&D 3 loại DN bằng t-test, box plot\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 5 — bạn có thể:\n\nMở Stata Lab 5 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 5 — DNNN vs KTTN vs FDI\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: t.test, geom_boxplot, summarise by group\n\n# === Lưu kết quả ===\n# ggsave(\"lab5.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 5 — xem chi tiết tại Stata Lab 5.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 05 — DNNN vs KTTN vs FDI"
+      "R Lab 5 — DNNN vs KTTN vs FDI"
     ]
   },
   {
     "objectID": "r-lab/lab-05.html#deliverable",
     "href": "r-lab/lab-05.html#deliverable",
-    "title": "R Lab 05 — DNNN vs KTTN vs FDI",
+    "title": "R Lab 5 — DNNN vs KTTN vs FDI",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab05_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab05_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab05_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB05-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab5_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab5_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab5_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB5-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 05 — DNNN vs KTTN vs FDI"
+      "R Lab 5 — DNNN vs KTTN vs FDI"
     ]
   },
   {
     "objectID": "r-lab/lab-05.html#tiêu-chí-chấm",
     "href": "r-lab/lab-05.html#tiêu-chí-chấm",
-    "title": "R Lab 05 — DNNN vs KTTN vs FDI",
+    "title": "R Lab 5 — DNNN vs KTTN vs FDI",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 4 | Lab tiếp theo: R Lab 6 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 05 — DNNN vs KTTN vs FDI"
+      "R Lab 5 — DNNN vs KTTN vs FDI"
     ]
   },
   {
@@ -2066,7 +2066,7 @@
     "href": "r-lab/lab-01.html#ppf-dịch-ra-tăng-trưởng",
     "title": "R Lab 1 — Vẽ PPF và tính chi phí cơ hội",
     "section": "6. PPF dịch ra — tăng trưởng",
-    "text": "6. PPF dịch ra — tăng trưởng\n# === Phần 5: PPF dịch ra ===\nppf_growth &lt;- tibble(\n  x = 0:11,\n  y_old = sqrt(pmax(100 - x^2, 0)),\n  y_new = sqrt(pmax(130 - x^2, 0))\n)\n\np3 &lt;- ggplot(ppf_growth, aes(x = x)) +\n  geom_line(aes(y = y_old, color = \"PPF cũ\"), linewidth = 1.2) +\n  geom_line(aes(y = y_new, color = \"PPF mới\"),\n            linewidth = 1.2, linetype = \"dashed\") +\n  scale_color_manual(\n    name = NULL,\n    values = c(\"PPF cũ\" = \"#722f37\", \"PPF mới\" = \"#2e7d50\")\n  ) +\n  labs(\n    title = \"PPF dịch ra — đại diện cho tăng trưởng kinh tế\",\n    x = \"Quân sự\",\n    y = \"Y tế\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(legend.position = c(0.85, 0.85))\n\nprint(p3)\nggsave(\"ppf_growth.png\", p3, width = 10, height = 6, dpi = 150)\nCâu hỏi 4: PPF mới mức tối đa Y khi X=0 = ? Đây có phải tăng trưởng đều giữa 2 ngành?",
+    "text": "6. PPF dịch ra — tăng trưởng\n# === Phần 5: PPF dịch ra ===\nppf_growth &lt;- tibble(\n  x = 0:11,\n  y_old = sqrt(pmax(100 - x^2, 0)),\n  y_new = sqrt(pmax(130 - x^2, 0))\n)\n\np3 &lt;- ggplot(ppf_growth, aes(x = x)) +\n  geom_line(aes(y = y_old, color = \"PPF cũ\"), linewidth = 1.2) +\n  geom_line(aes(y = y_new, color = \"PPF mới\"),\n            linewidth = 1.2, linetype = \"dashed\") +\n  scale_color_manual(\n    name = NULL,\n    values = c(\"PPF cũ\" = \"#722f37\", \"PPF mới\" = \"#2e7d50\")\n  ) +\n  labs(\n    title = \"PPF dịch ra — đại diện cho tăng trưởng kinh tế\",\n    x = \"Quân sự\",\n    y = \"Y tế\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(\n    legend.position        = \"inside\",\n    legend.position.inside = c(0.85, 0.85)   # ggplot2 ≥ 3.5 cú pháp mới\n  )\n\nprint(p3)\nggsave(\"ppf_growth.png\", p3, width = 10, height = 6, dpi = 150)\nCâu hỏi 4: PPF mới mức tối đa Y khi X=0 = ? Đây có phải tăng trưởng đều giữa 2 ngành?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2112,97 +2112,97 @@
   {
     "objectID": "r-lab/lab-06.html",
     "href": "r-lab/lab-06.html",
-    "title": "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam",
+    "title": "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 6\n\n\n\nPhiên bản R của Stata Lab 06. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: lm, broom::tidy, log transform, residuals",
+    "text": "Note🎯 Liên kết với Buổi 6\n\n\n\nPhiên bản R của Stata Lab 6. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: lm, broom::tidy, log transform, residuals",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam"
+      "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-06.html#khung-lab-06",
     "href": "r-lab/lab-06.html#khung-lab-06",
-    "title": "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam",
+    "title": "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam",
     "section": "Khung Lab 06",
-    "text": "Khung Lab 06\n\n1. Bài toán\nlog regression Y=AK^α L^(1-α), TFP residual, growth accounting\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 06 — bạn có thể:\n\nMở Stata Lab 06 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 06 — Ước lượng Cobb-Douglas Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: lm, broom::tidy, log transform, residuals\n\n# === Lưu kết quả ===\n# ggsave(\"lab06.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 06 — xem chi tiết tại Stata Lab 06.",
+    "text": "Khung Lab 06\n\n1. Bài toán\nlog regression Y=AK^α L^(1-α), TFP residual, growth accounting\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 6 — bạn có thể:\n\nMở Stata Lab 6 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 6 — Ước lượng Cobb-Douglas Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: lm, broom::tidy, log transform, residuals\n\n# === Lưu kết quả ===\n# ggsave(\"lab6.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 6 — xem chi tiết tại Stata Lab 6.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam"
+      "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-06.html#deliverable",
     "href": "r-lab/lab-06.html#deliverable",
-    "title": "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam",
+    "title": "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab06_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab06_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab06_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB06-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab6_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab6_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab6_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB6-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam"
+      "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-06.html#tiêu-chí-chấm",
     "href": "r-lab/lab-06.html#tiêu-chí-chấm",
-    "title": "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam",
+    "title": "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 5 | Lab tiếp theo: R Lab 7 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam"
+      "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-08.html",
     "href": "r-lab/lab-08.html",
-    "title": "R Lab 08 — Đường Phillips Việt Nam 2010-2024",
+    "title": "R Lab 8 — Đường Phillips Việt Nam 2010-2024",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 8\n\n\n\nPhiên bản R của Stata Lab 08. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: lm, geom_smooth, lag, fixest::feols",
+    "text": "Note🎯 Liên kết với Buổi 8\n\n\n\nPhiên bản R của Stata Lab 8. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: lm, geom_smooth, lag, fixest::feols",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 08 — Đường Phillips Việt Nam 2010-2024"
+      "R Lab 8 — Đường Phillips Việt Nam 2010-2024"
     ]
   },
   {
     "objectID": "r-lab/lab-08.html#khung-lab-08",
     "href": "r-lab/lab-08.html#khung-lab-08",
-    "title": "R Lab 08 — Đường Phillips Việt Nam 2010-2024",
+    "title": "R Lab 8 — Đường Phillips Việt Nam 2010-2024",
     "section": "Khung Lab 08",
-    "text": "Khung Lab 08\n\n1. Bài toán\nOLS CPI~unemployment, 2 giai đoạn, NAIRU\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 08 — bạn có thể:\n\nMở Stata Lab 08 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 08 — Đường Phillips Việt Nam 2010-2024\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: lm, geom_smooth, lag, fixest::feols\n\n# === Lưu kết quả ===\n# ggsave(\"lab08.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 08 — xem chi tiết tại Stata Lab 08.",
+    "text": "Khung Lab 08\n\n1. Bài toán\nOLS CPI~unemployment, 2 giai đoạn, NAIRU\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 8 — bạn có thể:\n\nMở Stata Lab 8 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 8 — Đường Phillips Việt Nam 2010-2024\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: lm, geom_smooth, lag, fixest::feols\n\n# === Lưu kết quả ===\n# ggsave(\"lab8.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 8 — xem chi tiết tại Stata Lab 8.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 08 — Đường Phillips Việt Nam 2010-2024"
+      "R Lab 8 — Đường Phillips Việt Nam 2010-2024"
     ]
   },
   {
     "objectID": "r-lab/lab-08.html#deliverable",
     "href": "r-lab/lab-08.html#deliverable",
-    "title": "R Lab 08 — Đường Phillips Việt Nam 2010-2024",
+    "title": "R Lab 8 — Đường Phillips Việt Nam 2010-2024",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab08_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab08_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab08_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB08-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab8_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab8_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab8_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB8-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 08 — Đường Phillips Việt Nam 2010-2024"
+      "R Lab 8 — Đường Phillips Việt Nam 2010-2024"
     ]
   },
   {
     "objectID": "r-lab/lab-08.html#tiêu-chí-chấm",
     "href": "r-lab/lab-08.html#tiêu-chí-chấm",
-    "title": "R Lab 08 — Đường Phillips Việt Nam 2010-2024",
+    "title": "R Lab 8 — Đường Phillips Việt Nam 2010-2024",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 7 | Lab tiếp theo: R Lab 9 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 08 — Đường Phillips Việt Nam 2010-2024"
+      "R Lab 8 — Đường Phillips Việt Nam 2010-2024"
     ]
   },
   {
@@ -2305,49 +2305,49 @@
   {
     "objectID": "r-lab/lab-04.html",
     "href": "r-lab/lab-04.html",
-    "title": "R Lab 04 — Mô phỏng thuế Pigou",
+    "title": "R Lab 4 — Mô phỏng thuế Pigou",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 4\n\n\n\nPhiên bản R của Stata Lab 04. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, geom_line layered, intersect lines",
+    "text": "Note🎯 Liên kết với Buổi 4\n\n\n\nPhiên bản R của Stata Lab 4. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, geom_line layered, intersect lines",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 04 — Mô phỏng thuế Pigou"
+      "R Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
     "objectID": "r-lab/lab-04.html#khung-lab-04",
     "href": "r-lab/lab-04.html#khung-lab-04",
-    "title": "R Lab 04 — Mô phỏng thuế Pigou",
+    "title": "R Lab 4 — Mô phỏng thuế Pigou",
     "section": "Khung Lab 04",
-    "text": "Khung Lab 04\n\n1. Bài toán\nTìm cân bằng MPC vs MSC, tính DWL, vẽ 4 đường\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 04 — bạn có thể:\n\nMở Stata Lab 04 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 04 — Mô phỏng thuế Pigou\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, geom_line layered, intersect lines\n\n# === Lưu kết quả ===\n# ggsave(\"lab04.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 04 — xem chi tiết tại Stata Lab 04.",
+    "text": "Khung Lab 04\n\n1. Bài toán\nTìm cân bằng MPC vs MSC, tính DWL, vẽ 4 đường\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 4 — bạn có thể:\n\nMở Stata Lab 4 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 4 — Mô phỏng thuế Pigou\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, geom_line layered, intersect lines\n\n# === Lưu kết quả ===\n# ggsave(\"lab4.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 4 — xem chi tiết tại Stata Lab 4.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 04 — Mô phỏng thuế Pigou"
+      "R Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
     "objectID": "r-lab/lab-04.html#deliverable",
     "href": "r-lab/lab-04.html#deliverable",
-    "title": "R Lab 04 — Mô phỏng thuế Pigou",
+    "title": "R Lab 4 — Mô phỏng thuế Pigou",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab04_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab04_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab04_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB04-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab4_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab4_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab4_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB4-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 04 — Mô phỏng thuế Pigou"
+      "R Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
     "objectID": "r-lab/lab-04.html#tiêu-chí-chấm",
     "href": "r-lab/lab-04.html#tiêu-chí-chấm",
-    "title": "R Lab 04 — Mô phỏng thuế Pigou",
+    "title": "R Lab 4 — Mô phỏng thuế Pigou",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 3 | Lab tiếp theo: R Lab 5 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 04 — Mô phỏng thuế Pigou"
+      "R Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
@@ -2497,97 +2497,97 @@
   {
     "objectID": "r-lab/lab-09.html",
     "href": "r-lab/lab-09.html",
-    "title": "R Lab 09 — Tính NEER và REER VND",
+    "title": "R Lab 9 — Tính NEER và REER VND",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 9\n\n\n\nPhiên bản R của Stata Lab 09. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: prod, weighted geometric mean, tidy with pivot_longer",
+    "text": "Note🎯 Liên kết với Buổi 9\n\n\n\nPhiên bản R của Stata Lab 9. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: prod, weighted geometric mean, tidy with pivot_longer",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 09 — Tính NEER và REER VND"
+      "R Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
     "objectID": "r-lab/lab-09.html#khung-lab-09",
     "href": "r-lab/lab-09.html#khung-lab-09",
-    "title": "R Lab 09 — Tính NEER và REER VND",
+    "title": "R Lab 9 — Tính NEER và REER VND",
     "section": "Khung Lab 09",
-    "text": "Khung Lab 09\n\n1. Bài toán\nTrọng số 5 đối tác, geometric mean, REER với CPI\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 09 — bạn có thể:\n\nMở Stata Lab 09 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 09 — Tính NEER và REER VND\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: prod, weighted geometric mean, tidy with pivot_longer\n\n# === Lưu kết quả ===\n# ggsave(\"lab09.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 09 — xem chi tiết tại Stata Lab 09.",
+    "text": "Khung Lab 09\n\n1. Bài toán\nTrọng số 5 đối tác, geometric mean, REER với CPI\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 9 — bạn có thể:\n\nMở Stata Lab 9 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 9 — Tính NEER và REER VND\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: prod, weighted geometric mean, tidy with pivot_longer\n\n# === Lưu kết quả ===\n# ggsave(\"lab9.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 9 — xem chi tiết tại Stata Lab 9.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 09 — Tính NEER và REER VND"
+      "R Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
     "objectID": "r-lab/lab-09.html#deliverable",
     "href": "r-lab/lab-09.html#deliverable",
-    "title": "R Lab 09 — Tính NEER và REER VND",
+    "title": "R Lab 9 — Tính NEER và REER VND",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab09_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab09_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab09_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB09-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab9_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab9_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab9_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB9-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 09 — Tính NEER và REER VND"
+      "R Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
     "objectID": "r-lab/lab-09.html#tiêu-chí-chấm",
     "href": "r-lab/lab-09.html#tiêu-chí-chấm",
-    "title": "R Lab 09 — Tính NEER và REER VND",
+    "title": "R Lab 9 — Tính NEER và REER VND",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 8 | Lab tiếp theo: R Lab 10 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 09 — Tính NEER và REER VND"
+      "R Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
     "objectID": "r-lab/lab-03.html",
     "href": "r-lab/lab-03.html",
-    "title": "R Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "R Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 3\n\n\n\nPhiên bản R của Stata Lab 03. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, group_by, mutate, summarise, geom_col",
+    "text": "Note🎯 Liên kết với Buổi 3\n\n\n\nPhiên bản R của Stata Lab 3. Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.\nKhái niệm R học: tibble, group_by, mutate, summarise, geom_col",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "R Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-03.html#khung-lab-03",
     "href": "r-lab/lab-03.html#khung-lab-03",
-    "title": "R Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "R Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "Khung Lab 03",
-    "text": "Khung Lab 03\n\n1. Bài toán\nHHI viễn thông/ngân hàng/bia/bán lẻ/hàng không, mô phỏng M&A\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 03 — bạn có thể:\n\nMở Stata Lab 03 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 03 — Tính HHI cho 5 ngành Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, group_by, mutate, summarise, geom_col\n\n# === Lưu kết quả ===\n# ggsave(\"lab03.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 03 — xem chi tiết tại Stata Lab 03.",
+    "text": "Khung Lab 03\n\n1. Bài toán\nHHI viễn thông/ngân hàng/bia/bán lẻ/hàng không, mô phỏng M&A\n\n\n2. Stata Lab tương ứng\nCùng phân tích như Stata Lab 3 — bạn có thể:\n\nMở Stata Lab 3 để xem logic phân tích, yêu cầu chi tiết, và câu hỏi suy nghĩ\nDùng bảng quy đổi Stata → R ở R Lab index để chuyển code\n\n\n\n3. Khung code R (mẫu)\n# R Lab 3 — Tính HHI cho 5 ngành Việt Nam\n# Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nlibrary(tidyverse)\nlibrary(modelsummary)        # cho bảng đẹp\nlibrary(fixest)              # cho hồi quy nâng cao (nếu cần)\n\n# === Đọc/tạo dataset ===\n# (sẽ chi tiết khi có dataset thật)\n\n# === Phân tích ===\n# Sử dụng: tibble, group_by, mutate, summarise, geom_col\n\n# === Lưu kết quả ===\n# ggsave(\"lab3.png\", plot_obj, width = 10, height = 6, dpi = 150)\n\n\n4. Câu hỏi suy nghĩ\nGiống Stata Lab 3 — xem chi tiết tại Stata Lab 3.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "R Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-03.html#deliverable",
     "href": "r-lab/lab-03.html#deliverable",
-    "title": "R Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "R Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "Deliverable",
-    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab03_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab03_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab03_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB03-MSSV-HọTên",
+    "text": "Deliverable\nNộp 3 file (như Lab khác):\n\n\n\nFile\nNội dung\n\n\n\n\nlab3_&lt;tên&gt;.R hoặc .qmd\nCode R + comment\n\n\nlab3_&lt;tên&gt;.html (nếu Quarto)\nOutput rendered\n\n\nlab3_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: RLAB3-MSSV-HọTên",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "R Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
     "objectID": "r-lab/lab-03.html#tiêu-chí-chấm",
     "href": "r-lab/lab-03.html#tiêu-chí-chấm",
-    "title": "R Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "R Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "Tiêu chí chấm",
     "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode R chạy đúng\n30%\n\n\nVận dụng đúng kỹ thuật mới của bài\n25%\n\n\nBiểu đồ ggplot2 đẹp\n20%\n\n\nTrả lời câu hỏi sâu\n25%\n\n\n\n\n← Lab trước: R Lab 2 | Lab tiếp theo: R Lab 4 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "R Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "R Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
@@ -2687,7 +2687,7 @@
     "href": "r-lab/index.html#stata-r-cheatsheet",
     "title": "R Lab",
     "section": "Stata → R cheatsheet",
-    "text": "Stata → R cheatsheet\nBảng quy đổi nhanh cho người đã quen Stata:\n\n\n\n\n\n\n\n\nStata\nR (tidyverse)\nMục đích\n\n\n\n\nuse mydata.dta\ndf &lt;- read_dta(\"mydata.dta\")\nĐọc file\n\n\nimport delimited \"mydata.csv\"\ndf &lt;- read_csv(\"mydata.csv\")\nĐọc CSV\n\n\ndescribe\nglimpse(df)\nMô tả cấu trúc\n\n\nsummarize\nsummary(df)\nThống kê mô tả\n\n\ntabulate x\ncount(df, x)\nĐếm theo nhóm\n\n\ngen y = x*2\ndf &lt;- df |&gt; mutate(y = x*2)\nTạo biến mới\n\n\nkeep if x &gt; 0\ndf &lt;- df |&gt; filter(x &gt; 0)\nLọc\n\n\nbysort id: gen mean_y = mean(y)\ndf |&gt; group_by(id) |&gt; mutate(mean_y = mean(y))\nGroup by\n\n\nregress y x1 x2\nlm(y ~ x1 + x2, data = df)\nHồi quy OLS\n\n\nregress y x1 x2, robust\nfeols(y ~ x1 + x2, data = df) (fixest)\nOLS robust\n\n\nxtreg y x, fe i(id)\nfeols(y ~ x | id, data = df) (fixest)\nPanel FE\n\n\ntwoway scatter y x\nggplot(df, aes(x, y)) + geom_point()\nScatter\n\n\ntwoway line y x\nggplot(df, aes(x, y)) + geom_line()\nLine plot",
+    "text": "Stata → R cheatsheet\nBảng quy đổi nhanh cho người đã quen Stata:\n\n\n\n\n\n\n\n\nStata\nR (tidyverse)\nMục đích\n\n\n\n\nuse mydata.dta\ndf &lt;- read_dta(\"mydata.dta\")\nĐọc file\n\n\nimport delimited \"mydata.csv\"\ndf &lt;- read_csv(\"mydata.csv\")\nĐọc CSV\n\n\ndescribe\nglimpse(df)\nMô tả cấu trúc\n\n\nsummarize\nsummary(df)\nThống kê mô tả\n\n\ntabulate x\ncount(df, x)\nĐếm theo nhóm\n\n\ngen y = x*2\ndf &lt;- df |&gt; mutate(y = x*2)\nTạo biến mới\n\n\nkeep if x &gt; 0\ndf &lt;- df |&gt; filter(x &gt; 0)\nLọc\n\n\nbysort id: gen mean_y = mean(y)\ndf |&gt; group_by(id) |&gt; mutate(mean_y = mean(y))\nGroup by\n\n\nregress y x1 x2\nlm(y ~ x1 + x2, data = df)\nHồi quy OLS\n\n\nregress y x1 x2, robust\nfeols(y ~ x1 + x2, data = df, vcov = \"hetero\") (fixest)\nOLS robust SE (HC1 — phải khai báo vcov)\n\n\nxtreg y x, fe i(id) vce(robust)\nfeols(y ~ x | id, data = df) (fixest)\nPanel FE — fixest tự cluster SE tại id\n\n\ntwoway scatter y x\nggplot(df, aes(x, y)) + geom_point()\nScatter\n\n\ntwoway line y x\nggplot(df, aes(x, y)) + geom_line()\nLine plot",
     "crumbs": [
       "Trang chủ",
       "R Lab"
