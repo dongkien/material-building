@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 0 — Cài Stata và các lệnh cơ bản – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 0 — Cài Stata và các lệnh cơ bản – Nguyên lý Quản lý Kinh tế</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Nguyên lý Quản lý Kinh tế (DTU301)</span>
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -142,10 +142,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../lectures/index.html"> 
 <span class="menu-text">Bài giảng</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../stata-lab/index.html"> 
-<span class="menu-text">Stata Lab</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stata--r-lab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stata / R Lab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stata--r-lab">    
+        <li>
+    <a class="dropdown-item" href="../stata-lab/index.html">
+ <span class="dropdown-text">Stata Lab</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../r-lab/index.html">
+ <span class="dropdown-text">R Lab</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../problem-sets/index.html"> 
 <span class="menu-text">Tiểu luận / Bài tập</span></a>
@@ -153,6 +164,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../exams/index.html"> 
 <span class="menu-text">Đánh giá</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../nguoi-huong-dan.html"> 
+<span class="menu-text">Người hướng dẫn</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -406,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên">Phương án A — Phòng máy FTU (khuyên dùng cho sinh viên)</h3>
 <p>Đa số phòng máy của FTU có Stata cài sẵn. Lịch sử dụng:</p>
 <ul>
-<li>Hỏi giảng viên về <strong>lịch phòng máy</strong> dành cho lớp DTU301</li>
+<li>Hỏi giảng viên về <strong>lịch phòng máy</strong> dành cho lớp</li>
 <li>Mang theo <strong>USB</strong> để lưu file do/log/dataset của bạn</li>
 <li>Mỗi buổi lên phòng máy 1-2 lần là đủ làm xong 1-2 lab</li>
 </ul>
@@ -481,7 +496,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="viết-do-file-đầu-tiên" class="level2">
 <h2 class="anchored" data-anchor-id="viết-do-file-đầu-tiên">3. Viết do-file đầu tiên</h2>
 <p>Mở Do-file Editor (<code>Ctrl+9</code>) và gõ:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 0 — DTU301 — Buổi học đầu tiên với Stata</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 0 — Buổi học đầu tiên với Stata</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền tên&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>* MSSV: &lt;điền MSSV&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>* Ngày: &lt;điền ngày&gt;</span>
@@ -629,7 +644,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Sử dụng <code>///</code></strong> để xuống dòng trong 1 lệnh dài</li>
 <li><strong>Bật <code>set more off</code></strong> đầu file để không phải bấm space</li>
 <li><strong>Save thường xuyên</strong> dataset đã làm sạch</li>
-<li><strong>Tạo working directory chuyên cho DTU301</strong>: <code>cd "đường-dẫn"</code> đầu file</li>
+<li><strong>Tạo working directory chuyên cho </strong>: <code>cd "đường-dẫn"</code> đầu file</li>
 </ol>
 </section>
 <section id="lệnh-giúp-đỡ" class="level2">

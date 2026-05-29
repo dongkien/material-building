@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>R Lab 0 — Cài R + RStudio + Tidyverse – Nguyên lý Quản lý Kinh tế</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": true,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Trang chủ</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Đề cương</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Lịch học</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lectures/index.html"> 
+<span class="menu-text">Bài giảng</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stata--r-lab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stata / R Lab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stata--r-lab">    
+        <li>
+    <a class="dropdown-item" href="../stata-lab/index.html">
+ <span class="dropdown-text">Stata Lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../r-lab/index.html">
+ <span class="dropdown-text">R Lab</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../problem-sets/index.html"> 
+<span class="menu-text">Tiểu luận / Bài tập</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../exams/index.html"> 
+<span class="menu-text">Đánh giá</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../nguoi-huong-dan.html"> 
+<span class="menu-text">Người hướng dẫn</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../r-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../r-lab/lab-00.html">R Lab 0 — Cài R + RStudio + Tidyverse</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">← Trang chủ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Hướng dẫn</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-00.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">R Lab 0 — Cài R + RStudio + Tidyverse</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab theo buổi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 1 — Vẽ PPF và tính chi phí cơ hội</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 02 — Phân tích chi tiêu công Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 04 — Mô phỏng thuế Pigou</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 05 — DNNN vs KTTN vs FDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 06 — Ước lượng Cobb-Douglas Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 07 — Mô phỏng IS-LM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 09 — Tính NEER và REER VND</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 11 — Event study Khủng hoảng châu Á 1997</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 12 — PCI / PAPI / PAR Index theo tỉnh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 13 — So sánh 6 vùng KT-XH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 14 — Capstone phân tích chính sách</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Trong bài</h2>
+   
+  <ul>
+  <li><a href="#cài-r-rstudio" id="toc-cài-r-rstudio" class="nav-link active" data-scroll-target="#cài-r-rstudio">1. Cài R + RStudio</a>
+  <ul class="collapse">
+  <li><a href="#phương-án-a-cài-về-máy-cá-nhân-khuyên-dùng" id="toc-phương-án-a-cài-về-máy-cá-nhân-khuyên-dùng" class="nav-link" data-scroll-target="#phương-án-a-cài-về-máy-cá-nhân-khuyên-dùng">Phương án A — Cài về máy cá nhân (khuyên dùng)</a></li>
+  <li><a href="#phương-án-b-posit-cloud-online-free-tier" id="toc-phương-án-b-posit-cloud-online-free-tier" class="nav-link" data-scroll-target="#phương-án-b-posit-cloud-online-free-tier">Phương án B — Posit Cloud (online, free tier)</a></li>
+  </ul></li>
+  <li><a href="#cài-tidyverse-các-package-cần" id="toc-cài-tidyverse-các-package-cần" class="nav-link" data-scroll-target="#cài-tidyverse-các-package-cần">2. Cài tidyverse + các package cần</a></li>
+  <li><a href="#script-r-đầu-tiên" id="toc-script-r-đầu-tiên" class="nav-link" data-scroll-target="#script-r-đầu-tiên">3. Script R đầu tiên</a></li>
+  <li><a href="#khám-phá-dataset-bốn-lệnh-cốt-lõi" id="toc-khám-phá-dataset-bốn-lệnh-cốt-lõi" class="nav-link" data-scroll-target="#khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</a>
+  <ul class="collapse">
+  <li><a href="#glimpse-mô-tả-cấu-trúc" id="toc-glimpse-mô-tả-cấu-trúc" class="nav-link" data-scroll-target="#glimpse-mô-tả-cấu-trúc"><code>glimpse()</code> — mô tả cấu trúc</a></li>
+  <li><a href="#summary-thống-kê-mô-tả" id="toc-summary-thống-kê-mô-tả" class="nav-link" data-scroll-target="#summary-thống-kê-mô-tả"><code>summary()</code> — thống kê mô tả</a></li>
+  <li><a href="#count-bảng-tần-suất" id="toc-count-bảng-tần-suất" class="nav-link" data-scroll-target="#count-bảng-tần-suất"><code>count()</code> — bảng tần suất</a></li>
+  <li><a href="#xem-dòng-dữ-liệu" id="toc-xem-dòng-dữ-liệu" class="nav-link" data-scroll-target="#xem-dòng-dữ-liệu">Xem dòng dữ liệu</a></li>
+  </ul></li>
+  <li><a href="#tạo-biến-lọc-sort-tidyverse" id="toc-tạo-biến-lọc-sort-tidyverse" class="nav-link" data-scroll-target="#tạo-biến-lọc-sort-tidyverse">5. Tạo biến + lọc + sort (tidyverse)</a></li>
+  <li><a href="#vẽ-biểu-đồ-với-ggplot2" id="toc-vẽ-biểu-đồ-với-ggplot2" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-với-ggplot2">6. Vẽ biểu đồ với ggplot2</a>
+  <ul class="collapse">
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot">Scatter plot</a></li>
+  <li><a href="#bar-chart-theo-nhóm" id="toc-bar-chart-theo-nhóm" class="nav-link" data-scroll-target="#bar-chart-theo-nhóm">Bar chart theo nhóm</a></li>
+  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram">Histogram</a></li>
+  </ul></li>
+  <li><a href="#lưu-output" id="toc-lưu-output" class="nav-link" data-scroll-target="#lưu-output">7. Lưu output</a>
+  <ul class="collapse">
+  <li><a href="#lưu-dataset-đã-xử-lý" id="toc-lưu-dataset-đã-xử-lý" class="nav-link" data-scroll-target="#lưu-dataset-đã-xử-lý">Lưu dataset đã xử lý</a></li>
+  <li><a href="#lưu-biểu-đồ" id="toc-lưu-biểu-đồ" class="nav-link" data-scroll-target="#lưu-biểu-đồ">Lưu biểu đồ</a></li>
+  </ul></li>
+  <li><a href="#đọc-dataset-bên-ngoài" id="toc-đọc-dataset-bên-ngoài" class="nav-link" data-scroll-target="#đọc-dataset-bên-ngoài">8. Đọc dataset bên ngoài</a></li>
+  <li><a href="#báo-cáo-r-bằng-quarto" id="toc-báo-cáo-r-bằng-quarto" class="nav-link" data-scroll-target="#báo-cáo-r-bằng-quarto">9. Báo cáo R bằng Quarto</a></li>
+  <li><a href="#mẹo-r-hiệu-quả" id="toc-mẹo-r-hiệu-quả" class="nav-link" data-scroll-target="#mẹo-r-hiệu-quả">10. Mẹo R hiệu quả</a></li>
+  <li><a href="#deliverable-lab-0" id="toc-deliverable-lab-0" class="nav-link" data-scroll-target="#deliverable-lab-0">Deliverable Lab 0</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../r-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../r-lab/lab-00.html">R Lab 0 — Cài R + RStudio + Tidyverse</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">R Lab 0 — Cài R + RStudio + Tidyverse</h1>
+<p class="subtitle lead">Nền tảng trước khi vào 15 lab buổi</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>🎯 Mục tiêu Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sau Lab 0, bạn có thể:</p>
+<ul>
+<li><strong>Cài R + RStudio</strong> trên Windows/macOS/Linux (hoàn toàn miễn phí)</li>
+<li><strong>Cài tidyverse</strong> + các package econ phổ biến</li>
+<li><strong>Tải, đọc, ghi</strong> dataset (<code>.csv</code>, <code>.xlsx</code>, <code>.dta</code>)</li>
+<li><strong>Khám phá nhanh</strong> dữ liệu bằng <code>glimpse()</code>, <code>summary()</code>, <code>count()</code></li>
+<li><strong>Viết script R</strong> đầu tiên có comment tiếng Việt</li>
+<li><strong>Render báo cáo</strong> bằng Quarto/RMarkdown</li>
+</ul>
+</div>
+</div>
+<section id="cài-r-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="cài-r-rstudio">1. Cài R + RStudio</h2>
+<p>R là <em>ngôn ngữ + công cụ chạy</em>. RStudio là <em>IDE</em> (môi trường viết code) đẹp nhất cho R.</p>
+<section id="phương-án-a-cài-về-máy-cá-nhân-khuyên-dùng" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-a-cài-về-máy-cá-nhân-khuyên-dùng">Phương án A — Cài về máy cá nhân (khuyên dùng)</h3>
+<section id="bước-1-cài-r" class="level4">
+<h4 class="anchored" data-anchor-id="bước-1-cài-r">Bước 1: Cài R</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>OS</th>
+<th>Đường dẫn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Windows</strong></td>
+<td>https://cran.r-project.org/bin/windows/base/ — tải file <code>R-X.X.X-win.exe</code></td>
+</tr>
+<tr class="even">
+<td><strong>macOS</strong></td>
+<td>https://cran.r-project.org/bin/macosx/ — tải <code>.pkg</code> cho chip Intel hoặc Apple Silicon</td>
+</tr>
+<tr class="odd">
+<td><strong>Linux/WSL</strong></td>
+<td><code>sudo apt install r-base</code> (Ubuntu)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bước-2-cài-rstudio-desktop-free" class="level4">
+<h4 class="anchored" data-anchor-id="bước-2-cài-rstudio-desktop-free">Bước 2: Cài RStudio Desktop (free)</h4>
+<ul>
+<li>https://posit.co/download/rstudio-desktop/</li>
+<li>Cài cùng OS với R</li>
+</ul>
+<p>Mở <strong>RStudio</strong> — bạn sẽ thấy 4 cửa sổ chính:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cửa sổ</th>
+<th>Vai trò</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Source</strong> (trên trái)</td>
+<td>Viết script <code>.R</code> hoặc <code>.qmd</code></td>
+</tr>
+<tr class="even">
+<td><strong>Console</strong> (dưới trái)</td>
+<td>Chạy lệnh trực tiếp</td>
+</tr>
+<tr class="odd">
+<td><strong>Environment</strong> (trên phải)</td>
+<td>Danh sách biến hiện có</td>
+</tr>
+<tr class="even">
+<td><strong>Files / Plots / Help</strong> (dưới phải)</td>
+<td>Quản lý file, xem biểu đồ, đọc help</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="phương-án-b-posit-cloud-online-free-tier" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-b-posit-cloud-online-free-tier">Phương án B — Posit Cloud (online, free tier)</h3>
+<p>Nếu không muốn cài:</p>
+<ul>
+<li>Vào https://posit.cloud — đăng ký</li>
+<li>Tạo new project — RStudio chạy trên trình duyệt</li>
+<li>Free tier: 25 giờ/tháng (đủ cho R Lab DTU301)</li>
+</ul>
+</section>
+</section>
+<section id="cài-tidyverse-các-package-cần" class="level2">
+<h2 class="anchored" data-anchor-id="cài-tidyverse-các-package-cần">2. Cài tidyverse + các package cần</h2>
+<p>Trong RStudio Console, gõ:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bộ thư viện cốt lõi</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)    <span class="co"># dplyr + ggplot2 + readr + tibble + ...</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"haven"</span>)        <span class="co"># đọc Stata .dta</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"readxl"</span>)       <span class="co"># đọc Excel</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"fixest"</span>)       <span class="co"># hồi quy nâng cao (panel, IV, fixed effects)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"modelsummary"</span>) <span class="co"># bảng hồi quy đẹp</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggthemes"</span>)     <span class="co"># theme đẹp cho ggplot2</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"scales"</span>)       <span class="co"># format số trên biểu đồ</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Đợi vài phút. Sau khi cài xong, load:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Bạn sẽ thấy thông báo các package được attach.</p>
+</section>
+<section id="script-r-đầu-tiên" class="level2">
+<h2 class="anchored" data-anchor-id="script-r-đầu-tiên">3. Script R đầu tiên</h2>
+<p>File &gt; New File &gt; <strong>R Script</strong> (hoặc <code>Ctrl+Shift+N</code>).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lab 0 — Buổi học đầu tiên với R</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Họ tên: &lt;điền tên&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># MSSV: &lt;điền MSSV&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ngày: &lt;điền ngày&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Tải tidyverse</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataset có sẵn: mtcars (32 mẫu xe)</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># In thông báo</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"R đang chạy. Bạn đã mở dataset mtcars"</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Xem cấu trúc</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(mtcars)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Xem 5 dòng đầu</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Lưu file</strong> với tên <code>lab00_&lt;ten&gt;.R</code>. Phím tắt: <code>Ctrl+S</code>.</p>
+<p><strong>Chạy file</strong>: nhấn nút <strong>Run</strong> ở góc phải, hoặc: - <code>Ctrl+Enter</code>: chạy dòng đang chọn - <code>Ctrl+Shift+Enter</code>: chạy cả script</p>
+</section>
+<section id="khám-phá-dataset-bốn-lệnh-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</h2>
+<section id="glimpse-mô-tả-cấu-trúc" class="level3">
+<h3 class="anchored" data-anchor-id="glimpse-mô-tả-cấu-trúc"><code>glimpse()</code> — mô tả cấu trúc</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output sẽ cho: - <strong>Số dòng</strong> + <strong>số cột</strong> - <strong>Kiểu dữ liệu</strong> từng biến (dbl, int, fct, chr…) - <strong>5 giá trị đầu</strong> mỗi biến</p>
+</section>
+<section id="summary-thống-kê-mô-tả" class="level3">
+<h3 class="anchored" data-anchor-id="summary-thống-kê-mô-tả"><code>summary()</code> — thống kê mô tả</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mtcars)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mtcars[, <span class="fu">c</span>(<span class="st">"mpg"</span>, <span class="st">"hp"</span>, <span class="st">"wt"</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output cho: Min, 1st Qu, Median, Mean, 3rd Qu, Max cho mỗi biến.</p>
+</section>
+<section id="count-bảng-tần-suất" class="level3">
+<h3 class="anchored" data-anchor-id="count-bảng-tần-suất"><code>count()</code> — bảng tần suất</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(mtcars, cyl)              <span class="co"># đếm theo số xi-lanh</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(mtcars, cyl, am)          <span class="co"># bảng chéo</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="xem-dòng-dữ-liệu" class="level3">
+<h3 class="anchored" data-anchor-id="xem-dòng-dữ-liệu">Xem dòng dữ liệu</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars, <span class="dv">10</span>)                            <span class="co"># 10 dòng đầu</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> <span class="fu">filter</span>(mpg <span class="sc">&gt;</span> <span class="dv">25</span>)                  <span class="co"># các dòng có mpg &gt; 25</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> <span class="fu">select</span>(mpg, hp) <span class="sc">|&gt;</span> <span class="fu">head</span>()         <span class="co"># chỉ cột mpg, hp</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📝 Bài tập nhỏ ngay tại Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mở dataset <code>mtcars</code>, trả lời:</p>
+<ol type="1">
+<li>Có bao nhiêu xe trong dataset?</li>
+<li><code>mpg</code> (mile per gallon) trung bình là bao nhiêu?</li>
+<li>Có bao nhiêu xe 4, 6, 8 xi-lanh?</li>
+<li>Xe nào có <code>mpg</code> cao nhất?</li>
+<li>So sánh trung bình <code>mpg</code> giữa xe automatic (<code>am == 0</code>) và manual (<code>am == 1</code>)?</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="tạo-biến-lọc-sort-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-biến-lọc-sort-tidyverse">5. Tạo biến + lọc + sort (tidyverse)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cách viết cũ (base R)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>mtcars_new <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>mtcars_new<span class="sc">$</span>gpm <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> mtcars_new<span class="sc">$</span>mpg</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Cách tidyverse (khuyên dùng)</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>mtcars_new <span class="ot">&lt;-</span> mtcars <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">gpm =</span> <span class="dv">1</span> <span class="sc">/</span> mpg,                    <span class="co"># gallon per mile</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">is_efficient =</span> mpg <span class="sc">&gt;</span> <span class="dv">25</span>            <span class="co"># xe tiết kiệm</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(cyl <span class="sc">!=</span> <span class="dv">4</span>) <span class="sc">|&gt;</span>                  <span class="co"># bỏ xe 4 xi-lanh</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(mpg, hp, gpm, is_efficient) <span class="sc">|&gt;</span> <span class="co"># giữ 4 cột</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mpg))                   <span class="co"># sắp theo mpg giảm dần</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars_new, <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>|&gt;</code> là <strong>pipe</strong> — biểu thị “rồi” trong tiếng Việt. Đọc từ trên xuống: lấy <code>mtcars</code>, RỒI mutate, RỒI filter, RỒI select, RỒI arrange.</p>
+</section>
+<section id="vẽ-biểu-đồ-với-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-với-ggplot2">6. Vẽ biểu đồ với ggplot2</h2>
+<section id="scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot">Scatter plot</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> mpg, <span class="at">y =</span> hp)) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Công suất vs Tiết kiệm xăng"</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Mile per gallon"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Horsepower"</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="bar-chart-theo-nhóm" class="level3">
+<h3 class="anchored" data-anchor-id="bar-chart-theo-nhóm">Bar chart theo nhóm</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(cyl) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(cyl), <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#722f37"</span>) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Số xe theo số xi-lanh"</span>, <span class="at">x =</span> <span class="st">"Xi-lanh"</span>, <span class="at">y =</span> <span class="st">"Số xe"</span>) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="histogram" class="level3">
+<h3 class="anchored" data-anchor-id="histogram">Histogram</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>, <span class="at">fill =</span> <span class="st">"#c19a4d"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Phân bố MPG"</span>) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="lưu-output" class="level2">
+<h2 class="anchored" data-anchor-id="lưu-output">7. Lưu output</h2>
+<section id="lưu-dataset-đã-xử-lý" class="level3">
+<h3 class="anchored" data-anchor-id="lưu-dataset-đã-xử-lý">Lưu dataset đã xử lý</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(mtcars_new, <span class="st">"mtcars_clean.csv"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_rds</span>(mtcars_new, <span class="st">"mtcars_clean.rds"</span>)     <span class="co"># native R format</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="lưu-biểu-đồ" class="level3">
+<h3 class="anchored" data-anchor-id="lưu-biểu-đồ">Lưu biểu đồ</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>my_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(mpg, hp)) <span class="sc">+</span> <span class="fu">geom_point</span>()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"scatter.png"</span>, my_plot, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">5</span>, <span class="at">dpi =</span> <span class="dv">150</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"scatter.pdf"</span>, my_plot, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="đọc-dataset-bên-ngoài" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-dataset-bên-ngoài">8. Đọc dataset bên ngoài</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"mydata.csv"</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"mydata.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">1</span>)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Stata</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>df_dta <span class="ot">&lt;-</span> <span class="fu">read_dta</span>(<span class="st">"mydata.dta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="báo-cáo-r-bằng-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="báo-cáo-r-bằng-quarto">9. Báo cáo R bằng Quarto</h2>
+<p>R Lab nộp dạng <strong>Quarto</strong> đẹp như cuốn sách:</p>
+<ol type="1">
+<li>File &gt; New File &gt; <strong>Quarto Document</strong></li>
+<li>Đặt tên <code>lab01_&lt;ten&gt;.qmd</code></li>
+<li>Viết code trong block:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "R Lab 1"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Họ tên — MSSV"</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phần 1: Đặt vấn đề</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>Lab này phân tích...</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mtcars)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phần 2: Biểu đồ</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Công suất vs MPG"</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(mpg, hp)) <span class="sc">+</span> <span class="fu">geom_point</span>()</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="4" type="1">
+<li>Bấm <strong>Render</strong> → có file <code>.html</code> đẹp với cả code + output.</li>
+</ol>
+</section>
+<section id="mẹo-r-hiệu-quả" class="level2">
+<h2 class="anchored" data-anchor-id="mẹo-r-hiệu-quả">10. Mẹo R hiệu quả</h2>
+<ol type="1">
+<li><strong>Luôn dùng <code>library(tidyverse)</code></strong> — chuẩn hiện đại</li>
+<li><strong>Dùng pipe <code>|&gt;</code></strong> thay vì lồng hàm</li>
+<li><strong>Tên biến tiếng Việt được</strong>: <code>gdp_thuc &lt;- ...</code> (R hỗ trợ UTF-8)</li>
+<li><strong>Comment tiếng Việt</strong> sau <code>#</code></li>
+<li><strong>Save dataset thường xuyên</strong> sau khi clean</li>
+<li><strong>Set working directory</strong>: <code>setwd("đường-dẫn")</code> hoặc dùng project RStudio</li>
+<li><strong>Help</strong>: gõ <code>?summary</code> để xem hướng dẫn</li>
+</ol>
+</section>
+<section id="deliverable-lab-0" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-0">Deliverable Lab 0</h2>
+<p>Nộp <strong>1 file R</strong> <code>lab00_&lt;ten&gt;.R</code> hoặc Quarto <code>lab00_&lt;ten&gt;.qmd</code> thực hiện:</p>
+<ol type="1">
+<li>Load <code>tidyverse</code></li>
+<li>Mở <code>mtcars</code> (<code>data(mtcars)</code>)</li>
+<li><code>glimpse()</code> + <code>summary()</code></li>
+<li>So sánh trung bình <code>mpg</code> giữa xe automatic và manual (<code>group_by(am)</code>)</li>
+<li>Vẽ scatter <code>mpg</code> vs <code>hp</code>, phân biệt automatic/manual</li>
+<li>Tạo biến mới <code>gpm = 1/mpg</code></li>
+<li><strong>Comment tiếng Việt</strong> ở mỗi bước</li>
+<li>Nếu dùng Quarto: render ra HTML</li>
+</ol>
+<p>Nộp kèm: - File <code>.R</code> hoặc <code>.qmd</code> - File <code>.html</code> (nếu Quarto) - Phản hồi ngắn 200 chữ: bạn thấy R khó/dễ hơn Stata ở điểm nào?</p>
+<hr>
+<p><em>Lab tiếp theo</em>: <a href="../r-lab/lab-01.html">R Lab 1 — Vẽ PPF và chi phí cơ hội</a> →</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dongkien\.github\.io\/material-building\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 — Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, ĐH Ngoại Thương · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>TS. Đỗ Ngọc Kiên — Trưởng Bộ môn</p>
+</div>
+    <div class="nav-footer-right">
+<p>Tạo bằng <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

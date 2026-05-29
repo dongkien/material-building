@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 9 — Tính NEER và REER VND – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 9 — Tính NEER và REER VND – Nguyên lý Quản lý Kinh tế</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -146,7 +146,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Nguyên lý Quản lý Kinh tế (DTU301)</span>
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -171,10 +171,21 @@ window.Quarto = {
     <a class="nav-link" href="../lectures/index.html"> 
 <span class="menu-text">Bài giảng</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../stata-lab/index.html"> 
-<span class="menu-text">Stata Lab</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stata--r-lab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stata / R Lab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stata--r-lab">    
+        <li>
+    <a class="dropdown-item" href="../stata-lab/index.html">
+ <span class="dropdown-text">Stata Lab</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../r-lab/index.html">
+ <span class="dropdown-text">R Lab</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../problem-sets/index.html"> 
 <span class="menu-text">Tiểu luận / Bài tập</span></a>
@@ -182,6 +193,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="../exams/index.html"> 
 <span class="menu-text">Đánh giá</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../nguoi-huong-dan.html"> 
+<span class="menu-text">Người hướng dẫn</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -396,7 +411,7 @@ window.Quarto = {
 </div>
 <section id="dataset-tỷ-giá-cpi" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-tỷ-giá-cpi">1. Dataset tỷ giá + CPI</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 9 — DTU301 — NEER/REER VND</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 9 — NEER/REER VND</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab09_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>

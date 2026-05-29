@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Đánh giá học phần – Nguyên lý Quản lý Kinh tế</title>
+<title>R Lab – Nguyên lý Quản lý Kinh tế</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/custom.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Trang chủ</span></a>
   </li>  
   <li class="nav-item">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tiểu luận / Bài tập</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../exams/index.html" aria-current="page"> 
+    <a class="nav-link" href="../exams/index.html"> 
 <span class="menu-text">Đánh giá</span></a>
   </li>  
   <li class="nav-item">
@@ -140,33 +140,169 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../r-lab/index.html">R Lab</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">← Trang chủ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">R Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Hướng dẫn</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-00.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 0 — Cài R + RStudio + Tidyverse</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab theo buổi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 1 — Vẽ PPF và tính chi phí cơ hội</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 02 — Phân tích chi tiêu công Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 04 — Mô phỏng thuế Pigou</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 05 — DNNN vs KTTN vs FDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 06 — Ước lượng Cobb-Douglas Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 07 — Mô phỏng IS-LM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 09 — Tính NEER và REER VND</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 11 — Event study Khủng hoảng châu Á 1997</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 12 — PCI / PAPI / PAR Index theo tỉnh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 13 — So sánh 6 vùng KT-XH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 14 — Capstone phân tích chính sách</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../r-lab/lab-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#tổng-quan-đánh-giá" id="toc-tổng-quan-đánh-giá" class="nav-link active" data-scroll-target="#tổng-quan-đánh-giá">1. Tổng quan đánh giá</a></li>
-  <li><a href="#đánh-giá-giữa-kỳ-30" id="toc-đánh-giá-giữa-kỳ-30" class="nav-link" data-scroll-target="#đánh-giá-giữa-kỳ-30">2. Đánh giá giữa kỳ (30%)</a>
-  <ul class="collapse">
-  <li><a href="#khung-câu-hỏi-mẫu" id="toc-khung-câu-hỏi-mẫu" class="nav-link" data-scroll-target="#khung-câu-hỏi-mẫu">Khung câu hỏi mẫu</a></li>
-  </ul></li>
-  <li><a href="#đánh-giá-cuối-kỳ-60" id="toc-đánh-giá-cuối-kỳ-60" class="nav-link" data-scroll-target="#đánh-giá-cuối-kỳ-60">3. Đánh giá cuối kỳ (60%)</a>
-  <ul class="collapse">
-  <li><a href="#phân-bổ-điểm-đề-nghị" id="toc-phân-bổ-điểm-đề-nghị" class="nav-link" data-scroll-target="#phân-bổ-điểm-đề-nghị">Phân bổ điểm đề nghị</a></li>
-  <li><a href="#khung-câu-hỏi-mẫu-1" id="toc-khung-câu-hỏi-mẫu-1" class="nav-link" data-scroll-target="#khung-câu-hỏi-mẫu-1">Khung câu hỏi mẫu</a></li>
-  <li><a href="#tiêu-chí-chấm-phần-2" id="toc-tiêu-chí-chấm-phần-2" class="nav-link" data-scroll-target="#tiêu-chí-chấm-phần-2">Tiêu chí chấm Phần 2</a></li>
-  </ul></li>
-  <li><a href="#tiêu-chí-chấm-chung" id="toc-tiêu-chí-chấm-chung" class="nav-link" data-scroll-target="#tiêu-chí-chấm-chung">4. Tiêu chí chấm chung</a></li>
-  <li><a href="#quy-định-liêm-chính-học-thuật" id="toc-quy-định-liêm-chính-học-thuật" class="nav-link" data-scroll-target="#quy-định-liêm-chính-học-thuật">5. Quy định liêm chính học thuật</a>
-  <ul class="collapse">
-  <li><a href="#quy-định-sử-dụng-ai" id="toc-quy-định-sử-dụng-ai" class="nav-link" data-scroll-target="#quy-định-sử-dụng-ai">Quy định sử dụng AI</a></li>
-  </ul></li>
-  <li><a href="#đề-thi-các-năm-trước" id="toc-đề-thi-các-năm-trước" class="nav-link" data-scroll-target="#đề-thi-các-năm-trước">6. Đề thi các năm trước</a></li>
+  <li><a href="#r-lab-là-gì" id="toc-r-lab-là-gì" class="nav-link active" data-scroll-target="#r-lab-là-gì">R Lab là gì?</a></li>
+  <li><a href="#vì-sao-học-r" id="toc-vì-sao-học-r" class="nav-link" data-scroll-target="#vì-sao-học-r">Vì sao học R?</a></li>
+  <li><a href="#cấu-trúc-16-bài-r-lab" id="toc-cấu-trúc-16-bài-r-lab" class="nav-link" data-scroll-target="#cấu-trúc-16-bài-r-lab">Cấu trúc 16 bài R Lab</a></li>
+  <li><a href="#stata-r-cheatsheet" id="toc-stata-r-cheatsheet" class="nav-link" data-scroll-target="#stata-r-cheatsheet">Stata → R cheatsheet</a></li>
+  <li><a href="#cách-nộp-r-lab" id="toc-cách-nộp-r-lab" class="nav-link" data-scroll-target="#cách-nộp-r-lab">Cách nộp R Lab</a></li>
+  <li><a href="#bắt-đầu-ở-đâu" id="toc-bắt-đầu-ở-đâu" class="nav-link" data-scroll-target="#bắt-đầu-ở-đâu">Bắt đầu ở đâu?</a></li>
   </ul>
 </nav>
     </div>
@@ -175,8 +311,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Đánh giá học phần</h1>
-<p class="subtitle lead">Cấu trúc thi giữa kỳ, cuối kỳ và đánh giá quá trình theo</p>
+<h1 class="title">R Lab</h1>
+<p class="subtitle lead">Tự học R qua 16 bài thực hành — phiên bản song song với Stata Lab</p>
 </div>
 
 
@@ -193,321 +329,316 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tổng-quan-đánh-giá" class="level2">
-<h2 class="anchored" data-anchor-id="tổng-quan-đánh-giá">1. Tổng quan đánh giá</h2>
-<p>Thang điểm <strong>10</strong>. Học phần đánh giá qua <strong>3 cấu phần</strong>:</p>
+<section id="r-lab-là-gì" class="level2">
+<h2 class="anchored" data-anchor-id="r-lab-là-gì">R Lab là gì?</h2>
+<p>R Lab là <strong>phiên bản song song</strong> với <a href="../stata-lab/">Stata Lab</a> — cùng nội dung phân tích, cùng dataset, cùng câu hỏi suy nghĩ, nhưng dùng <strong>R</strong> thay vì Stata.</p>
+<p>Sinh viên <strong>chọn 1 trong 2</strong> (hoặc làm cả hai — bonus cao hơn):</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Hình thức</th>
-<th style="text-align: center;">Trọng số</th>
-<th>Hình thức cụ thể</th>
-<th>Phạm vi</th>
-<th>CLO</th>
+<th></th>
+<th><strong>Stata Lab</strong></th>
+<th><strong>R Lab</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Đánh giá quá trình</strong></td>
-<td style="text-align: center;"><strong>10%</strong></td>
-<td>Điểm danh + bài kiểm tra ngắn + chất lượng thảo luận</td>
-<td>Liên tục</td>
-<td>CLO1, CLO4</td>
+<td>Ngôn ngữ</td>
+<td>Stata</td>
+<td>R</td>
 </tr>
 <tr class="even">
-<td><strong>Đánh giá giữa kỳ</strong></td>
-<td style="text-align: center;"><strong>30%</strong></td>
-<td>Thi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định)</td>
-<td>Chương 1–2</td>
-<td>CLO1, CLO2</td>
+<td>Chi phí</td>
+<td>Có phí (license)</td>
+<td><strong>100% free</strong></td>
 </tr>
 <tr class="odd">
-<td><strong>Đánh giá cuối kỳ</strong></td>
-<td style="text-align: center;"><strong>60%</strong></td>
-<td><strong>Thi tự luận đóng</strong> — cấu trúc đề do <strong>Bộ môn quyết định đầu kỳ</strong>. Hiện hành: <strong>20 trắc nghiệm + 2 tự luận</strong> (2 mức Bloom khác nhau)</td>
-<td>Toàn bộ học phần</td>
-<td>CLO2, CLO3, CLO4, CLO5</td>
+<td>Phổ biến VN</td>
+<td>Cao (truyền thống)</td>
+<td>Đang tăng nhanh</td>
 </tr>
 <tr class="even">
-<td><strong>Stata Lab</strong> <em>(bonus)</em></td>
-<td style="text-align: center;"><strong>+5%</strong></td>
-<td>15 lab tự học, nộp tự nguyện. Tối đa cộng 0,5 điểm vào điểm tổng kết — xem <a href="../stata-lab/">Stata Lab</a></td>
-<td>Liên tục</td>
-<td>CLO2, CLO5</td>
+<td>Phù hợp nhất</td>
+<td>Phòng máy FTU + giảng viên dạy Stata</td>
+<td>Sinh viên muốn học miễn phí + dùng dài hạn</td>
+</tr>
+<tr class="odd">
+<td>Bonus 5%</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+<span class="screen-reader-only">Tip</span>🎁 Bonus song song
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Lưu ý</em>: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể <strong>linh hoạt do Bộ môn quyết định</strong> phụ thuộc vào tình hình thực tế.</p>
+<ul>
+<li>Làm Stata Lab: tới <strong>+5% bonus</strong></li>
+<li>Làm R Lab: tới <strong>+5% bonus</strong></li>
+<li>Làm <strong>cả hai</strong> trong cùng Lab: tới <strong>+7% bonus</strong> (không phải +10%, vì câu hỏi suy nghĩ chấm 1 lần)</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="đánh-giá-giữa-kỳ-30" class="level2">
-<h2 class="anchored" data-anchor-id="đánh-giá-giữa-kỳ-30">2. Đánh giá giữa kỳ (30%)</h2>
-<p><strong>Diễn ra</strong>: sau Buổi 5 (hết Chương 1–2)</p>
-<p><strong>Phạm vi</strong>: Chương 1 + Chương 2 — <em>Tổng quan QLKT</em> và <em>Quản lý kinh tế ngành và doanh nghiệp</em></p>
-<p><strong>Hình thức</strong>: giảng viên quyết định, có thể là: - Đề tự luận - Mini-case (phân tích tình huống chính sách) - Thuyết trình theo chủ đề</p>
-<p><strong>Tiêu chí</strong>: kiến thức nền, vận dụng khung lý thuyết, ví dụ Việt Nam.</p>
-<section id="khung-câu-hỏi-mẫu" class="level3">
-<h3 class="anchored" data-anchor-id="khung-câu-hỏi-mẫu">Khung câu hỏi mẫu</h3>
-<p><strong>Dạng tự luận</strong></p>
-<blockquote class="blockquote">
-<p>Phân biệt vai trò <strong>chủ sở hữu</strong>, <strong>quản lý</strong> và <strong>điều tiết</strong> của Nhà nước trong nền kinh tế thị trường. Lấy một ngành cụ thể tại Việt Nam để minh hoạ cả ba vai trò.</p>
-</blockquote>
-<p><strong>Dạng mini-case</strong></p>
-<blockquote class="blockquote">
-<p><em>Formosa Hà Tĩnh, 2016</em>: Phân tích <strong>thất bại thị trường</strong> trong tình huống này. Áp dụng khung <strong>thuế Pigou</strong> và <strong>định lý Coase</strong>, đề xuất phương án điều tiết phù hợp với bối cảnh Việt Nam.</p>
-</blockquote>
-</section>
-</section>
-<section id="đánh-giá-cuối-kỳ-60" class="level2">
-<h2 class="anchored" data-anchor-id="đánh-giá-cuối-kỳ-60">3. Đánh giá cuối kỳ (60%)</h2>
-<p><strong>Diễn ra</strong>: cuối học kỳ, theo lịch thi do Trường ban hành</p>
-<p><strong>Phạm vi</strong>: <strong>toàn bộ học phần</strong> (Chương 1 → Chương 5 và nội dung Seminar)</p>
-<p><strong>Hình thức</strong>: <strong>thi tự luận đóng</strong> (không sử dụng tài liệu)</p>
-<p><strong>Cấu trúc đề thi</strong>: do <strong>Bộ môn quyết định đầu kỳ</strong>. Cấu trúc hiện hành gồm <strong>2 phần</strong>:</p>
+<section id="vì-sao-học-r" class="level2">
+<h2 class="anchored" data-anchor-id="vì-sao-học-r">Vì sao học R?</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 15%">
-<col style="width: 15%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Phần</th>
-<th>Hình thức</th>
-<th style="text-align: center;">Số câu</th>
-<th>Thang Bloom</th>
+<th>Lý do</th>
+<th>Chi tiết</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>100% Free</strong></td>
+<td>Không cần license — sinh viên cài về máy cá nhân</td>
+</tr>
+<tr class="even">
+<td><strong>Tidyverse + ggplot2</strong></td>
+<td>Hệ sinh thái mạnh nhất cho khoa học dữ liệu</td>
+</tr>
+<tr class="odd">
+<td><strong>Cộng đồng học thuật</strong></td>
+<td>Hầu hết tạp chí kinh tế hiện đại chấp nhận R</td>
+</tr>
+<tr class="even">
+<td><strong>Reproducibility</strong></td>
+<td>RMarkdown / Quarto + R → tái tạo nghiên cứu chuẩn quốc tế</td>
+</tr>
+<tr class="odd">
+<td><strong>Dài hạn</strong></td>
+<td>Khoá luận, cao học, nghiên cứu — R ngày càng quan trọng</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cấu-trúc-16-bài-r-lab" class="level2">
+<h2 class="anchored" data-anchor-id="cấu-trúc-16-bài-r-lab">Cấu trúc 16 bài R Lab</h2>
+<p>Tương ứng với 16 Stata Lab:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Lab</th>
+<th>Chủ đề</th>
+<th style="text-align: center;">Lab tương ứng</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0</strong></td>
+<td><a href="../r-lab/lab-00.html">Cài R + RStudio + tidyverse</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-00.html">Stata Lab 0</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1</strong></td>
+<td><a href="../r-lab/lab-01.html">Vẽ PPF + chi phí cơ hội</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-01.html">Stata Lab 1</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>2</strong></td>
+<td><a href="../r-lab/lab-02.html">Phân tích chi tiêu công VN</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-02.html">Stata Lab 2</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>3</strong></td>
+<td><a href="../r-lab/lab-03.html">Tính HHI 5 ngành VN</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-03.html">Stata Lab 3</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>4</strong></td>
+<td><a href="../r-lab/lab-04.html">Mô phỏng thuế Pigou</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-04.html">Stata Lab 4</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5</strong></td>
+<td><a href="../r-lab/lab-05.html">DNNN vs KTTN vs FDI</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-05.html">Stata Lab 5</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>6</strong></td>
+<td><a href="../r-lab/lab-06.html">Cobb-Douglas VN</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-06.html">Stata Lab 6</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>7</strong></td>
+<td><a href="../r-lab/lab-07.html">Mô phỏng IS-LM</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-07.html">Stata Lab 7</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>8</strong></td>
+<td><a href="../r-lab/lab-08.html">Phillips VN 2010-2024</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-08.html">Stata Lab 8</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>9</strong></td>
+<td><a href="../r-lab/lab-09.html">NEER/REER VND</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-09.html">Stata Lab 9</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>10</strong></td>
+<td><a href="../r-lab/lab-10.html">Mundell-Fleming</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-10.html">Stata Lab 10</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>11</strong></td>
+<td><a href="../r-lab/lab-11.html">Event study KH Á 1997</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-11.html">Stata Lab 11</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>12</strong></td>
+<td><a href="../r-lab/lab-12.html">PCI/PAPI/PAR</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-12.html">Stata Lab 12</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>13</strong></td>
+<td><a href="../r-lab/lab-13.html">6 vùng KT-XH</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-13.html">Stata Lab 13</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>14</strong></td>
+<td><a href="../r-lab/lab-14.html">Capstone</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-14.html">Stata Lab 14</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>15</strong></td>
+<td><a href="../r-lab/lab-15.html">Xuất bảng + biểu đồ</a></td>
+<td style="text-align: center;"><a href="../stata-lab/lab-15.html">Stata Lab 15</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="stata-r-cheatsheet" class="level2">
+<h2 class="anchored" data-anchor-id="stata-r-cheatsheet">Stata → R cheatsheet</h2>
+<p>Bảng quy đổi nhanh cho người đã quen Stata:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stata</th>
+<th>R (tidyverse)</th>
 <th>Mục đích</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong>Phần 1</strong></td>
-<td>Trắc nghiệm khách quan</td>
-<td style="text-align: center;"><strong>20 câu</strong></td>
-<td>Nhớ — Hiểu — Vận dụng (cấp thấp)</td>
-<td>Kiểm tra kiến thức nền và nhận biết khung lý thuyết qua 5 chương</td>
+<td><code>use mydata.dta</code></td>
+<td><code>df &lt;- read_dta("mydata.dta")</code></td>
+<td>Đọc file</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><strong>Phần 2</strong></td>
-<td>Tự luận</td>
-<td style="text-align: center;"><strong>2 câu</strong></td>
-<td><strong>2 mức Bloom khác nhau</strong> (vd: Vận dụng + Phân tích, hoặc Phân tích + Đánh giá)</td>
-<td>Kiểm tra năng lực vận dụng và phân tích phối hợp chính sách</td>
+<td><code>import delimited "mydata.csv"</code></td>
+<td><code>df &lt;- read_csv("mydata.csv")</code></td>
+<td>Đọc CSV</td>
+</tr>
+<tr class="odd">
+<td><code>describe</code></td>
+<td><code>glimpse(df)</code></td>
+<td>Mô tả cấu trúc</td>
+</tr>
+<tr class="even">
+<td><code>summarize</code></td>
+<td><code>summary(df)</code></td>
+<td>Thống kê mô tả</td>
+</tr>
+<tr class="odd">
+<td><code>tabulate x</code></td>
+<td><code>count(df, x)</code></td>
+<td>Đếm theo nhóm</td>
+</tr>
+<tr class="even">
+<td><code>gen y = x*2</code></td>
+<td><code>df &lt;- df |&gt; mutate(y = x*2)</code></td>
+<td>Tạo biến mới</td>
+</tr>
+<tr class="odd">
+<td><code>keep if x &gt; 0</code></td>
+<td><code>df &lt;- df |&gt; filter(x &gt; 0)</code></td>
+<td>Lọc</td>
+</tr>
+<tr class="even">
+<td><code>bysort id: gen mean_y = mean(y)</code></td>
+<td><code>df |&gt; group_by(id) |&gt; mutate(mean_y = mean(y))</code></td>
+<td>Group by</td>
+</tr>
+<tr class="odd">
+<td><code>regress y x1 x2</code></td>
+<td><code>lm(y ~ x1 + x2, data = df)</code></td>
+<td>Hồi quy OLS</td>
+</tr>
+<tr class="even">
+<td><code>regress y x1 x2, robust</code></td>
+<td><code>feols(y ~ x1 + x2, data = df)</code> (fixest)</td>
+<td>OLS robust</td>
+</tr>
+<tr class="odd">
+<td><code>xtreg y x, fe i(id)</code></td>
+<td><code>feols(y ~ x | id, data = df)</code> (fixest)</td>
+<td>Panel FE</td>
+</tr>
+<tr class="even">
+<td><code>twoway scatter y x</code></td>
+<td><code>ggplot(df, aes(x, y)) + geom_point()</code></td>
+<td>Scatter</td>
+</tr>
+<tr class="odd">
+<td><code>twoway line y x</code></td>
+<td><code>ggplot(df, aes(x, y)) + geom_line()</code></td>
+<td>Line plot</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cấu trúc 20+2 trên là <strong>cấu trúc hiện hành</strong> do Bộ môn quyết định cho học kỳ này. Trong các học kỳ sau, <strong>Bộ môn có thể điều chỉnh</strong> số lượng câu, tỷ trọng giữa hai phần, hoặc các mức Bloom được kiểm tra. Sinh viên nên xác nhận với giảng viên đầu kỳ.</p>
-</div>
-</div>
-<section id="phân-bổ-điểm-đề-nghị" class="level3">
-<h3 class="anchored" data-anchor-id="phân-bổ-điểm-đề-nghị">Phân bổ điểm đề nghị</h3>
+</section>
+<section id="cách-nộp-r-lab" class="level2">
+<h2 class="anchored" data-anchor-id="cách-nộp-r-lab">Cách nộp R Lab</h2>
+<p>Mỗi lab nộp 3 file:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: center;">Phần</th>
-<th style="text-align: center;">Số câu</th>
-<th style="text-align: center;">Điểm/câu</th>
-<th style="text-align: center;">Tổng</th>
+<th>File</th>
+<th>Nội dung</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Phần 1 — Trắc nghiệm</td>
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">0.2</td>
-<td style="text-align: center;">4.0</td>
+<td><code>lab&lt;số&gt;_&lt;tên&gt;.R</code></td>
+<td>Script R có comment tiếng Việt</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Phần 2 — Tự luận (Câu 1)</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3.0</td>
-<td style="text-align: center;">3.0</td>
+<td><code>lab&lt;số&gt;_&lt;tên&gt;.html</code></td>
+<td>Output sau render (qua Quarto/RMarkdown)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Phần 2 — Tự luận (Câu 2)</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3.0</td>
-<td style="text-align: center;">3.0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Tổng</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>10.0</strong></td>
+<td><code>lab&lt;số&gt;_&lt;tên&gt;.pdf</code></td>
+<td>Trả lời câu hỏi + biểu đồ (1-2 trang)</td>
 </tr>
 </tbody>
 </table>
-<p><em>Phân bổ trên là gợi ý; trọng số cụ thể do Bộ môn quyết định trong ma trận đề thi đầu kỳ.</em></p>
+<p><strong>Tiêu đề email</strong>: <code>RLAB&lt;số&gt;-MSSV-HọTên</code> → giảng viên trước hạn nộp.</p>
 </section>
-<section id="khung-câu-hỏi-mẫu-1" class="level3">
-<h3 class="anchored" data-anchor-id="khung-câu-hỏi-mẫu-1">Khung câu hỏi mẫu</h3>
-<section id="phần-1-trắc-nghiệm-khách-quan-20-câu" class="level4">
-<h4 class="anchored" data-anchor-id="phần-1-trắc-nghiệm-khách-quan-20-câu">Phần 1 — Trắc nghiệm khách quan (20 câu)</h4>
-<p>Phủ đều 5 chương + nội dung Seminar. Một số dạng câu thường gặp:</p>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 1</strong> — Yếu tố nào KHÔNG phải là một trong <strong>ba vai trò Nhà nước</strong> trong nền kinh tế thị trường?</p>
-<p>A. Chủ sở hữu B. Quản lý C. Sản xuất ✓ D. Điều tiết</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 2</strong> — Theo hàm sản xuất Cobb-Douglas \(Y = AK^\alpha L^{1-\alpha}\), nếu \(\alpha = 0.3\) và \(K\) tăng 10%, sản lượng \(Y\) tăng xấp xỉ:</p>
-<p>A. 1% B. 3% ✓ C. 7% D. 10%</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 3</strong> — <strong>Bộ ba bất khả thi</strong> nói rằng một quốc gia không thể đồng thời đạt được:</p>
-<p>A. Tăng trưởng cao, lạm phát thấp, thất nghiệp thấp B. Ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ ✓ C. Tài khoá cân bằng, tiền tệ độc lập, tỷ giá cố định D. Cán cân vãng lai, dự trữ ngoại hối, tỷ giá thả nổi</p>
-</blockquote>
-</section>
-<section id="phần-2-tự-luận-2-câu" class="level4">
-<h4 class="anchored" data-anchor-id="phần-2-tự-luận-2-câu">Phần 2 — Tự luận (2 câu)</h4>
-<p>Hai câu được thiết kế ở <strong>2 mức Bloom khác nhau</strong> để vừa kiểm tra năng lực vận dụng vừa kiểm tra năng lực phân tích / đánh giá.</p>
-<p><strong>Câu 1 — Vận dụng (CLO2)</strong> <em>(ví dụ)</em></p>
-<blockquote class="blockquote">
-<p>Áp dụng khung <strong>AD-AS</strong> và <strong>đường Phillips</strong> để giải thích phản ứng chính sách của Việt Nam trước cú sốc lạm phát 2022–2023. Hãy chỉ rõ: (a) bản chất cú sốc (cung/cầu), (b) công cụ chính sách đã sử dụng, (c) đánh đổi giữa các mục tiêu vĩ mô. (~600 từ)</p>
-</blockquote>
-<p><strong>Câu 2 — Phân tích (CLO3)</strong> <em>(ví dụ)</em></p>
-<blockquote class="blockquote">
-<p>Phân tích <strong>đánh đổi chính sách</strong> mà Ngân hàng Nhà nước phải đối mặt khi Fed tăng lãi suất 200 bps, trong bối cảnh Việt Nam có <strong>cán cân vãng lai gần cân bằng</strong> nhưng <strong>dòng vốn FDI biến động</strong>. Áp dụng <strong>Bộ ba bất khả thi</strong> để chỉ ra ba phương án và phương án phù hợp nhất. (~700 từ)</p>
-</blockquote>
-</section>
-</section>
-<section id="tiêu-chí-chấm-phần-2" class="level3">
-<h3 class="anchored" data-anchor-id="tiêu-chí-chấm-phần-2">Tiêu chí chấm Phần 2</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Trọng số</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Đúng khái niệm cốt lõi, đúng khung lý thuyết</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng dữ liệu / số liệu có nguồn chính thống</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="odd">
-<td>Logic và cấu trúc lập luận</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Phân tích, phản biện, đề xuất khả thi</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="odd">
-<td>Văn phong học thuật, trích dẫn đúng chuẩn</td>
-<td style="text-align: center;">10%</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="tiêu-chí-chấm-chung" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm-chung">4. Tiêu chí chấm chung</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Trọng số</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cấu trúc và logic lập luận</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Chất lượng nội dung học thuật</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="even">
-<td>Phân tích và phản biện</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="odd">
-<td>Đề xuất khả thi cho Việt Nam</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="even">
-<td>Sử dụng AI có trách nhiệm + liêm chính học thuật</td>
-<td style="text-align: center;">10%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quy-định-liêm-chính-học-thuật" class="level2">
-<h2 class="anchored" data-anchor-id="quy-định-liêm-chính-học-thuật">5. Quy định liêm chính học thuật</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Bài tập / tiểu luận <strong>giống nhau đến 50%</strong> trừ 1/2 số điểm.</li>
-<li>Bài giống nhau <strong>trên 50%</strong> bị <strong>điểm 0</strong>.</li>
-<li>Sinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều <strong>bị điểm 0</strong> phần đánh giá tương ứng.</li>
-<li>Vi phạm <strong>liêm chính học thuật</strong> (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường.</li>
-</ul>
-</div>
-</div>
-<section id="quy-định-sử-dụng-ai" class="level3">
-<h3 class="anchored" data-anchor-id="quy-định-sử-dụng-ai">Quy định sử dụng AI</h3>
-<ul>
-<li>Sử dụng AI và công cụ số <strong>được khuyến khích</strong> cho mục đích học tập và nghiên cứu.</li>
-<li>Phải <strong>công bố phạm vi sử dụng</strong> khi giảng viên yêu cầu.</li>
-<li>Phải <strong>tự kiểm chứng dữ liệu</strong> AI cung cấp.</li>
-<li><strong>Không sao chép trực tiếp</strong> đầu ra AI mà không xử lý lại.</li>
-<li>Không khai báo = đạo văn → xử lý theo quy chế.</li>
-</ul>
-</section>
-</section>
-<section id="đề-thi-các-năm-trước" class="level2">
-<h2 class="anchored" data-anchor-id="đề-thi-các-năm-trước">6. Đề thi các năm trước</h2>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Khi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.</p>
-</div>
-</div>
-</div>
-<p><em>(chưa có)</em></p>
+<section id="bắt-đầu-ở-đâu" class="level2">
+<h2 class="anchored" data-anchor-id="bắt-đầu-ở-đâu">Bắt đầu ở đâu?</h2>
+<p>→ <a href="../r-lab/lab-00.html">Lab 0 — Cài R + RStudio + tidyverse</a></p>
 
 
 </section>

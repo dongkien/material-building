@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Đánh giá học phần – Nguyên lý Quản lý Kinh tế</title>
+<title>project-state – Nguyên lý Quản lý Kinh tế</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,25 +23,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
     </a>
   </div>
@@ -92,19 +127,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Trang chủ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="./syllabus.html"> 
 <span class="menu-text">Đề cương</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html"> 
+    <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Lịch học</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lectures/index.html"> 
+    <a class="nav-link" href="./lectures/index.html"> 
 <span class="menu-text">Bài giảng</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -113,25 +148,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stata--r-lab">    
         <li>
-    <a class="dropdown-item" href="../stata-lab/index.html">
+    <a class="dropdown-item" href="./stata-lab/index.html">
  <span class="dropdown-text">Stata Lab</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../r-lab/index.html">
+    <a class="dropdown-item" href="./r-lab/index.html">
  <span class="dropdown-text">R Lab</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../problem-sets/index.html"> 
+    <a class="nav-link" href="./problem-sets/index.html"> 
 <span class="menu-text">Tiểu luận / Bài tập</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../exams/index.html" aria-current="page"> 
+    <a class="nav-link" href="./exams/index.html"> 
 <span class="menu-text">Đánh giá</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../nguoi-huong-dan.html"> 
+    <a class="nav-link" href="./nguoi-huong-dan.html"> 
 <span class="menu-text">Người hướng dẫn</span></a>
   </li>  
 </ul>
@@ -150,366 +185,226 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#tổng-quan-đánh-giá" id="toc-tổng-quan-đánh-giá" class="nav-link active" data-scroll-target="#tổng-quan-đánh-giá">1. Tổng quan đánh giá</a></li>
-  <li><a href="#đánh-giá-giữa-kỳ-30" id="toc-đánh-giá-giữa-kỳ-30" class="nav-link" data-scroll-target="#đánh-giá-giữa-kỳ-30">2. Đánh giá giữa kỳ (30%)</a>
+  <li><a href="#project-state-nguyên-lý-quản-lý-kinh-tế" id="toc-project-state-nguyên-lý-quản-lý-kinh-tế" class="nav-link active" data-scroll-target="#project-state-nguyên-lý-quản-lý-kinh-tế">Project State — Nguyên lý Quản lý Kinh tế</a>
   <ul class="collapse">
-  <li><a href="#khung-câu-hỏi-mẫu" id="toc-khung-câu-hỏi-mẫu" class="nav-link" data-scroll-target="#khung-câu-hỏi-mẫu">Khung câu hỏi mẫu</a></li>
-  </ul></li>
-  <li><a href="#đánh-giá-cuối-kỳ-60" id="toc-đánh-giá-cuối-kỳ-60" class="nav-link" data-scroll-target="#đánh-giá-cuối-kỳ-60">3. Đánh giá cuối kỳ (60%)</a>
+  <li><a href="#quick-context-đọc-30-giây" id="toc-quick-context-đọc-30-giây" class="nav-link" data-scroll-target="#quick-context-đọc-30-giây">📍 Quick context (đọc 30 giây)</a></li>
+  <li><a href="#đã-hoàn-thành-cumulative" id="toc-đã-hoàn-thành-cumulative" class="nav-link" data-scroll-target="#đã-hoàn-thành-cumulative">✅ Đã hoàn thành (cumulative)</a>
   <ul class="collapse">
-  <li><a href="#phân-bổ-điểm-đề-nghị" id="toc-phân-bổ-điểm-đề-nghị" class="nav-link" data-scroll-target="#phân-bổ-điểm-đề-nghị">Phân bổ điểm đề nghị</a></li>
-  <li><a href="#khung-câu-hỏi-mẫu-1" id="toc-khung-câu-hỏi-mẫu-1" class="nav-link" data-scroll-target="#khung-câu-hỏi-mẫu-1">Khung câu hỏi mẫu</a></li>
-  <li><a href="#tiêu-chí-chấm-phần-2" id="toc-tiêu-chí-chấm-phần-2" class="nav-link" data-scroll-target="#tiêu-chí-chấm-phần-2">Tiêu chí chấm Phần 2</a></li>
+  <li><a href="#nội-dung-100-song-slide-thật" id="toc-nội-dung-100-song-slide-thật" class="nav-link" data-scroll-target="#nội-dung-100-song-slide-thật">Nội dung (100% song slide thật)</a></li>
+  <li><a href="#cấu-trúc-đã-chốt" id="toc-cấu-trúc-đã-chốt" class="nav-link" data-scroll-target="#cấu-trúc-đã-chốt">Cấu trúc đã chốt</a></li>
+  <li><a href="#tech-setup" id="toc-tech-setup" class="nav-link" data-scroll-target="#tech-setup">Tech setup</a></li>
+  <li><a href="#quyết-định-lớn-đã-chốt" id="toc-quyết-định-lớn-đã-chốt" class="nav-link" data-scroll-target="#quyết-định-lớn-đã-chốt">Quyết định lớn đã chốt</a></li>
   </ul></li>
-  <li><a href="#tiêu-chí-chấm-chung" id="toc-tiêu-chí-chấm-chung" class="nav-link" data-scroll-target="#tiêu-chí-chấm-chung">4. Tiêu chí chấm chung</a></li>
-  <li><a href="#quy-định-liêm-chính-học-thuật" id="toc-quy-định-liêm-chính-học-thuật" class="nav-link" data-scroll-target="#quy-định-liêm-chính-học-thuật">5. Quy định liêm chính học thuật</a>
-  <ul class="collapse">
-  <li><a href="#quy-định-sử-dụng-ai" id="toc-quy-định-sử-dụng-ai" class="nav-link" data-scroll-target="#quy-định-sử-dụng-ai">Quy định sử dụng AI</a></li>
+  <li><a href="#đang-dở-chờ-user" id="toc-đang-dở-chờ-user" class="nav-link" data-scroll-target="#đang-dở-chờ-user">🚧 Đang dở / Chờ user</a></li>
+  <li><a href="#lệnh-thường-dùng" id="toc-lệnh-thường-dùng" class="nav-link" data-scroll-target="#lệnh-thường-dùng">🔑 Lệnh thường dùng</a></li>
+  <li><a href="#cấu-trúc-thư-mục" id="toc-cấu-trúc-thư-mục" class="nav-link" data-scroll-target="#cấu-trúc-thư-mục">📁 Cấu trúc thư mục</a></li>
+  <li><a href="#github-credentials" id="toc-github-credentials" class="nav-link" data-scroll-target="#github-credentials">🔐 GitHub credentials</a></li>
+  <li><a href="#quay-lại-làm-tiếp-checklist" id="toc-quay-lại-làm-tiếp-checklist" class="nav-link" data-scroll-target="#quay-lại-làm-tiếp-checklist">🚀 Quay lại làm tiếp — checklist</a></li>
+  <li><a href="#liên-hệ-nhận-diện" id="toc-liên-hệ-nhận-diện" class="nav-link" data-scroll-target="#liên-hệ-nhận-diện">📞 Liên hệ + nhận diện</a></li>
+  <li><a href="#kế-hoạch-dài-hạn-nếu-user-muốn-mở-rộng" id="toc-kế-hoạch-dài-hạn-nếu-user-muốn-mở-rộng" class="nav-link" data-scroll-target="#kế-hoạch-dài-hạn-nếu-user-muốn-mở-rộng">🎯 Kế hoạch dài hạn (nếu user muốn mở rộng)</a></li>
   </ul></li>
-  <li><a href="#đề-thi-các-năm-trước" id="toc-đề-thi-các-năm-trước" class="nav-link" data-scroll-target="#đề-thi-các-năm-trước">6. Đề thi các năm trước</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Đánh giá học phần</h1>
-<p class="subtitle lead">Cấu trúc thi giữa kỳ, cuối kỳ và đánh giá quá trình theo</p>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="tổng-quan-đánh-giá" class="level2">
-<h2 class="anchored" data-anchor-id="tổng-quan-đánh-giá">1. Tổng quan đánh giá</h2>
-<p>Thang điểm <strong>10</strong>. Học phần đánh giá qua <strong>3 cấu phần</strong>:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Hình thức</th>
-<th style="text-align: center;">Trọng số</th>
-<th>Hình thức cụ thể</th>
-<th>Phạm vi</th>
-<th>CLO</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Đánh giá quá trình</strong></td>
-<td style="text-align: center;"><strong>10%</strong></td>
-<td>Điểm danh + bài kiểm tra ngắn + chất lượng thảo luận</td>
-<td>Liên tục</td>
-<td>CLO1, CLO4</td>
-</tr>
-<tr class="even">
-<td><strong>Đánh giá giữa kỳ</strong></td>
-<td style="text-align: center;"><strong>30%</strong></td>
-<td>Thi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định)</td>
-<td>Chương 1–2</td>
-<td>CLO1, CLO2</td>
-</tr>
-<tr class="odd">
-<td><strong>Đánh giá cuối kỳ</strong></td>
-<td style="text-align: center;"><strong>60%</strong></td>
-<td><strong>Thi tự luận đóng</strong> — cấu trúc đề do <strong>Bộ môn quyết định đầu kỳ</strong>. Hiện hành: <strong>20 trắc nghiệm + 2 tự luận</strong> (2 mức Bloom khác nhau)</td>
-<td>Toàn bộ học phần</td>
-<td>CLO2, CLO3, CLO4, CLO5</td>
-</tr>
-<tr class="even">
-<td><strong>Stata Lab</strong> <em>(bonus)</em></td>
-<td style="text-align: center;"><strong>+5%</strong></td>
-<td>15 lab tự học, nộp tự nguyện. Tối đa cộng 0,5 điểm vào điểm tổng kết — xem <a href="../stata-lab/">Stata Lab</a></td>
-<td>Liên tục</td>
-<td>CLO2, CLO5</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>Lưu ý</em>: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể <strong>linh hoạt do Bộ môn quyết định</strong> phụ thuộc vào tình hình thực tế.</p>
-</div>
-</div>
+<section id="project-state-nguyên-lý-quản-lý-kinh-tế" class="level1">
+<h1>Project State — Nguyên lý Quản lý Kinh tế</h1>
+<p><strong>File này là điểm chốt trạng thái dự án — đọc đầu mỗi session để hiểu nhanh.</strong></p>
+<section id="quick-context-đọc-30-giây" class="level2">
+<h2 class="anchored" data-anchor-id="quick-context-đọc-30-giây">📍 Quick context (đọc 30 giây)</h2>
+<ul>
+<li><strong>Project</strong>: Website học liệu môn <strong>Nguyên lý Quản lý Kinh tế</strong> (FTU, Viện KT&amp;KDQT)</li>
+<li><strong>Path</strong>: <code>/home/kiendn/material-building/</code></li>
+<li><strong>Live URL</strong>: https://dongkien.github.io/material-building/</li>
+<li><strong>GitHub repo</strong>: https://github.com/dongkien/material-building</li>
+<li><strong>Tech stack</strong>: Quarto + Stata MP + R + nbstata + Netlify-like (GitHub Pages)</li>
+<li><strong>Người chính</strong>: TS. Đỗ Ngọc Kiên (Trưởng Bộ môn) + đội 11 giảng viên FTU</li>
+</ul>
 </section>
-<section id="đánh-giá-giữa-kỳ-30" class="level2">
-<h2 class="anchored" data-anchor-id="đánh-giá-giữa-kỳ-30">2. Đánh giá giữa kỳ (30%)</h2>
-<p><strong>Diễn ra</strong>: sau Buổi 5 (hết Chương 1–2)</p>
-<p><strong>Phạm vi</strong>: Chương 1 + Chương 2 — <em>Tổng quan QLKT</em> và <em>Quản lý kinh tế ngành và doanh nghiệp</em></p>
-<p><strong>Hình thức</strong>: giảng viên quyết định, có thể là: - Đề tự luận - Mini-case (phân tích tình huống chính sách) - Thuyết trình theo chủ đề</p>
-<p><strong>Tiêu chí</strong>: kiến thức nền, vận dụng khung lý thuyết, ví dụ Việt Nam.</p>
-<section id="khung-câu-hỏi-mẫu" class="level3">
-<h3 class="anchored" data-anchor-id="khung-câu-hỏi-mẫu">Khung câu hỏi mẫu</h3>
-<p><strong>Dạng tự luận</strong></p>
-<blockquote class="blockquote">
-<p>Phân biệt vai trò <strong>chủ sở hữu</strong>, <strong>quản lý</strong> và <strong>điều tiết</strong> của Nhà nước trong nền kinh tế thị trường. Lấy một ngành cụ thể tại Việt Nam để minh hoạ cả ba vai trò.</p>
-</blockquote>
-<p><strong>Dạng mini-case</strong></p>
-<blockquote class="blockquote">
-<p><em>Formosa Hà Tĩnh, 2016</em>: Phân tích <strong>thất bại thị trường</strong> trong tình huống này. Áp dụng khung <strong>thuế Pigou</strong> và <strong>định lý Coase</strong>, đề xuất phương án điều tiết phù hợp với bối cảnh Việt Nam.</p>
-</blockquote>
+<section id="đã-hoàn-thành-cumulative" class="level2">
+<h2 class="anchored" data-anchor-id="đã-hoàn-thành-cumulative">✅ Đã hoàn thành (cumulative)</h2>
+<section id="nội-dung-100-song-slide-thật" class="level3">
+<h3 class="anchored" data-anchor-id="nội-dung-100-song-slide-thật">Nội dung (100% song slide thật)</h3>
+<ul>
+<li><strong>15/15 bài giảng</strong> từ slide thực tế của TS. Đỗ Ngọc Kiên</li>
+<li><strong>16/16 Stata Lab</strong> (Lab 0 cài đặt + 15 lab theo buổi)</li>
+<li><strong>16/16 R Lab</strong> (song song với Stata Lab — phiên bản free, ggplot2)</li>
+<li>Trang chủ, đề cương, lịch học 15 buổi, problem sets, đánh giá, <strong>người hướng dẫn</strong></li>
+</ul>
+</section>
+<section id="cấu-trúc-đã-chốt" class="level3">
+<h3 class="anchored" data-anchor-id="cấu-trúc-đã-chốt">Cấu trúc đã chốt</h3>
+<ul>
+<li>5 chương + Seminar tổng hợp trải 15 buổi (đúng đề cương FTU)</li>
+<li>Đánh giá: 10% quá trình + 30% giữa kỳ + 60% cuối kỳ</li>
+<li>Cuối kỳ: tự luận đóng, <strong>20 trắc nghiệm + 2 tự luận</strong> (2 mức Bloom)</li>
+<li>Stata/R Lab: <strong>bonus 5%</strong>, làm cả 2 → tối đa <strong>+7%</strong></li>
+</ul>
+</section>
+<section id="tech-setup" class="level3">
+<h3 class="anchored" data-anchor-id="tech-setup">Tech setup</h3>
+<ul>
+<li><strong>Quarto 1.9.38</strong> ở <code>~/.local/quarto/</code></li>
+<li><strong>Stata MP 19</strong> ở <code>/usr/local/stata19/</code> (2-core perpetual MP license)</li>
+<li><strong>nbstata</strong> trong venv <code>.venv/</code> cho Stata MP qua Quarto</li>
+<li><strong>R</strong>: chưa cài (R Lab chỉ hiển thị code, không execute)</li>
+<li><strong>GitHub credentials</strong>: PAT trong <code>~/.git-credentials</code> (xem section dưới)</li>
+</ul>
+</section>
+<section id="quyết-định-lớn-đã-chốt" class="level3">
+<h3 class="anchored" data-anchor-id="quyết-định-lớn-đã-chốt">Quyết định lớn đã chốt</h3>
+<ul>
+<li><strong>Brand</strong>: chỉ “Nguyên lý Quản lý Kinh tế”, <strong>không có mã DTU301</strong></li>
+<li><strong>Theme</strong>: maroon <code>#722f37</code> + gold <code>#c19a4d</code> + cream <code>#fbfaf6</code></li>
+<li><strong>Font</strong>: Lora (serif) + Be Vietnam Pro (sans)</li>
+<li><strong>Code blocks</strong>: cream bg + dark text (sửa từ dark theme trước)</li>
+<li><strong>R Lab callouts</strong>: cross-link với Stata Lab trong mỗi bài giảng</li>
+</ul>
 </section>
 </section>
-<section id="đánh-giá-cuối-kỳ-60" class="level2">
-<h2 class="anchored" data-anchor-id="đánh-giá-cuối-kỳ-60">3. Đánh giá cuối kỳ (60%)</h2>
-<p><strong>Diễn ra</strong>: cuối học kỳ, theo lịch thi do Trường ban hành</p>
-<p><strong>Phạm vi</strong>: <strong>toàn bộ học phần</strong> (Chương 1 → Chương 5 và nội dung Seminar)</p>
-<p><strong>Hình thức</strong>: <strong>thi tự luận đóng</strong> (không sử dụng tài liệu)</p>
-<p><strong>Cấu trúc đề thi</strong>: do <strong>Bộ môn quyết định đầu kỳ</strong>. Cấu trúc hiện hành gồm <strong>2 phần</strong>:</p>
+<section id="đang-dở-chờ-user" class="level2">
+<h2 class="anchored" data-anchor-id="đang-dở-chờ-user">🚧 Đang dở / Chờ user</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 15%">
-<col style="width: 15%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Phần</th>
-<th>Hình thức</th>
-<th style="text-align: center;">Số câu</th>
-<th>Thang Bloom</th>
-<th>Mục đích</th>
+<th>Việc</th>
+<th>Trạng thái</th>
+<th>Cần</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong>Phần 1</strong></td>
-<td>Trắc nghiệm khách quan</td>
-<td style="text-align: center;"><strong>20 câu</strong></td>
-<td>Nhớ — Hiểu — Vận dụng (cấp thấp)</td>
-<td>Kiểm tra kiến thức nền và nhận biết khung lý thuyết qua 5 chương</td>
+<td>Pilot test với 5-8 SV</td>
+<td>Sẵn sàng (gói ở <code>_pilot-test/student-package/</code>)</td>
+<td>User triển khai pilot</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><strong>Phần 2</strong></td>
-<td>Tự luận</td>
-<td style="text-align: center;"><strong>2 câu</strong></td>
-<td><strong>2 mức Bloom khác nhau</strong> (vd: Vận dụng + Phân tích, hoặc Phân tích + Đánh giá)</td>
-<td>Kiểm tra năng lực vận dụng và phân tích phối hợp chính sách</td>
+<td>R Lab 2-15 chi tiết hoá</td>
+<td>Skeleton có sẵn</td>
+<td>Khi nào sinh viên cần → fill in</td>
 </tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cấu trúc 20+2 trên là <strong>cấu trúc hiện hành</strong> do Bộ môn quyết định cho học kỳ này. Trong các học kỳ sau, <strong>Bộ môn có thể điều chỉnh</strong> số lượng câu, tỷ trọng giữa hai phần, hoặc các mức Bloom được kiểm tra. Sinh viên nên xác nhận với giảng viên đầu kỳ.</p>
-</div>
-</div>
-<section id="phân-bổ-điểm-đề-nghị" class="level3">
-<h3 class="anchored" data-anchor-id="phân-bổ-điểm-đề-nghị">Phân bổ điểm đề nghị</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Phần</th>
-<th style="text-align: center;">Số câu</th>
-<th style="text-align: center;">Điểm/câu</th>
-<th style="text-align: center;">Tổng</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td style="text-align: center;">Phần 1 — Trắc nghiệm</td>
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">0.2</td>
-<td style="text-align: center;">4.0</td>
+<td>Datasets thật thay mô phỏng</td>
+<td>Mô phỏng OK cho học</td>
+<td>Khi có data thật, replace từng lab</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Phần 2 — Tự luận (Câu 1)</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3.0</td>
-<td style="text-align: center;">3.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Phần 2 — Tự luận (Câu 2)</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3.0</td>
-<td style="text-align: center;">3.0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Tổng</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>10.0</strong></td>
-</tr>
-</tbody>
-</table>
-<p><em>Phân bổ trên là gợi ý; trọng số cụ thể do Bộ môn quyết định trong ma trận đề thi đầu kỳ.</em></p>
-</section>
-<section id="khung-câu-hỏi-mẫu-1" class="level3">
-<h3 class="anchored" data-anchor-id="khung-câu-hỏi-mẫu-1">Khung câu hỏi mẫu</h3>
-<section id="phần-1-trắc-nghiệm-khách-quan-20-câu" class="level4">
-<h4 class="anchored" data-anchor-id="phần-1-trắc-nghiệm-khách-quan-20-câu">Phần 1 — Trắc nghiệm khách quan (20 câu)</h4>
-<p>Phủ đều 5 chương + nội dung Seminar. Một số dạng câu thường gặp:</p>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 1</strong> — Yếu tố nào KHÔNG phải là một trong <strong>ba vai trò Nhà nước</strong> trong nền kinh tế thị trường?</p>
-<p>A. Chủ sở hữu B. Quản lý C. Sản xuất ✓ D. Điều tiết</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 2</strong> — Theo hàm sản xuất Cobb-Douglas \(Y = AK^\alpha L^{1-\alpha}\), nếu \(\alpha = 0.3\) và \(K\) tăng 10%, sản lượng \(Y\) tăng xấp xỉ:</p>
-<p>A. 1% B. 3% ✓ C. 7% D. 10%</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Ví dụ 3</strong> — <strong>Bộ ba bất khả thi</strong> nói rằng một quốc gia không thể đồng thời đạt được:</p>
-<p>A. Tăng trưởng cao, lạm phát thấp, thất nghiệp thấp B. Ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ ✓ C. Tài khoá cân bằng, tiền tệ độc lập, tỷ giá cố định D. Cán cân vãng lai, dự trữ ngoại hối, tỷ giá thả nổi</p>
-</blockquote>
-</section>
-<section id="phần-2-tự-luận-2-câu" class="level4">
-<h4 class="anchored" data-anchor-id="phần-2-tự-luận-2-câu">Phần 2 — Tự luận (2 câu)</h4>
-<p>Hai câu được thiết kế ở <strong>2 mức Bloom khác nhau</strong> để vừa kiểm tra năng lực vận dụng vừa kiểm tra năng lực phân tích / đánh giá.</p>
-<p><strong>Câu 1 — Vận dụng (CLO2)</strong> <em>(ví dụ)</em></p>
-<blockquote class="blockquote">
-<p>Áp dụng khung <strong>AD-AS</strong> và <strong>đường Phillips</strong> để giải thích phản ứng chính sách của Việt Nam trước cú sốc lạm phát 2022–2023. Hãy chỉ rõ: (a) bản chất cú sốc (cung/cầu), (b) công cụ chính sách đã sử dụng, (c) đánh đổi giữa các mục tiêu vĩ mô. (~600 từ)</p>
-</blockquote>
-<p><strong>Câu 2 — Phân tích (CLO3)</strong> <em>(ví dụ)</em></p>
-<blockquote class="blockquote">
-<p>Phân tích <strong>đánh đổi chính sách</strong> mà Ngân hàng Nhà nước phải đối mặt khi Fed tăng lãi suất 200 bps, trong bối cảnh Việt Nam có <strong>cán cân vãng lai gần cân bằng</strong> nhưng <strong>dòng vốn FDI biến động</strong>. Áp dụng <strong>Bộ ba bất khả thi</strong> để chỉ ra ba phương án và phương án phù hợp nhất. (~700 từ)</p>
-</blockquote>
-</section>
-</section>
-<section id="tiêu-chí-chấm-phần-2" class="level3">
-<h3 class="anchored" data-anchor-id="tiêu-chí-chấm-phần-2">Tiêu chí chấm Phần 2</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Trọng số</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Đúng khái niệm cốt lõi, đúng khung lý thuyết</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng dữ liệu / số liệu có nguồn chính thống</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="odd">
-<td>Logic và cấu trúc lập luận</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Phân tích, phản biện, đề xuất khả thi</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="odd">
-<td>Văn phong học thuật, trích dẫn đúng chuẩn</td>
-<td style="text-align: center;">10%</td>
+<td>GitHub PAT có thể hết hạn</td>
+<td>Active 90 days</td>
+<td>Tạo mới nếu sắp hết hạn</td>
 </tr>
 </tbody>
 </table>
 </section>
+<section id="lệnh-thường-dùng" class="level2">
+<h2 class="anchored" data-anchor-id="lệnh-thường-dùng">🔑 Lệnh thường dùng</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># === LÀM VIỆC LOCAL ===</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/kiendn/material-building</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"</span><span class="va">$HOME</span><span class="st">/.local/bin:</span><span class="va">$PATH</span><span class="st">"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview <span class="at">--no-browser</span> <span class="at">--port</span> 4445</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># → http://localhost:4445/</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Render full</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># === ĐẨY LÊN PRODUCTION ===</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Commit source (main branch)</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add . <span class="kw">&amp;&amp;</span> <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"..."</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Render + publish (gh-pages branch — Pages serve từ đây)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages <span class="at">--no-prompt</span> <span class="at">--no-browser</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># === CHẠY STATA MP TRỰC TIẾP ===</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">stata-mp</span> <span class="at">-b</span> do myfile.do</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Hoặc qua Quarto khi có {stata} block (Tuần 1 hiện đang execute thật)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="tiêu-chí-chấm-chung" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm-chung">4. Tiêu chí chấm chung</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Trọng số</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cấu trúc và logic lập luận</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Chất lượng nội dung học thuật</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="even">
-<td>Phân tích và phản biện</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="odd">
-<td>Đề xuất khả thi cho Việt Nam</td>
-<td style="text-align: center;">15%</td>
-</tr>
-<tr class="even">
-<td>Sử dụng AI có trách nhiệm + liêm chính học thuật</td>
-<td style="text-align: center;">10%</td>
-</tr>
-</tbody>
-</table>
+<section id="cấu-trúc-thư-mục" class="level2">
+<h2 class="anchored" data-anchor-id="cấu-trúc-thư-mục">📁 Cấu trúc thư mục</h2>
+<pre><code>material-building/
+├── _quarto.yml              ← config navbar, sidebar, theme
+├── index.qmd                ← trang chủ
+├── syllabus.qmd             ← đề cương
+├── schedule.qmd             ← lịch học 15 buổi
+├── nguoi-huong-dan.qmd      ← danh sách giảng viên (NEW)
+├── lectures/
+│   ├── index.qmd
+│   └── buoi-{01..15}.qmd    ← 15 bài giảng đầy đủ
+├── stata-lab/
+│   ├── index.qmd
+│   ├── lab-00.qmd
+│   └── lab-{01..15}.qmd     ← 16 Stata Lab
+├── r-lab/                    ← (NEW)
+│   ├── index.qmd
+│   ├── lab-00.qmd            ← full
+│   ├── lab-01.qmd            ← full
+│   └── lab-{02..15}.qmd      ← skeleton, link sang Stata Lab tương ứng
+├── problem-sets/index.qmd
+├── exams/index.qmd
+├── data/vn_gdp_1986_2024.csv
+├── styles/custom.scss
+├── _source-materials/        ← slides gốc (Quarto ignored)
+│   └── slides/
+├── _pilot-test/              ← Pilot test cho 5-8 SV
+│   ├── CHECKLIST-PILOT.md
+│   └── student-package/
+├── .venv/                    ← Python venv với nbstata
+├── PROJECT-STATE.md          ← FILE NÀY
+└── README.md</code></pre>
 </section>
-<section id="quy-định-liêm-chính-học-thuật" class="level2">
-<h2 class="anchored" data-anchor-id="quy-định-liêm-chính-học-thuật">5. Quy định liêm chính học thuật</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Bài tập / tiểu luận <strong>giống nhau đến 50%</strong> trừ 1/2 số điểm.</li>
-<li>Bài giống nhau <strong>trên 50%</strong> bị <strong>điểm 0</strong>.</li>
-<li>Sinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều <strong>bị điểm 0</strong> phần đánh giá tương ứng.</li>
-<li>Vi phạm <strong>liêm chính học thuật</strong> (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường.</li>
+<section id="github-credentials" class="level2">
+<h2 class="anchored" data-anchor-id="github-credentials">🔐 GitHub credentials</h2>
+<pre><code>username: dongkien
+email: dongockien@gmail.com
+name: Do Ngoc Kien</code></pre>
+<p>PAT lưu ở <code>~/.git-credentials</code> (file local, KHÔNG commit). Tạo PAT mới khi cần tại https://github.com/settings/tokens với quyền <code>repo</code>.</p>
+</section>
+<section id="quay-lại-làm-tiếp-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="quay-lại-làm-tiếp-checklist">🚀 Quay lại làm tiếp — checklist</h2>
+<p>Khi mở Claude Code sáng mai:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Vào thư mục</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/kiendn</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Tiếp đúng hội thoại (nếu chưa quá 7 ngày)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> <span class="at">-c</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Hoặc session mới + đọc state</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Rồi nói: "tiếp Material Building, đọc PROJECT-STATE.md"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Memory file <code>~/.claude/projects/-home-kiendn/memory/material-building.md</code> sẽ auto-load với context.</p>
+</section>
+<section id="liên-hệ-nhận-diện" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-nhận-diện">📞 Liên hệ + nhận diện</h2>
+<p>Nếu file này không khớp với những gì bạn nghĩ Claude nhớ: - Memory: <code>cat ~/.claude/projects/-home-kiendn/memory/material-building.md</code> - Git log: <code>cd /home/kiendn/material-building &amp;&amp; git log --oneline | head -20</code> - File tree: <code>find /home/kiendn/material-building -type f -name "*.qmd" | head -20</code></p>
+</section>
+<section id="kế-hoạch-dài-hạn-nếu-user-muốn-mở-rộng" class="level2">
+<h2 class="anchored" data-anchor-id="kế-hoạch-dài-hạn-nếu-user-muốn-mở-rộng">🎯 Kế hoạch dài hạn (nếu user muốn mở rộng)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Bilingual VN/EN cho international students</label></li>
+<li><label><input type="checkbox">Tích hợp với LMS FTU (Moodle?)</label></li>
+<li><label><input type="checkbox">Mở rộng cho các môn khác trong Bộ môn</label></li>
+<li><label><input type="checkbox">Video lecture archive</label></li>
+<li><label><input type="checkbox">Newsletter sinh viên định kỳ</label></li>
+<li><label><input type="checkbox">PDF export đẹp cho in ấn</label></li>
 </ul>
-</div>
-</div>
-<section id="quy-định-sử-dụng-ai" class="level3">
-<h3 class="anchored" data-anchor-id="quy-định-sử-dụng-ai">Quy định sử dụng AI</h3>
-<ul>
-<li>Sử dụng AI và công cụ số <strong>được khuyến khích</strong> cho mục đích học tập và nghiên cứu.</li>
-<li>Phải <strong>công bố phạm vi sử dụng</strong> khi giảng viên yêu cầu.</li>
-<li>Phải <strong>tự kiểm chứng dữ liệu</strong> AI cung cấp.</li>
-<li><strong>Không sao chép trực tiếp</strong> đầu ra AI mà không xử lý lại.</li>
-<li>Không khai báo = đạo văn → xử lý theo quy chế.</li>
-</ul>
-</section>
-</section>
-<section id="đề-thi-các-năm-trước" class="level2">
-<h2 class="anchored" data-anchor-id="đề-thi-các-năm-trước">6. Đề thi các năm trước</h2>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Khi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.</p>
-</div>
-</div>
-</div>
-<p><em>(chưa có)</em></p>
+<hr>
+<p><em>Last updated: 29/05/2026 — sau khi thêm R Lab + xoá DTU301 + thêm trang Người hướng dẫn</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -938,5 +833,5 @@ Important
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
