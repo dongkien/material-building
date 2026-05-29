@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 08 — Đường Phillips Việt Nam 2010-2024 – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 8 — Đường Phillips Việt Nam 2010-2024 – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -105,6 +105,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -165,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-08.html">Lab 08 — Đường Phillips Việt Nam 2010-2024</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-08.html">Lab 8 — Đường Phillips Việt Nam 2010-2024</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -248,19 +277,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 06 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
+ <span class="menu-text">Lab 6 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 07 — Cân bằng IS-LM bằng số</span></a>
+ <span class="menu-text">Lab 7 — Mô phỏng cân bằng IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-08.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
+ <span class="menu-text">Lab 8 — Đường Phillips Việt Nam 2010-2024</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,14 +346,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-08" id="toc-khung-lab-08" class="nav-link active" data-scroll-target="#khung-lab-08">Khung Lab 08</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-08" id="toc-deliverable-lab-08" class="nav-link" data-scroll-target="#deliverable-lab-08">Deliverable Lab 08</a></li>
+  <li><a href="#dataset-cpi-và-thất-nghiệp-việt-nam" id="toc-dataset-cpi-và-thất-nghiệp-việt-nam" class="nav-link active" data-scroll-target="#dataset-cpi-và-thất-nghiệp-việt-nam">1. Dataset CPI và thất nghiệp Việt Nam</a></li>
+  <li><a href="#vẽ-scatter-phillips-toàn-giai-đoạn" id="toc-vẽ-scatter-phillips-toàn-giai-đoạn" class="nav-link" data-scroll-target="#vẽ-scatter-phillips-toàn-giai-đoạn">2. Vẽ scatter Phillips toàn giai đoạn</a></li>
+  <li><a href="#ước-lượng-độ-dốc-phillips-toàn-giai-đoạn" id="toc-ước-lượng-độ-dốc-phillips-toàn-giai-đoạn" class="nav-link" data-scroll-target="#ước-lượng-độ-dốc-phillips-toàn-giai-đoạn">3. Ước lượng độ dốc Phillips toàn giai đoạn</a></li>
+  <li><a href="#so-sánh-hai-giai-đoạn" id="toc-so-sánh-hai-giai-đoạn" class="nav-link" data-scroll-target="#so-sánh-hai-giai-đoạn">4. So sánh hai giai đoạn</a></li>
+  <li><a href="#vẽ-scatter-có-phân-biệt-giai-đoạn" id="toc-vẽ-scatter-có-phân-biệt-giai-đoạn" class="nav-link" data-scroll-target="#vẽ-scatter-có-phân-biệt-giai-đoạn">5. Vẽ scatter có phân biệt giai đoạn</a></li>
+  <li><a href="#phillips-kỳ-vọng-đơn-giản" id="toc-phillips-kỳ-vọng-đơn-giản" class="nav-link" data-scroll-target="#phillips-kỳ-vọng-đơn-giản">6. Phillips kỳ vọng — đơn giản</a></li>
+  <li><a href="#tính-nairu-ước-lượng" id="toc-tính-nairu-ước-lượng" class="nav-link" data-scroll-target="#tính-nairu-ước-lượng">7. Tính NAIRU ước lượng</a></li>
+  <li><a href="#đóng-log" id="toc-đóng-log" class="nav-link" data-scroll-target="#đóng-log">8. Đóng log</a></li>
+  <li><a href="#deliverable-lab-8" id="toc-deliverable-lab-8" class="nav-link" data-scroll-target="#deliverable-lab-8">Deliverable Lab 8</a></li>
   <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
@@ -332,10 +362,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-08.html">Lab 08 — Đường Phillips Việt Nam 2010-2024</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-08.html">Lab 8 — Đường Phillips Việt Nam 2010-2024</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 08 — Đường Phillips Việt Nam 2010-2024</h1>
-<p class="subtitle lead">Tương ứng Buổi 8: Mối quan hệ thất nghiệp - lạm phát</p>
+<h1 class="title">Lab 8 — Đường Phillips Việt Nam 2010-2024</h1>
+<p class="subtitle lead">Tương ứng Buổi 8: Ước lượng OLS, so sánh ngắn hạn từng giai đoạn</p>
 </div>
 
 
@@ -362,66 +392,185 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-08.html">Buổi 8</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>twoway scatter, fitted line, regress</code></p>
+<p>Bài này áp dụng <strong>đường Phillips</strong> từ <a href="../lectures/buoi-08.html">Buổi 8</a> vào dữ liệu Việt Nam 2010-2024. Bạn sẽ kiểm tra: <em>Phillips có còn tồn tại ở VN không?</em> và <em>Liệu kỳ vọng có làm dịch chuyển Phillips ngắn hạn?</em></p>
+<p>Sau Lab 8, bạn có thể:</p>
+<ul>
+<li>Tạo dataset lạm phát + thất nghiệp VN</li>
+<li>Vẽ scatter Phillips</li>
+<li>Ước lượng OLS độ dốc Phillips</li>
+<li>So sánh Phillips trước Covid (2010-2019) vs sau (2020-2024)</li>
+<li>Liên hệ với mô hình kỳ vọng Friedman-Phelps</li>
+</ul>
+<p><strong>Khái niệm Stata học</strong>: scatter + fitted line, <code>regress</code> by group, <code>if</code> condition, twoway combine</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 08. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-08" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-08">Khung Lab 08</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Vẽ đường Phillips và ước lượng độ dốc</p>
-</section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu CPI và unemployment VN 2010-2024 (GSO)</p>
-</section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 08 — DTU301</span>
+<section id="dataset-cpi-và-thất-nghiệp-việt-nam" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-cpi-và-thất-nghiệp-việt-nam">1. Dataset CPI và thất nghiệp Việt Nam</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 8 — DTU301 — Đường Phillips Việt Nam 2010-2024</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab08_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">twoway</span> <span class="kw">scatter</span>, <span class="kw">fitted</span> <span class="kw">line</span>, <span class="kw">regress</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Dữ liệu lạm phát + thất nghiệp VN ===</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* Nguồn: TCTK (CPI YoY), ước lượng tỷ lệ thất nghiệp khu vực thành thị</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">obs</span> 15</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> <span class="fu">year</span> = 2010 + <span class="dt">_n</span> - 1</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>* Lạm phát (CPI YoY, %) - ước lượng</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> inflation = .</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 9.2  <span class="kw">if</span> <span class="fu">year</span> == 2010</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 18.7 <span class="kw">if</span> <span class="fu">year</span> == 2011  <span class="co">// sốc lạm phát</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 9.1  <span class="kw">if</span> <span class="fu">year</span> == 2012</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 6.6  <span class="kw">if</span> <span class="fu">year</span> == 2013</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 4.1  <span class="kw">if</span> <span class="fu">year</span> == 2014</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 0.6  <span class="kw">if</span> <span class="fu">year</span> == 2015</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 2.7  <span class="kw">if</span> <span class="fu">year</span> == 2016</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.5  <span class="kw">if</span> <span class="fu">year</span> == 2017</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.5  <span class="kw">if</span> <span class="fu">year</span> == 2018</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 2.8  <span class="kw">if</span> <span class="fu">year</span> == 2019</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.2  <span class="kw">if</span> <span class="fu">year</span> == 2020  <span class="co">// Covid</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 1.8  <span class="kw">if</span> <span class="fu">year</span> == 2021</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.2  <span class="kw">if</span> <span class="fu">year</span> == 2022</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.3  <span class="kw">if</span> <span class="fu">year</span> == 2023</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> inflation = 3.6  <span class="kw">if</span> <span class="fu">year</span> == 2024</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>* Thất nghiệp khu vực thành thị (%) - ước lượng</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> unemployment = .</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 4.4  <span class="kw">if</span> <span class="fu">year</span> == 2010</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.6  <span class="kw">if</span> <span class="fu">year</span> == 2011</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.2  <span class="kw">if</span> <span class="fu">year</span> == 2012</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.6  <span class="kw">if</span> <span class="fu">year</span> == 2013</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.4  <span class="kw">if</span> <span class="fu">year</span> == 2014</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.4  <span class="kw">if</span> <span class="fu">year</span> == 2015</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.2  <span class="kw">if</span> <span class="fu">year</span> == 2016</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.2  <span class="kw">if</span> <span class="fu">year</span> == 2017</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.1  <span class="kw">if</span> <span class="fu">year</span> == 2018</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.0  <span class="kw">if</span> <span class="fu">year</span> == 2019</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.9  <span class="kw">if</span> <span class="fu">year</span> == 2020  <span class="co">// Covid</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 4.4  <span class="kw">if</span> <span class="fu">year</span> == 2021</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 3.0  <span class="kw">if</span> <span class="fu">year</span> == 2022</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 2.8  <span class="kw">if</span> <span class="fu">year</span> == 2023</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> unemployment = 2.6  <span class="kw">if</span> <span class="fu">year</span> == 2024</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> <span class="fu">year</span> <span class="st">"Năm"</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> inflation <span class="st">"Lạm phát CPI YoY (%)"</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> unemployment <span class="st">"Tỷ lệ thất nghiệp thành thị (%)"</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Dữ liệu mô phỏng</strong> xấp xỉ thực tế. Nguồn chính thức: - <strong>TCTK</strong> (gso.gov.vn) — CPI và Bảng KSDN - <strong>Bộ LĐ-TB-XH</strong> — Báo cáo thị trường LĐ - <strong>WB Vietnam Development Report</strong></p>
+</div>
+</div>
+</div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="vẽ-scatter-phillips-toàn-giai-đoạn" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-scatter-phillips-toàn-giai-đoạn">2. Vẽ scatter Phillips toàn giai đoạn</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* === Phillips <span class="kw">scatter</span> cơ bản ===</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">scatter</span> inflation unemployment, <span class="bn">mlabel</span>(<span class="fu">year</span>) <span class="bn">mlabsize</span>(small) <span class="co">///</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        msize(medium) mcolor(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> inflation unemployment, lcolor(<span class="st">"0 88 163"</span>) lwidth(medium)), <span class="co">///</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Đường Phillips Việt Nam, 2010-2024"</span>) <span class="co">///</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Tỷ lệ thất nghiệp (%)"</span>) <span class="co">///</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>       <span class="bn">ytitle</span>(<span class="st">"Lạm phát (%)"</span>) <span class="co">///</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">///</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"phillips_full.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: Đường fitted có dốc xuống (Phillips tồn tại) hay dốc lên (Phillips bị phá vỡ)? 2011 là outlier hay đại diện?</p>
 </section>
+<section id="ước-lượng-độ-dốc-phillips-toàn-giai-đoạn" class="level2">
+<h2 class="anchored" data-anchor-id="ước-lượng-độ-dốc-phillips-toàn-giai-đoạn">3. Ước lượng độ dốc Phillips toàn giai đoạn</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === OLS toàn giai đoạn ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Phillips 2010-2024 toàn giai đoạn ==="</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> inflation unemployment, <span class="kw">robust</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Hệ số <code>unemployment</code> ước lượng được bao nhiêu? Có ý nghĩa thống kê 5% không? Theo lý thuyết Phillips, kỳ vọng dấu âm — có đúng không?</p>
 </section>
-<section id="deliverable-lab-08" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-08">Deliverable Lab 08</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="so-sánh-hai-giai-đoạn" class="level2">
+<h2 class="anchored" data-anchor-id="so-sánh-hai-giai-đoạn">4. So sánh hai giai đoạn</h2>
+<p>Theo Friedman-Phelps, kỳ vọng làm dịch Phillips. Liệu Phillips 2010-2019 có <em>khác</em> Phillips 2020-2024?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Tạo biến giai đoạn ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> giai_doan = <span class="st">""</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> giai_doan = <span class="st">"2010-2019"</span> <span class="kw">if</span> <span class="fu">year</span> &lt;= 2019</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> giai_doan = <span class="st">"2020-2024"</span> <span class="kw">if</span> <span class="fu">year</span> &gt;= 2020</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>* === Regress theo 2 giai đoạn ===</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Phillips 2010-2019 (trước Covid) ==="</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &lt;= 2019, <span class="kw">robust</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Phillips 2020-2024 (sau Covid) ==="</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &gt;= 2020, <span class="kw">robust</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Độ dốc Phillips hai giai đoạn có khác nhau không? Giai đoạn nào dốc hơn? Ý nghĩa?</p>
+</section>
+<section id="vẽ-scatter-có-phân-biệt-giai-đoạn" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-scatter-có-phân-biệt-giai-đoạn">5. Vẽ scatter có phân biệt giai đoạn</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === Scatter có màu theo giai đoạn ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">scatter</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &lt;= 2019, mcolor(<span class="st">"114 47 55"</span>) <span class="co">///</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="bn">mlabel</span>(<span class="fu">year</span>) <span class="bn">mlabsize</span>(small) msize(medium)) <span class="co">///</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">scatter</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &gt;= 2020, mcolor(<span class="st">"0 88 163"</span>) <span class="co">///</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="bn">mlabel</span>(<span class="fu">year</span>) <span class="bn">mlabsize</span>(small) msize(medium)) <span class="co">///</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &lt;= 2019, lcolor(<span class="st">"114 47 55"</span>) <span class="co">///</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        lwidth(medium) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> inflation unemployment <span class="kw">if</span> <span class="fu">year</span> &gt;= 2020, lcolor(<span class="st">"0 88 163"</span>) <span class="co">///</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        lwidth(medium) lpattern(<span class="kw">dash</span>)), <span class="co">///</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Phillips VN: 2010-2019 vs 2020-2024"</span>) <span class="co">///</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Tỷ lệ thất nghiệp (%)"</span>) <span class="bn">ytitle</span>(<span class="st">"Lạm phát (%)"</span>) <span class="co">///</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"2010-2019"</span>) <span class="kw">label</span>(2 <span class="st">"2020-2024"</span>) <span class="co">///</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>              <span class="kw">order</span>(1 2) <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"phillips_2periods.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="phillips-kỳ-vọng-đơn-giản" class="level2">
+<h2 class="anchored" data-anchor-id="phillips-kỳ-vọng-đơn-giản">6. Phillips kỳ vọng — đơn giản</h2>
+<p>Theo Friedman-Phelps: <span class="math display">\[\pi_t = \pi^e_t - \beta(U_t - U^N)\]</span></p>
+<p>Một cách đơn giản: kỳ vọng = lạm phát năm trước.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* === Lagged inflation làm proxy cho expectations ===</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> <span class="fu">year</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> inflation_lag = inflation[<span class="dt">_n</span>-1]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> inflation_expected = inflation_lag    <span class="co">// Naive expectations</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>* === Phillips expectation-augmented ===</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> inflation unemployment inflation_lag <span class="kw">if</span> <span class="fu">year</span> &gt;= 2011, <span class="kw">robust</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 4</strong>: Khi thêm <code>inflation_lag</code> (proxy cho kỳ vọng), độ dốc của <code>unemployment</code> có thay đổi không? Có gần với NAIRU lý thuyết hơn không?</p>
+</section>
+<section id="tính-nairu-ước-lượng" class="level2">
+<h2 class="anchored" data-anchor-id="tính-nairu-ước-lượng">7. Tính NAIRU ước lượng</h2>
+<p>Theo công thức: <span class="math display">\[U^N = U - \frac{\pi - \pi^e}{\beta}\]</span></p>
+<p>Với β = độ dốc Phillips, <span class="math inline">\(\pi^e\)</span> = inflation_lag:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>* === Ước lượng NAIRU ===</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>* Lấy beta từ hồi quy vừa rồi</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="kw">local</span> beta = -_b[unemployment]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Beta = "</span> <span class="ot">`beta'</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> NAIRU = unemployment - (inflation - inflation_lag) / <span class="ot">`beta'</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>* Trung bình NAIRU</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> NAIRU, <span class="kw">detail</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"NAIRU trung bình = "</span> <span class="fu">r</span>(<span class="kw">mean</span>) <span class="st">"%"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 5</strong> (suy nghĩ + viết, 400 từ):</p>
+<p>NAIRU của Việt Nam trung bình bao nhiêu? Có hợp lý không? (gợi ý: tỷ lệ thất nghiệp chính thức VN luôn rất thấp ~2-4%, có thể NAIRU cũng vậy.)</p>
+<p>Theo bạn, <strong>Phillips có còn áp dụng được ở Việt Nam</strong> sau giai đoạn 2010 không? Lập luận của bạn dựa trên:</p>
+<ul>
+<li>Cú sốc cung 2022 (Nga-Ukraine) làm lạm phát tăng nhưng thất nghiệp không giảm — đây có phải bằng chứng Phillips bị phá vỡ?</li>
+<li>Năm 2011 lạm phát cực cao (18.7%) nhưng thất nghiệp vẫn thấp — vì sao?</li>
+<li>Số liệu thất nghiệp VN có <em>chính xác</em> không? (gợi ý: kinh tế phi chính thức, thiếu việc làm)</li>
+</ul>
+</section>
+<section id="đóng-log" class="level2">
+<h2 class="anchored" data-anchor-id="đóng-log">8. Đóng log</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-8" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-8">Deliverable Lab 8</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -432,15 +581,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><code>lab08_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>Code + comment tiếng Việt</td>
 </tr>
 <tr class="even">
 <td><code>lab08_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>Output Stata</td>
 </tr>
 <tr class="odd">
-<td><code>lab08_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><code>lab08_&lt;tên&gt;.pdf</code> (2-3 trang)</td>
+<td>5 câu hỏi + 2 biểu đồ Phillips</td>
 </tr>
 </tbody>
 </table>
@@ -457,25 +606,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
+<td>Code chạy + scatter Phillips</td>
 <td style="text-align: center;">20%</td>
 </tr>
 <tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
+<td>Hồi quy OLS có ý nghĩa thống kê</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="odd">
+<td>So sánh 2 giai đoạn đúng</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="even">
+<td>Phillips kỳ vọng + NAIRU</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="odd">
+<td>Phản biện về Phillips ở VN</td>
+<td style="text-align: center;">20%</td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🚀 Mở rộng (tự chọn)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Lấy <strong>dữ liệu thật từ TCTK</strong> (CPI tháng, thay vì năm) để có nhiều quan sát hơn.</li>
+<li>Thử <strong>Phillips kỳ vọng adaptive</strong> với <span class="math inline">\(\pi^e = \rho \pi_{t-1} + (1-\rho) \pi^e_{t-1}\)</span>.</li>
+<li>So sánh VN với <strong>Singapore hoặc Thái Lan</strong> cùng giai đoạn.</li>
+</ul>
+</div>
+</div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-07.html">Lab 7</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-09.html">Lab 9</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-07.html">Lab 7 — Mô phỏng IS-LM</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-09.html">Lab 9 — Tính NEER/REER VND</a> →</p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-08.html">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-08.html">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -212,19 +241,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</span></a>
+ <span class="menu-text">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 07 — Mô hình IS-LM</span></a>
+ <span class="menu-text">Buổi 7 — Mô hình IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-08.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</span></a>
+ <span class="menu-text">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-8" id="toc-lộ-trình-buổi-8" class="nav-link active" data-scroll-target="#lộ-trình-buổi-8">Lộ trình Buổi 8</a></li>
+  <li><a href="#a.-mô-hình-ad-as" id="toc-a.-mô-hình-ad-as" class="nav-link" data-scroll-target="#a.-mô-hình-ad-as">A. Mô hình AD-AS</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-đường-tổng-cầu-ad" id="toc-a.1.-đường-tổng-cầu-ad" class="nav-link" data-scroll-target="#a.1.-đường-tổng-cầu-ad">A.1. Đường tổng cầu (AD)</a></li>
+  <li><a href="#a.2.-lras-tổng-cung-dài-hạn-cổ-điển" id="toc-a.2.-lras-tổng-cung-dài-hạn-cổ-điển" class="nav-link" data-scroll-target="#a.2.-lras-tổng-cung-dài-hạn-cổ-điển">A.2. LRAS — Tổng cung dài hạn (cổ điển)</a></li>
+  <li><a href="#a.3.-sras-tổng-cung-ngắn-hạn-keynes" id="toc-a.3.-sras-tổng-cung-ngắn-hạn-keynes" class="nav-link" data-scroll-target="#a.3.-sras-tổng-cung-ngắn-hạn-keynes">A.3. SRAS — Tổng cung ngắn hạn (Keynes)</a></li>
+  <li><a href="#a.4.-cân-bằng-ad-as" id="toc-a.4.-cân-bằng-ad-as" class="nav-link" data-scroll-target="#a.4.-cân-bằng-ad-as">A.4. Cân bằng AD-AS</a></li>
+  <li><a href="#a.5.-cú-sốc-cầu-và-cú-sốc-cung" id="toc-a.5.-cú-sốc-cầu-và-cú-sốc-cung" class="nav-link" data-scroll-target="#a.5.-cú-sốc-cầu-và-cú-sốc-cung">A.5. Cú sốc cầu và Cú sốc cung</a></li>
+  </ul></li>
+  <li><a href="#b.-đường-phillips" id="toc-b.-đường-phillips" class="nav-link" data-scroll-target="#b.-đường-phillips">B. Đường Phillips</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-phillips-1958" id="toc-b.1.-phillips-1958" class="nav-link" data-scroll-target="#b.1.-phillips-1958">B.1. Phillips 1958</a></li>
+  <li><a href="#b.2.-phillips-kỳ-vọng-friedman-phelps" id="toc-b.2.-phillips-kỳ-vọng-friedman-phelps" class="nav-link" data-scroll-target="#b.2.-phillips-kỳ-vọng-friedman-phelps">B.2. Phillips kỳ vọng — Friedman, Phelps</a></li>
+  <li><a href="#b.3.-stagflation-và-bài-học-chính-sách" id="toc-b.3.-stagflation-và-bài-học-chính-sách" class="nav-link" data-scroll-target="#b.3.-stagflation-và-bài-học-chính-sách">B.3. Stagflation và bài học chính sách</a></li>
+  </ul></li>
+  <li><a href="#c.-chính-sách-tài-khoá-và-tiền-tệ" id="toc-c.-chính-sách-tài-khoá-và-tiền-tệ" class="nav-link" data-scroll-target="#c.-chính-sách-tài-khoá-và-tiền-tệ">C. Chính sách tài khoá và tiền tệ</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-cstk-công-cụ-và-số-nhân" id="toc-c.1.-cstk-công-cụ-và-số-nhân" class="nav-link" data-scroll-target="#c.1.-cstk-công-cụ-và-số-nhân">C.1. CSTK — công cụ và số nhân</a></li>
+  <li><a href="#c.2.-ricardian-equivalence-và-ổn-định-tự-động" id="toc-c.2.-ricardian-equivalence-và-ổn-định-tự-động" class="nav-link" data-scroll-target="#c.2.-ricardian-equivalence-và-ổn-định-tự-động">C.2. Ricardian equivalence và Ổn định tự động</a></li>
+  <li><a href="#c.3.-cstt-ba-công-cụ-và-inflation-targeting" id="toc-c.3.-cstt-ba-công-cụ-và-inflation-targeting" class="nav-link" data-scroll-target="#c.3.-cstt-ba-công-cụ-và-inflation-targeting">C.3. CSTT — ba công cụ và Inflation Targeting</a></li>
+  <li><a href="#c.4.-đặc-thù-cstt-việt-nam" id="toc-c.4.-đặc-thù-cstt-việt-nam" class="nav-link" data-scroll-target="#c.4.-đặc-thù-cstt-việt-nam">C.4. Đặc thù CSTT Việt Nam</a></li>
+  </ul></li>
+  <li><a href="#d.-case-việt-nam-20202024" id="toc-d.-case-việt-nam-20202024" class="nav-link" data-scroll-target="#d.-case-việt-nam-20202024">D. Case Việt Nam 2020–2024</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-bốn-cú-sốc-liên-tiếp" id="toc-d.1.-bốn-cú-sốc-liên-tiếp" class="nav-link" data-scroll-target="#d.1.-bốn-cú-sốc-liên-tiếp">D.1. Bốn cú sốc liên tiếp</a></li>
+  <li><a href="#d.2.-policy-mix-việt-nam-20222024" id="toc-d.2.-policy-mix-việt-nam-20222024" class="nav-link" data-scroll-target="#d.2.-policy-mix-việt-nam-20222024">D.2. Policy mix Việt Nam 2022–2024</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-8-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-8-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-8-năm-điểm-cốt-lõi">Tổng kết Buổi 8 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-9-mở-chương-4" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-9-mở-chương-4" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-9-mở-chương-4">Bài tập về nhà (chuẩn bị Buổi 9 — mở Chương 4)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +379,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-08.html">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-08.html">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</h1>
-<p class="subtitle lead">AD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN</p>
+<h1 class="title">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</h1>
+<p class="subtitle lead">Mô hình AD-AS · Đường Phillips · CSTK và CSTT · Case VN 2020–2024</p>
 </div>
 
 
@@ -355,66 +409,462 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Phân tích phối hợp chính sách</strong></p>
+<p><strong>CLO2, CLO3</strong> — Phân tích phối hợp chính sách tài khoá – tiền tệ qua khung AD-AS và Phillips, vận dụng vào tình huống Việt Nam 2020–2024.</p>
+<p>Buổi 8 đóng lại Chương 3 với câu hỏi tổng hợp: <strong>làm thế nào Nhà nước phối hợp tài khoá và tiền tệ</strong> trước cú sốc thực tế, đặc biệt trong bối cảnh <strong>4 cú sốc liên tiếp 2020–2024</strong> mà Việt Nam vừa trải qua.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>3.3. Mô hình AD-AS</strong></p>
-<ul>
-<li>Đường tổng cầu (AD)</li>
-<li>Đường tổng cung ngắn hạn (SRAS) và dài hạn (LRAS)</li>
-</ul>
-<p><strong>Đường Phillips</strong></p>
-<ul>
-<li>Phillips ngắn hạn</li>
-<li>Phiên bản kỳ vọng (expectations-augmented)</li>
-<li>NAIRU</li>
-</ul>
-<p><strong>Chính sách</strong></p>
-<ul>
-<li>Tài khoá: chi tiêu, thuế, chuyển giao</li>
-<li>Tiền tệ: lãi suất chính sách, OMO, dự trữ bắt buộc</li>
-<li><strong>Phối hợp tài khoá – tiền tệ Việt Nam 2020–2024</strong></li>
-</ul>
+<section id="lộ-trình-buổi-8" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-8">Lộ trình Buổi 8</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Mô hình AD-AS — đường AD, LRAS, SRAS, cú sốc</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Đường Phillips — ngắn hạn vs dài hạn, NAIRU, stagflation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Chính sách CSTK + CSTT — công cụ, số nhân, IT, Taylor rule</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Case Việt Nam — 4 cú sốc và policy mix 2022–2024</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Phân tích <strong>gói hỗ trợ Covid 2021–2022</strong> qua khung AD-AS: cú sốc cầu hay cú sốc cung? Hiệu quả tài khoá vs tiền tệ?</p>
+<section id="a.-mô-hình-ad-as" class="level2">
+<h2 class="anchored" data-anchor-id="a.-mô-hình-ad-as">A. Mô hình AD-AS</h2>
+<section id="a.1.-đường-tổng-cầu-ad" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-đường-tổng-cầu-ad">A.1. Đường tổng cầu (AD)</h3>
+<p><strong>AD</strong> = tổng cầu nền kinh tế = <span class="math inline">\(C + I + G + NX\)</span> (trong KT đóng: <span class="math inline">\(NX = 0\)</span>).</p>
+<p>AD <strong>dốc xuống</strong> theo mức giá <span class="math inline">\(P\)</span> — ngược với đường cầu vi mô (cho 1 hàng hoá).</p>
+<p><strong>Ba kênh</strong> AD dốc xuống:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kênh</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Tiền tệ</strong> (Keynes)</td>
+<td><span class="math inline">\(P\)</span> tăng → <span class="math inline">\(M/P\)</span> giảm → <span class="math inline">\(r\)</span> tăng → <span class="math inline">\(I\)</span> giảm</td>
+</tr>
+<tr class="even">
+<td><strong>Tài sản</strong> (Pigou)</td>
+<td><span class="math inline">\(P\)</span> tăng → giá trị thực của tài sản giảm → <span class="math inline">\(C\)</span> giảm</td>
+</tr>
+<tr class="odd">
+<td><strong>Xuất khẩu</strong> (Mundell-Fleming)</td>
+<td><span class="math inline">\(P\)</span> tăng → hàng VN đắt hơn so với nước ngoài → <span class="math inline">\(NX\)</span> giảm</td>
+</tr>
+</tbody>
+</table>
+<p>AD = <strong>mở rộng IS-LM cho mức giá thay đổi</strong>. Khi <span class="math inline">\(P\)</span> thay đổi, LM dịch (vì <span class="math inline">\(M/P\)</span> thay đổi), kéo theo <span class="math inline">\((Y, r)\)</span> thay đổi → tổng hợp lại thành quan hệ <span class="math inline">\(P–Y\)</span> chính là đường AD.</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p><strong>Tiểu luận giữa kỳ</strong> — đánh giá chính sách vĩ mô Việt Nam 2020–2024 qua khung AD-AS và Phillips.</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
-<ol type="1">
-<li>Hạn mức tín dụng: giữ hay bỏ?</li>
-<li>Phillips có còn áp dụng được ở VN sau 2008?</li>
-<li>Khi nào lạm phát mục tiêu là chính sách tốt cho VN?</li>
-</ol>
-</section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="a.2.-lras-tổng-cung-dài-hạn-cổ-điển" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-lras-tổng-cung-dài-hạn-cổ-điển">A.2. LRAS — Tổng cung dài hạn (cổ điển)</h3>
+<p><strong>LRAS</strong> (Long-Run Aggregate Supply) — <strong>thẳng đứng</strong> tại sản lượng tiềm năng <span class="math inline">\(Y^*\)</span>.</p>
+<p><strong>Quan điểm cổ điển</strong>: trong dài hạn, mọi thị trường điều chỉnh hoàn hảo. <span class="math inline">\(P\)</span> và <span class="math inline">\(W\)</span> (lương) linh hoạt. Sản lượng tiềm năng <span class="math inline">\(Y^*\)</span> phụ thuộc:</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 14–15.</li>
-<li>Báo cáo IMF Article IV về Việt Nam, phiên bản mới nhất.</li>
+<li>Vốn <span class="math inline">\(K\)</span></li>
+<li>Lao động <span class="math inline">\(L\)</span></li>
+<li>Công nghệ <span class="math inline">\(A\)</span></li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<p>(Chính là các yếu tố trong Cobb-Douglas — đã học Buổi 6.)</p>
+</section>
+<section id="a.3.-sras-tổng-cung-ngắn-hạn-keynes" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-sras-tổng-cung-ngắn-hạn-keynes">A.3. SRAS — Tổng cung ngắn hạn (Keynes)</h3>
+<p><strong>SRAS</strong> (Short-Run Aggregate Supply) — <strong>dốc lên</strong>: <span class="math inline">\(P\)</span> tăng → <span class="math inline">\(Y\)</span> tăng (trong ngắn hạn).</p>
+<p><strong>Ba lý thuyết</strong> giải thích SRAS dốc lên:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lý thuyết</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Sticky price</strong> (Keynesian)</td>
+<td>DN không thể điều chỉnh giá ngay (chi phí menu, hợp đồng)</td>
+</tr>
+<tr class="even">
+<td><strong>Sticky wage</strong> (Keynesian)</td>
+<td>Lương cứng nhắc (hợp đồng dài, thoả thuận công đoàn)</td>
+</tr>
+<tr class="odd">
+<td><strong>Misperception</strong> (Lucas)</td>
+<td>DN nhầm tăng giá chung với tăng giá riêng → tăng sản xuất nhầm</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hệ quả</strong>: trong ngắn hạn, <span class="math inline">\(P\)</span> và <span class="math inline">\(W\)</span> cứng nhắc, <span class="math inline">\(Y\)</span> có thể <em>lệch</em> khỏi <span class="math inline">\(Y^*\)</span> — đây là chỗ chính sách kinh tế có <em>không gian tác động</em>.</p>
+</section>
+<section id="a.4.-cân-bằng-ad-as" class="level3">
+<h3 class="anchored" data-anchor-id="a.4.-cân-bằng-ad-as">A.4. Cân bằng AD-AS</h3>
+<p><strong>Ngắn hạn</strong>: AD và SRAS cắt nhau → <span class="math inline">\((P_1, Y_1)\)</span>. <strong>Dài hạn</strong>: AD và LRAS cắt nhau → <span class="math inline">\((P_2, Y^*)\)</span>.</p>
+<p><strong>Cân bằng dài hạn</strong>: ba đường AD + SRAS + LRAS cùng giao tại <span class="math inline">\(Y^*\)</span>.</p>
+<p><strong>Quá trình điều chỉnh</strong>: nếu nền KT lệch khỏi <span class="math inline">\(Y^*\)</span>, lực thị trường (lương và giá điều chỉnh dần) sẽ đưa về. Trong quá trình đó, <span class="math inline">\(P\)</span> và <span class="math inline">\(Y\)</span> biến động.</p>
+</section>
+<section id="a.5.-cú-sốc-cầu-và-cú-sốc-cung" class="level3">
+<h3 class="anchored" data-anchor-id="a.5.-cú-sốc-cầu-và-cú-sốc-cung">A.5. Cú sốc cầu và Cú sốc cung</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loại cú sốc</th>
+<th>Nguyên nhân</th>
+<th>Tác động ngắn hạn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cú sốc cầu</strong></td>
+<td>AD dịch — do <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(M\)</span></td>
+<td><span class="math inline">\(P\)</span> và <span class="math inline">\(Y\)</span> cùng chiều</td>
+</tr>
+<tr class="even">
+<td><strong>Cú sốc cung</strong></td>
+<td>SRAS dịch — do giá đầu vào, năng suất</td>
+<td><span class="math inline">\(P\)</span> và <span class="math inline">\(Y\)</span> ngược chiều</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ví dụ kinh điển</strong>:</p>
+<ul>
+<li><strong>Cú sốc cầu âm</strong>: khủng hoảng tài chính 2008 → AD dịch trái → cả <span class="math inline">\(P\)</span> và <span class="math inline">\(Y\)</span> giảm.</li>
+<li><strong>Cú sốc cung âm</strong>: OPEC 1973-1979 → SRAS dịch trái → <span class="math inline">\(P\)</span> tăng, <span class="math inline">\(Y\)</span> giảm → <strong>stagflation</strong> (lạm phát + thất nghiệp cùng cao).</li>
+</ul>
+<p><strong>Stagflation</strong> là <em>thách thức khó nhất</em> cho chính sách: chống lạm phát cần thắt chặt (làm thất nghiệp tệ hơn), kích cầu cần nới lỏng (làm lạm phát tệ hơn). Không có phương án “đẹp”.</p>
+</section>
+</section>
+<section id="b.-đường-phillips" class="level2">
+<h2 class="anchored" data-anchor-id="b.-đường-phillips">B. Đường Phillips</h2>
+<section id="b.1.-phillips-1958" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-phillips-1958">B.1. Phillips 1958</h3>
+<p><strong>A. W. Phillips (1958)</strong> — <em>The Relation between Unemployment and the Rate of Change of Money Wage Rates in the United Kingdom, 1861–1957</em>:</p>
+<ul>
+<li>Nghiên cứu dữ liệu Anh <strong>gần 100 năm</strong> (1861–1957)</li>
+<li>Phát hiện <strong>tương quan ngược</strong>: tỷ lệ thất nghiệp ↔︎ tốc độ tăng lương danh nghĩa</li>
+<li>Sau này mở rộng: thất nghiệp ↔︎ lạm phát</li>
+</ul>
+<p><strong>Cơ sở lý thuyết</strong>: thị trường lao động ngắn hạn.</p>
+<ul>
+<li>Khi <span class="math inline">\(U\)</span> (thất nghiệp) thấp → khan hiếm LĐ → lương tăng → giá tăng (do chi phí tăng) → lạm phát cao</li>
+<li>Khi <span class="math inline">\(U\)</span> cao → LĐ dư thừa → lương ổn định/giảm → lạm phát thấp</li>
+</ul>
+<p><strong>Hàm ý chính sách những năm 1960</strong>: Nhà nước có thể <em>chọn</em> điểm trên đường Phillips — chấp nhận lạm phát cao để thất nghiệp thấp, hoặc ngược lại.</p>
+</section>
+<section id="b.2.-phillips-kỳ-vọng-friedman-phelps" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-phillips-kỳ-vọng-friedman-phelps">B.2. Phillips kỳ vọng — Friedman, Phelps</h3>
+<p><strong>Milton Friedman (1968)</strong> và <strong>Edmund Phelps (1967)</strong> đặt vấn đề: lựa chọn đó <em>chỉ tồn tại ngắn hạn</em>, do người LĐ và DN có <em>kỳ vọng lạm phát</em> <span class="math inline">\(\pi^e\)</span>.</p>
+<p><strong>Đường Phillips mở rộng</strong>:</p>
+<p><span class="math display">\[\pi = \pi^e - \beta(U - U^N)\]</span></p>
+<p>Trong đó <span class="math inline">\(U^N\)</span> = <strong>NAIRU</strong> (Non-Accelerating Inflation Rate of Unemployment) = thất nghiệp tự nhiên.</p>
+<p><strong>Khi <span class="math inline">\(\pi^e\)</span> thay đổi, Phillips ngắn hạn dịch</strong>:</p>
+<ul>
+<li>Nhà nước in tiền để giảm <span class="math inline">\(U\)</span> tạm thời → nhưng người dân học được → <span class="math inline">\(\pi^e\)</span> tăng → Phillips dịch lên</li>
+<li>Để giữ <span class="math inline">\(U\)</span> thấp tiếp tục, phải in tiền nhiều hơn → lạm phát tăng tốc → mất kiểm soát</li>
+</ul>
+<p><strong>Phillips dài hạn</strong>: <strong>thẳng đứng tại NAIRU</strong>.</p>
+<p>→ Không thể dùng lạm phát để giảm thất nghiệp dài hạn. <strong>Tín nhiệm NHTW</strong> là then chốt: nếu NHTW cam kết giữ lạm phát thấp và <em>được tin</em>, kỳ vọng giảm, Phillips ngắn hạn dịch xuống.</p>
+</section>
+<section id="b.3.-stagflation-và-bài-học-chính-sách" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-stagflation-và-bài-học-chính-sách">B.3. Stagflation và bài học chính sách</h3>
+<p><strong>Stagflation 1970s</strong> = lạm phát cao + thất nghiệp cao + tăng trưởng thấp.</p>
+<p><strong>Nguyên nhân</strong>:</p>
+<ul>
+<li><strong>Cú sốc cung dầu</strong> (OPEC 1973, 1979) → SRAS dịch trái</li>
+<li><strong>Chính sách kéo dài</strong> kích cầu khi không nên — vì tin sai vào Phillips ổn định</li>
+</ul>
+<p><strong>Paul Volcker (Fed 1979-1987)</strong>:</p>
+<ul>
+<li>Nâng <span class="math inline">\(r\)</span> Fed Funds lên ~20% → suy thoái 1980-82 (thất nghiệp 10%+)</li>
+<li>Nhưng <em>thành công kéo lạm phát từ 14% xuống 3%</em></li>
+<li><strong>Bài học</strong>: chấp nhận đau ngắn hạn để tái lập tín nhiệm</li>
+</ul>
+<p><strong>Khung Inflation Targeting (IT)</strong> ra đời từ đó (New Zealand 1989 tiên phong, lan rộng): - NHTW công khai mục tiêu lạm phát (vd: 2%) - Cam kết minh bạch, có thể bị giám sát - Giúp neo <span class="math inline">\(\pi^e\)</span> ở mức thấp ổn định</p>
+</section>
+</section>
+<section id="c.-chính-sách-tài-khoá-và-tiền-tệ" class="level2">
+<h2 class="anchored" data-anchor-id="c.-chính-sách-tài-khoá-và-tiền-tệ">C. Chính sách tài khoá và tiền tệ</h2>
+<section id="c.1.-cstk-công-cụ-và-số-nhân" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-cstk-công-cụ-và-số-nhân">C.1. CSTK — công cụ và số nhân</h3>
+<p><strong>Công cụ chính</strong>: <span class="math inline">\(G\)</span> (chi tiêu công) và <span class="math inline">\(T\)</span> (thuế).</p>
+<p><strong>Tác động qua AD</strong>:</p>
+<ul>
+<li>Tăng <span class="math inline">\(G\)</span> → AD dịch phải</li>
+<li>Giảm <span class="math inline">\(T\)</span> → <span class="math inline">\(C\)</span> tăng → AD dịch phải</li>
+</ul>
+<p><strong>Số nhân lý thuyết</strong> (Keynesian Cross): <span class="math inline">\(\frac{1}{1-\text{MPC}} \approx 2-4\)</span>.</p>
+<p><strong>Số nhân thực nghiệm</strong>: thường thấp hơn, <strong>0.5–1.5</strong>. Lý do:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Cơ chế giảm hiệu lực</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Crowding out</strong></td>
+<td><span class="math inline">\(r\)</span> tăng → <span class="math inline">\(I\)</span> giảm (đã học Buổi 7)</td>
+</tr>
+<tr class="even">
+<td><strong>Ricardian equivalence</strong></td>
+<td>Hộ gia đình tăng tiết kiệm để trả thuế tương lai (xem C.2)</td>
+</tr>
+<tr class="odd">
+<td><strong>Đầu tư công kém hiệu quả</strong></td>
+<td>Lãng phí, tham nhũng làm <span class="math inline">\(G\)</span> không tạo cầu thực</td>
+</tr>
+<tr class="even">
+<td><strong>Nhập khẩu</strong></td>
+<td>Một phần <span class="math inline">\(G\)</span> chi cho hàng nhập → rò rỉ ra ngoài (chỉ trong KT mở)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="c.2.-ricardian-equivalence-và-ổn-định-tự-động" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-ricardian-equivalence-và-ổn-định-tự-động">C.2. Ricardian equivalence và Ổn định tự động</h3>
+<p><strong>Robert Barro (1974)</strong> — <em>Are Government Bonds Net Wealth?</em> — đề xuất <strong>Ricardian equivalence</strong>:</p>
+<blockquote class="blockquote">
+<p>Nếu hộ gia đình duy lý, họ biết rằng <em>nợ công ngày nay = thuế ngày mai</em>. Họ tăng tiết kiệm hôm nay để trả thuế tương lai → <span class="math inline">\(C\)</span> không tăng → CSTK kích cầu không hiệu quả.</p>
+</blockquote>
+<p><strong>Thực tế</strong>: Ricardian equivalence không hoàn toàn đúng vì: - Hộ gia đình không hoàn toàn duy lý - Hạn chế thanh khoản (không thể vay/cho vay tự do) - Không bận tâm thế hệ sau</p>
+<p>Nhưng <em>hiệu ứng Ricardian</em> có tồn tại — giải thích phần nào vì sao số nhân thực thấp hơn lý thuyết.</p>
+<p><strong>Ổn định tự động (automatic stabilizers)</strong>:</p>
+<ul>
+<li>Thuế thu nhập lũy tiến: suy thoái → <span class="math inline">\(Y\)</span> giảm → thuế thu thấp hơn → cầu giữ được</li>
+<li>BHXH, trợ cấp thất nghiệp: suy thoái → trợ cấp tăng → cầu giữ được</li>
+</ul>
+<p><strong>Việt Nam</strong>: bộ ổn định tự động <strong>yếu</strong> — BHXH chưa phổ cập, thuế TNCN tỷ trọng nhỏ. Đây là lý do khi suy thoái, VN phải dùng <em>discretionary policy</em> mạnh hơn các nước phát triển.</p>
+</section>
+<section id="c.3.-cstt-ba-công-cụ-và-inflation-targeting" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-cstt-ba-công-cụ-và-inflation-targeting">C.3. CSTT — ba công cụ và Inflation Targeting</h3>
+<p><strong>Mục tiêu chính của CSTT</strong> (theo IT chuẩn): <strong>ổn định giá cả</strong>.</p>
+<p><strong>Ba công cụ truyền thống</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Công cụ</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OMO</strong> (Open Market Operations)</td>
+<td>NHTW mua/bán trái phiếu CP → tăng/giảm <span class="math inline">\(M\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Dự trữ bắt buộc</strong></td>
+<td>Tỷ lệ % gửi tiền NHTW — tăng → giảm tín dụng</td>
+</tr>
+<tr class="odd">
+<td><strong>r chiết khấu</strong> (discount rate)</td>
+<td><span class="math inline">\(r\)</span> NHTW cho NHTM vay</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Inflation Targeting</strong>:</p>
+<ul>
+<li>NHTW công bố <strong>mục tiêu lạm phát</strong> cụ thể (vd 2%)</li>
+<li><strong>Neo kỳ vọng</strong> <span class="math inline">\(\pi^e\)</span> → Phillips ngắn hạn ở vị trí thấp</li>
+<li><strong>Minh bạch</strong>: công bố biên bản họp, dự báo</li>
+</ul>
+<p><strong>Taylor rule</strong> (John Taylor, 1993):</p>
+<p><span class="math display">\[i = \pi + 0.5(\pi - \pi^*) + 0.5(Y - Y^*)\]</span></p>
+<p>Quy tắc khuyến nghị <span class="math inline">\(r\)</span> chính sách dựa trên <em>độ lệch lạm phát</em> và <em>độ lệch sản lượng</em>. Đây là <em>guidance</em> cho NHTW hiện đại.</p>
+</section>
+<section id="c.4.-đặc-thù-cstt-việt-nam" class="level3">
+<h3 class="anchored" data-anchor-id="c.4.-đặc-thù-cstt-việt-nam">C.4. Đặc thù CSTT Việt Nam</h3>
+<p><strong>NHNN Việt Nam</strong> dùng <strong>5 công cụ</strong> (theo HCMA 2021):</p>
+<ul>
+<li>Ba công cụ truyền thống (OMO, dự trữ bắt buộc, r chiết khấu)</li>
+<li><strong>+ Hạn mức tín dụng</strong> (room tín dụng)</li>
+<li><strong>+ Chính sách tỷ giá</strong> (sẽ học kỹ Chương 4)</li>
+</ul>
+<p><strong>Khác Fed (Mỹ)</strong>: Fed có <strong>dual mandate</strong> — ổn định giá + tối đa hoá việc làm. <strong>Khác ECB (EU)</strong>: ECB có <strong>single mandate</strong> — chỉ ổn định giá. <strong>NHNN VN</strong>: <strong>đa mục tiêu</strong> — giá + tăng trưởng + tỷ giá → khó cân bằng.</p>
+<p><strong>Tranh luận lớn 2023–2025</strong>: <em>có nên bỏ hạn mức tín dụng?</em> - Ủng hộ giữ: cần kiểm soát chất lượng tín dụng, phòng bong bóng tài sản - Ủng hộ bỏ: bóp méo cạnh tranh giữa NHTM, hạn chế hiệu lực CSTT chuẩn</p>
+</section>
+</section>
+<section id="d.-case-việt-nam-20202024" class="level2">
+<h2 class="anchored" data-anchor-id="d.-case-việt-nam-20202024">D. Case Việt Nam 2020–2024</h2>
+<section id="d.1.-bốn-cú-sốc-liên-tiếp" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-bốn-cú-sốc-liên-tiếp">D.1. Bốn cú sốc liên tiếp</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 35%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th style="text-align: center;">Năm</th>
+<th>Cú sốc</th>
+<th>Phân loại</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td style="text-align: center;">2020-2021</td>
+<td><strong>COVID-19</strong></td>
+<td>Cú sốc cầu lớn (giảm tiêu dùng, đầu tư)</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td style="text-align: center;">2022</td>
+<td><strong>Nga–Ukraine</strong> → giá dầu, khí, thực phẩm</td>
+<td>Cú sốc cung</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td style="text-align: center;">2022-2023</td>
+<td><strong>Fed tăng r quyết liệt</strong> (~5pp trong 18 tháng)</td>
+<td>Áp lực tỷ giá VND, dòng vốn</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td style="text-align: center;">2022-2024</td>
+<td><strong>Suy giảm bất động sản</strong></td>
+<td>Cú sốc tài chính + cầu nội địa</td>
+</tr>
+</tbody>
+</table>
+<p>Đây là <strong>chuỗi cú sốc dài nhất kể từ 1997</strong> mà nền kinh tế VN phải đối phó.</p>
+</section>
+<section id="d.2.-policy-mix-việt-nam-20222024" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-policy-mix-việt-nam-20222024">D.2. Policy mix Việt Nam 2022–2024</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trục</th>
+<th>Hướng</th>
+<th>Công cụ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Tài khoá</strong></td>
+<td><strong>Mở rộng</strong></td>
+<td>Đầu tư công lớn (gói 350.000 tỷ), giảm VAT 2%, hỗ trợ DN</td>
+</tr>
+<tr class="even">
+<td><strong>Tiền tệ</strong></td>
+<td><strong>Thắt chặt nửa cuối 2022, nới dần 2023-2024</strong></td>
+<td>Tăng lãi suất chính sách, can thiệp tỷ giá</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Đặc điểm</strong>: phối hợp <strong>expansion + tightening</strong> — <em>không chuẩn sách giáo khoa</em> (sách thường khuyên cùng hướng).</p>
+<p><strong>Lý do phù hợp với VN</strong>: - <strong>Tài khoá mở rộng</strong>: chống suy giảm cầu nội địa (BĐS, tiêu dùng) - <strong>Tiền tệ thắt chặt</strong>: bảo vệ tỷ giá VND trước Fed tăng r — tránh dòng vốn rút mạnh</p>
+<p>Đây là một bài học chính sách quan trọng: <em>khung lý thuyết là chuẩn, nhưng vận dụng phải đọc đúng bối cảnh</em>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 08 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Sử dụng khung <strong>AD-AS</strong> và <strong>Phillips</strong> để phân tích <strong>gói hỗ trợ Covid 2021–2022</strong> của Việt Nam:</p>
+<ol type="1">
+<li>Cú sốc Covid là cú sốc cầu hay cung? AD/SRAS dịch hướng nào?</li>
+<li>Gói hỗ trợ là CSTK hay CSTT?</li>
+<li>Có hiệu quả hơn ở Việt Nam (Ricardian yếu, ổn định tự động yếu) so với Mỹ?</li>
+<li>So sánh quy mô gói VN (~5% GDP) với Mỹ (~30% GDP) và EU (~10% GDP). Bài học?</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-8-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-8-năm-điểm-cốt-lõi">Tổng kết Buổi 8 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>AD-AS</strong>: khung tổng hợp ngắn hạn vs dài hạn. SRAS dốc lên (cứng nhắc), LRAS thẳng đứng (cổ điển).</li>
+<li><strong>Phillips</strong>: trade-off <span class="math inline">\(U–\pi\)</span> chỉ ngắn hạn. Dài hạn thẳng đứng tại NAIRU. Tín nhiệm NHTW then chốt.</li>
+<li><strong>CSTK</strong>: kích cầu qua <span class="math inline">\(G\)</span>, <span class="math inline">\(T\)</span>; số nhân thực ~0.5–1.5 do crowding out + Ricardian.</li>
+<li><strong>CSTT</strong>: 3 công cụ + IT + Taylor rule. NHNN VN có 5 công cụ và đa mục tiêu.</li>
+<li><strong>VN 2022-2024</strong>: policy mix expansion + tightening — không chuẩn sách giáo khoa, phù hợp bối cảnh đa cú sốc.</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-9-mở-chương-4" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-9-mở-chương-4">Bài tập về nhà (chuẩn bị Buổi 9 — mở Chương 4)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw chương về <strong>kinh tế mở</strong>.</li>
+<li><strong>Tự đọc</strong> về <strong>cán cân thanh toán (BoP)</strong>.</li>
+<li><strong>Chuẩn bị 1 ví dụ chế độ tỷ giá VN</strong> — neo theo USD, NEER VND, can thiệp 2022.</li>
+<li><strong>Đọc thêm</strong> về <strong>Mundell-Fleming</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 8 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab <strong>ước lượng đường Phillips Việt Nam 2010-2024</strong> trong Stata: lấy dữ liệu CPI và unemployment từ GSO, vẽ scatter, ước lượng OLS, so sánh Phillips ngắn hạn từng giai đoạn.</p>
+<p>→ <a href="../stata-lab/lab-08.html"><strong>Bắt đầu Lab 8 — Đường Phillips Việt Nam</strong></a> <em>(~25 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em> (2026), Chương 14–15 (AD-AS, Phillips).</li>
+<li><strong>Phillips, A. W.</strong> (1958) — bài báo gốc.</li>
+<li><strong>Friedman, M.</strong> (1968), <em>The Role of Monetary Policy</em>.</li>
+<li><strong>Taylor, J. B.</strong> (1993), <em>Discretion versus Policy Rules in Practice</em>.</li>
+<li>Báo cáo <strong>IMF Article IV</strong> về Việt Nam — phiên bản mới nhất.</li>
+<li>Báo cáo NHNN — chính sách tiền tệ 2022–2024.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-07.html">Buổi 7</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-09.html">Buổi 9</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-07.html">Buổi 7 — Mô hình IS-LM</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-09.html">Buổi 9 — Cán cân thanh toán và Tỷ giá</a> →</p>
 
 
 </section>

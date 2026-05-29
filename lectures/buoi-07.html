@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 07 — Mô hình IS-LM – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 7 — Mô hình IS-LM – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-07.html">Buổi 07 — Mô hình IS-LM</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-07.html">Buổi 7 — Mô hình IS-LM</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -212,19 +241,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</span></a>
+ <span class="menu-text">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-07.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 07 — Mô hình IS-LM</span></a>
+ <span class="menu-text">Buổi 7 — Mô hình IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</span></a>
+ <span class="menu-text">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-7" id="toc-lộ-trình-buổi-7" class="nav-link active" data-scroll-target="#lộ-trình-buổi-7">Lộ trình Buổi 7</a></li>
+  <li><a href="#a.-mở-rộng-từ-keynesian-cross" id="toc-a.-mở-rộng-từ-keynesian-cross" class="nav-link" data-scroll-target="#a.-mở-rộng-từ-keynesian-cross">A. Mở rộng từ Keynesian Cross</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-ôn-keynesian-cross" id="toc-a.1.-ôn-keynesian-cross" class="nav-link" data-scroll-target="#a.1.-ôn-keynesian-cross">A.1. Ôn Keynesian Cross</a></li>
+  <li><a href="#a.2.-vì-sao-cần-is-lm" id="toc-a.2.-vì-sao-cần-is-lm" class="nav-link" data-scroll-target="#a.2.-vì-sao-cần-is-lm">A.2. Vì sao cần IS-LM?</a></li>
+  </ul></li>
+  <li><a href="#b.-đường-is-thị-trường-hàng-hoá" id="toc-b.-đường-is-thị-trường-hàng-hoá" class="nav-link" data-scroll-target="#b.-đường-is-thị-trường-hàng-hoá">B. Đường IS — Thị trường hàng hoá</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-cầu-thay-đổi-khi-lãi-suất-thay-đổi" id="toc-b.1.-cầu-thay-đổi-khi-lãi-suất-thay-đổi" class="nav-link" data-scroll-target="#b.1.-cầu-thay-đổi-khi-lãi-suất-thay-đổi">B.1. Cầu thay đổi khi lãi suất thay đổi</a></li>
+  <li><a href="#b.2.-suy-ra-đường-is" id="toc-b.2.-suy-ra-đường-is" class="nav-link" data-scroll-target="#b.2.-suy-ra-đường-is">B.2. Suy ra đường IS</a></li>
+  <li><a href="#b.3.-trượt-dọc-is-vs-dịch-chuyển-is" id="toc-b.3.-trượt-dọc-is-vs-dịch-chuyển-is" class="nav-link" data-scroll-target="#b.3.-trượt-dọc-is-vs-dịch-chuyển-is">B.3. Trượt dọc IS vs Dịch chuyển IS</a></li>
+  </ul></li>
+  <li><a href="#c.-đường-lm-thị-trường-tiền-tệ" id="toc-c.-đường-lm-thị-trường-tiền-tệ" class="nav-link" data-scroll-target="#c.-đường-lm-thị-trường-tiền-tệ">C. Đường LM — Thị trường tiền tệ</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-cân-bằng-cung-cầu-tiền" id="toc-c.1.-cân-bằng-cung-cầu-tiền" class="nav-link" data-scroll-target="#c.1.-cân-bằng-cung-cầu-tiền">C.1. Cân bằng cung-cầu tiền</a></li>
+  <li><a href="#c.2.-suy-ra-đường-lm" id="toc-c.2.-suy-ra-đường-lm" class="nav-link" data-scroll-target="#c.2.-suy-ra-đường-lm">C.2. Suy ra đường LM</a></li>
+  <li><a href="#c.3.-trượt-dọc-lm-vs-dịch-chuyển-lm" id="toc-c.3.-trượt-dọc-lm-vs-dịch-chuyển-lm" class="nav-link" data-scroll-target="#c.3.-trượt-dọc-lm-vs-dịch-chuyển-lm">C.3. Trượt dọc LM vs Dịch chuyển LM</a></li>
+  </ul></li>
+  <li><a href="#d.-cân-bằng-is-lm-và-tác-động-chính-sách" id="toc-d.-cân-bằng-is-lm-và-tác-động-chính-sách" class="nav-link" data-scroll-target="#d.-cân-bằng-is-lm-và-tác-động-chính-sách">D. Cân bằng IS-LM và tác động chính sách</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-cân-bằng-đồng-thời" id="toc-d.1.-cân-bằng-đồng-thời" class="nav-link" data-scroll-target="#d.1.-cân-bằng-đồng-thời">D.1. Cân bằng đồng thời</a></li>
+  <li><a href="#d.2.-chính-sách-tài-khoá-cstk" id="toc-d.2.-chính-sách-tài-khoá-cstk" class="nav-link" data-scroll-target="#d.2.-chính-sách-tài-khoá-cstk">D.2. Chính sách tài khoá (CSTK)</a></li>
+  <li><a href="#d.3.-chính-sách-tiền-tệ-cstt" id="toc-d.3.-chính-sách-tiền-tệ-cstt" class="nav-link" data-scroll-target="#d.3.-chính-sách-tiền-tệ-cstt">D.3. Chính sách tiền tệ (CSTT)</a></li>
+  <li><a href="#d.4.-crowding-out-phân-tích-sâu" id="toc-d.4.-crowding-out-phân-tích-sâu" class="nav-link" data-scroll-target="#d.4.-crowding-out-phân-tích-sâu">D.4. Crowding out — phân tích sâu</a></li>
+  <li><a href="#d.5.-bẫy-thanh-khoản-liquidity-trap" id="toc-d.5.-bẫy-thanh-khoản-liquidity-trap" class="nav-link" data-scroll-target="#d.5.-bẫy-thanh-khoản-liquidity-trap">D.5. Bẫy thanh khoản (Liquidity Trap)</a></li>
+  <li><a href="#d.6.-cstk-vs-cstt-bảng-đối-chiếu" id="toc-d.6.-cstk-vs-cstt-bảng-đối-chiếu" class="nav-link" data-scroll-target="#d.6.-cstk-vs-cstt-bảng-đối-chiếu">D.6. CSTK vs CSTT — bảng đối chiếu</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-7-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-7-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-7-năm-điểm-cốt-lõi">Tổng kết Buổi 7 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-8" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-8" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-8">Bài tập về nhà (chuẩn bị Buổi 8)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +379,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-07.html">Buổi 07 — Mô hình IS-LM</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-07.html">Buổi 7 — Mô hình IS-LM</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 07 — Mô hình IS-LM</h1>
-<p class="subtitle lead">Đường IS, LM, cân bằng, crowding out, bẫy thanh khoản</p>
+<h1 class="title">Buổi 7 — Mô hình IS-LM</h1>
+<p class="subtitle lead">Hicks 1937 · Đường IS · Đường LM · Crowding out · Bẫy thanh khoản</p>
 </div>
 
 
@@ -355,57 +409,445 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Vận dụng IS-LM phân tích chính sách</strong></p>
+<p><strong>CLO2, CLO3</strong> — Vận dụng khung IS-LM để phân tích phối hợp chính sách tài khoá và tiền tệ.</p>
+<p>Buổi 6 trình bày <em>mục tiêu</em> vĩ mô. Buổi 7 giới thiệu <strong>khung phân tích cốt lõi</strong> để hiểu cách <em>chính sách</em> tác động lên các mục tiêu đó. Đây là <strong>xương sống</strong> của Chương 3.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>3.2. Mô hình IS-LM</strong></p>
+<section id="lộ-trình-buổi-7" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-7">Lộ trình Buổi 7</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Ôn Keynesian Cross — vì sao cần IS-LM</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Đường IS — thị trường hàng hoá</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Đường LM — thị trường tiền tệ</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Cân bằng IS-LM và tác động chính sách</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.-mở-rộng-từ-keynesian-cross" class="level2">
+<h2 class="anchored" data-anchor-id="a.-mở-rộng-từ-keynesian-cross">A. Mở rộng từ Keynesian Cross</h2>
+<section id="a.1.-ôn-keynesian-cross" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-ôn-keynesian-cross">A.1. Ôn Keynesian Cross</h3>
+<p>Mô hình Keynesian Cross (đã học ở Kinh tế Vĩ mô) giả định lãi suất <span class="math inline">\(r\)</span> <strong>cố định</strong>. Trong nền kinh tế đóng:</p>
+<p><span class="math display">\[Y = C + I + G\]</span></p>
+<p>Với hàm tiêu dùng tuyến tính:</p>
+<p><span class="math display">\[C = C_0 + \text{MPC} \cdot (Y - T)\]</span></p>
+<p>Trong đó <strong>MPC</strong> = Marginal Propensity to Consume (xu hướng tiêu dùng biên).</p>
+<p><strong>Số nhân chi tiêu (multiplier)</strong> = <span class="math inline">\(\frac{1}{1 - \text{MPC}}\)</span>.</p>
+<p>Ví dụ với MPC = 0.6: số nhân = <span class="math inline">\(\frac{1}{0.4} = 2.5\)</span>. Tăng G thêm 100 → Y tăng 250.</p>
+</section>
+<section id="a.2.-vì-sao-cần-is-lm" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-vì-sao-cần-is-lm">A.2. Vì sao cần IS-LM?</h3>
+<p>Hạn chế của Keynesian Cross: <strong>giả định r cố định</strong>.</p>
+<p>Trong thực tế:</p>
 <ul>
-<li>Đường <strong>IS</strong>: cân bằng thị trường hàng hoá</li>
-<li>Đường <strong>LM</strong>: cân bằng thị trường tiền tệ</li>
-<li>Cân bằng đồng thời</li>
-<li><strong>Crowding out</strong> — hiệu ứng lấn át</li>
-<li><strong>Bẫy thanh khoản</strong> (liquidity trap)</li>
+<li><span class="math inline">\(r\)</span> thay đổi khi <span class="math inline">\(Y\)</span> thay đổi (cầu tiền)</li>
+<li><span class="math inline">\(r\)</span> thay đổi → <span class="math inline">\(I\)</span> thay đổi → AD thay đổi</li>
+<li>Vòng phản hồi này không có trong Keynesian Cross</li>
 </ul>
+<p><strong>John Hicks (1937)</strong> — <em>Mr.&nbsp;Keynes and the Classics: A Suggested Interpretation</em> — đề xuất khung IS-LM tổng hợp hai thị trường:</p>
+<ul>
+<li><strong>Thị trường hàng hoá</strong> → đường <strong>IS</strong> (Investment-Saving)</li>
+<li><strong>Thị trường tiền tệ</strong> → đường <strong>LM</strong> (Liquidity-Money)</li>
+</ul>
+<p>Khung này trở thành <strong>xương sống của vĩ mô học</strong> cho đến tận hôm nay — dù đã có nhiều mô hình hiện đại hơn (DSGE, New Keynesian), IS-LM vẫn là <em>ngôn ngữ chung</em> để bàn về chính sách.</p>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Vẽ IS-LM cho <strong>phản ứng NHNN trước cú sốc cung 2022</strong> (giá xăng tăng). Mô phỏng <strong>Bộ Tài chính</strong> và <strong>NHNN</strong> ra quyết định trong 3 vòng kịch bản.</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Báo cáo phân tích một mục tiêu vĩ mô VN giai đoạn 2020–2024 (Phần 2): bổ sung IS-LM.</p>
+<section id="b.-đường-is-thị-trường-hàng-hoá" class="level2">
+<h2 class="anchored" data-anchor-id="b.-đường-is-thị-trường-hàng-hoá">B. Đường IS — Thị trường hàng hoá</h2>
+<section id="b.1.-cầu-thay-đổi-khi-lãi-suất-thay-đổi" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-cầu-thay-đổi-khi-lãi-suất-thay-đổi">B.1. Cầu thay đổi khi lãi suất thay đổi</h3>
+<p><strong>Đầu tư I = f(r)</strong> — phụ thuộc <em>âm</em> vào lãi suất:</p>
+<ul>
+<li><span class="math inline">\(r\)</span> tăng → chi phí vay tăng → <span class="math inline">\(I\)</span> giảm</li>
+<li><span class="math inline">\(r\)</span> giảm → chi phí vay giảm → <span class="math inline">\(I\)</span> tăng</li>
+</ul>
+<p>Vì <span class="math inline">\(I\)</span> là một thành phần của AD:</p>
+<p><span class="math display">\[AD = C + I(r) + G\]</span></p>
+<p>→ Quan hệ <span class="math inline">\(r\)</span> và <span class="math inline">\(Y\)</span> ngược chiều: <strong>đường IS dốc xuống</strong> trong mặt phẳng <span class="math inline">\((Y, r)\)</span>.</p>
 </section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
+<section id="b.2.-suy-ra-đường-is" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-suy-ra-đường-is">B.2. Suy ra đường IS</h3>
+<p>Bắt đầu từ cân bằng thị trường hàng hoá:</p>
+<p><span class="math display">\[Y = C(Y - T) + I(r) + G\]</span></p>
+<p><strong>Cách suy ra</strong>:</p>
+<ul>
+<li>Tại <span class="math inline">\(r_1\)</span> (thấp): <span class="math inline">\(I_1\)</span> cao → cầu cao → <span class="math inline">\(Y_1\)</span> cao</li>
+<li>Tại <span class="math inline">\(r_2\)</span> (cao): <span class="math inline">\(I_2\)</span> thấp → cầu thấp → <span class="math inline">\(Y_2\)</span> thấp</li>
+<li>Nối các điểm <span class="math inline">\((Y_1, r_1)\)</span>, <span class="math inline">\((Y_2, r_2)\)</span>, … → <strong>đường IS dốc xuống</strong></li>
+</ul>
+<p><strong>Ý nghĩa</strong>: mỗi điểm trên IS là một cặp <span class="math inline">\((Y, r)\)</span> tại đó <strong>thị trường hàng hoá cân bằng</strong> (tổng cầu = tổng cung).</p>
+</section>
+<section id="b.3.-trượt-dọc-is-vs-dịch-chuyển-is" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-trượt-dọc-is-vs-dịch-chuyển-is">B.3. Trượt dọc IS vs Dịch chuyển IS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loại</th>
+<th>Nguyên nhân</th>
+<th>Tác động</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trượt dọc IS</strong></td>
+<td><span class="math inline">\(r\)</span> thay đổi → <span class="math inline">\(I\)</span> thay đổi → <span class="math inline">\(Y\)</span> thay đổi</td>
+<td>Di chuyển dọc đường IS hiện có</td>
+</tr>
+<tr class="even">
+<td><strong>Dịch IS sang phải</strong></td>
+<td><span class="math inline">\(G\)</span> tăng <em>hoặc</em> <span class="math inline">\(T\)</span> giảm <em>hoặc</em> <span class="math inline">\(I_0\)</span> tăng tự định</td>
+<td>Kích thích cầu, <span class="math inline">\(Y\)</span> tăng tại mọi mức <span class="math inline">\(r\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Dịch IS sang trái</strong></td>
+<td><span class="math inline">\(G\)</span> giảm <em>hoặc</em> <span class="math inline">\(T\)</span> tăng <em>hoặc</em> niềm tin DN suy giảm</td>
+<td>Thắt chặt tài khoá, <span class="math inline">\(Y\)</span> giảm tại mọi mức <span class="math inline">\(r\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lưu ý</strong>: thay đổi <span class="math inline">\(G\)</span>, <span class="math inline">\(T\)</span> = <strong>chính sách tài khoá (CSTK)</strong> → tác động qua IS.</p>
+</section>
+</section>
+<section id="c.-đường-lm-thị-trường-tiền-tệ" class="level2">
+<h2 class="anchored" data-anchor-id="c.-đường-lm-thị-trường-tiền-tệ">C. Đường LM — Thị trường tiền tệ</h2>
+<section id="c.1.-cân-bằng-cung-cầu-tiền" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-cân-bằng-cung-cầu-tiền">C.1. Cân bằng cung-cầu tiền</h3>
+<p><strong>Cầu tiền</strong> <span class="math inline">\(L(Y, r)\)</span> — phụ thuộc:</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> tăng → giao dịch nhiều hơn → cầu tiền <span class="math inline">\(L\)</span> tăng</li>
+<li><span class="math inline">\(r\)</span> tăng → chi phí cơ hội của giữ tiền tăng → <span class="math inline">\(L\)</span> giảm (chuyển sang tài sản sinh lãi)</li>
+</ul>
+<p><strong>Cung tiền</strong> = <span class="math inline">\(M/P\)</span> — do NHTW quyết định (giả định <span class="math inline">\(P\)</span> cố định ngắn hạn).</p>
+<p><strong>Cân bằng thị trường tiền tệ</strong>:</p>
+<p><span class="math display">\[\frac{M}{P} = L(Y, r)\]</span></p>
+</section>
+<section id="c.2.-suy-ra-đường-lm" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-suy-ra-đường-lm">C.2. Suy ra đường LM</h3>
+<p><strong>Cách suy ra</strong>:</p>
+<ul>
+<li>Tại <span class="math inline">\(r_1\)</span> (thấp): cầu tiền cao → cần <span class="math inline">\(Y_1\)</span> (thấp) để cân bằng với cung cố định</li>
+<li>Tại <span class="math inline">\(r_2\)</span> (cao hơn): cầu tiền giảm → cần <span class="math inline">\(Y_2\)</span> (cao hơn) bù lại</li>
+<li>Nối các điểm → <strong>đường LM dốc lên</strong></li>
+</ul>
+<p><strong>Logic</strong>: lãi suất cao làm cầu tiền giảm — cần thu nhập cao hơn để bù lại sao cho cầu tiền = cung tiền cố định.</p>
+<p><strong>Ý nghĩa</strong>: mỗi điểm trên LM là một cặp <span class="math inline">\((Y, r)\)</span> tại đó <strong>thị trường tiền tệ cân bằng</strong>.</p>
+</section>
+<section id="c.3.-trượt-dọc-lm-vs-dịch-chuyển-lm" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-trượt-dọc-lm-vs-dịch-chuyển-lm">C.3. Trượt dọc LM vs Dịch chuyển LM</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loại</th>
+<th>Nguyên nhân</th>
+<th>Tác động</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trượt dọc LM</strong></td>
+<td><span class="math inline">\(Y\)</span> thay đổi → <span class="math inline">\(r\)</span> thay đổi</td>
+<td>Di chuyển dọc đường LM hiện có</td>
+</tr>
+<tr class="even">
+<td><strong>Dịch LM sang phải</strong></td>
+<td><span class="math inline">\(M\)</span> tăng (CSTT mở rộng)</td>
+<td><span class="math inline">\(r\)</span> giảm tại mọi mức <span class="math inline">\(Y\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Dịch LM sang trái</strong></td>
+<td><span class="math inline">\(M\)</span> giảm (CSTT thắt chặt)</td>
+<td><span class="math inline">\(r\)</span> tăng tại mọi mức <span class="math inline">\(Y\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lưu ý</strong>: thay đổi <span class="math inline">\(M\)</span> = <strong>chính sách tiền tệ (CSTT)</strong> → tác động qua LM.</p>
+</section>
+</section>
+<section id="d.-cân-bằng-is-lm-và-tác-động-chính-sách" class="level2">
+<h2 class="anchored" data-anchor-id="d.-cân-bằng-is-lm-và-tác-động-chính-sách">D. Cân bằng IS-LM và tác động chính sách</h2>
+<section id="d.1.-cân-bằng-đồng-thời" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-cân-bằng-đồng-thời">D.1. Cân bằng đồng thời</h3>
+<p>Giao điểm IS và LM xác định <span class="math inline">\((Y^*, r^*)\)</span> — tại đó <strong>cả hai thị trường cùng cân bằng</strong>.</p>
+<ul>
+<li><span class="math inline">\(Y^*\)</span>: sản lượng cân bằng đồng thời</li>
+<li><span class="math inline">\(r^*\)</span>: lãi suất cân bằng đồng thời</li>
+</ul>
+<p>Đây là khung phân tích <strong>phản ứng chính sách</strong> — bất kỳ thay đổi nào (CSTK, CSTT, cú sốc) đều dịch IS hoặc LM, dẫn đến <span class="math inline">\((Y^{**}, r^{**})\)</span> mới.</p>
+</section>
+<section id="d.2.-chính-sách-tài-khoá-cstk" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-chính-sách-tài-khoá-cstk">D.2. Chính sách tài khoá (CSTK)</h3>
+<p><strong>Tăng G</strong> (chi tiêu chính phủ) → IS dịch sang phải.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tác động</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Y^*\)</span> tăng</td>
+<td>Cầu tăng (kích thích)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r^*\)</span> tăng</td>
+<td>Cầu tiền tăng (vì <span class="math inline">\(Y\)</span> tăng) → <span class="math inline">\(r\)</span> phải tăng để cân bằng cung tiền cố định</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Crowding out</strong> = <span class="math inline">\(r\)</span> tăng → <span class="math inline">\(I\)</span> tư nhân <em>giảm</em> → tác động ròng của tăng G <em>yếu hơn</em> số nhân Keynesian Cross.</p>
+<blockquote class="blockquote">
+<p><strong>Hệ quả thực tiễn</strong>: 1 đồng chi tiêu công không tạo ra 1 đồng GDP — mà ít hơn, vì một phần đầu tư tư nhân bị “lấn át”.</p>
+</blockquote>
+</section>
+<section id="d.3.-chính-sách-tiền-tệ-cstt" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-chính-sách-tiền-tệ-cstt">D.3. Chính sách tiền tệ (CSTT)</h3>
+<p><strong>Tăng M</strong> (cung tiền) → LM dịch sang phải.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tác động</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Y^*\)</span> tăng</td>
+<td>Đầu tư tăng (qua <span class="math inline">\(r\)</span> giảm)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r^*\)</span> giảm</td>
+<td>Cung tiền dồi dào</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Khác CSTK</strong>: <strong>không có crowding out</strong>. CSTT kích thích đầu tư tư nhân thông qua hạ <span class="math inline">\(r\)</span>.</p>
+<blockquote class="blockquote">
+<p><strong>Hệ quả thực tiễn</strong>: CSTT hoạt động <em>qua kênh đầu tư</em>. Hiệu quả phụ thuộc DN có <strong>muốn vay</strong> hay không (phụ thuộc niềm tin và cơ hội kinh doanh).</p>
+</blockquote>
+</section>
+<section id="d.4.-crowding-out-phân-tích-sâu" class="level3">
+<h3 class="anchored" data-anchor-id="d.4.-crowding-out-phân-tích-sâu">D.4. Crowding out — phân tích sâu</h3>
+<p><strong>Mức độ crowding out</strong> phụ thuộc <strong>độ dốc của LM</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Độ dốc LM</th>
+<th>Crowding out</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>LM dốc đứng</strong> (cầu tiền cứng nhắc theo <span class="math inline">\(r\)</span>)</td>
+<td>Hoàn toàn — Y không tăng, chỉ r tăng</td>
+</tr>
+<tr class="even">
+<td><strong>LM thoải</strong></td>
+<td>Một phần — Y tăng nhưng ít hơn số nhân lý thuyết</td>
+</tr>
+<tr class="odd">
+<td><strong>LM nằm ngang</strong> (bẫy thanh khoản — xem D.5)</td>
+<td>Không có — Y tăng đầy đủ theo số nhân</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bài học QLKT</strong>: hiệu quả CSTK phụ thuộc <em>bối cảnh tiền tệ</em>. Khi LM ngang (lãi suất ≈ 0), CSTK <em>cực kỳ hiệu quả</em>. Khi LM dốc đứng, CSTK <em>gần như vô nghĩa</em>.</p>
+</section>
+<section id="d.5.-bẫy-thanh-khoản-liquidity-trap" class="level3">
+<h3 class="anchored" data-anchor-id="d.5.-bẫy-thanh-khoản-liquidity-trap">D.5. Bẫy thanh khoản (Liquidity Trap)</h3>
+<p>Khi <span class="math inline">\(r \approx 0\)</span> và không thể âm (zero lower bound):</p>
+<ul>
+<li>LM <strong>nằm ngang</strong></li>
+<li>Tăng <span class="math inline">\(M\)</span> → không hạ <span class="math inline">\(r\)</span> thêm được nữa → <strong>CSTT mất tác dụng</strong></li>
+<li>Tiền dư thừa được giữ dưới dạng tiền mặt thay vì tài sản sinh lãi</li>
+</ul>
+<p><strong>Lịch sử</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trường hợp</th>
+<th>Bối cảnh</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Nhật Bản 1990s</strong></td>
+<td>Krugman (1998) — <em>“It’s Baaack: Japan’s Slump and the Return of the Liquidity Trap”</em></td>
+</tr>
+<tr class="even">
+<td><strong>Mỹ, EU sau 2008</strong></td>
+<td>Khủng hoảng tài chính → r chính sách = 0</td>
+</tr>
+<tr class="odd">
+<td><strong>Mỹ, EU 2020–2021</strong></td>
+<td>COVID-19</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Giải pháp</strong> trong bẫy thanh khoản:</p>
 <ol type="1">
-<li>Khi nào CSTK hiệu quả hơn CSTT?</li>
-<li>Việt Nam có ở bẫy thanh khoản không?</li>
-<li>Crowding out có quan trọng ở nền kinh tế nhỏ mở?</li>
+<li><strong>CSTK mở rộng mạnh</strong> (kích cầu tài khoá vì CSTT không có tác dụng)</li>
+<li><strong>CSTT phi truyền thống</strong>: QE (Quantitative Easing — mua tài sản lâu hạn), forward guidance, mục tiêu lạm phát cao hơn để giảm <span class="math inline">\(r\)</span> thực</li>
 </ol>
 </section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
-<ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 11–12.</li>
-<li>Blanchard (2020), chương 5.</li>
-</ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<section id="d.6.-cstk-vs-cstt-bảng-đối-chiếu" class="level3">
+<h3 class="anchored" data-anchor-id="d.6.-cstk-vs-cstt-bảng-đối-chiếu">D.6. CSTK vs CSTT — bảng đối chiếu</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>CSTK (IS dịch)</strong></th>
+<th><strong>CSTT (LM dịch)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Công cụ</td>
+<td><span class="math inline">\(G\)</span>, <span class="math inline">\(T\)</span></td>
+<td><span class="math inline">\(M\)</span>, <span class="math inline">\(r\)</span> chính sách</td>
+</tr>
+<tr class="even">
+<td>Tác động <span class="math inline">\(Y\)</span></td>
+<td>Tăng</td>
+<td>Tăng</td>
+</tr>
+<tr class="odd">
+<td>Tác động <span class="math inline">\(r\)</span></td>
+<td>Tăng</td>
+<td>Giảm</td>
+</tr>
+<tr class="even">
+<td>Crowding out</td>
+<td>Có</td>
+<td>Không</td>
+</tr>
+<tr class="odd">
+<td>Kênh tác động</td>
+<td>Trực tiếp qua cầu</td>
+<td>Gián tiếp qua đầu tư</td>
+</tr>
+<tr class="even">
+<td>Hạn chế chính</td>
+<td>Nợ công</td>
+<td>Bẫy thanh khoản</td>
+</tr>
+<tr class="odd">
+<td>Tốc độ tác động</td>
+<td>Chậm (cần lập kế hoạch, thông qua Quốc hội)</td>
+<td>Nhanh (NHTW quyết định)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 07 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Phân tích <strong>phản ứng NHNN trước cú sốc cung giá xăng dầu 2022</strong> bằng khung IS-LM:</p>
+<ol type="1">
+<li>Cú sốc cung tác động lên đường nào (IS hay LM)?</li>
+<li>NHNN có nên tăng <span class="math inline">\(r\)</span> (LM dịch trái) hay giảm <span class="math inline">\(r\)</span> (LM dịch phải)?</li>
+<li>Tác động lên <span class="math inline">\(Y\)</span> và lạm phát?</li>
+<li>So sánh với phản ứng của Fed cùng thời điểm.</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-7-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-7-năm-điểm-cốt-lõi">Tổng kết Buổi 7 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>IS-LM (Hicks 1937)</strong>: khung phân tích vĩ mô cốt lõi, kết hợp thị trường hàng hoá và thị trường tiền tệ.</li>
+<li><strong>Đường IS dốc xuống</strong> — phản ánh trade-off giữa <span class="math inline">\(r\)</span> và <span class="math inline">\(Y\)</span> trên thị trường hàng hoá.</li>
+<li><strong>Đường LM dốc lên</strong> — phản ánh quan hệ thuận <span class="math inline">\(Y\)</span>–<span class="math inline">\(r\)</span> trên thị trường tiền tệ với cung tiền cố định.</li>
+<li><strong>CSTK</strong>: <span class="math inline">\(Y\)</span> và <span class="math inline">\(r\)</span> cùng tăng; có <strong>crowding out</strong>.</li>
+<li><strong>CSTT</strong>: <span class="math inline">\(Y\)</span> tăng, <span class="math inline">\(r\)</span> giảm; hạn chế bởi <strong>bẫy thanh khoản</strong> khi <span class="math inline">\(r \approx 0\)</span>.</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-8" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-8">Bài tập về nhà (chuẩn bị Buổi 8)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw, chương về <strong>AD-AS</strong>.</li>
+<li><strong>Tự đọc</strong> về đường Phillips và NAIRU.</li>
+<li><strong>Chuẩn bị phân tích 1 chính sách vĩ mô VN</strong> giai đoạn 2020-2024 (gói hỗ trợ Covid, đầu tư công, lãi suất chính sách).</li>
+<li><strong>Đọc thêm</strong> về crowding out và bẫy thanh khoản (Krugman 1998 về Nhật Bản).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 7 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab <strong>mô phỏng cân bằng IS-LM bằng số</strong> trong Stata: cài tham số, vẽ hai đường, tìm <span class="math inline">\((Y^*, r^*)\)</span>, mô phỏng tác động của tăng <span class="math inline">\(G\)</span> và tăng <span class="math inline">\(M\)</span>.</p>
+<p>→ <a href="../stata-lab/lab-07.html"><strong>Bắt đầu Lab 7 — Mô phỏng IS-LM</strong></a> <em>(~25 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em> (2026), Chương 11–12 (IS-LM).</li>
+<li>Blanchard (2020), Chương 5.</li>
+<li><strong>Hicks, J. R.</strong> (1937), <em>Mr.&nbsp;Keynes and the Classics</em> — bài báo gốc.</li>
+<li><strong>Krugman, P.</strong> (1998), <em>It’s Baaack: Japan’s Slump and the Return of the Liquidity Trap</em>.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-06.html">Buổi 6</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-08.html">Buổi 8</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-06.html">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-08.html">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách</a> →</p>
 
 
 </section>

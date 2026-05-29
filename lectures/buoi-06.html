@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -212,19 +241,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-06.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</span></a>
+ <span class="menu-text">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 07 — Mô hình IS-LM</span></a>
+ <span class="menu-text">Buổi 7 — Mô hình IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</span></a>
+ <span class="menu-text">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-6" id="toc-lộ-trình-buổi-6" class="nav-link active" data-scroll-target="#lộ-trình-buổi-6">Lộ trình Buổi 6</a></li>
+  <li><a href="#a.-bốn-mục-tiêu-vĩ-mô" id="toc-a.-bốn-mục-tiêu-vĩ-mô" class="nav-link" data-scroll-target="#a.-bốn-mục-tiêu-vĩ-mô">A. Bốn mục tiêu vĩ mô</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-tổng-quan-bốn-mục-tiêu" id="toc-a.1.-tổng-quan-bốn-mục-tiêu" class="nav-link" data-scroll-target="#a.1.-tổng-quan-bốn-mục-tiêu">A.1. Tổng quan bốn mục tiêu</a></li>
+  <li><a href="#a.2.-tăng-trưởng-kinh-tế" id="toc-a.2.-tăng-trưởng-kinh-tế" class="nav-link" data-scroll-target="#a.2.-tăng-trưởng-kinh-tế">A.2. Tăng trưởng kinh tế</a></li>
+  <li><a href="#a.3.-ổn-định-giá-cả" id="toc-a.3.-ổn-định-giá-cả" class="nav-link" data-scroll-target="#a.3.-ổn-định-giá-cả">A.3. Ổn định giá cả</a></li>
+  <li><a href="#a.4.-việc-làm-và-thất-nghiệp" id="toc-a.4.-việc-làm-và-thất-nghiệp" class="nav-link" data-scroll-target="#a.4.-việc-làm-và-thất-nghiệp">A.4. Việc làm và thất nghiệp</a></li>
+  <li><a href="#a.5.-cán-cân-thanh-toán-bop" id="toc-a.5.-cán-cân-thanh-toán-bop" class="nav-link" data-scroll-target="#a.5.-cán-cân-thanh-toán-bop">A.5. Cán cân thanh toán (BoP)</a></li>
+  </ul></li>
+  <li><a href="#b.-phân-phối-thu-nhập" id="toc-b.-phân-phối-thu-nhập" class="nav-link" data-scroll-target="#b.-phân-phối-thu-nhập">B. Phân phối thu nhập</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-đo-phân-phối-đường-lorenz-và-hệ-số-gini" id="toc-b.1.-đo-phân-phối-đường-lorenz-và-hệ-số-gini" class="nav-link" data-scroll-target="#b.1.-đo-phân-phối-đường-lorenz-và-hệ-số-gini">B.1. Đo phân phối — Đường Lorenz và Hệ số Gini</a></li>
+  <li><a href="#b.2.-chính-sách-phân-phối-lại" id="toc-b.2.-chính-sách-phân-phối-lại" class="nav-link" data-scroll-target="#b.2.-chính-sách-phân-phối-lại">B.2. Chính sách phân phối lại</a></li>
+  </ul></li>
+  <li><a href="#c.-phát-triển-bền-vững" id="toc-c.-phát-triển-bền-vững" class="nav-link" data-scroll-target="#c.-phát-triển-bền-vững">C. Phát triển bền vững</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-sdgs-17-mục-tiêu-phát-triển-bền-vững" id="toc-c.1.-sdgs-17-mục-tiêu-phát-triển-bền-vững" class="nav-link" data-scroll-target="#c.1.-sdgs-17-mục-tiêu-phát-triển-bền-vững">C.1. SDGs — 17 mục tiêu Phát triển bền vững</a></li>
+  <li><a href="#c.2.-esg-và-kinh-tế-xanh" id="toc-c.2.-esg-và-kinh-tế-xanh" class="nav-link" data-scroll-target="#c.2.-esg-và-kinh-tế-xanh">C.2. ESG và Kinh tế xanh</a></li>
+  <li><a href="#c.3.-việt-nam-ptbv-và-đại-hội-xiv" id="toc-c.3.-việt-nam-ptbv-và-đại-hội-xiv" class="nav-link" data-scroll-target="#c.3.-việt-nam-ptbv-và-đại-hội-xiv">C.3. Việt Nam — PTBV và Đại hội XIV</a></li>
+  </ul></li>
+  <li><a href="#d.-tăng-trưởng-dài-hạn-cobb-douglas-solow-tfp" id="toc-d.-tăng-trưởng-dài-hạn-cobb-douglas-solow-tfp" class="nav-link" data-scroll-target="#d.-tăng-trưởng-dài-hạn-cobb-douglas-solow-tfp">D. Tăng trưởng dài hạn — Cobb-Douglas + Solow + TFP</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-hàm-sản-xuất-cobb-douglas" id="toc-d.1.-hàm-sản-xuất-cobb-douglas" class="nav-link" data-scroll-target="#d.1.-hàm-sản-xuất-cobb-douglas">D.1. Hàm sản xuất Cobb-Douglas</a></li>
+  <li><a href="#d.2.-phân-rã-solow-phát-hiện-sốc" id="toc-d.2.-phân-rã-solow-phát-hiện-sốc" class="nav-link" data-scroll-target="#d.2.-phân-rã-solow-phát-hiện-sốc">D.2. Phân rã Solow — phát hiện sốc</a></li>
+  <li><a href="#d.3.-growth-accounting-việt-nam" id="toc-d.3.-growth-accounting-việt-nam" class="nav-link" data-scroll-target="#d.3.-growth-accounting-việt-nam">D.3. Growth accounting Việt Nam</a></li>
+  <li><a href="#d.4.-mục-tiêu-tfp-của-đại-hội-xiv" id="toc-d.4.-mục-tiêu-tfp-của-đại-hội-xiv" class="nav-link" data-scroll-target="#d.4.-mục-tiêu-tfp-của-đại-hội-xiv">D.4. Mục tiêu TFP của Đại hội XIV</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-6-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-6-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-6-năm-điểm-cốt-lõi">Tổng kết Buổi 6 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-7" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-7" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-7">Bài tập về nhà (chuẩn bị Buổi 7)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +379,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Chương 3 — Vĩ mô (KT đóng)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-06.html">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</h1>
-<p class="subtitle lead">4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam</p>
+<h1 class="title">Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn</h1>
+<p class="subtitle lead">Bốn mục tiêu · Phân phối thu nhập · PTBV · Cobb-Douglas + Solow + TFP</p>
 </div>
 
 
@@ -355,63 +409,548 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Phân tích các đánh đổi giữa mục tiêu vĩ mô</strong></p>
+<p><strong>CLO2, CLO3</strong> — Vận dụng khung mục tiêu vĩ mô và mô hình tăng trưởng dài hạn vào phân tích chính sách Việt Nam.</p>
+<p>Buổi 6 mở Chương 3 với câu hỏi nền tảng: <strong>Nhà nước theo đuổi gì khi quản lý nền kinh tế quốc dân?</strong> Bốn mục tiêu cổ điển + ba phép thử hiện đại (phân phối, bền vững, năng suất) định hình toàn bộ tư duy chính sách vĩ mô.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>3.1. Bốn mục tiêu vĩ mô</strong></p>
+<section id="lộ-trình-buổi-6" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-6">Lộ trình Buổi 6</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Bốn mục tiêu vĩ mô — tăng trưởng, giá cả, việc làm, BoP</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Phân phối thu nhập — Gini, Lorenz, chính sách phân phối lại</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Phát triển bền vững — SDGs, ESG, định hướng XIV</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Tăng trưởng dài hạn — Cobb-Douglas + Solow + TFP</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.-bốn-mục-tiêu-vĩ-mô" class="level2">
+<h2 class="anchored" data-anchor-id="a.-bốn-mục-tiêu-vĩ-mô">A. Bốn mục tiêu vĩ mô</h2>
+<section id="a.1.-tổng-quan-bốn-mục-tiêu" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-tổng-quan-bốn-mục-tiêu">A.1. Tổng quan bốn mục tiêu</h3>
+<p>Nhà nước trong vai trò quản lý vĩ mô theo đuổi <strong>bốn mục tiêu cổ điển</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Mục tiêu</th>
+<th>Đo lường</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Tăng trưởng kinh tế</td>
+<td>GDP, GDP/đầu người, tốc độ tăng trưởng</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>Ổn định giá cả</td>
+<td>CPI, GDP deflator, PCE</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>Việc làm đầy đủ</td>
+<td>Tỷ lệ thất nghiệp, tỷ lệ tham gia LLLĐ</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>Cân bằng cán cân thanh toán</td>
+<td>BoP (sẽ học Chương 4)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Điểm cốt lõi</strong>: bốn mục tiêu <strong>mâu thuẫn nhau ở ngắn hạn</strong>. Kích cầu mạnh để tăng trưởng có thể đẩy lạm phát. Thắt chặt để ổn định giá có thể tăng thất nghiệp. Đây là <em>nguồn gốc của trade-off chính sách</em> — chủ đề xuyên suốt Chương 3.</p>
+</section>
+<section id="a.2.-tăng-trưởng-kinh-tế" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-tăng-trưởng-kinh-tế">A.2. Tăng trưởng kinh tế</h3>
+<p><strong>Cách đo</strong>: - <strong>GDP danh nghĩa</strong> — theo giá hiện hành - <strong>GDP thực</strong> — đã trừ lạm phát (so sánh được qua các năm) - <strong>GDP/đầu người</strong> — tốt hơn cho so sánh mức sống</p>
+<p><strong>Mankiw Nguyên lý 8</strong>: <em>Mức sống phụ thuộc vào năng suất</em>. Đây là chìa khoá để hiểu khác biệt giữa <strong>tăng trưởng dài hạn</strong> (do năng suất + tích luỹ vốn + dân số) và <strong>chu kỳ ngắn hạn</strong> (do cú sốc cầu, cung).</p>
+<p><strong>Mục tiêu Đại hội XIV</strong>: tăng trưởng ≥ <strong>10%/năm</strong> giai đoạn 2026-2030. Đây là mục tiêu <em>rất tham vọng</em> — VN giai đoạn 2010-2024 trung bình chỉ đạt ~6.3%. Để đạt 10%, không thể chỉ tích luỹ vốn — <strong>phải tăng năng suất (TFP)</strong>.</p>
+</section>
+<section id="a.3.-ổn-định-giá-cả" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-ổn-định-giá-cả">A.3. Ổn định giá cả</h3>
+<p><strong>Lạm phát</strong> = tốc độ tăng mức giá chung. Đo bằng:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chỉ số</th>
+<th>Tính bằng</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CPI</strong> (Consumer Price Index)</td>
+<td>Rổ hàng tiêu dùng</td>
+<td>Sát với người dân</td>
+</tr>
+<tr class="even">
+<td><strong>GDP deflator</strong></td>
+<td>Tỷ lệ GDP danh nghĩa/thực</td>
+<td>Bao quát toàn nền KT</td>
+</tr>
+<tr class="odd">
+<td><strong>PCE</strong></td>
+<td>Chi tiêu cá nhân (Fed dùng)</td>
+<td>Linh hoạt theo thay đổi tiêu dùng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tại Việt Nam</strong>: TCTK tính CPI dựa trên <strong>rổ 752 mặt hàng</strong> chia thành <strong>11 nhóm</strong> (lương thực, nhà ở, y tế, giao thông…).</p>
+<p><strong>Mục tiêu lạm phát VN</strong>: vùng an toàn <strong>2–4%</strong>. Lạm phát quá cao → bất ổn xã hội + giảm tiết kiệm + biến dạng tín hiệu giá. Lạm phát quá thấp (thậm chí âm) → giảm phát, doanh nghiệp chần chừ đầu tư.</p>
+</section>
+<section id="a.4.-việc-làm-và-thất-nghiệp" class="level3">
+<h3 class="anchored" data-anchor-id="a.4.-việc-làm-và-thất-nghiệp">A.4. Việc làm và thất nghiệp</h3>
+<p><strong>Định nghĩa</strong>: thất nghiệp = người <em>đang tìm việc</em> + <em>không có việc</em>. Người không tìm việc (sinh viên, nội trợ, nghỉ hưu) không tính.</p>
+<p><strong>Ba loại thất nghiệp</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loại</th>
+<th>Nguyên nhân</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ma sát</strong> (frictional)</td>
+<td>Thời gian tìm việc giữa hai công việc — không tránh được</td>
+</tr>
+<tr class="even">
+<td><strong>Cơ cấu</strong> (structural)</td>
+<td>Kỹ năng người LĐ không khớp với cầu thị trường — chuyển dịch ngành</td>
+</tr>
+<tr class="odd">
+<td><strong>Chu kỳ</strong> (cyclical)</td>
+<td>Suy thoái kinh tế — cần CSTK/CSTT can thiệp</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NAIRU (Friedman 1968)</strong>: <em>Non-Accelerating Inflation Rate of Unemployment</em> — <strong>tỷ lệ thất nghiệp tự nhiên</strong>, dưới đó lạm phát có xu hướng tăng. Cố đẩy thất nghiệp dưới NAIRU dài hạn → chỉ tăng lạm phát.</p>
+<p><strong>Việt Nam</strong>: tỷ lệ thất nghiệp chính thức ~<strong>2.3%</strong> — thấp nhưng cần đọc kèm chỉ số <strong>tỷ lệ thiếu việc làm</strong> (underemployment) để hiểu toàn cảnh thị trường lao động.</p>
+</section>
+<section id="a.5.-cán-cân-thanh-toán-bop" class="level3">
+<h3 class="anchored" data-anchor-id="a.5.-cán-cân-thanh-toán-bop">A.5. Cán cân thanh toán (BoP)</h3>
+<p><strong>BoP</strong> = <em>dòng tiền giữa Việt Nam và phần còn lại của thế giới</em>.</p>
+<p>Cấu trúc gồm 2 phần chính:</p>
 <ul>
-<li>Tăng trưởng kinh tế</li>
-<li>Việc làm đầy đủ</li>
-<li>Ổn định giá cả (kiểm soát lạm phát)</li>
-<li>Cân bằng cán cân thanh toán</li>
+<li><strong>Tài khoản vãng lai (CA)</strong> — thương mại + dịch vụ + thu nhập + chuyển giao</li>
+<li><strong>Tài khoản tài chính (FA)</strong> — FDI + đầu tư danh mục + vay nợ</li>
 </ul>
-<p>Phân phối thu nhập; phát triển bền vững.</p>
-<p><strong>Tăng trưởng dài hạn</strong></p>
+<p>Đồng nhất kế toán kép: <strong>CA + FA + sai số = 0</strong>.</p>
+<p>Chi tiết BoP sẽ học ở <strong>Chương 4 (Buổi 9-11)</strong>. Ở Chương 3, ta giả định nền KT đóng (NX = 0) để tập trung vào tương tác CSTK – CSTT.</p>
+<p><strong>Mục tiêu</strong>: BoP cân bằng ổn định, tránh khủng hoảng cán cân (như Thái Lan 1997).</p>
+</section>
+</section>
+<section id="b.-phân-phối-thu-nhập" class="level2">
+<h2 class="anchored" data-anchor-id="b.-phân-phối-thu-nhập">B. Phân phối thu nhập</h2>
+<section id="b.1.-đo-phân-phối-đường-lorenz-và-hệ-số-gini" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-đo-phân-phối-đường-lorenz-và-hệ-số-gini">B.1. Đo phân phối — Đường Lorenz và Hệ số Gini</h3>
+<p><strong>Đường Lorenz</strong> (Max Lorenz, 1905): vẽ tỷ lệ % thu nhập tích luỹ theo tỷ lệ % dân số (xếp từ nghèo đến giàu).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vị trí đường</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Đường thẳng 45°</strong></td>
+<td>Bình đẳng hoàn hảo (mọi người có thu nhập như nhau)</td>
+</tr>
+<tr class="even">
+<td><strong>Lorenz cong xa 45°</strong></td>
+<td>Bất bình đẳng càng cao</td>
+</tr>
+<tr class="odd">
+<td><strong>Lorenz trùng với cạnh dưới + cạnh phải</strong></td>
+<td>Một người chiếm hết thu nhập</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hệ số Gini</strong> = 2 × diện tích giữa đường 45° và đường Lorenz. Phạm vi 0 (bình đẳng tuyệt đối) đến 1 (bất bình đẳng tuyệt đối).</p>
+<p><strong>So sánh quốc tế</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quốc gia / vùng</th>
+<th>Gini gần đây</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bắc Âu (Đan Mạch, Thuỵ Điển, Na Uy)</td>
+<td>0.25–0.28</td>
+</tr>
+<tr class="even">
+<td><strong>Việt Nam</strong></td>
+<td><strong>~0.36</strong> (trung bình khu vực, đang giảm)</td>
+</tr>
+<tr class="odd">
+<td>Trung Quốc</td>
+<td>~0.38</td>
+</tr>
+<tr class="even">
+<td>Mỹ</td>
+<td>~0.41</td>
+</tr>
+<tr class="odd">
+<td>Brazil, Nam Phi</td>
+<td>0.50+</td>
+</tr>
+</tbody>
+</table>
+<p>VN có Gini trung bình so với khu vực — không quá cao, nhưng cần chú ý xu hướng vùng và nông thôn – thành thị.</p>
+</section>
+<section id="b.2.-chính-sách-phân-phối-lại" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-chính-sách-phân-phối-lại">B.2. Chính sách phân phối lại</h3>
+<p>Bốn nhóm công cụ chính:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nhóm</th>
+<th>Cơ chế</th>
+<th>Ví dụ VN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Thuế lũy tiến</strong></td>
+<td>Người thu nhập cao đóng tỷ lệ cao hơn</td>
+<td>Thuế TNCN (bậc 5–35%), thuế tài sản (đang xây dựng)</td>
+</tr>
+<tr class="even">
+<td><strong>Chi tiêu xã hội</strong></td>
+<td>Chuyển giao trực tiếp</td>
+<td>BHYT, BHXH, trợ cấp cho người nghèo</td>
+</tr>
+<tr class="odd">
+<td><strong>Lương tối thiểu</strong></td>
+<td>Đặt sàn cho lương</td>
+<td>Lương tối thiểu vùng được điều chỉnh hàng năm</td>
+</tr>
+<tr class="even">
+<td><strong>Cung cấp dịch vụ công</strong></td>
+<td>Giáo dục, y tế công</td>
+<td>Phổ cập giáo dục tiểu học, BHYT toàn dân</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tranh luận kinh điển</strong>: phân phối lại có <em>giảm tăng trưởng</em> không?</p>
 <ul>
-<li>Hàm sản xuất <strong>Cobb-Douglas</strong>: (Y = AK^L^{1-})</li>
-<li><strong>Phân rã Solow</strong>: đóng góp K, L, TFP</li>
-<li><strong>Growth accounting</strong> Việt Nam giai đoạn 2010–2024</li>
+<li><em>Lập luận giảm</em>: thuế cao làm giảm khuyến khích làm việc và đầu tư</li>
+<li><em>Lập luận không</em>: nhiều nghiên cứu (IMF, OECD) cho thấy mức phân phối lại vừa phải <em>không</em> giảm tăng trưởng dài hạn, và có thể tăng vì tăng năng suất lao động (giáo dục, y tế cho mọi tầng lớp)</li>
 </ul>
+<p><strong>Việt Nam</strong>: <strong>BHXH toàn dân</strong> là mục tiêu chiến lược — Luật BHXH 2024 mở rộng đối tượng, hướng tới phổ cập đầy đủ vào 2030.</p>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Tính <strong>growth accounting</strong> cho Việt Nam giai đoạn 5 năm gần nhất: đóng góp của vốn, lao động và TFP. Thảo luận hàm ý chính sách.</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Báo cáo phân tích <strong>một mục tiêu vĩ mô</strong> của Việt Nam giai đoạn 2020–2024 (Phần 1).</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
-<ol type="1">
-<li>Bốn mục tiêu vĩ mô mâu thuẫn nhau ở đâu?</li>
-<li>TFP đóng góp bao nhiêu % vào tăng trưởng VN?</li>
-<li>Khi nào tăng trưởng đi đôi với bất bình đẳng tăng?</li>
-</ol>
-</section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="c.-phát-triển-bền-vững" class="level2">
+<h2 class="anchored" data-anchor-id="c.-phát-triển-bền-vững">C. Phát triển bền vững</h2>
+<section id="c.1.-sdgs-17-mục-tiêu-phát-triển-bền-vững" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-sdgs-17-mục-tiêu-phát-triển-bền-vững">C.1. SDGs — 17 mục tiêu Phát triển bền vững</h3>
+<p><strong>SDGs</strong> (Sustainable Development Goals) — Liên Hợp Quốc thông qua 9/2015, thay thế MDGs cũ.</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 7–8.</li>
-<li>Blanchard (2020), chương 11–13.</li>
+<li><strong>17 mục tiêu</strong>, <strong>169 chỉ tiêu</strong>, đến <strong>2030</strong></li>
+<li>Bao quát: nghèo, đói, sức khoẻ, giáo dục, bình đẳng giới, nước sạch, năng lượng, việc làm, hạ tầng, bất bình đẳng, thành phố bền vững, sản xuất – tiêu dùng có trách nhiệm, khí hậu, đại dương, đất liền, công lý, hợp tác</li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<p><strong>Việt Nam tham gia tích cực</strong>: VNR (Voluntary National Review) định kỳ; SDG VN có hệ thống chỉ tiêu thống kê quốc gia.</p>
+</section>
+<section id="c.2.-esg-và-kinh-tế-xanh" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-esg-và-kinh-tế-xanh">C.2. ESG và Kinh tế xanh</h3>
+<p><strong>ESG</strong> = <strong>E</strong>nvironmental (môi trường) – <strong>S</strong>ocial (xã hội) – <strong>G</strong>overnance (quản trị) — bộ ba tiêu chuẩn đánh giá đầu tư có trách nhiệm.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Trụ cột</th>
+<th>Đo lường</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>E</strong></td>
+<td>Phát thải, sử dụng năng lượng, tài nguyên</td>
+</tr>
+<tr class="even">
+<td><strong>S</strong></td>
+<td>Quan hệ NLĐ, an toàn, đa dạng</td>
+</tr>
+<tr class="odd">
+<td><strong>G</strong></td>
+<td>HĐQT độc lập, minh bạch, chống tham nhũng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kinh tế xanh</strong> = tăng trưởng <em>không huỷ hoại môi trường</em>. <strong>Kinh tế tuần hoàn</strong> = tái sử dụng, tái chế — giảm thải tới đầu vào nguồn.</p>
+<p><strong>Trái phiếu xanh</strong> (green bond) phát triển nhanh toàn cầu — Việt Nam có thị trường sơ khai, ASEAN+3 hỗ trợ.</p>
+</section>
+<section id="c.3.-việt-nam-ptbv-và-đại-hội-xiv" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-việt-nam-ptbv-và-đại-hội-xiv">C.3. Việt Nam — PTBV và Đại hội XIV</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cam kết</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Net Zero 2050</strong></td>
+<td>Cam kết tại COP26 (Glasgow 2021)</td>
+</tr>
+<tr class="even">
+<td><strong>Chiến lược Tăng trưởng xanh 2021–2030</strong></td>
+<td>Lộ trình giảm phát thải, mở rộng năng lượng tái tạo</td>
+</tr>
+<tr class="odd">
+<td><strong>NĐ 06/2022</strong></td>
+<td>Thị trường carbon thí điểm, vận hành chính thức 2028</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bốn loại kinh tế mới của Đại hội XIV</strong>: 1. Kinh tế <strong>dữ liệu</strong> 2. Kinh tế <strong>số</strong> 3. Kinh tế <strong>xanh</strong> 4. Kinh tế <strong>tuần hoàn</strong></p>
+<p>→ PTBV gắn chặt với Chiến lược phát triển KT-XH 2026–2030.</p>
+</section>
+</section>
+<section id="d.-tăng-trưởng-dài-hạn-cobb-douglas-solow-tfp" class="level2">
+<h2 class="anchored" data-anchor-id="d.-tăng-trưởng-dài-hạn-cobb-douglas-solow-tfp">D. Tăng trưởng dài hạn — Cobb-Douglas + Solow + TFP</h2>
+<section id="d.1.-hàm-sản-xuất-cobb-douglas" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-hàm-sản-xuất-cobb-douglas">D.1. Hàm sản xuất Cobb-Douglas</h3>
+<p><span class="math display">\[Y = A \cdot K^\alpha \cdot L^{1-\alpha}\]</span></p>
+<p>Trong đó:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ký hiệu</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Y</strong></td>
+<td>Sản lượng (GDP)</td>
+</tr>
+<tr class="even">
+<td><strong>A</strong></td>
+<td>TFP (Total Factor Productivity) — năng suất tổng</td>
+</tr>
+<tr class="odd">
+<td><strong>K</strong></td>
+<td>Vốn (capital)</td>
+</tr>
+<tr class="even">
+<td><strong>L</strong></td>
+<td>Lao động</td>
+</tr>
+<tr class="odd">
+<td><strong>α</strong></td>
+<td>Tỷ phần vốn trong sản lượng (thường 0.3–0.4)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Phân rã tăng trưởng</strong> (lấy log, lấy đạo hàm theo thời gian):</p>
+<p><span class="math display">\[\frac{\Delta Y}{Y} = \alpha \cdot \frac{\Delta K}{K} + (1-\alpha) \cdot \frac{\Delta L}{L} + \frac{\Delta A}{A}\]</span></p>
+<p>→ Tăng trưởng GDP = đóng góp K + đóng góp L + <strong>đóng góp TFP (phần dư Solow)</strong>.</p>
+</section>
+<section id="d.2.-phân-rã-solow-phát-hiện-sốc" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-phân-rã-solow-phát-hiện-sốc">D.2. Phân rã Solow — phát hiện sốc</h3>
+<p><strong>Robert Solow (1957)</strong>, <em>Technical Change and the Aggregate Production Function</em> (Nobel 1987):</p>
+<ul>
+<li>Lấy số liệu Mỹ 1909–1949</li>
+<li>Tính đóng góp của K và L vào tăng trưởng</li>
+<li><strong>Phát hiện sốc</strong>: chỉ ~15% tăng trưởng do K và L; <strong>~50–60% là TFP (phần dư)</strong></li>
+</ul>
+<p><strong>Bài học cho QLKT</strong>:</p>
+<ul>
+<li><strong>Vốn (K)</strong> là điều kiện cần, <em>không đủ</em>. Đầu tư cao không tự động tạo tăng trưởng nhanh.</li>
+<li><strong>TFP</strong> mới quan trọng dài hạn — <em>cách dùng</em> vốn và lao động hiệu quả ra sao.</li>
+<li><strong>Nguồn TFP</strong>: công nghệ, giáo dục, thể chế (institutions).</li>
+</ul>
+</section>
+<section id="d.3.-growth-accounting-việt-nam" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-growth-accounting-việt-nam">D.3. Growth accounting Việt Nam</h3>
+<p><strong>Đóng góp vào tăng trưởng VN 2010–2024</strong> (ước tính):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Đóng góp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vốn (K)</td>
+<td>~50–55%</td>
+</tr>
+<tr class="even">
+<td>Lao động (L)</td>
+<td>~25–30%</td>
+</tr>
+<tr class="odd">
+<td><strong>TFP</strong></td>
+<td><strong>~20–25%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So sánh:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Nền KT</th>
+<th>TFP đóng góp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Việt Nam 2010–2024</td>
+<td>~20–25%</td>
+</tr>
+<tr class="even">
+<td>Hàn Quốc, Nhật Bản (giai đoạn cất cánh)</td>
+<td>35–45%</td>
+</tr>
+<tr class="odd">
+<td>Mỹ thế kỷ XX</td>
+<td>50–60%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VN dựa quá nhiều vào K</strong>: đầu tư cao (≥30% GDP) nhưng <em>hiệu suất sử dụng vốn còn hạn chế</em> (ICOR cao).</p>
+</section>
+<section id="d.4.-mục-tiêu-tfp-của-đại-hội-xiv" class="level3">
+<h3 class="anchored" data-anchor-id="d.4.-mục-tiêu-tfp-của-đại-hội-xiv">D.4. Mục tiêu TFP của Đại hội XIV</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Đại hội</th>
+<th>Mục tiêu TFP đóng góp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>XIII (2021)</strong></td>
+<td>~50% (đến 2025)</td>
+</tr>
+<tr class="even">
+<td><strong>XIV (2026)</strong></td>
+<td><strong>&gt;55%</strong> (đến 2030)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Yêu cầu thực tế</strong>: phải <strong>nâng năng suất gấp đôi hiện tại</strong> trong 5 năm. Đây là mục tiêu <em>rất tham vọng</em>.</p>
+<p><strong>Điều kiện cần để đạt</strong>:</p>
+<ul>
+<li><strong>ĐMST</strong> mạnh (xem Buổi 5)</li>
+<li><strong>NIC</strong> hoạt động hiệu quả</li>
+<li>Đầu tư <strong>R&amp;D</strong> tăng từ 0.5% lên 1.5–2% GDP</li>
+<li>Cải cách thể chế — đặc biệt giáo dục đại học và liên kết DN–đại học</li>
+</ul>
+<p><strong>Tranh luận</strong>: mục tiêu TFP &gt;55% có khả thi không? Một số nhà kinh tế (vd Trần Văn Thọ) cho rằng quá tham vọng nếu không có cải cách thể chế mạnh.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 06 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Áp dụng phân rã Solow cho Việt Nam giai đoạn 2015–2019 (trước Covid):</p>
+<ol type="1">
+<li>Giả định α = 0.4, ước lượng ΔK/K và ΔL/L từ dữ liệu GSO/WB.</li>
+<li>Tính ΔA/A (phần dư TFP).</li>
+<li>So sánh với mục tiêu Đại hội XIV (TFP &gt;55% vào 2030).</li>
+<li>Theo bạn, cải cách nào sẽ giúp đẩy TFP tăng nhanh nhất?</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-6-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-6-năm-điểm-cốt-lõi">Tổng kết Buổi 6 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>Bốn mục tiêu vĩ mô</strong> mâu thuẫn nhau ở ngắn hạn — đây là <em>nguồn gốc của trade-off chính sách</em>.</li>
+<li><strong>Phân phối thu nhập</strong>: Gini + Lorenz; bốn nhóm công cụ phân phối lại. Việt Nam Gini ~0.36, đang giảm dần.</li>
+<li><strong>PTBV</strong>: SDGs (17 mục tiêu, 2030), ESG, 4 chuyển đổi Đại hội XIV, NetZero 2050.</li>
+<li><strong>Tăng trưởng dài hạn</strong>: Cobb-Douglas (Y=AK<sup>αL</sup>(1-α)) + phân rã Solow (TFP là phần dư).</li>
+<li><strong>TFP VN ~20–25%</strong> hiện tại; <strong>mục tiêu XIV &gt;55% vào 2030</strong> — tham vọng, cần cải cách thể chế mạnh.</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-7" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-7">Bài tập về nhà (chuẩn bị Buổi 7)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw chương về <strong>mô hình IS-LM</strong>.</li>
+<li><strong>Tự ôn</strong> lại <strong>Keynesian Cross</strong> (Y = C + I + G).</li>
+<li><strong>Chuẩn bị 1 ví dụ chính sách tài khoá VN</strong> — vd gói đầu tư công 2020-2024, giảm VAT 2%.</li>
+<li><strong>Đọc thêm</strong> về Solow growth accounting tại Việt Nam.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 6 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab thực hành <strong>ước lượng Cobb-Douglas cho Việt Nam</strong> trong Stata: lấy dữ liệu Y, K, L từ Penn World Tables, hồi quy log-linear, ước lượng α và TFP residual. Bạn sẽ học <code>regress</code>, <code>log</code>, robust SE, residual analysis.</p>
+<p>→ <a href="../stata-lab/lab-06.html"><strong>Bắt đầu Lab 6 — Ước lượng Cobb-Douglas VN</strong></a> <em>(~30 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em> (2026), Chương 7–8 (Growth, Productivity).</li>
+<li><strong>Solow, R.</strong> (1957), <em>Technical Change and the Aggregate Production Function</em>, <em>Review of Economics and Statistics</em> — bài báo gốc.</li>
+<li><strong>Friedman, M.</strong> (1968), <em>The Role of Monetary Policy</em> — về NAIRU.</li>
+<li>Báo cáo VNR Việt Nam — định kỳ về SDGs.</li>
+<li>Văn kiện Đại hội XIV — mục tăng trưởng và TFP.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-05.html">Buổi 5</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-07.html">Buổi 7</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-05.html">Buổi 5 — Chính sách công nghiệp và Quản trị DN</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-07.html">Buổi 7 — Mô hình IS-LM</a> →</p>
 
 
 </section>

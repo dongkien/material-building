@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 07 — Cân bằng IS-LM bằng số – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 7 — Mô phỏng cân bằng IS-LM – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -105,6 +105,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -165,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-07.html">Lab 07 — Cân bằng IS-LM bằng số</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-07.html">Lab 7 — Mô phỏng cân bằng IS-LM</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -248,19 +277,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 06 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
+ <span class="menu-text">Lab 6 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-07.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 07 — Cân bằng IS-LM bằng số</span></a>
+ <span class="menu-text">Lab 7 — Mô phỏng cân bằng IS-LM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
+ <span class="menu-text">Lab 8 — Đường Phillips Việt Nam 2010-2024</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,14 +346,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-07" id="toc-khung-lab-07" class="nav-link active" data-scroll-target="#khung-lab-07">Khung Lab 07</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-07" id="toc-deliverable-lab-07" class="nav-link" data-scroll-target="#deliverable-lab-07">Deliverable Lab 07</a></li>
+  <li><a href="#mô-hình-is-lm-tham-số-hoá" id="toc-mô-hình-is-lm-tham-số-hoá" class="nav-link active" data-scroll-target="#mô-hình-is-lm-tham-số-hoá">1. Mô hình IS-LM tham số hoá</a></li>
+  <li><a href="#thiết-lập-tham-số-trong-stata" id="toc-thiết-lập-tham-số-trong-stata" class="nav-link" data-scroll-target="#thiết-lập-tham-số-trong-stata">2. Thiết lập tham số trong Stata</a></li>
+  <li><a href="#tìm-cân-bằng-y-r-bằng-số" id="toc-tìm-cân-bằng-y-r-bằng-số" class="nav-link" data-scroll-target="#tìm-cân-bằng-y-r-bằng-số">3. Tìm cân bằng (Y<em>, r</em>) bằng số</a></li>
+  <li><a href="#vẽ-is-lm" id="toc-vẽ-is-lm" class="nav-link" data-scroll-target="#vẽ-is-lm">4. Vẽ IS-LM</a></li>
+  <li><a href="#mô-phỏng-cstk-tăng-g" id="toc-mô-phỏng-cstk-tăng-g" class="nav-link" data-scroll-target="#mô-phỏng-cstk-tăng-g">5. Mô phỏng CSTK — Tăng G</a></li>
+  <li><a href="#đo-crowding-out" id="toc-đo-crowding-out" class="nav-link" data-scroll-target="#đo-crowding-out">6. Đo crowding out</a></li>
+  <li><a href="#mô-phỏng-cstt-tăng-m" id="toc-mô-phỏng-cstt-tăng-m" class="nav-link" data-scroll-target="#mô-phỏng-cstt-tăng-m">7. Mô phỏng CSTT — Tăng M</a></li>
+  <li><a href="#bẫy-thanh-khoản-lm-nằm-ngang" id="toc-bẫy-thanh-khoản-lm-nằm-ngang" class="nav-link" data-scroll-target="#bẫy-thanh-khoản-lm-nằm-ngang">8. Bẫy thanh khoản — LM nằm ngang</a></li>
+  <li><a href="#đóng-log" id="toc-đóng-log" class="nav-link" data-scroll-target="#đóng-log">9. Đóng log</a></li>
+  <li><a href="#deliverable-lab-7" id="toc-deliverable-lab-7" class="nav-link" data-scroll-target="#deliverable-lab-7">Deliverable Lab 7</a></li>
   <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
@@ -332,10 +363,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-07.html">Lab 07 — Cân bằng IS-LM bằng số</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-07.html">Lab 7 — Mô phỏng cân bằng IS-LM</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 07 — Cân bằng IS-LM bằng số</h1>
-<p class="subtitle lead">Tương ứng Buổi 7: IS-LM dưới dạng đại số</p>
+<h1 class="title">Lab 7 — Mô phỏng cân bằng IS-LM</h1>
+<p class="subtitle lead">Tương ứng Buổi 7: Tìm (Y<em>, r</em>) bằng số và mô phỏng chính sách</p>
 </div>
 
 
@@ -362,66 +393,257 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-07.html">Buổi 7</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>display, scalar, equation solving</code></p>
+<p>Bài này mô phỏng <strong>mô hình IS-LM</strong> từ <a href="../lectures/buoi-07.html">Buổi 7</a> bằng Stata: xây dựng IS và LM bằng số, tìm cân bằng <span class="math inline">\((Y^*, r^*)\)</span>, mô phỏng tác động của tăng <span class="math inline">\(G\)</span> (CSTK) và tăng <span class="math inline">\(M\)</span> (CSTT).</p>
+<p>Sau Lab 7, bạn có thể:</p>
+<ul>
+<li>Tạo đường IS và LM bằng dạng tham số</li>
+<li>Tìm điểm cân bằng đồng thời <span class="math inline">\((Y^*, r^*)\)</span></li>
+<li>Mô phỏng dịch IS khi <span class="math inline">\(G\)</span> tăng (CSTK)</li>
+<li>Mô phỏng dịch LM khi <span class="math inline">\(M\)</span> tăng (CSTT)</li>
+<li>Đo <em>crowding out</em> — so sánh tăng Y so với số nhân Keynesian thuần</li>
+</ul>
+<p><strong>Khái niệm Stata học</strong>: <code>set obs</code>, <code>generate</code>, <code>scalar</code>, <code>display</code>, hệ phương trình tuyến tính, <code>twoway</code> nhiều layer</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 07. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-07" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-07">Khung Lab 07</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Tìm Y* và r* cân bằng; phân tích shock</p>
+<section id="mô-hình-is-lm-tham-số-hoá" class="level2">
+<h2 class="anchored" data-anchor-id="mô-hình-is-lm-tham-số-hoá">1. Mô hình IS-LM tham số hoá</h2>
+<p>Bắt đầu với mô hình đơn giản:</p>
+<p><strong>Đường IS</strong> (KT đóng): <span class="math display">\[Y = C_0 + c(Y - T) + I_0 - br + G\]</span></p>
+<p>Giải ra: <span class="math display">\[Y = \frac{C_0 + I_0 + G - cT - br}{1 - c} \quad \Rightarrow \quad \text{IS: } r = \frac{C_0 + I_0 + G - cT - (1-c)Y}{b}\]</span></p>
+<p><strong>Đường LM</strong>: <span class="math display">\[\frac{M}{P} = kY - hr\]</span></p>
+<p>Giải ra: <span class="math display">\[\text{LM: } r = \frac{kY - M/P}{h}\]</span></p>
+<p><strong>Tham số mặc định</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tham số</th>
+<th style="text-align: center;">Giá trị</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(C_0\)</span></td>
+<td style="text-align: center;">100</td>
+<td>Tiêu dùng tự định</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(c\)</span> (MPC)</td>
+<td style="text-align: center;">0.6</td>
+<td>Xu hướng tiêu dùng biên</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(I_0\)</span></td>
+<td style="text-align: center;">200</td>
+<td>Đầu tư tự định</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(b\)</span></td>
+<td style="text-align: center;">500</td>
+<td>Độ nhạy đầu tư với <span class="math inline">\(r\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(G\)</span></td>
+<td style="text-align: center;">100</td>
+<td>Chi tiêu chính phủ</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T\)</span></td>
+<td style="text-align: center;">100</td>
+<td>Thuế</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(M/P\)</span></td>
+<td style="text-align: center;">200</td>
+<td>Cung tiền thực</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(k\)</span></td>
+<td style="text-align: center;">0.5</td>
+<td>Độ nhạy cầu tiền với <span class="math inline">\(Y\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(h\)</span></td>
+<td style="text-align: center;">1000</td>
+<td>Độ nhạy cầu tiền với <span class="math inline">\(r\)</span></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Tham số IS và LM giả định</p>
-</section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 07 — DTU301</span>
+<section id="thiết-lập-tham-số-trong-stata" class="level2">
+<h2 class="anchored" data-anchor-id="thiết-lập-tham-số-trong-stata">2. Thiết lập tham số trong Stata</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 7 — DTU301 — Mô phỏng IS-LM</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab07_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">display</span>, <span class="fu">scalar</span>, equation solving</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tham số ===</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> C0 = 100      <span class="co">// Tiêu dùng tự định</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> c  = 0.6      <span class="co">// MPC</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> I0 = 200      <span class="co">// Đầu tư tự định</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> b  = 500      <span class="co">// Độ nhạy I theo r</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> G  = 100      <span class="co">// Chi tiêu CP</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> T  = 100      <span class="co">// Thuế</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> M  = 200      <span class="co">// Cung tiền thực</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> <span class="kw">k</span>  = 0.5      <span class="co">// Độ nhạy cầu tiền theo Y</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> <span class="kw">h</span>  = 1000     <span class="co">// Độ nhạy cầu tiền theo r</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="tìm-cân-bằng-y-r-bằng-số" class="level2">
+<h2 class="anchored" data-anchor-id="tìm-cân-bằng-y-r-bằng-số">3. Tìm cân bằng (Y<em>, r</em>) bằng số</h2>
+<p>Giải hệ: - IS: <span class="math inline">\((1-c)Y + br = C_0 + I_0 + G - cT\)</span> - LM: <span class="math inline">\(kY - hr = M\)</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* === Giải bằng đại số (substitution) ===</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>* IS: <span class="fu">r</span> = [C0 + I0 + G - cT - (1-c)Y] / b</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>* LM: <span class="fu">r</span> = (kY - M) / <span class="kw">h</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>* Đặt 2 vế bằng nhau, giải Y:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> A_is = C0 + I0 + G - c*T          <span class="co">// Hằng số IS</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Y_star = (A_is/b + M/<span class="kw">h</span>) / ((1-c)/b + <span class="kw">k</span>/<span class="kw">h</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> r_star = (<span class="kw">k</span>*Y_star - M) / <span class="kw">h</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Cân bằng ban đầu ==="</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Y* = "</span> Y_star</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"r* = "</span> r_star</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: Cân bằng ở đâu? Y* và r* bao nhiêu?</p>
 </section>
+<section id="vẽ-is-lm" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-is-lm">4. Vẽ IS-LM</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === Tạo lưới Y để vẽ ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">obs</span> 101</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> Y = 200 + 8 * (<span class="dt">_n</span> - 1)        <span class="co">// Y từ 200 đến 1000</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>* Tham số (gọi lại từ scalars trên — phải re-<span class="kw">set</span> vì <span class="kw">clear</span> <span class="ot">all</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> C0 = 100</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> c  = 0.6</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> I0 = 200</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> b  = 500</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> G  = 100</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> T  = 100</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> M  = 200</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> <span class="kw">k</span>  = 0.5</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> <span class="kw">h</span>  = 1000</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>* === Đường IS ===</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> r_IS = (C0 + I0 + G - c*T - (1-c)*Y) / b</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>* === Đường LM ===</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> r_LM = (<span class="kw">k</span>*Y - M) / <span class="kw">h</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>* === Vẽ ===</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> r_IS Y, lcolor(<span class="st">"114 47 55"</span>) lwidth(thick)) <span class="co">///</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> r_LM Y, lcolor(<span class="st">"0 88 163"</span>) lwidth(thick)), <span class="co">///</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Mô hình IS-LM — Cân bằng ban đầu"</span>) <span class="co">///</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Sản lượng Y"</span>) <span class="bn">ytitle</span>(<span class="st">"Lãi suất r"</span>) <span class="co">///</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"IS"</span>) <span class="kw">label</span>(2 <span class="st">"LM"</span>) <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>)) <span class="co">///</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>       <span class="kw">ylabel</span>(0(0.05)0.5)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"is_lm_initial.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="deliverable-lab-07" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-07">Deliverable Lab 07</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="mô-phỏng-cstk-tăng-g" class="level2">
+<h2 class="anchored" data-anchor-id="mô-phỏng-cstk-tăng-g">5. Mô phỏng CSTK — Tăng G</h2>
+<p>Giả sử <span class="math inline">\(G\)</span> tăng từ 100 lên 200 (tăng 100 = 10% GDP ban đầu).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Tính cân bằng mới sau tăng G ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> G_new = 200</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> A_is_new = C0 + I0 + G_new - c*T</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Y_star_new = (A_is_new/b + M/<span class="kw">h</span>) / ((1-c)/b + <span class="kw">k</span>/<span class="kw">h</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> r_star_new = (<span class="kw">k</span>*Y_star_new - M) / <span class="kw">h</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Cân bằng sau khi G: 100 → 200 ==="</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Y_mới = "</span> Y_star_new <span class="st">"  (tăng "</span> Y_star_new - 333.33 <span class="st">")"</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"r_mới = "</span> r_star_new</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>* === Vẽ IS mới + LM cũ ===</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> r_IS_new = (C0 + I0 + G_new - c*T - (1-c)*Y) / b</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> r_IS Y,     lcolor(<span class="st">"114 47 55"</span>) lwidth(medium) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> r_IS_new Y, lcolor(<span class="st">"114 47 55"</span>) lwidth(thick)) <span class="co">///</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> r_LM Y,     lcolor(<span class="st">"0 88 163"</span>) lwidth(thick)), <span class="co">///</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"CSTK: Tăng G → IS dịch phải"</span>) <span class="co">///</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Sản lượng Y"</span>) <span class="bn">ytitle</span>(<span class="st">"Lãi suất r"</span>) <span class="co">///</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"IS cũ"</span>) <span class="kw">label</span>(2 <span class="st">"IS mới"</span>) <span class="kw">label</span>(3 <span class="st">"LM"</span>) <span class="co">///</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>              <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>)) <span class="co">///</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>       <span class="kw">ylabel</span>(0(0.05)0.5)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"is_lm_cstk.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Tăng G làm Y tăng bao nhiêu? r tăng bao nhiêu? Đây có phải là tác động đúng theo dự đoán của Buổi 7?</p>
+</section>
+<section id="đo-crowding-out" class="level2">
+<h2 class="anchored" data-anchor-id="đo-crowding-out">6. Đo crowding out</h2>
+<p><strong>Số nhân Keynesian</strong> (giả sử r cố định): <span class="math display">\[\Delta Y_{\text{Keynesian}} = \frac{\Delta G}{1 - c}\]</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === So sánh: tăng Y thực tế vs số nhân Keynesian ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> deltaG = G_new - G</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> deltaY_actual = Y_star_new - Y_star</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> multiplier_keynes = deltaG / (1 - c)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> crowding_out_pct = (multiplier_keynes - deltaY_actual) / multiplier_keynes * 100</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Crowding out ==="</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"ΔG = "</span> deltaG</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"ΔY thực tế (IS-LM) = "</span> deltaY_actual</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"ΔY theo Keynesian thuần = "</span> multiplier_keynes</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"% crowding out = "</span> crowding_out_pct <span class="st">"%"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Crowding out bao nhiêu %? Lý do tại sao tác động thực tế nhỏ hơn số nhân Keynesian?</p>
+</section>
+<section id="mô-phỏng-cstt-tăng-m" class="level2">
+<h2 class="anchored" data-anchor-id="mô-phỏng-cstt-tăng-m">7. Mô phỏng CSTT — Tăng M</h2>
+<p>Giả sử <span class="math inline">\(M/P\)</span> tăng từ 200 lên 300.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* === Cân bằng mới sau tăng M ===</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> M_new = 300</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> A_is_old = C0 + I0 + G - c*T          <span class="co">// Quay về G = 100</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Y_star_m = (A_is_old/b + M_new/<span class="kw">h</span>) / ((1-c)/b + <span class="kw">k</span>/<span class="kw">h</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> r_star_m = (<span class="kw">k</span>*Y_star_m - M_new) / <span class="kw">h</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Cân bằng sau khi M: 200 → 300 ==="</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Y_mới = "</span> Y_star_m</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"r_mới = "</span> r_star_m</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>* === Vẽ LM mới + IS cũ ===</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> r_LM_new = (<span class="kw">k</span>*Y - M_new) / <span class="kw">h</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> r_IS Y,     lcolor(<span class="st">"114 47 55"</span>) lwidth(thick)) <span class="co">///</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> r_LM Y,     lcolor(<span class="st">"0 88 163"</span>) lwidth(medium) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> r_LM_new Y, lcolor(<span class="st">"0 88 163"</span>) lwidth(thick)), <span class="co">///</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"CSTT: Tăng M → LM dịch phải"</span>) <span class="co">///</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Sản lượng Y"</span>) <span class="bn">ytitle</span>(<span class="st">"Lãi suất r"</span>) <span class="co">///</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"IS"</span>) <span class="kw">label</span>(2 <span class="st">"LM cũ"</span>) <span class="kw">label</span>(3 <span class="st">"LM mới"</span>) <span class="co">///</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>              <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>)) <span class="co">///</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>       <span class="kw">ylabel</span>(0(0.05)0.5)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"is_lm_cstt.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 4</strong>: Tăng M làm Y tăng bao nhiêu? r thay đổi như thế nào? So sánh hiệu quả CSTT vs CSTK trong mô hình này.</p>
+</section>
+<section id="bẫy-thanh-khoản-lm-nằm-ngang" class="level2">
+<h2 class="anchored" data-anchor-id="bẫy-thanh-khoản-lm-nằm-ngang">8. Bẫy thanh khoản — LM nằm ngang</h2>
+<p>Khi <span class="math inline">\(r \approx 0\)</span>, LM gần như nằm ngang. Mô phỏng bằng cách đặt <span class="math inline">\(h\)</span> rất lớn:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>* === Bẫy thanh khoản: <span class="kw">h</span> rất lớn ===</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> h_trap = 10000</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>* Trong bẫy thanh khoản, tăng M không ảnh hưởng Y nhiều</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Y_trap_M = (A_is_old/b + M_new/h_trap) / ((1-c)/b + <span class="kw">k</span>/h_trap)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Trong bẫy thanh khoản, tăng M chỉ làm Y tăng tới: "</span> Y_trap_M</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>* Nhưng CSTK rất hiệu quả</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Y_trap_G = (A_is_new/b + M/h_trap) / ((1-c)/b + <span class="kw">k</span>/h_trap)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Trong bẫy thanh khoản, tăng G làm Y tăng tới: "</span> Y_trap_G</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 5</strong> (suy nghĩ + viết, 300 từ):</p>
+<p>Liên hệ kết quả mô phỏng với <strong>case Việt Nam 2022-2024</strong>:</p>
+<ul>
+<li>VN <em>không</em> trong bẫy thanh khoản (lãi suất NHNN vẫn dương ~4-6%). Vậy CSTT <em>vẫn có hiệu quả</em>.</li>
+<li>Tuy nhiên 2022, NHNN <em>thắt chặt</em> CSTT mặc dù VN cần kích cầu. Theo bạn, vì sao?</li>
+<li>Đây có phải là <em>trade-off độc đáo của VN</em> mà mô hình IS-LM đóng không bắt được?</li>
+<li>Chương 4 sẽ mở ra khung Mundell-Fleming (KT mở) — bạn nghĩ khung đó sẽ giải thích được tại sao NHNN VN phải thắt chặt 2022 không?</li>
+</ul>
+</section>
+<section id="đóng-log" class="level2">
+<h2 class="anchored" data-anchor-id="đóng-log">9. Đóng log</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-7" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-7">Deliverable Lab 7</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -432,15 +654,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><code>lab07_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>Code + comment tiếng Việt</td>
 </tr>
 <tr class="even">
 <td><code>lab07_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>Output Stata</td>
 </tr>
 <tr class="odd">
-<td><code>lab07_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><code>lab07_&lt;tên&gt;.pdf</code> (2-3 trang)</td>
+<td>5 câu hỏi + 3 biểu đồ IS-LM</td>
 </tr>
 </tbody>
 </table>
@@ -457,25 +679,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
+<td>Code chạy đúng + tìm cân bằng đúng</td>
+<td style="text-align: center;">25%</td>
 </tr>
 <tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
+<td>Mô phỏng CSTK + đo crowding out</td>
 <td style="text-align: center;">25%</td>
 </tr>
 <tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
+<td>Mô phỏng CSTT + so sánh hiệu quả</td>
 <td style="text-align: center;">20%</td>
 </tr>
 <tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
+<td>Biểu đồ IS-LM rõ ràng</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="odd">
+<td>Liên hệ case VN 2022-2024</td>
+<td style="text-align: center;">15%</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-06.html">Lab 6</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-08.html">Lab 8</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-06.html">Lab 6 — Cobb-Douglas cho VN</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-08.html">Lab 8 — Đường Phillips Việt Nam</a> →</p>
 
 
 </section>
